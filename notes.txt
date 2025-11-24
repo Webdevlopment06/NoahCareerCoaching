@@ -1,0 +1,12 @@
+Website Notes
+
+Problems:
+missing image files: "Large Section Image", "Headshot"
+Logo looks really small 
+The hero in index.html has a small blue bar on the left, as if someone didnt crop it all the way
+these link names are off from the mural, I renamed some of the about stuff but it isnt very clear where 
+I am supposed to go with this template.
+
+Possible Optimizations:
+The navbar has to be copied into each file, if we were using something like react, we could just use it as a 
+component and put it once and have it be in every page

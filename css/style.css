@@ -1,0 +1,291 @@
+/* FONTS */
+
+.lora-hero {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.outfit-hero {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.lora-para {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* Navigation section */
+.navfont{
+
+}
+
+/*Logo Section */
+.logoSize{
+    max-height: 50px;
+
+}
+
+/* Hero class + attributes */
+.herobgimg {
+  background-image: url("../images/herobg.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+}
+.heroMFont{
+    font-family: ;
+    color: ;
+}
+
+.heroParaFont{
+    font-family: ;
+    color:#fff ;
+    font-size: 20px;
+
+}
+
+/* Keep carousel image heights consistent */
+    .carousel-item img {
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .carousel-inner {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .carousel-fade .carousel-item {
+        transition: opacity 1s ease-in-out;
+    }
+
+.carousel-item {
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+#autoCarousel:hover {
+  animation-play-state: paused;
+}
+
+/* card box section */
+.blue-card-box {
+  background-color: #1800ad;
+  border-radius: 20px;
+}
+.orange-button{
+    background-color: #ffb700 ;
+    color: #fff;
+}
+.white-card-box {
+  background-color: #fff;
+  border-color: #1800ad;
+  border-radius: 20px;
+  color: #000;
+}
+
+
+
+
+
+/* Explore Careers Page Styles */
+
+.explore-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full viewport height */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.explore-hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* Ensures full coverage */
+  z-index: 0;
+}
+
+.explore-hero-content {
+  position: relative;
+  z-index: 2; /* Above overlay and video */
+  max-width: 800px; /* limits text width */
+  padding: 1rem 2rem;
+}
+
+.explore-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); /* dark overlay for text visibility */
+  z-index: 1;
+}
+
+/* Make paragraph readable and centered */
+.explore-para {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+/* back to top */
+.glass-back {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  background: rgba(255,255,255,0.35);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0d6efd;
+  font-size: 26px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  opacity: 0;
+  transition: opacity .3s ease;
+  z-index: 999;
+}
+
+.glass-back.show {
+  opacity: 1;
+}
+
+
+
+
+
+/* state map */
+/* CRITICAL: Container setup */
+        #map-container {
+            position: relative;
+            /* Max width for the image part */
+            max-width: 100%; 
+        }
+
+        /* Ensure the image scales correctly */
+        #map-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Style the individual labels */
+        .state-label {
+            position: absolute; /* Crucial for overlaying */
+            text-decoration: none;
+            font-weight: bold;
+            color: #000; 
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 1px 3px;
+            border-radius: 2px;
+            font-size: 11px;
+            z-index: 10; 
+            border: 1px solid #333;
+            transition: all 0.2s;
+            line-height: 1; 
+            cursor: pointer; /* Indicate clickability */
+        }
+
+        /* Hover effect and active state */
+        .state-label:hover, .state-label.active {
+            background-color: #0d6efd; /* Bootstrap Blue */
+            color: #fff;
+            transform: scale(1.1);
+            z-index: 15;
+        }
+
+        /* ---------------------------------------------------- */
+        /* --- State Positioning (PASTE YOUR ADJUSTED VALUES) --- */
+        /* ---------------------------------------------------- */
+        
+        /* WEST */
+        #label-wa { top: 10%; left: 12%; }
+        #label-or { top: 20%; left: 11%; }
+        #label-ca { top: 40%; left: 6%; }
+        #label-nv { top: 36%; left: 12%; }
+        #label-id { top: 24%; left: 20%; }
+        #label-ut { top: 37%; left: 22%; }
+        #label-az { top: 53%; left: 20%; }
+        
+        /* MOUNTAIN/PLAINS */
+        #label-mt { top: 14%; left: 28%; }
+        #label-wy { top: 27%; left: 31%; }
+        #label-co { top: 39%; left: 32%; }
+        #label-nm { top: 53%; left: 30%; }
+        #label-nd { top: 14%; left: 42%; }
+        #label-sd { top: 24%; left: 40%; }
+        #label-ne { top: 34%; left: 41%; }
+        #label-ks { top: 44%; left: 45%; }
+        #label-ok { top: 55%; left: 46%; }
+        #label-tx { top: 67%; left: 44%; } 
+        
+        /* MIDWEST */
+        #label-mn { top: 17%; left: 50%; }
+        #label-ia { top: 32%; left: 52%; }
+        #label-mo { top: 43%; left: 53%; }
+        #label-ar { top: 55%; left: 54%; }
+        #label-la { top: 70%; left: 55%; }
+        #label-wi { top: 22%; left: 57%; }
+        #label-il { top: 37%; left: 60%; }
+        #label-in { top: 35%; left: 64%; }
+        #label-mi { top: 20%; left: 65%; }
+        #label-oh { top: 36%; left: 68%; }
+        #label-ky { top: 45%; left: 66%; }
+        #label-tn { top: 52%; left: 66%; }
+        #label-ms { top: 62%; left: 59%; }
+        #label-al { top: 65%; left: 64%; }
+        
+        /* EAST/SOUTH */
+        #label-fl { top: 80%; left: 76%; } 
+        #label-ga { top: 63%; left: 71%; }
+        #label-sc { top: 57%; left: 75%; }
+        #label-nc { top: 50%; left: 78%; }
+        #label-va { top: 44%; left: 77%; }
+        #label-wv { top: 40%; left: 72%; }
+        #label-pa { top: 33%; left: 78%; }
+        #label-ny { top: 24%; left: 78%; }
+        #label-vt { top: 18%; left: 78%; }
+        #label-nh { top: 14%; left: 82%; }
+        #label-me { top: 13%; left: 90%; }
+        
+        /* SMALL NORTHEAST */
+        #label-ma { top: 22%; left: 91%; }
+        #label-ri { top: 26%; left: 90%; font-size: 8px;}
+        #label-ct { top: 31%; left: 88%; font-size: 8px;}
+        #label-nj { top: 33%; left: 85%; font-size: 8px;}
+        #label-de { top: 38%; left: 84%; font-size: 8px;}
+        #label-md { top: 41%; left: 84%; font-size: 8px;}
+        #label-dc { top: 47%; left: 84%; font-size: 6px;} 
+
+        /* NON-CONTIGUOUS */
+        #label-ak { top: 75%; left: 5%; font-size: 16px; } 
+        #label-hi { top: 85%; left: 28%; font-size: 16px; }
