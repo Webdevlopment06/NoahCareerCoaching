@@ -1,4 +1,4 @@
-<!-- Navigation Start -->
+const navHTML = `
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <div class="container">
     <!-- Logo -->
@@ -16,12 +16,12 @@
       <ul class="navbar-nav ms-auto">
 
         <!-- Home -->
-        <li class="nav-item">
+        <li class="nav-item" id="nav-home">
           <a class="nav-link" href="/src/index.html">Home</a>
         </li>
 
         <!-- About Dropdown -->
-        <li class="nav-item dropdown position-static">
+        <li class="nav-item dropdown position-static" id="nav-about">
           <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
             About
           </a>
@@ -48,7 +48,7 @@
         </li>
 
         <!-- Services Dropdown -->
-        <li class="nav-item dropdown position-static">
+        <li class="nav-item dropdown position-static" id="nav-services">
           <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
             Services
           </a>
@@ -92,7 +92,7 @@
         </li>
 
         <!-- Resources Dropdown -->
-        <li class="nav-item dropdown position-static">
+        <li class="nav-item dropdown position-static" id="nav-resources">
           <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
             Resources
           </a>
@@ -136,7 +136,7 @@
         </li>
 
         <!-- Contact -->
-        <li class="nav-item">
+        <li class="nav-item" id="nav-contact">
           <a class="nav-link" href="/src/contact.html">Contact</a>
         </li>
 
@@ -144,3 +144,37 @@
     </div>
   </div>
 </nav>
+`;
+document.addEventListener('DOMContentLoaded', function() {
+  const placeholder = document.getElementById('nav-placeholder');
+  if (placeholder) {
+    placeholder.innerHTML = navHTML;
+    // Set section active
+    let activeSection = '';
+    if (window.location.pathname === '/src/index.html') {
+      activeSection = 'home';
+    } else if (window.location.pathname.startsWith('/src/about/')) {
+      activeSection = 'about';
+    } else if (window.location.pathname.startsWith('/src/services/')) {
+      activeSection = 'services';
+    } else if (window.location.pathname.startsWith('/src/resources/')) {
+      activeSection = 'resources';
+    } else if (window.location.pathname === '/src/contact.html') {
+      activeSection = 'contact';
+    }
+    if (activeSection) {
+      const navItem = document.getElementById('nav-' + activeSection);
+      if (navItem) {
+        const link = navItem.querySelector('.nav-link');
+        if (link) link.classList.add('active');
+      }
+    }
+    // Set exact link active
+    document.querySelectorAll('#navMenu a').forEach(link => {
+      if (link.pathname === window.location.pathname) {
+        link.classList.add('active');
+      }
+    });
+  }
+});
+
