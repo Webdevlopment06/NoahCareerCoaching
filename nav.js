@@ -169,12 +169,6 @@ document.addEventListener('DOMContentLoaded', function() {
         if (link) link.classList.add('active');
       }
     }
-    // Set exact link active
-    document.querySelectorAll('#navMenu a').forEach(link => {
-      if (link.pathname === window.location.pathname) {
-        link.classList.add('active');
-      }
-    });
   }
 });
 
