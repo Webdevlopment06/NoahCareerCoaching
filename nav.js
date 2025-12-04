@@ -145,7 +145,26 @@ const navHTML = `
   </div>
 </nav>
 `;
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+  const head = document.head;
+  if (head) {
+    head.innerHTML += `
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/ncc4.png">
+  `;
+  }
+
   const placeholder = document.getElementById('nav-placeholder');
   if (placeholder) {
     placeholder.innerHTML = navHTML;
@@ -174,11 +193,32 @@ document.addEventListener('DOMContentLoaded', function() {
   const backToTop = document.getElementById("backToTop");
 
   window.addEventListener("scroll", () => {
+    if (!backToTop) return;
     if (window.scrollY > 300) {
       backToTop.classList.add("show");
     } else {
       backToTop.classList.remove("show");
     }
   });
+  
+
+  // Add Bootstrap JS
+  const bootstrapScript = document.createElement('script');
+  bootstrapScript.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js';
+  document.body.appendChild(bootstrapScript);
+
+  // Add carousel script if carousel exists
+  if (document.querySelector('#heroCarousel')) {
+    const carouselScript = document.createElement('script');
+    carouselScript.textContent = `
+      const myCarousel = document.querySelector('#heroCarousel');
+      const carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2500,
+        ride: 'carousel'
+      });
+    `;
+    document.body.appendChild(carouselScript);
+  }
 });
+
 
