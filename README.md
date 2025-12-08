@@ -18,6 +18,6 @@ the back to top button can be clicked when it is invisible at the top (minor iss
 when I tried to add the actual <a> for the back to top button to the .js file it remained invisible. so I guess it stays in every file for now.
 
 NOTEABLE CHANGES FROM MAIN:
-there is a js file called nav.js, it does more than that. It inserts all the stuff every file will need, so the head stuff, the nav, and the bootstrap link on the bottom. now the head just needs the title and the import of that script. I'm going to rename it in the next commit.
+there is a js file called script.js, it does more than that. It inserts all the stuff every file will need, so the head stuff, the nav, and the bootstrap link on the bottom. now the head just needs the title and the import of that script. I'm going to rename it in the next commit.
 
 because of the change in file structure, I use absolute links to avoid GET issues.
