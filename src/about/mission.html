@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Noah Career Coaching</title>
+<script src="/script.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<div id="nav-placeholder"></div>
+
+<!-- content starts here -->
+<!-- Hero mission statement section -->
+<!-- HERO SECTION -->
+<section 
+  class="hero d-flex align-items-center justify-content-center text-center text-white"
+  style="
+    background: url('images/herobg.png') center/cover no-repeat;
+    min-height: 70vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+  "
+>
+
+  <!-- Optional dark overlay -->
+  <div 
+    style="
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+    "
+  ></div>
+
+  <!-- Mission Statement Content -->
+  <div class="position-relative">
+    <h1 class="display-3 fw-bold mb-3 " style="font-size: clamp(1.8rem, 4vw, 3rem); color:#ffb700;">
+      Our Mission
+    </h1>
+
+    <p class="lead " style="font-size: clamp(1rem, 2.5vw, 1.4rem); color:#ffb700;">
+      Empowering individuals to grow, transform, and find purpose through guidance,
+      education, and meaningful support.
+    </p>
+  </div>
+
+</section>
+
+
+<!-- back to top -->
+<a href="#" class="glass-back" id="backToTop">
+  <i class="bi bi-arrow-up"></i>
+</a>
+
+<!-- joining java script -->
+
+<script>
+// Small client-side behavior: validate and show a success modal.
+document.getElementById('joinForm')?.addEventListener('submit', function(e){
+e.preventDefault();
+// Basic validity check
+const name = document.getElementById('fullName');
+const email = document.getElementById('email');
+if(!name.value.trim() || !email.value.trim()){
+name.classList.toggle('is-invalid', !name.value.trim());
+email.classList.toggle('is-invalid', !email.value.trim());
+return;
+}
+
+
+// TODO: replace with real submission (fetch to your API endpoint)
+// Example: fetch('/api/join', { method: 'POST', body: new FormData(this) })
+
+
+// Show modal
+const modal = new bootstrap.Modal(document.getElementById('successModal'));
+modal.show();
+// reset form
+this.reset();
+// collapse form
+const collapseEl = document.getElementById('applyForm');
+if(collapseEl){
+new bootstrap.Collapse(collapseEl, {toggle:false}).hide();
+}
+});
+</script>
+</body>
+</html>
