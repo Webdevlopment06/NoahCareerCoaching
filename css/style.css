@@ -13,7 +13,7 @@ Black - #000
 .lora-hero {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: normal; /* or any valid weight like 400, bold, etc. */
   font-style: normal;
 }
 
