@@ -15,7 +15,7 @@ Text on the Logo looks really small, especially in the favicon.
 
 The hero in index.html has a small itty bitty blue bar on the left, as if someone didn't crop it all the way
 
-VScode is telling me that the style.css has 7 errors because there are placeholders in it (can i delete it?)
+VScode is telling me that the style.css has 7 errors because there are placeholders in it, also it is really big. we should look into some way of making it smaller and more readable.
 
 the back to top button can be clicked when it is invisible at the top (minor issue)
 
