@@ -145,7 +145,11 @@ const navHTML = `
   </div>
 </nav>
 `;
+
+
 document.addEventListener('DOMContentLoaded', function () {
+
+  // Add meta tags
   const head = document.head;
   if (head) {
     head.innerHTML += `
@@ -160,11 +164,10 @@ document.addEventListener('DOMContentLoaded', function () {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/images/ncc4.png">
   `;
   }
 
+  // Insert navbar
   const placeholder = document.getElementById('nav-placeholder');
   if (placeholder) {
     placeholder.innerHTML = navHTML;
@@ -190,8 +193,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  // Add back to top button
   const backToTop = document.getElementById("backToTop");
-
   window.addEventListener("scroll", () => {
     if (!backToTop) return;
     if (window.scrollY > 300) {
@@ -205,20 +208,21 @@ document.addEventListener('DOMContentLoaded', function () {
   // Add Bootstrap JS
   const bootstrapScript = document.createElement('script');
   bootstrapScript.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js';
+  bootstrapScript.onload = function() {
+    // Add carousel script if carousel exists (after Bootstrap loads)
+    if (document.querySelector('#heroCarousel')) {
+      const carouselScript = document.createElement('script');
+      carouselScript.textContent = `
+        const myCarousel = document.querySelector('#heroCarousel');
+        const carousel = new bootstrap.Carousel(myCarousel, {
+          interval: 2500,
+          ride: 'carousel'
+        });
+      `;
+      document.body.appendChild(carouselScript);
+    }
+  };
   document.body.appendChild(bootstrapScript);
-
-  // Add carousel script if carousel exists
-  if (document.querySelector('#heroCarousel')) {
-    const carouselScript = document.createElement('script');
-    carouselScript.textContent = `
-      const myCarousel = document.querySelector('#heroCarousel');
-      const carousel = new bootstrap.Carousel(myCarousel, {
-        interval: 2500,
-        ride: 'carousel'
-      });
-    `;
-    document.body.appendChild(carouselScript);
-  }
 });
 
 
