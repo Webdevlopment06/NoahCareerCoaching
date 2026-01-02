@@ -70,7 +70,7 @@ const navHTML = `
                   <a class="dropdown-item" href="/src/services/professionalDev.html">Professional Development</a>
                 </div>
                 <div class="col-md-4">
-                  <a class="dropdown-item" href="/src/services/internshipPath.html">Internship Pathways</a>
+                  <a class="dropdown-item" href="/src/services/InternPath.html">Internship Pathways</a>
                 </div>
                 <div class="col-md-4">
                   <a class="dropdown-item" href="/src/services/volunteer.html">Volunteer Opportunities</a>
