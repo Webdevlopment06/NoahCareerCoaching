@@ -28,3 +28,5 @@ because of the change in file structure, I use absolute links to avoid issues wi
 I wrapped all of the main content of every page in a main tag, I also got rid of the `<!-- content stars here -->`'s.(yes it was misspelled like that in every comment)
 
 There is a new file called favicon.ico, its just a copy of ncc4.png that gets automatically inserted as the favicon.
+
+all of the colors in style.css are now tied to vars at the top of the file, you can edit all of the colors of things at once this way.

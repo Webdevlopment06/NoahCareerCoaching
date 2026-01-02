@@ -29,18 +29,18 @@ const navHTML = `
             <div class="container">
               <div class="row mb-2">
                 <div class="col-md-6">
-                  <a class="dropdown-item" href="/src/about/mission.html">Mission Statement</a>
+                  <a class="dropdown-item" href="/src/about.html">Mission Statement</a>
                 </div>
                 <div class="col-md-6">
-                  <a class="dropdown-item" href="/src/about/founder.html">About Our Founder</a>
+                  <a class="dropdown-item" href="/src/about.html#founder">About Our Founder</a>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <a class="dropdown-item" href="/src/about/join.html">How To Join</a>
+                  <a class="dropdown-item" href="/src/about.html#join">How To Join</a>
                 </div>
                 <div class="col-md-6">
-                  <a class="dropdown-item" href="/src/about/donate.html">Donation</a>
+                  <a class="dropdown-item" href="/src/about.html#donation">Donation</a>
                 </div>
               </div>
             </div>
