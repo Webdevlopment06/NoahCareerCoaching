@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Insert navbar
-  const placeholder = document.getElementById('nav-placeholder');
+  const placeholder = document.getElementById('nav-inserter');
   if (placeholder) {
     placeholder.innerHTML = navHTML;
     // Set section active
