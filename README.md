@@ -30,3 +30,6 @@ I wrapped all of the main content of every page in a main tag, I also got rid of
 There is a new file called favicon.ico, its just a copy of ncc4.png that gets automatically inserted as the favicon.
 
 all of the colors in style.css are now tied to vars at the top of the file, you can edit all of the colors of things at once this way.
+
+## Tri's notes
+Added a new hero image for resources/trades because it was blurry. The free source of the image used is [here](https://www.pexels.com/photo/photo-of-a-welder-at-work-4007300/). Feel free to replace if needed. Just found this one to fill in the blurry image spot.
