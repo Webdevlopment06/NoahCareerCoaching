@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let activeSection = '';
     if (window.location.pathname === '/src/index.html') {
       activeSection = 'home';
-    } else if (window.location.pathname.startsWith('/src/about/')) {
+    } else if (window.location.pathname.startsWith('/src/about.html')) {
       activeSection = 'about';
     } else if (window.location.pathname.startsWith('/src/services/')) {
       activeSection = 'services';
