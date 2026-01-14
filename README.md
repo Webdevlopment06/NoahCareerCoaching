@@ -9,6 +9,8 @@ Adding dark mode and theme detection
 
 Might want to merge one of the branches into main soon because they both have placeholders for each page (the github deployment is full of 404's)
 
+We could make the navbar position fixed so it will stay at the top of the screen when you scroll
+
 
 PROBLEMS:
 Text on the Logo looks really small, especially in the favicon.
@@ -19,7 +21,9 @@ VScode is telling me that the style.css has 4 errors because there are placehold
 
 the back to top button can be clicked when it is invisible at the top (minor issue)
 
-in the branches, because we are inserting the styles from a script, there is one frame while loading where you can see the unstyled page (a simple fix would be to just put the styles back in the head, but i'm too sttuborn)
+in the branches, because we are inserting the styles from a script, there is one frame while loading where you can see the unstyled page (a simple fix would be to just put the styles back in the head, but i'm too stubborn)
+
+We could use some more comments in some of the pages, particularly the career pages
 
 NOTEABLE CHANGES FROM MAIN:
 There is a javascript file that inserts all the stuff every file will need, so the head stuff, the nav, the backtotop button, and the bootstrap link on the bottom. now the head just needs the title and the import of that script.
