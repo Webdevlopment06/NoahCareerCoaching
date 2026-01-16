@@ -371,7 +371,7 @@ Black - #000
   width: 100%;
   min-height: 320px; /* adjust as needed */
   padding: 40px 20px;
-  background-image: url('/images/careerAssessment-hero-bg.jpg');
+  background-image: url('/images/career-hero-banner.png');
   background-size: cover;       /* cover the entire banner */
   background-position: center;  /* center the image */
   background-repeat: no-repeat; /* don’t tile */
@@ -754,6 +754,7 @@ Black - #000
     z-index: 2; /* ensures your hero content sits above overlay */
 
 }
+
 
 
 
