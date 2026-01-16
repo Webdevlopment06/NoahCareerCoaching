@@ -108,6 +108,34 @@ Black - #000
   color: #000;
 }
 
+.creative-card {
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+  }
+
+  .creative-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  }
+
+  .icon-box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+  }
+
+  /* Color Variations */
+  .bg-gradient-purple { background: linear-gradient(45deg, #6a11cb, #2575fc); }
+  .bg-gradient-orange { background: linear-gradient(45deg, #ff9a9e, #fecfef); }
+  .bg-gradient-green  { background: linear-gradient(45deg, #00b09b, #96c93d); }
 
 /* Buttons */
 .orange-button{
@@ -755,6 +783,7 @@ Black - #000
     z-index: 2; /* ensures your hero content sits above overlay */
 
 }
+
 
 
 
