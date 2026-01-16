@@ -785,6 +785,49 @@ Black - #000
 }
 
 
+/* Roadmap Custom Styling */
+.roadmap-wrapper {
+    padding: 20px 0;
+}
+
+.roadmap-line {
+    position: absolute;
+    top: 45px;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    background: #dee2e6;
+    z-index: 0;
+}
+
+.roadmap-node {
+    width: 60px;
+    height: 60px;
+    background-color: #f1b327;
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    border: 4px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.step-item:hover .roadmap-node {
+    transform: scale(1.15);
+    background-color: #007bff; /* Transition to Noah blue on hover */
+    color: #fff;
+}
+
+.section-heading-custom {
+    border-left: 5px solid #f1b327;
+    padding-left: 15px;
+}
 
 
 
