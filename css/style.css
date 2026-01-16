@@ -369,7 +369,7 @@ Black - #000
 
 .career-top-banner {
   width: 100%;
-  min-height: 320px; /* adjust as needed */
+  min-height: 400px; /* adjust as needed */
   padding: 40px 20px;
   background-image: url('/images/career-hero-banner.png');
   background-size: cover;       /* cover the entire banner */
@@ -754,6 +754,7 @@ Black - #000
     z-index: 2; /* ensures your hero content sits above overlay */
 
 }
+
 
 
 
