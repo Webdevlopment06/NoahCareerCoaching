@@ -370,7 +370,7 @@ Black - #000
 .career-top-banner {
   width: 100%;
   padding: 40px 20px;
-  background-image: url('../images/careerAssessment-hero-bg.jpg');
+  background-image: url('/images/careerAssessment-hero-bg.jpg');
 }
 
 .banner-row {
@@ -750,4 +750,5 @@ Black - #000
     z-index: 2; /* ensures your hero content sits above overlay */
 
 }
+
 
