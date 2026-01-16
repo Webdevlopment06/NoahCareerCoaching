@@ -266,138 +266,8 @@
                         </div>
                     </div>
         </section>
-          <section>
-    <style>
-        :root {
-            --noah-navy: #0a192f; /* Premium Deep Navy */
-            --noah-blue: #0077b6; /* Trusted Brand Blue */
-            --noah-light-blue: #e0f2f1;
-            --text-gray: #4a5568;
-            --white: #ffffff;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f8fafc;
-            display: flex;
-            justify-content: center;
-            padding: 50px 20px;
-        }
-
-        /* Roadmap Container */
-        .roadmap-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            max-width: 1000px;
-            width: 100%;
-            position: relative;
-        }
-
-        /* The Connecting Line */
-        .roadmap-container::before {
-            content: '';
-            position: absolute;
-            top: 40px;
-            left: 5%;
-            right: 5%;
-            height: 4px;
-            background: #cbd5e0;
-            z-index: 1;
-        }
-
-        /* Roadmap Step */
-        .step {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            width: 20%;
-        }
-
-        /* The Node (Circle) */
-        .node {
-            width: 80px;
-            height: 80px;
-            background-color: var(--white);
-            border: 4px solid var(--noah-blue);
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            color: var(--noah-navy);
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        .step:hover .node {
-            background-color: var(--noah-blue);
-            color: white;
-            transform: scale(1.1);
-        }
-
-        /* Text Content */
-        .step-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--noah-navy);
-            margin-bottom: 8px;
-        }
-
-        .step-desc {
-            font-size: 0.85rem;
-            color: var(--text-gray);
-            line-height: 1.4;
-            padding: 0 10px;
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .roadmap-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .roadmap-container::before {
-                display: none; /* Hide line on mobile for vertical stack */
-            }
-            .step {
-                width: 100%;
-                margin-bottom: 40px;
-            }
-        }
-    </style>
-
-
-<div class="roadmap-container">
-    <div class="step">
-        <div class="node">01</div>
-        <div class="step-title">Entry Level</div>
-        <div class="step-desc">Business Analyst or Assistant Manager focus on operations.</div>
-    </div>
-
-    <div class="step">
-        <div class="node">02</div>
-        <div class="step-title">Mid-Level</div>
-        <div class="step-desc">Department Manager overseeing teams and budgets.</div>
-    </div>
-
-    <div class="step">
-        <div class="node">03</div>
-        <div class="step-title">Director</div>
-        <div class="step-desc">Strategic oversight of multiple departments and long-term goals.</div>
-    </div>
-
-    <div class="step">
-        <div class="node">04</div>
-        <div class="step-title">Executive</div>
-        <div class="step-desc">VP or C-Suite roles leading organizational vision.</div>
-    </div>
-</div>
-
-
-          </section>
-<!-- education entry paths 
+          
+<!-- education entry paths -->
         <section id="education" class="mb-5">
             <h2 class="fs-2 fw-bold section-heading-custom text-dark mb-4">Educational and Entry Paths 🎓</h2>
             <div class="row g-4">
@@ -443,7 +313,7 @@
 
             </div>
         </section>
--->
+<!-- future trends -->
         <section id="future" class="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
             <h2 class="fs-2 fw-bold section-heading-custom text-dark">Future Trends and Growth</h2>
 
@@ -682,6 +552,7 @@
 
 </body>
 </html>
+
 
 
 
