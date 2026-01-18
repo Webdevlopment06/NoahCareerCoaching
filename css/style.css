@@ -625,7 +625,7 @@ Black - #000
 /* finance styles page */
 
 .finance-hero-bg {
-    background-image: url('../images/finance-hero-bg.png');
+    background-image: url('../images/finance-hero-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -783,3 +783,4 @@ Black - #000
     position: relative;
     z-index: 2; /* ensures your hero content sits above overlay */
 }
+
