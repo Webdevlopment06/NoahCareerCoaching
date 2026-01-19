@@ -652,7 +652,7 @@ Black - #000
 /* healthcare styles page */
 
 .health-hero-bg {
-    background-image: url('../images/health-hero-bg.jpg');
+    background-image: url('../images/healthcare-hero-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -783,5 +783,6 @@ Black - #000
     position: relative;
     z-index: 2; /* ensures your hero content sits above overlay */
 }
+
 
 
