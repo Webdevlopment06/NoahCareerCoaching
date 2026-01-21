@@ -71,7 +71,7 @@ Black - #000
 
 /* Hero class + attributes */
 .herobgimg {
-  background-image: url("../images/herobg.png");
+  background-image: url("../images/home-hero-bg.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -783,6 +783,7 @@ Black - #000
     position: relative;
     z-index: 2; /* ensures your hero content sits above overlay */
 }
+
 
 
 
