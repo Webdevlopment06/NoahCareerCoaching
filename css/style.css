@@ -9,19 +9,16 @@
     --dark-grey: #2a2E30;
     --black: #000000;
     --blue-bootstrap: #0d6efd;
-    --overlay-dark: rgba(0, 0, 0, 0.4);
     --glass-bg: rgba(255, 255, 255, 0.35);
 }
 
 /* ==========================================================================
-   2. TYPOGRAPHY
+   2. FONTS & TYPOGRAPHY
    ========================================================================== */
-.lora-hero, .lora-para { font-family: "Lora", serif; }
-.outfit-hero, .outfit-para { font-family: "Outfit", sans-serif; }
+.lora-hero, .lora-para { font-family: "Lora", serif; font-weight: bold; }
+.outfit-hero, .outfit-para { font-family: "Outfit", sans-serif; font-weight: bold; }
 .tasa-explorer-nav, .navfont, .heroFont, .main-hero-btn { font-family: "TASA Explorer", sans-serif; }
 
-/* Weight & Style Helpers */
-.bold { font-weight: bold; }
 .whiteText { color: var(--white); }
 .blackText { color: var(--black); }
 
@@ -31,89 +28,68 @@
 .main-hero-btn { font-size: 15px; }
 
 /* ==========================================================================
-   3. LAYOUT & NAVIGATION
-   ========================================================================== */
-.nav-bg { background-color: #EDEDED; }
-.logoSize { max-height: 60px; }
-
-.assess-container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
-    background-color: var(--white);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-}
-
-/* Responsive Container Widths */
-@media (min-width: 576px)  { .assess-container { max-width: 540px; } }
-@media (min-width: 768px)  { .assess-container { max-width: 720px; } }
-@media (min-width: 992px)  { .assess-container { max-width: 960px; } }
-@media (min-width: 1200px) { .assess-container { max-width: 1140px; } }
-@media (min-width: 1400px) { .assess-container { max-width: 1320px; } }
-
-/* ==========================================================================
-   4. COMPONENTS (Cards, Buttons, Carousel)
+   3. ORIGINAL HERO SECTIONS (REINSTATED)
    ========================================================================== */
 
-/* Buttons */
-.orange-button { background-color: var(--orange); color: var(--white); border: none; }
-.blue-button   { background-color: var(--indigo); color: var(--white); border: none; }
-
-/* Cards */
-.blue-card-box { background-color: var(--indigo); border-radius: 20px; color: var(--white); }
-.white-card-box { background-color: var(--white); border: 1px solid var(--indigo); border-radius: 20px; color: var(--black); }
-
-.card-flyer { transition: all 0.3s ease-in-out; }
-.card-flyer:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+/* Main Hero Image */
+.herobgimg {
+    background-image: url("../images/herobg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
-/* Carousel */
-.carousel-item img {
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.carousel-inner { border-radius: 10px; overflow: hidden; }
-.carousel-item, .carousel-fade .carousel-item { transition: transform 1s ease-in-out, opacity 1s ease-in-out; }
-
-/* ==========================================================================
-   5. HERO SECTIONS
-   ========================================================================== */
-
-/* Shared Hero Logic */
-.hero-video-base {
+/* Explore Careers Full Height Video Hero */
+.explore-hero {
     position: relative;
     width: 100%;
+    height: 100vh; /* Reinstated full viewport height */
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    color: white;
 }
 
-.explore-hero { @extend .hero-video-base; height: 100vh; text-align: center; color: white; }
-.explore-hero-compact { @extend .hero-video-base; height: 35vh; min-height: 250px; }
+.explore-hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+}
 
-/* Background Images for Sector Pages */
-.arts-hero-bg      { background-image: url('../images/artherobg.png'); }
-.tech-hero-bg      { background-image: url('../images/tech-hero-bg.png'); }
-.business-hero-bg  { background-image: url('../images/buisness-hero-bg.jpg'); }
-.education-hero-bg { background-image: url('../images/education-hero-bg.jpg'); }
-.finance-hero-bg   { background-image: url('../images/finance-hero-bg.jpg'); }
-.health-hero-bg    { background-image: url('../images/healthcare-hero-bg.png'); }
-.hosp-hero-bg      { background-image: url('../images/hosp-hero-bg.jpg'); }
-.law-hero-bg       { background-image: url('../images/law-hero-bg.jpg'); }
-.science-hero-bg   { background-image: url('../images/science-hero-bg.jpg'); }
-.trade-hero-bg     { background-image: url('../images/trade-hero-bg.jpg'); }
+.explore-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+}
 
-/* Sector Hero Shared Overlay Effect */
+.explore-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 1rem 2rem;
+}
+
+.explore-para { margin: 1rem 0; line-height: 1.6; }
+
+/* --- SECTOR HERO BACKGROUNDS --- */
 [class*="-hero-bg"] {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
 }
+
 [class*="-hero-bg"]::before {
     content: "";
     position: absolute;
@@ -121,86 +97,89 @@
     background: rgba(0,0,0,0.35);
     z-index: 1;
 }
+
 [class*="-hero-bg"] > .container { position: relative; z-index: 2; }
 
-/* ==========================================================================
-   STATE MAP RESPONSIVENESS
-   ========================================================================= */
+/* Individual Image Paths */
+.arts-hero-bg      { background-image: url('../images/artherobg.png'); }
+.tech-hero-bg      { background-image: url('../images/tech-hero-bg.png'); }
+.business-hero-bg  { background-image: url('../images/buisness-hero-bg.jpg'); }
+.education-hero-bg { background-image: url('../images/education-hero-bg.jpg'); }
+.finance-hero-bg   { background-image: url('../images/finance-hero-bg.png'); }
+.health-hero-bg    { background-image: url('../images/health-hero-bg.jpg'); }
+.hosp-hero-bg      { background-image: url('../images/hosp-hero-bg.jpg'); }
+.law-hero-bg       { background-image: url('../images/law-hero-bg.jpg'); }
+.science-hero-bg   { background-image: url('../images/science-hero-bg.jpg'); }
+.trade-hero-bg     { background-image: url('../images/trade-hero-bg.jpg'); }
 
-#map-container {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden; /* Prevents labels from creating scrollbars if they shift */
+/* ==========================================================================
+   4. ICON & CARD FIXES
+   ========================================================================== */
+.icon-header {
+    background: #fcfcfc;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 15px;
 }
+
+.career-icon {
+    max-height: 55px;
+    max-width: 55px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.08));
+    transition: transform 0.3s ease;
+}
+
+.career-mini-card:hover .career-icon {
+    transform: scale(1.1);
+}
+
+.career-mini-card { 
+    transition: transform 0.25s ease; 
+    border-radius: 16px; 
+    overflow: hidden; 
+}
+
+/* ==========================================================================
+   5. STATE MAP (Responsive)
+   ========================================================================== */
+#map-container { position: relative; max-width: 100%; }
+#map-container img { display: block; width: 100%; height: auto; }
 
 .state-label {
     position: absolute;
     text-decoration: none;
     font-weight: bold;
     color: var(--black);
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1px 4px;
-    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 1px 3px;
+    border-radius: 2px;
     border: 1px solid #333;
-    z-index: 10;
     cursor: pointer;
-    line-height: 1;
-    transition: all 0.2s ease;
-    
-    /* Responsive Font: Scales between 8px and 12px based on screen width */
-    font-size: clamp(8px, 1vw, 12px); 
-    white-space: nowrap;
+    z-index: 10;
+    font-size: clamp(8px, 1vw, 11px); /* Responsive font sizing */
 }
 
-/* Hover & Active States */
-.state-label:hover, 
-.state-label.active {
+.state-label:hover, .state-label.active {
     background-color: var(--blue-bootstrap);
     color: var(--white);
-    transform: scale(1.15);
-    z-index: 20;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: scale(1.1);
+    z-index: 15;
 }
 
-/* Tablet Adjustments (Standard screens) */
-@media (max-width: 992px) {
-    .state-label {
-        padding: 1px 2px;
-        border-width: 0.5px;
-    }
-}
-
-/* Mobile Adjustments (Small screens) */
-@media (max-width: 576px) {
-    .state-label {
-        /* Force font even smaller for tiny screens to prevent overlap */
-        font-size: 7px; 
-        padding: 0px 1px;
-    }
-
-    /* Adjust specific tiny labels that often collide */
-    #label-ri, #label-ct, #label-nj, #label-de, #label-md, #label-dc {
-        font-size: 5px;
-        border: none; /* Removing border saves space on mobile */
-        background-color: rgba(255, 255, 255, 0.7);
-    }
-}
-
-/* Specific positioning for Non-Contiguous states to stay visible */
-#label-ak { font-size: clamp(12px, 1.5vw, 18px); }
-#label-hi { font-size: clamp(12px, 1.5vw, 18px); }
-
-/* ==========================================================================
-   STATE COORDINATES (Ensure these remain percentages)
-   ========================================================================== */
+/* State Positions */
 #label-wa { top: 10%; left: 12%; }
 #label-or { top: 20%; left: 11%; }
 #label-ca { top: 40%; left: 6%; }
-/* ... [Rest of your state IDs] ... */
+/* ... (Add other state labels as needed) */
 
 /* ==========================================================================
-   7. UTILITIES & BACK TO TOP
+   6. UTILITIES
    ========================================================================== */
 .glass-back {
     position: fixed;
@@ -215,7 +194,7 @@
     align-items: center;
     justify-content: center;
     color: var(--blue-bootstrap);
-    font-size: 26px;
+    text-decoration: none;
     box-shadow: 0 4px 15px rgba(0,0,0,0.25);
     opacity: 0;
     transition: opacity .3s ease;
@@ -223,6 +202,5 @@
 }
 .glass-back.show { opacity: 1; }
 
-.z-2 { z-index: 2; }
-.mt-n4 { margin-top: -2.5rem !important; }
-
+.orange-button { background-color: var(--orange); color: #fff; }
+.blue-button { background-color: var(--indigo); color: #fff; }
