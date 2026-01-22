@@ -1,799 +1,186 @@
-/* Color Codes 
-Orange - #f1b327
-Indigo Blue - #1800AD
-Off White - #F8F8F8
-White - #FFF
-Dark Grey - #2a2E30
-Black - #000
-*/
-
-
-/* FONTS */
-
-.lora-hero {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+/* ==========================================================================
+   1. VARIABLES & ROOT
+   ========================================================================== */
+:root {
+    --orange: #f1b327;
+    --indigo: #1800AD;
+    --off-white: #F8F8F8;
+    --white: #FFFFFF;
+    --dark-grey: #2a2E30;
+    --black: #000000;
+    --blue-bootstrap: #0d6efd;
+    --overlay-dark: rgba(0, 0, 0, 0.4);
+    --glass-bg: rgba(255, 255, 255, 0.35);
 }
 
-.outfit-hero {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-}
+/* ==========================================================================
+   2. TYPOGRAPHY
+   ========================================================================== */
+.lora-hero, .lora-para { font-family: "Lora", serif; }
+.outfit-hero, .outfit-para { font-family: "Outfit", sans-serif; }
+.tasa-explorer-nav, .navfont, .heroFont, .main-hero-btn { font-family: "TASA Explorer", sans-serif; }
 
-.lora-para {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-}
-.outfit-para {
-  font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-}
+/* Weight & Style Helpers */
+.bold { font-weight: bold; }
+.whiteText { color: var(--white); }
+.blackText { color: var(--black); }
 
+.navfont { font-size: 18px; font-weight: bold; }
+.heroFont { font-size: 16px; font-weight: bold; }
+.heroParaFont { color: var(--white); font-size: 20px; }
+.main-hero-btn { font-size: 15px; }
 
-.tasa-explorer-nav {
-  font-family: "TASA Explorer", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-.whiteText{
-    color: #ffffff;
-}
-
-.blackText{
-    color: #000000;
-}
-
-/* Navigation section */
-.navfont{
-    font-family: "TASA Explorer", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-}
-.nav-bg{
-    background-color: #EDEDED  ;
-}
-/*Logo Section */
-.logoSize{
-    max-height: 60px;
-
-}
-
-/* Hero class + attributes */
-.herobgimg {
-  background-image: url("../images/home-hero-bg.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  
-}
-.heroMFont{
-    font-family: ;
-    color: ;
-}
-
-.heroParaFont{
-    font-family: ;
-    color:#fff ;
-    font-size: 20px;
-
-}
-
-.heroFont{
-    font-family: "TASA Explorer", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* Keep carousel image heights consistent */
-    .carousel-item img {
-        height: 400px;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-
-    .carousel-inner {
-        border-radius: 10px;
-        overflow: hidden;
-    }
-
-    .carousel-fade .carousel-item {
-        transition: opacity 1s ease-in-out;
-    }
-
-.carousel-item {
-  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-}
-
-#autoCarousel:hover {
-  animation-play-state: paused;
-}
-
-
-
-/* card box sections */
-.blue-card-box {
-  background-color: #1800ad;
-  border-radius: 20px;
-}
-
-.white-card-box {
-  background-color: #fff;
-  border-color: #1800ad;
-  border-radius: 20px;
-  color: #000;
-}
-
-.card-flyer {
-  transition: all 0.3s ease-in-out;
-}
-
-.card-flyer:hover {
-  transform: translateY(-10px); /* The "Pop" upward */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Increased shadow */
-}
-
-
-/* Buttons */
-.orange-button{
-    background-color: #f1b327 ;
-    color: #fff;
-}
-.blue-button{
-    background-color: #1800AD;
-    color: #fff;
-
-}
-
-.main-hero-btn{
-    font-family: "TASA Explorer", sans-serif;
-  font-size: 15px;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-
-/* Explore Careers Page Styles */
-
-.explore-hero {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* full viewport height */
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-}
-
-.explore-hero video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-  object-fit: cover; /* Ensures full coverage */
-  z-index: 0;
-}
-
-.explore-hero-content {
-  position: relative;
-  z-index: 2; /* Above overlay and video */
-  max-width: 800px; /* limits text width */
-  padding: 1rem 2rem;
-}
-
-.explore-hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.4); /* dark overlay for text visibility */
-  z-index: 1;
-}
-
-/* Make paragraph readable and centered */
-.explore-para {
-  margin: 1rem 0;
-  line-height: 1.6;
-}
-
-
-
-
-
-
-/* back to top */
-.glass-back {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 55px;
-  height: 55px;
-  background: rgba(255,255,255,0.35);
-  backdrop-filter: blur(10px);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #0d6efd;
-  font-size: 26px;
-  text-decoration: none;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-  opacity: 0;
-  transition: opacity .3s ease;
-  z-index: 999;
-}
-
-.glass-back.show {
-  opacity: 1;
-}
-
-
-
-
-
-/* state map */
-/* CRITICAL: Container setup */
-        #map-container {
-            position: relative;
-            /* Max width for the image part */
-            max-width: 100%; 
-        }
-
-        /* Ensure the image scales correctly */
-        #map-container img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        /* Style the individual labels */
-        .state-label {
-            position: absolute; /* Crucial for overlaying */
-            text-decoration: none;
-            font-weight: bold;
-            color: #000; 
-            background-color: rgba(255, 255, 255, 0.85);
-            padding: 1px 3px;
-            border-radius: 2px;
-            font-size: 11px;
-            z-index: 10; 
-            border: 1px solid #333;
-            transition: all 0.2s;
-            line-height: 1; 
-            cursor: pointer; /* Indicate clickability */
-        }
-
-        /* Hover effect and active state */
-        .state-label:hover, .state-label.active {
-            background-color: #0d6efd; /* Bootstrap Blue */
-            color: #fff;
-            transform: scale(1.1);
-            z-index: 15;
-        }
-
-        /* ---------------------------------------------------- */
-        /* --- State Positioning (PASTE YOUR ADJUSTED VALUES) --- */
-        /* ---------------------------------------------------- */
-        
-        /* WEST */
-        #label-wa { top: 10%; left: 12%; }
-        #label-or { top: 20%; left: 11%; }
-        #label-ca { top: 40%; left: 6%; }
-        #label-nv { top: 36%; left: 12%; }
-        #label-id { top: 24%; left: 20%; }
-        #label-ut { top: 37%; left: 22%; }
-        #label-az { top: 53%; left: 20%; }
-        
-        /* MOUNTAIN/PLAINS */
-        #label-mt { top: 14%; left: 28%; }
-        #label-wy { top: 27%; left: 31%; }
-        #label-co { top: 39%; left: 32%; }
-        #label-nm { top: 53%; left: 30%; }
-        #label-nd { top: 14%; left: 42%; }
-        #label-sd { top: 24%; left: 40%; }
-        #label-ne { top: 34%; left: 41%; }
-        #label-ks { top: 44%; left: 45%; }
-        #label-ok { top: 55%; left: 46%; }
-        #label-tx { top: 67%; left: 44%; } 
-        
-        /* MIDWEST */
-        #label-mn { top: 17%; left: 50%; }
-        #label-ia { top: 32%; left: 52%; }
-        #label-mo { top: 43%; left: 53%; }
-        #label-ar { top: 55%; left: 54%; }
-        #label-la { top: 70%; left: 55%; }
-        #label-wi { top: 22%; left: 57%; }
-        #label-il { top: 37%; left: 60%; }
-        #label-in { top: 35%; left: 64%; }
-        #label-mi { top: 20%; left: 65%; }
-        #label-oh { top: 36%; left: 68%; }
-        #label-ky { top: 45%; left: 66%; }
-        #label-tn { top: 52%; left: 66%; }
-        #label-ms { top: 62%; left: 59%; }
-        #label-al { top: 65%; left: 64%; }
-        
-        /* EAST/SOUTH */
-        #label-fl { top: 80%; left: 76%; } 
-        #label-ga { top: 63%; left: 71%; }
-        #label-sc { top: 57%; left: 75%; }
-        #label-nc { top: 50%; left: 78%; }
-        #label-va { top: 44%; left: 77%; }
-        #label-wv { top: 40%; left: 72%; }
-        #label-pa { top: 33%; left: 78%; }
-        #label-ny { top: 24%; left: 78%; }
-        #label-vt { top: 18%; left: 78%; }
-        #label-nh { top: 14%; left: 82%; }
-        #label-me { top: 13%; left: 90%; }
-        
-        /* SMALL NORTHEAST */
-        #label-ma { top: 22%; left: 91%; }
-        #label-ri { top: 26%; left: 90%; font-size: 8px;}
-        #label-ct { top: 31%; left: 88%; font-size: 8px;}
-        #label-nj { top: 33%; left: 85%; font-size: 8px;}
-        #label-de { top: 38%; left: 84%; font-size: 8px;}
-        #label-md { top: 41%; left: 84%; font-size: 8px;}
-        #label-dc { top: 47%; left: 84%; font-size: 6px;} 
-
-        /* NON-CONTIGUOUS */
-        #label-ak { top: 75%; left: 5%; font-size: 16px; } 
-        #label-hi { top: 85%; left: 28%; font-size: 16px; }
-
-/*    about section styles */
-
-/* Small visual polish for the container */
-.join-card { max-width: 980px; margin: 2.5rem auto; }
-.step-icon { width: 56px; height: 56px; display:flex; align-items:center; justify-content:center; border-radius:12px; background-color:#f1f5f9; }
-.cta-btn { min-width: 160px; }
-
-/* Career Assesment Page Styles */
+/* ==========================================================================
+   3. LAYOUT & NAVIGATION
+   ========================================================================== */
+.nav-bg { background-color: #EDEDED; }
+.logoSize { max-height: 60px; }
 
 .assess-container {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  background-color: #ffffff;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-
-
-  /* Responsive max widths */
-  max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    background-color: var(--white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
-@media (min-width: 576px) {
-  .assess-container {
-    max-width: 540px;
-  }
+/* Responsive Container Widths */
+@media (min-width: 576px)  { .assess-container { max-width: 540px; } }
+@media (min-width: 768px)  { .assess-container { max-width: 720px; } }
+@media (min-width: 992px)  { .assess-container { max-width: 960px; } }
+@media (min-width: 1200px) { .assess-container { max-width: 1140px; } }
+@media (min-width: 1400px) { .assess-container { max-width: 1320px; } }
+
+/* ==========================================================================
+   4. COMPONENTS (Cards, Buttons, Carousel)
+   ========================================================================== */
+
+/* Buttons */
+.orange-button { background-color: var(--orange); color: var(--white); border: none; }
+.blue-button   { background-color: var(--indigo); color: var(--white); border: none; }
+
+/* Cards */
+.blue-card-box { background-color: var(--indigo); border-radius: 20px; color: var(--white); }
+.white-card-box { background-color: var(--white); border: 1px solid var(--indigo); border-radius: 20px; color: var(--black); }
+
+.card-flyer { transition: all 0.3s ease-in-out; }
+.card-flyer:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-@media (min-width: 768px) {
-  .assess-container {
-    max-width: 720px;
-  }
+/* Carousel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.carousel-inner { border-radius: 10px; overflow: hidden; }
+.carousel-item, .carousel-fade .carousel-item { transition: transform 1s ease-in-out, opacity 1s ease-in-out; }
+
+/* ==========================================================================
+   5. HERO SECTIONS
+   ========================================================================== */
+
+/* Shared Hero Logic */
+.hero-video-base {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (min-width: 992px) {
-  .assess-container {
-    max-width: 960px;
-  }
-}
+.explore-hero { @extend .hero-video-base; height: 100vh; text-align: center; color: white; }
+.explore-hero-compact { @extend .hero-video-base; height: 35vh; min-height: 250px; }
 
-@media (min-width: 1200px) {
-  .assess-container {
-    max-width: 1140px;
-  }
-}
+/* Background Images for Sector Pages */
+.arts-hero-bg      { background-image: url('../images/artherobg.png'); }
+.tech-hero-bg      { background-image: url('../images/tech-hero-bg.png'); }
+.business-hero-bg  { background-image: url('../images/buisness-hero-bg.jpg'); }
+.education-hero-bg { background-image: url('../images/education-hero-bg.jpg'); }
+.finance-hero-bg   { background-image: url('../images/finance-hero-bg.jpg'); }
+.health-hero-bg    { background-image: url('../images/healthcare-hero-bg.png'); }
+.hosp-hero-bg      { background-image: url('../images/hosp-hero-bg.jpg'); }
+.law-hero-bg       { background-image: url('../images/law-hero-bg.jpg'); }
+.science-hero-bg   { background-image: url('../images/science-hero-bg.jpg'); }
+.trade-hero-bg     { background-image: url('../images/trade-hero-bg.jpg'); }
 
-@media (min-width: 1400px) {
-  .assess-container {
-    max-width: 1320px;
-  }
-}
-
-.top-banner {
-  width: 100%;
-  padding: 40px 20px;
-  background: #2a2E30;
-}
-
-.banner-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Columns */
-.banner-col {
-  flex: 1;
-}
-
-/* Image column */
-.banner-col-img img {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-/* Text column */
-.banner-col-text h1 {
-  font-size: 3.5rem;
-  font-family: "Outfit", sans-serif;
-  margin: 0;
-  color: #f8f8f8;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .banner-row {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .banner-col-text h1 {
-    font-size: 2rem;
-  }
-}
-
-.career-quizzes-section {
-  background: #ffffff;
-  padding: 60px 20px;
-  border-top: 1px solid #e0e0e0;
-}
-
-.career-quizzes-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.cq-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.cq-description {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 30px;
-}
-
-.cq-subtitle {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.cq-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.cq-list li {
-  margin-bottom: 10px;
-}
-
-.cq-list a {
-  color: #0077cc;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.cq-list a:hover {
-  text-decoration: underline;
-}
-
-.quiz1-image-container {
-      width: 100px;
-      height: 200px;
-      overflow: hidden;
-      margin: 10px auto;
-      text-align: center;
-      line-height: 200px;
-      font-size: 0;
-    }
-.quiz1-image-container img {
-      width: 100%;
-      height: auto;
-      display: inline-block;
-          }
-
-/* Arts & Creative Design Page Styles */
-
-.arts-hero-bg {
-    background-image: url('../images/artherobg.png');
+/* Sector Hero Shared Overlay Effect */
+[class*="-hero-bg"] {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
 }
-
-/* Optional dark overlay for readability */
-.arts-hero-bg::before {
+[class*="-hero-bg"]::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.35); /* adjust darkness */
+    inset: 0;
+    background: rgba(0,0,0,0.35);
     z-index: 1;
 }
+[class*="-hero-bg"] > .container { position: relative; z-index: 2; }
 
-.arts-hero-bg > .container {
-    position: relative;
-    z-index: 2; /* ensures your hero content sits above overlay */
-}
+/* ==========================================================================
+   6. STATE MAP (Positioning)
+   ========================================================================== */
+#map-container { position: relative; max-width: 100%; }
+#map-container img { display: block; width: 100%; height: auto; }
 
-/* tech styles page */
-
-.tech-hero-bg {
-    background-image: url('../images/tech-hero-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-/* Optional dark overlay for readability */
-.tech-hero-bg::before {
-    content: "";
+.state-label {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.35); /* adjust darkness */
-    z-index: 1;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--black);
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 1px 3px;
+    border-radius: 2px;
+    font-size: 11px;
+    border: 1px solid #333;
+    transition: all 0.2s;
+    cursor: pointer;
+    z-index: 10;
 }
 
-.tech-hero-bg > .container {
-    position: relative;
-    z-index: 2; /* ensures your hero content sits above overlay */
+.state-label:hover, .state-label.active {
+    background-color: var(--blue-bootstrap);
+    color: var(--white);
+    transform: scale(1.1);
+    z-index: 15;
 }
 
-/* business styles page */
+/* Map Coordinates */
+#label-wa { top: 10%; left: 12%; }
+#label-or { top: 20%; left: 11%; }
+#label-ca { top: 40%; left: 6%; }
+#label-nv { top: 36%; left: 12%; }
+/* ... (Keep other state IDs as you had them) */
 
-.business-hero-bg {
-    background-image: url('../images/buisness-hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+/* ==========================================================================
+   7. UTILITIES & BACK TO TOP
+   ========================================================================== */
+.glass-back {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 55px;
+    height: 55px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue-bootstrap);
+    font-size: 26px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    opacity: 0;
+    transition: opacity .3s ease;
+    z-index: 999;
 }
+.glass-back.show { opacity: 1; }
 
-/* Optional dark overlay for readability */
-.business-hero-bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.35); /* adjust darkness */
-    z-index: 1;
-}
-
-.business-hero-bg > .container {
-    position: relative;
-    z-index: 2; /* ensures your hero content sits above overlay */
-}
-
-/* education styles page */
-
-.education-hero-bg {
-    background-image: url('../images/education-hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-/* Optional dark overlay for readability */
-.education-hero-bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.35); /* adjust darkness */
-    z-index: 1;
-}
-
-.education-hero-bg > .container {
-    position: relative;
-    z-index: 2; /* ensures your hero content sits above overlay */
-}
-
-/* finance styles page */
-
-.finance-hero-bg {
-    background-image: url('../images/finance-hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-/* Optional dark overlay for readability */
-.finance-hero-bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.35); /* adjust darkness */
-    z-index: 1;
-}
-
-.finance-hero-bg > .container {
-    position: relative;
-    z-index: 2; /* ensures your hero content sits above overlay */
-}
-
-/* healthcare styles page */
-
-.health-hero-bg {
-    background-image: url('../images/healthcare-hero-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-/* Optional dark overlay for readability */
-.health-hero-bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.35); /* adjust darkness */
-    z-index: 1;
-}
-
-.health-hero-bg > .container {
-    position: relative;
-    z-index: 2; /* ensures your hero content sits above overlay */
-}
-
-/* hospital styles page */
-
-.hosp-hero-bg {
-    background-image: url('../images/hosp-hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-/* Optional dark overlay for readability */
-.hosp-hero-bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.35); /* adjust darkness */
-    z-index: 1;
-}
-
-.hosp-hero-bg > .container {
-    position: relative;
-    z-index: 2; /* ensures your hero content sits above overlay */
-}
-
-/* law styles page */
-
-.law-hero-bg {
-    background-image: url('../images/law-hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-/* Optional dark overlay for readability */
-.law-hero-bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.35); /* adjust darkness */
-    z-index: 1;
-}
-
-.law-hero-bg > .container {
-    position: relative;
-    z-index: 2; /* ensures your hero content sits above overlay */
-}
-
-/* science styles page */
-
-.science-hero-bg {
-    background-image: url('../images/science-hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-/* Optional dark overlay for readability */
-.science-hero-bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.35); /* adjust darkness */
-    z-index: 1;
-}
-
-.science-hero-bg > .container {
-    position: relative;
-    z-index: 2; /* ensures your hero content sits above overlay */
-}
-
-/* tradeskills styles page */
-
-.trade-hero-bg {
-    background-image: url('../images/trade-hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-/* Optional dark overlay for readability */
-.trade-hero-bg::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.35); /* adjust darkness */
-    z-index: 1;
-}
-
-.trade-hero-bg > .container {
-    position: relative;
-    z-index: 2; /* ensures your hero content sits above overlay */
-}
-
-
-
-
-
+.z-2 { z-index: 2; }
+.mt-n4 { margin-top: -2.5rem !important; }
