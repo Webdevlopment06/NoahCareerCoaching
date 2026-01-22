@@ -1,37 +1,27 @@
 /* ==========================================================================
-   1. VARIABLES & ROOT
-   ========================================================================== */
-:root {
-    --orange: #f1b327;
-    --indigo: #1800AD;
-    --off-white: #F8F8F8;
-    --white: #FFFFFF;
-    --dark-grey: #2a2E30;
-    --black: #000000;
-    --blue-bootstrap: #0d6efd;
-    --glass-bg: rgba(255, 255, 255, 0.35);
-}
-
-/* ==========================================================================
-   2. FONTS & TYPOGRAPHY
-   ========================================================================== */
-.lora-hero, .lora-para { font-family: "Lora", serif; font-weight: bold; }
-.outfit-hero, .outfit-para { font-family: "Outfit", sans-serif; font-weight: bold; }
-.tasa-explorer-nav, .navfont, .heroFont, .main-hero-btn { font-family: "TASA Explorer", sans-serif; }
-
-.whiteText { color: var(--white); }
-.blackText { color: var(--black); }
-
-.navfont { font-size: 18px; font-weight: bold; }
-.heroFont { font-size: 16px; font-weight: bold; }
-.heroParaFont { color: var(--white); font-size: 20px; }
-.main-hero-btn { font-size: 15px; }
-
-/* ==========================================================================
-   3. ORIGINAL HERO SECTIONS (REINSTATED)
+   COLOR CODES (Reference)
+   Orange - #f1b327 | Indigo Blue - #1800AD | Off White - #F8F8F8 
+   White - #FFF     | Dark Grey - #2a2E30   | Black - #000
    ========================================================================== */
 
-/* Main Hero Image */
+/* 1. FONTS & GLOBAL TYPOGRAPHY */
+.lora-hero { font-family: "Lora", serif; font-optical-sizing: auto; font-style: normal; }
+.outfit-hero { font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-weight: bold; font-style: normal; }
+.lora-para { font-family: "Lora", serif; font-optical-sizing: auto; font-weight: bold; font-style: normal; }
+.outfit-para { font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-weight: bold; font-style: normal; }
+.tasa-explorer-nav { font-family: "TASA Explorer", sans-serif; font-optical-sizing: auto; font-style: normal; }
+.navfont { font-family: "TASA Explorer", sans-serif; font-size: 18px; font-weight: bold; font-style: normal; }
+.heroFont { font-family: "TASA Explorer", sans-serif; font-size: 16px; font-weight: bold; font-style: normal; }
+.heroParaFont { color:#fff; font-size: 20px; }
+.main-hero-btn { font-family: "TASA Explorer", sans-serif; font-size: 15px; font-style: normal; }
+.whiteText { color: #ffffff; }
+.blackText { color: #000000; }
+
+/* 2. NAVIGATION & LOGO */
+.nav-bg { background-color: #EDEDED; }
+.logoSize { max-height: 60px; }
+
+/* 3. HERO SECTIONS (ALL ORIGINAL HEIGHTS PRESERVED) */
 .herobgimg {
     background-image: url("../images/herobg.png");
     background-size: cover;
@@ -39,11 +29,10 @@
     background-repeat: no-repeat;
 }
 
-/* Explore Careers Full Height Video Hero */
 .explore-hero {
     position: relative;
     width: 100%;
-    height: 100vh; /* Reinstated full viewport height */
+    height: 100vh; /* Original full viewport height */
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -68,7 +57,7 @@
 .explore-hero::before {
     content: "";
     position: absolute;
-    inset: 0;
+    top: 0; left: 0; width: 100%; height: 100%;
     background-color: rgba(0,0,0,0.4);
     z-index: 1;
 }
@@ -82,7 +71,8 @@
 
 .explore-para { margin: 1rem 0; line-height: 1.6; }
 
-/* --- SECTOR HERO BACKGROUNDS --- */
+/* 4. SECTOR SPECIFIC HEROES */
+/* Applied to: Arts, Tech, Business, Education, Finance, Health, Hosp, Law, Science, Trade */
 [class*="-hero-bg"] {
     background-size: cover;
     background-position: center;
@@ -93,14 +83,13 @@
 [class*="-hero-bg"]::before {
     content: "";
     position: absolute;
-    inset: 0;
+    top: 0; left: 0; width: 100%; height: 100%;
     background: rgba(0,0,0,0.35);
     z-index: 1;
 }
 
 [class*="-hero-bg"] > .container { position: relative; z-index: 2; }
 
-/* Individual Image Paths */
 .arts-hero-bg      { background-image: url('../images/artherobg.png'); }
 .tech-hero-bg      { background-image: url('../images/tech-hero-bg.png'); }
 .business-hero-bg  { background-image: url('../images/buisness-hero-bg.jpg'); }
@@ -112,9 +101,17 @@
 .science-hero-bg   { background-image: url('../images/science-hero-bg.jpg'); }
 .trade-hero-bg     { background-image: url('../images/trade-hero-bg.jpg'); }
 
-/* ==========================================================================
-   4. ICON & CARD FIXES
-   ========================================================================== */
+/* 5. CAROUSEL & CARDS */
+.carousel-item img { height: 400px; object-fit: cover; border-radius: 10px; }
+.carousel-inner { border-radius: 10px; overflow: hidden; }
+.carousel-fade .carousel-item { transition: opacity 1s ease-in-out; }
+.carousel-item { transition: transform 1s ease-in-out, opacity 1s ease-in-out; }
+#autoCarousel:hover { animation-play-state: paused; }
+
+.blue-card-box { background-color: #1800ad; border-radius: 20px; }
+.white-card-box { background-color: #fff; border: 1px solid #1800ad; border-radius: 20px; color: #000; }
+
+/* NEW: Icon Container Fixes */
 .icon-header {
     background: #fcfcfc;
     height: 100px;
@@ -135,19 +132,14 @@
     transition: transform 0.3s ease;
 }
 
-.career-mini-card:hover .career-icon {
-    transform: scale(1.1);
-}
+/* Ensure images don't look blurry on hover */
+.career-mini-card:hover .career-icon { transform: scale(1.1); }
 
-.career-mini-card { 
-    transition: transform 0.25s ease; 
-    border-radius: 16px; 
-    overflow: hidden; 
-}
+/* 6. BUTTONS */
+.orange-button { background-color: #f1b327; color: #fff; border: none; }
+.blue-button { background-color: #1800AD; color: #fff; border: none; }
 
-/* ==========================================================================
-   5. STATE MAP (Responsive)
-   ========================================================================== */
+/* 7. STATE MAP & LABELS */
 #map-container { position: relative; max-width: 100%; }
 #map-container img { display: block; width: 100%; height: auto; }
 
@@ -155,78 +147,123 @@
     position: absolute;
     text-decoration: none;
     font-weight: bold;
-    color: var(--black);
+    color: #000; 
     background-color: rgba(255, 255, 255, 0.85);
     padding: 1px 3px;
     border-radius: 2px;
+    z-index: 10; 
     border: 1px solid #333;
+    transition: all 0.2s;
+    line-height: 1; 
     cursor: pointer;
-    z-index: 10;
-    font-size: clamp(8px, 1vw, 11px); /* Responsive font sizing */
+    /* NEW: Clamp prevents text overlap on mobile while keeping original 11px on desktop */
+    font-size: clamp(7px, 1.2vw, 11px); 
 }
 
 .state-label:hover, .state-label.active {
-    background-color: var(--blue-bootstrap);
-    color: var(--white);
+    background-color: #0d6efd;
+    color: #fff;
     transform: scale(1.1);
     z-index: 15;
 }
 
-/* State Positions */
+/* Original State Positions */
 #label-wa { top: 10%; left: 12%; }
 #label-or { top: 20%; left: 11%; }
 #label-ca { top: 40%; left: 6%; }
-/* ... (Add other state labels as needed) */
+#label-nv { top: 36%; left: 12%; }
+#label-id { top: 24%; left: 20%; }
+#label-ut { top: 37%; left: 22%; }
+#label-az { top: 53%; left: 20%; }
+#label-mt { top: 14%; left: 28%; }
+#label-wy { top: 27%; left: 31%; }
+#label-co { top: 39%; left: 32%; }
+#label-nm { top: 53%; left: 30%; }
+#label-nd { top: 14%; left: 42%; }
+#label-sd { top: 24%; left: 40%; }
+#label-ne { top: 34%; left: 41%; }
+#label-ks { top: 44%; left: 45%; }
+#label-ok { top: 55%; left: 46%; }
+#label-tx { top: 67%; left: 44%; } 
+#label-mn { top: 17%; left: 50%; }
+#label-ia { top: 32%; left: 52%; }
+#label-mo { top: 43%; left: 53%; }
+#label-ar { top: 55%; left: 54%; }
+#label-la { top: 70%; left: 55%; }
+#label-wi { top: 22%; left: 57%; }
+#label-il { top: 37%; left: 60%; }
+#label-in { top: 35%; left: 64%; }
+#label-mi { top: 20%; left: 65%; }
+#label-oh { top: 36%; left: 68%; }
+#label-ky { top: 45%; left: 66%; }
+#label-tn { top: 52%; left: 66%; }
+#label-ms { top: 62%; left: 59%; }
+#label-al { top: 65%; left: 64%; }
+#label-fl { top: 80%; left: 76%; } 
+#label-ga { top: 63%; left: 71%; }
+#label-sc { top: 57%; left: 75%; }
+#label-nc { top: 50%; left: 78%; }
+#label-va { top: 44%; left: 77%; }
+#label-wv { top: 40%; left: 72%; }
+#label-pa { top: 33%; left: 78%; }
+#label-ny { top: 24%; left: 78%; }
+#label-vt { top: 18%; left: 78%; }
+#label-nh { top: 14%; left: 82%; }
+#label-me { top: 13%; left: 90%; }
+#label-ma { top: 22%; left: 91%; }
+#label-ri { top: 26%; left: 90%; font-size: 8px;}
+#label-ct { top: 31%; left: 88%; font-size: 8px;}
+#label-nj { top: 33%; left: 85%; font-size: 8px;}
+#label-de { top: 38%; left: 84%; font-size: 8px;}
+#label-md { top: 41%; left: 84%; font-size: 8px;}
+#label-dc { top: 47%; left: 84%; font-size: 6px;} 
+#label-ak { top: 75%; left: 5%; font-size: 16px; } 
+#label-hi { top: 85%; left: 28%; font-size: 16px; }
 
-/* ==========================================================================
-   6. UTILITIES
-   ========================================================================== */
+/* 8. CAREER ASSESSMENT & UTILITIES */
+.assess-container {
+    width: 100%; margin: 0 auto; padding: 0 1rem;
+    background-color: #ffffff; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+    max-width: 100%;
+}
+@media (min-width: 576px) { .assess-container { max-width: 540px; } }
+@media (min-width: 768px) { .assess-container { max-width: 720px; } }
+@media (min-width: 992px) { .assess-container { max-width: 960px; } }
+@media (min-width: 1200px) { .assess-container { max-width: 1140px; } }
+
+.top-banner { width: 100%; padding: 40px 20px; background: #2a2E30; }
+.banner-row { display: flex; align-items: center; justify-content: space-between; gap: 30px; max-width: 1200px; margin: 0 auto; }
+.banner-col { flex: 1; }
+.banner-col-img img { width: 100%; max-width: 350px; height: auto; border-radius: 8px; object-fit: cover; }
+.banner-col-text h1 { font-size: 3.5rem; font-family: "Outfit", sans-serif; margin: 0; color: #f8f8f8; }
+
+.career-quizzes-section { background: #ffffff; padding: 60px 20px; border-top: 1px solid #e0e0e0; }
+.career-quizzes-container { max-width: 900px; margin: 0 auto; }
+.cq-title { font-size: 2rem; font-weight: 700; margin-bottom: 20px; }
+.cq-description { font-size: 1.1rem; line-height: 1.7; margin-bottom: 30px; }
+.cq-subtitle { font-size: 1.4rem; font-weight: 600; margin-bottom: 15px; }
+.cq-list { list-style: none; padding: 0; }
+.cq-list a { color: #0077cc; font-weight: 500; text-decoration: none; }
+.cq-list a:hover { text-decoration: underline; }
+
+.quiz1-image-container { width: 100px; height: 200px; overflow: hidden; margin: 10px auto; text-align: center; line-height: 200px; font-size: 0; }
+.quiz1-image-container img { width: 100%; height: auto; display: inline-block; }
+
 .glass-back {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 55px;
-    height: 55px;
-    background: var(--glass-bg);
-    backdrop-filter: blur(10px);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--blue-bootstrap);
-    text-decoration: none;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-    opacity: 0;
-    transition: opacity .3s ease;
-    z-index: 999;
+    position: fixed; bottom: 25px; right: 25px; width: 55px; height: 55px;
+    background: rgba(255,255,255,0.35); backdrop-filter: blur(10px);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    color: #0d6efd; font-size: 26px; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    opacity: 0; transition: opacity .3s ease; z-index: 999;
 }
 .glass-back.show { opacity: 1; }
 
-.orange-button { background-color: var(--orange); color: #fff; }
-.blue-button { background-color: var(--indigo); color: #fff; }
+.join-card { max-width: 980px; margin: 2.5rem auto; }
+.step-icon { width: 56px; height: 56px; display:flex; align-items:center; justify-content:center; border-radius:12px; background-color:#f1f5f9; }
+.cta-btn { min-width: 160px; }
 
-
-/* Columns */
-.banner-col {
-  flex: 1;
+/* Responsive tweaks for Assessment banner */
+@media (max-width: 768px) {
+    .banner-row { flex-direction: column; text-align: center; }
+    .banner-col-text h1 { font-size: 2rem; }
 }
-
-/* Image column */
-.banner-col-img img {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-/* Text column */
-.banner-col-text h1 {
-  font-size: 3.5rem;
-  font-family: "Outfit", sans-serif;
-  margin: 0;
-  color: #f8f8f8;
-}
-
-
-
