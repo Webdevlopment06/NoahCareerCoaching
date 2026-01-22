@@ -124,39 +124,80 @@
 [class*="-hero-bg"] > .container { position: relative; z-index: 2; }
 
 /* ==========================================================================
-   6. STATE MAP (Positioning)
-   ========================================================================== */
-#map-container { position: relative; max-width: 100%; }
-#map-container img { display: block; width: 100%; height: auto; }
+   STATE MAP RESPONSIVENESS
+   ========================================================================= */
+
+#map-container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden; /* Prevents labels from creating scrollbars if they shift */
+}
 
 .state-label {
     position: absolute;
     text-decoration: none;
     font-weight: bold;
     color: var(--black);
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 1px 3px;
-    border-radius: 2px;
-    font-size: 11px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1px 4px;
+    border-radius: 3px;
     border: 1px solid #333;
-    transition: all 0.2s;
-    cursor: pointer;
     z-index: 10;
+    cursor: pointer;
+    line-height: 1;
+    transition: all 0.2s ease;
+    
+    /* Responsive Font: Scales between 8px and 12px based on screen width */
+    font-size: clamp(8px, 1vw, 12px); 
+    white-space: nowrap;
 }
 
-.state-label:hover, .state-label.active {
+/* Hover & Active States */
+.state-label:hover, 
+.state-label.active {
     background-color: var(--blue-bootstrap);
     color: var(--white);
-    transform: scale(1.1);
-    z-index: 15;
+    transform: scale(1.15);
+    z-index: 20;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Map Coordinates */
+/* Tablet Adjustments (Standard screens) */
+@media (max-width: 992px) {
+    .state-label {
+        padding: 1px 2px;
+        border-width: 0.5px;
+    }
+}
+
+/* Mobile Adjustments (Small screens) */
+@media (max-width: 576px) {
+    .state-label {
+        /* Force font even smaller for tiny screens to prevent overlap */
+        font-size: 7px; 
+        padding: 0px 1px;
+    }
+
+    /* Adjust specific tiny labels that often collide */
+    #label-ri, #label-ct, #label-nj, #label-de, #label-md, #label-dc {
+        font-size: 5px;
+        border: none; /* Removing border saves space on mobile */
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+/* Specific positioning for Non-Contiguous states to stay visible */
+#label-ak { font-size: clamp(12px, 1.5vw, 18px); }
+#label-hi { font-size: clamp(12px, 1.5vw, 18px); }
+
+/* ==========================================================================
+   STATE COORDINATES (Ensure these remain percentages)
+   ========================================================================== */
 #label-wa { top: 10%; left: 12%; }
 #label-or { top: 20%; left: 11%; }
 #label-ca { top: 40%; left: 6%; }
-#label-nv { top: 36%; left: 12%; }
-/* ... (Keep other state IDs as you had them) */
+/* ... [Rest of your state IDs] ... */
 
 /* ==========================================================================
    7. UTILITIES & BACK TO TOP
@@ -184,3 +225,4 @@
 
 .z-2 { z-index: 2; }
 .mt-n4 { margin-top: -2.5rem !important; }
+
