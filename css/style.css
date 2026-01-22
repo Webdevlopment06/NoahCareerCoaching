@@ -135,6 +135,15 @@ Black - #000
   color: #000;
 }
 
+.card-flyer {
+  transition: all 0.3s ease-in-out;
+}
+
+.card-flyer:hover {
+  transform: translateY(-10px); /* The "Pop" upward */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Increased shadow */
+}
+
 
 /* Buttons */
 .orange-button{
@@ -783,6 +792,7 @@ Black - #000
     position: relative;
     z-index: 2; /* ensures your hero content sits above overlay */
 }
+
 
 
 
