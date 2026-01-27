@@ -11,172 +11,148 @@
   <div id="nav-inserter"></div>
 
   <main>
-    <!-- hero video -->
     <section class="explore-hero">
-      <!-- Video Background -->
-      <video autoplay muted loop playsinline>
+      <video autoplay muted loop playsinline class="hero-video">
         <source src="/images/explorcareers.mp4" type="video/mp4">
-        Your browser does not support the video tag.
       </video>
-
-      <!-- Content Box -->
-      <div class="explore-hero-content">
-        <h1 class="fw-bold">Explore Careers</h1>
-        <p class="lead explore-para">
-          At Noah Career Coaching, we help you navigate the vast world of careers with clarity and confidence. Through
-          personalized guidance, hands-on experiences, and access to industry insights, we empower you to discover paths
-          that align with your skills, interests, and values. From one-on-one coaching sessions to workshops,
-          assessments,
-          and real-world opportunities, we make career exploration intentional, informed, and inspiring, so you can make
-          choices that set you up for long-term success.
-        </p>
+      <div class="hero-overlay"></div>
+      <div class="container position-relative z-1 text-center text-white">
+        <h1 class="fw-bold display-6">Explore Career Pathways</h1>
+        <p class="opacity-75 small">Find the right industry for your professional journey</p>
       </div>
     </section>
 
-    <!-- start for cards -->
-    <section class="container my-5" id="explore-careers">
-      <h2 class="text-center mb-4">Explore Careers</h2>
-      <p class="text-center mb-5">Discover broad career fields and learn what skills and opportunities they offer. Click
-        on any card to explore further.</p>
+    <div class="container filter-container">
+      <div class="card filter-card p-3">
+        <div class="row g-3 align-items-center">
+          <div class="col-md-8">
+            <div class="d-flex flex-wrap gap-2" id="filterBtnGroup">
+              <button class="btn btn-outline-primary rounded-pill active" data-filter="all">All</button>
+              <button class="btn btn-outline-primary rounded-pill" data-filter="stem">STEM</button>
+              <button class="btn btn-outline-primary rounded-pill" data-filter="corporate">Corporate</button>
+              <button class="btn btn-outline-primary rounded-pill" data-filter="service">Service</button>
+              <button class="btn btn-outline-primary rounded-pill" data-filter="creative">Creative</button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="input-group input-group-sm">
+              <span class="input-group-text bg-white border-end-0"><i class="bi bi-search"></i></span>
+              <input type="text" id="careerSearch" class="form-control border-start-0" placeholder="Search industry...">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <div class="row g-4">
-        <!-- Technology -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="/images/technologyicon.png" class="card-img-top p-3" alt="Technology Icon">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Technology</h5>
-              <p class="card-text">Careers in technology involve creating, maintaining, and innovating digital systems.
-                Roles include software development, IT support, cybersecurity, and more.</p>
-              <p><strong>Key Skills:</strong> Problem-solving, coding basics, troubleshooting, analytical thinking</p>
-              <a href="/src/resources//career pages/technology.html" class="mt-auto btn btn-primary">Learn More</a>
+    <section class="container py-5">
+      <div class="row g-4 row-cols-2 row-cols-md-3 row-cols-lg-5" id="careerGrid">
+
+        <div class="col career-item" data-category="corporate">
+          <div class="card career-mini-card border-0 shadow-sm">
+            <div class="icon-header"><img src="/images/buisnessicon.png" class="career-icon" alt="Business"></div>
+            <div class="card-body p-3 text-center d-flex flex-column">
+              <h6 class="fw-bold mb-1">Business</h6>
+              <p class="extra-small text-muted mb-3">Management</p>
+              <a href="/src/resources/career pages/buisnessmanagemnt.html" class="btn btn-primary btn-sm mt-auto rounded-pill">View Path</a>
             </div>
           </div>
         </div>
 
-        <!-- Healthcare -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="/images/healthcareicon.png" class="card-img-top p-3" alt="Healthcare Icon">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Healthcare</h5>
-              <p class="card-text">Healthcare careers focus on improving people’s health and well-being. This field
-                includes nursing, medical technicians, therapists, and health administration.</p>
-              <p><strong>Key Skills:</strong> Communication, empathy, technical knowledge, attention to detail</p>
-              <a href="/src/resources/career pages/healthcare.html" class="mt-auto btn btn-primary">Learn More</a>
+        <div class="col career-item" data-category="creative">
+          <div class="card career-mini-card border-0 shadow-sm">
+            <div class="icon-header"><img src="/images/articon.png" class="career-icon" alt="Creative Arts"></div>
+            <div class="card-body p-3 text-center d-flex flex-column">
+              <h6 class="fw-bold mb-1">Creative Arts</h6>
+              <p class="extra-small text-muted mb-3">Design & Media</p>
+              <a href="/src/resources/career pages/artsdesign.html" class="btn btn-primary btn-sm mt-auto rounded-pill">View Path</a>
             </div>
           </div>
         </div>
 
-        <!-- Business & Management -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="/images/buisnessicon.png" class="card-img-top p-3" alt="Business Icon">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Business & Management</h5>
-              <p class="card-text">Business careers involve leadership, strategy, and operations. Opportunities exist in
-                management, sales, human resources, and entrepreneurship.</p>
-              <p><strong>Key Skills:</strong> Leadership, communication, organization, problem-solving</p>
-              <a href="/src/resources/career pages/buisnessmanagemnt.html" class="mt-auto btn btn-primary">Learn More</a>
+        <div class="col career-item" data-category="service">
+          <div class="card career-mini-card border-0 shadow-sm">
+            <div class="icon-header"><img src="/images/educationicon.png" class="career-icon" alt="Education"></div>
+            <div class="card-body p-3 text-center d-flex flex-column">
+              <h6 class="fw-bold mb-1">Education</h6>
+              <p class="extra-small text-muted mb-3">Teaching</p>
+              <a href="/src/resources/career pages/education.html" class="btn btn-primary btn-sm mt-auto rounded-pill">View Path</a>
             </div>
           </div>
         </div>
 
-        <!-- Creative Arts & Design -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="/images/articon.png" class="card-img-top p-3" alt="Creative Arts Icon">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Creative Arts & Design</h5>
-              <p class="card-text">Creative careers include graphic design, visual arts, photography, writing, and
-                multimedia production. They require creativity and technical skills.</p>
-              <p><strong>Key Skills:</strong> Creativity, design software, storytelling, attention to detail</p>
-              <a href="/src/resources/career pages/artsdesign.html" class="mt-auto btn btn-primary">Learn More</a>
+        <div class="col career-item" data-category="corporate">
+          <div class="card career-mini-card border-0 shadow-sm">
+            <div class="icon-header"><img src="/images/financeicon.png" class="career-icon" alt="Finance"></div>
+            <div class="card-body p-3 text-center d-flex flex-column">
+              <h6 class="fw-bold mb-1">Finance</h6>
+              <p class="extra-small text-muted mb-3">Accounting</p>
+              <a href="/src/resources/career pages/finance.html" class="btn btn-primary btn-sm mt-auto rounded-pill">View Path</a>
             </div>
           </div>
         </div>
 
-        <!-- Education & Training -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="/images/educationicon.png" class="card-img-top p-3" alt="Education Icon">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Education & Training</h5>
-              <p class="card-text">Education careers involve teaching, training, or mentoring others, from early
-                childhood
-                to adult learning and professional development.</p>
-              <p><strong>Key Skills:</strong> Communication, patience, instructional skills, organization</p>
-              <a href="/src/resources/career pages/education.html" class="mt-auto btn btn-primary">Learn More</a>
+        <div class="col career-item" data-category="stem">
+          <div class="card career-mini-card border-0 shadow-sm">
+            <div class="icon-header"><img src="/images/healthcareicon.png" class="career-icon" alt="Healthcare"></div>
+            <div class="card-body p-3 text-center d-flex flex-column">
+              <h6 class="fw-bold mb-1">Healthcare</h6>
+              <p class="extra-small text-muted mb-3">Medical</p>
+              <a href="/src/resources/career pages/healthcare.html" class="btn btn-primary btn-sm mt-auto rounded-pill">View Path</a>
             </div>
           </div>
         </div>
 
-        <!-- Skilled Trades -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="/images/skillsicon.png" class="card-img-top p-3" alt="Skilled Trades Icon">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Skilled Trades</h5>
-              <p class="card-text">Skilled trades include hands-on careers such as construction, plumbing, electrical
-                work, carpentry, and manufacturing.</p>
-              <p><strong>Key Skills:</strong> Technical knowledge, problem-solving, physical stamina, precision</p>
-              <a href="/src/resources/career pages/trades.html" class="mt-auto btn btn-primary">Learn More</a>
+        <div class="col career-item" data-category="service">
+          <div class="card career-mini-card border-0 shadow-sm">
+            <div class="icon-header"><img src="/images/hospitalityicon.png" class="career-icon" alt="Hospitality"></div>
+            <div class="card-body p-3 text-center d-flex flex-column">
+              <h6 class="fw-bold mb-1">Hospitality</h6>
+              <p class="extra-small text-muted mb-3">Service</p>
+              <a href="/src/resources/career pages/hospitality.html" class="btn btn-primary btn-sm mt-auto rounded-pill">View Path</a>
             </div>
           </div>
         </div>
 
-        <!-- Finance & Accounting -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="/images/financeicon.png" class="card-img-top p-3" alt="Finance Icon">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Finance & Accounting</h5>
-              <p class="card-text">Finance careers focus on managing money, analyzing financial data, and planning for
-                individuals or businesses.</p>
-              <p><strong>Key Skills:</strong> Analytical thinking, math, attention to detail, problem-solving</p>
-              <a href="/src/resources/career pages/finance.html" class="mt-auto btn btn-primary">Learn More</a>
+        <div class="col career-item" data-category="corporate">
+          <div class="card career-mini-card border-0 shadow-sm">
+            <div class="icon-header"><img src="/images/lawicon.png" class="career-icon" alt="Law"></div>
+            <div class="card-body p-3 text-center d-flex flex-column">
+              <h6 class="fw-bold mb-1">Law & Safety</h6>
+              <p class="extra-small text-muted mb-3">Legal</p>
+              <a href="/src/resources/career pages/law.html" class="btn btn-primary btn-sm mt-auto rounded-pill">View Path</a>
             </div>
           </div>
         </div>
 
-        <!-- Law & Public Safety -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="/images/lawicon.png" class="card-img-top p-3" alt="Law Icon">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Law & Public Safety</h5>
-              <p class="card-text">Careers in law and public safety include legal professionals, law enforcement,
-                emergency responders, and security services.</p>
-              <p><strong>Key Skills:</strong> Critical thinking, ethics, communication, decision-making</p>
-              <a href="/src/resources/career pages/law.html" class="mt-auto btn btn-primary">Learn More</a>
+        <div class="col career-item" data-category="stem">
+          <div class="card career-mini-card border-0 shadow-sm">
+            <div class="icon-header"><img src="/images/scienceicon.png" class="career-icon" alt="Science"></div>
+            <div class="card-body p-3 text-center d-flex flex-column">
+              <h6 class="fw-bold mb-1">Science</h6>
+              <p class="extra-small text-muted mb-3">Research</p>
+              <a href="/src/resources/career pages/science.html" class="btn btn-primary btn-sm mt-auto rounded-pill">View Path</a>
             </div>
           </div>
         </div>
 
-        <!-- Science & Research -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="/images/scienceicon.png" class="card-img-top p-3" alt="Science Icon">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Science & Research</h5>
-              <p class="card-text">Science careers involve research, experimentation, and discovery in fields like
-                biology, chemistry, physics, and environmental science.</p>
-              <p><strong>Key Skills:</strong> Analytical thinking, research, technical skills, attention to detail</p>
-              <a href="/src/resources/career pages/science.html" class="mt-auto btn btn-primary">Learn More</a>
+        <div class="col career-item" data-category="service">
+          <div class="card career-mini-card border-0 shadow-sm">
+            <div class="icon-header"><img src="/images/skillsicon.png" class="career-icon" alt="Trades"></div>
+            <div class="card-body p-3 text-center d-flex flex-column">
+              <h6 class="fw-bold mb-1">Skilled Trades</h6>
+              <p class="extra-small text-muted mb-3">Specialized</p>
+              <a href="/src/resources/career pages/trades.html" class="btn btn-primary btn-sm mt-auto rounded-pill">View Path</a>
             </div>
           </div>
         </div>
 
-        <!-- Hospitality & Tourism -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="/images/hospitalityicon.png" class="card-img-top p-3" alt="Hospitality Icon">
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Hospitality & Tourism</h5>
-              <p class="card-text">Careers in hospitality and tourism focus on customer service, event planning, travel
-                coordination, and food services.</p>
-              <p><strong>Key Skills:</strong> Communication, customer service, organization, adaptability</p>
-              <a href="/src/resources/career pages/hospitality.html" class="mt-auto btn btn-primary">Learn More</a>
+        <div class="col career-item" data-category="stem">
+          <div class="card career-mini-card border-0 shadow-sm">
+            <div class="icon-header"><img src="/images/technologyicon.png" class="career-icon" alt="Tech"></div>
+            <div class="card-body p-3 text-center d-flex flex-column">
+              <h6 class="fw-bold mb-1">Technology</h6>
+              <p class="extra-small text-muted mb-3">IT & Coding</p>
+              <a href="/src/resources/career pages/technology.html" class="btn btn-primary btn-sm mt-auto rounded-pill">View Path</a>
             </div>
           </div>
         </div>
@@ -189,6 +165,34 @@
   <a href="#" class="glass-back" id="backToTop">
     <i class="bi bi-arrow-up"></i>
   </a>
+
+  <script>
+    const filterButtons = document.querySelectorAll('#filterBtnGroup .btn');
+    const careerItems = document.querySelectorAll('.career-item');
+    const searchInput = document.getElementById('careerSearch');
+
+    function applyFilters() {
+        const activeFilter = document.querySelector('#filterBtnGroup .btn.active').dataset.filter;
+        const searchTerm = searchInput.value.toLowerCase();
+
+        careerItems.forEach(item => {
+            const categoryMatch = activeFilter === 'all' || item.dataset.category === activeFilter;
+            const textMatch = item.querySelector('h6').innerText.toLowerCase().includes(searchTerm);
+            
+            item.style.display = (categoryMatch && textMatch) ? 'block' : 'none';
+        });
+    }
+
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            filterButtons.forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
+            applyFilters();
+        });
+    });
+
+    searchInput.addEventListener('input', applyFilters);
+</script>
 
 </body>
 

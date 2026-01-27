@@ -2,8 +2,7 @@
 
 ## Rome's Notes
 
-MY IDEAS:
-I have a chrome flag that makes every website dark mode, so now that I see what the website actually is I realize we might need some color changes and to make some things more visible
+### MY IDEAS:
 
 Adding dark mode and theme detection
 
@@ -12,12 +11,14 @@ Might want to merge one of the branches into main soon because they both have pl
 We could make the navbar position fixed so it will stay at the top of the screen when you scroll
 
 
-PROBLEMS:
-Text on the Logo looks really small, especially in the favicon.
+### PROBLEMS:
+the back to top button is not very noticable so you end up scrolling to the top manually anyways
 
-The hero in index.html has a small itty bitty blue bar on the left, as if someone didn't crop it all the way
+Text on the Logo looks really small in the favicon.ico.
 
-VScode is telling me that the style.css has 4 errors because there are placeholders in it, also it is really big. we should look into some way of making it smaller and more readable.
+hospitality.html uses the image from buisnessmanegmnt.html at the bottom
+
+some career pages do not have images and image placeholders used in general
 
 the back to top button can be clicked when it is invisible at the top (minor issue)
 
@@ -25,7 +26,7 @@ in the branches, because we are inserting the styles from a script, there is one
 
 We could use some more comments in some of the pages, particularly the career pages
 
-NOTEABLE CHANGES FROM MAIN:
+### NOTEABLE CHANGES FROM MAIN:
 There is a javascript file that inserts all the stuff every file will need, so the head stuff, the nav, the backtotop button, and the bootstrap link on the bottom. now the head just needs the title and the import of that script.
 
 because of the change in file structure, I use absolute links to avoid issues with navigation.
