@@ -8,40 +8,47 @@
 <!-- Bootstrap 5 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+
 <!-- FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=TASA+Explorer:wght@400..800&display=swap" rel="stylesheet">
+
 <!-- Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
 </head>
 <body>
 
-<!--  Navigation -->
-<nav class="navbar navbar-expand-lg  nav-bg shadow-sm">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <div class="container">
+   
+    <!-- Logo -->
     <a class="navbar-brand" href="index.html">
-      <img src="images/nav-logo.png" height="40" alt="Logo">
+      <img src="images/ncc4.png" height="40" alt="Logo">
     </a>
 
+    <!-- Mobile Toggle -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-center" id="navMenu">
-      <ul class="navbar-nav mx-auto text-center">
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
 
+        <!-- Home -->
         <li class="nav-item">
-          <a class="nav-link active navfont blackText" href="index.html">HOME</a>
+          <a class="nav-link active" href="index.html">Home</a>
         </li>
 
+        <!-- About Dropdown -->
         <li class="nav-item dropdown position-static">
-          <a class="nav-link dropdown-toggle navfont blackText" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
-            ABOUT
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+            About
           </a>
-          <div class="dropdown-menu w-100 p-4 text-center" aria-labelledby="aboutDropdown">
+          <div class="dropdown-menu w-100 p-4" aria-labelledby="aboutDropdown">
             <div class="container">
               <div class="row mb-2">
                 <div class="col-md-6">
@@ -63,11 +70,12 @@
           </div>
         </li>
 
+        <!-- Services Dropdown -->
         <li class="nav-item dropdown position-static">
-          <a class="nav-link dropdown-toggle navfont blackText" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
-            SERVICES
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+            Services
           </a>
-          <div class="dropdown-menu w-100 p-4 text-center" aria-labelledby="servicesDropdown">
+          <div class="dropdown-menu w-100 p-4" aria-labelledby="servicesDropdown">
             <div class="container">
               <div class="row mb-2">
                 <div class="col-md-4">
@@ -91,15 +99,27 @@
                   <a class="dropdown-item" href="volunteer.html">Volunteer Opportunities</a>
                 </div>
               </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <!-- Optional: extra space for future items or leave blank -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Optional -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Optional -->
+                </div>
+              </div>
             </div>
           </div>
         </li>
 
+        <!-- Resources Dropdown -->
         <li class="nav-item dropdown position-static">
-          <a class="nav-link dropdown-toggle navfont blackText" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
-            RESOURCES
+          <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+            Resources
           </a>
-          <div class="dropdown-menu w-100 p-4 text-center" aria-labelledby="resourcesDropdown">
+          <div class="dropdown-menu w-100 p-4" aria-labelledby="resourcesDropdown">
             <div class="container">
               <div class="row mb-2">
                 <div class="col-md-4">
@@ -123,145 +143,128 @@
                   <a class="dropdown-item" href="state.html">Resources By State</a>
                 </div>
               </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <!-- Optional: future items -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Optional -->
+                </div>
+                <div class="col-md-4">
+                  <!-- Optional -->
+                </div>
+              </div>
             </div>
           </div>
         </li>
 
+        <!-- Contact -->
         <li class="nav-item">
-          <a class="nav-link navfont blackText" href="contact.html">GET INVOLVED</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
-      </ul>
 
-      <div class="text-center">
-        <button class="btn btn-warning navfont ms-lg-3">GET FREE COACHING</button>
-      </div>
-        <div class="text-center">
-        <button class="btn btn-warning navfont ms-lg-3">DONATE</button>
-      </div>
+      </ul>
     </div>
   </div>
 </nav>
 
-<!-- content stars here -->
-
-<section class="hero-section d-flex align-items-center" style="min-height: 80vh; background: url('images/home-hero-bg.png') no-repeat center center/cover;">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-lg-4">
-        <div class="hero-content p-4 p-md-0">
-          <h1 class="display-5 fw-bold text-dark mb-3">
-            Your Career Path Doesn't Have To Be A Solo Journey
-          </h1>
-          <p class="lead mb-4 heroFont blackText text-bold">
-           Free, personalized career coaching for job searches and career changes. Get the tools you need to make an impression, regardless of your starting point.
-          </p>
-          <div class="d-grid d-md-block">
-            <button class="btn btn-warning btn-lg px-5 py-3 shadow-sm fw-bold main-hero-btn">
-              START MY COACHING JOURNEY
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-8 d-none d-lg-block">
+<!-- Hero Section Start -->
+<div class="container-fluid herobgimg py-5 ">
+    <div class="container py-5 " >
+        <div class="row align-items-center ">
+          <div class="col-lg-6 text-center">
+                <img src="images/ncc4.png" 
+                     class="img-fluid "
+                     alt="Hero Image">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-1 outfit-hero fw-bold mb-4" style="color:#ffb700">
+                    Transform Your Career Today 
+                </h1>
+                <p class=" heroParaFont mb-4">
+                    Noah Career Coaching inspires individuals to do better.
+                </p>
+            </div>
+            
         </div>
     </div>
-  </div>
-</section>
+</div>
+<!-- Hero Section End--> 
 
-<!-- new section --> 
+<!-- ✅ Carousel inside a container -->
+<div class="container my-4">
 
-<section class="py-5 nav-bg" >
-  <div class="container">
-    <div class="row">
-      
-      <div class="col-lg-4 mb-5 mb-lg-0">
-        <div class="pe-lg-4">
-          <h2 class="fw-bold h4 blackText">The Why</h2>
-          <p class=" blackText small mb-4">
-            Stop searching. Start landing. We provide the expert guidance to help you unlock your full professional potential.
-          </p>
-          
-          <div class="d-flex gap-3 mb-5">
-            <div class="icon-circle border border-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-              <i class="bi bi-shield-check blackText h4 mb-0"></i>
-            </div>
-            <div class="icon-circle border border-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-              <i class="bi bi-handshake blackText h4 mb-0"></i>
-            </div>
-            <div class="icon-circle border border-dark rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px;">
-              <i class="bi bi-mortarboard blackText h4 mb-0"></i>
-            </div>
-          </div>
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
 
-          <h2 class="fw-bold blackText h4">Social Proof</h2>
-          <div class="d-flex align-items-center gap-4 mt-3">
-            <div>
-              <span class="h3 fw-bold blackText">500+</span>
-              <p class="small blackText mb-0">Lives Impacted</p>
-            </div>
-            <div class="border-start border-dark ps-4">
-              <span class="h3 fw-bold blackText">100%</span>
-              <p class="small blackText mb-0">Free</p>
-            </div>
-          </div>
-        </div>
+      <div class="carousel-item active">
+        <img src="images/cara1.png" class="d-block w-100" alt="Slide 1">
       </div>
 
-      <div class="col-lg-8">
-        <h2 class="fw-bold h4 blackText mb-4">The Power of Three</h2>
-        
-        <div class="row g-3 mb-5">
-          <div class="col-md-4">
-            <div class="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm">
-              <i class="bi bi-file-earmark-text h2 blackText"></i>
-              <p class="small blackText mt-2 mb-0">Stand out to recruiters with a professional career roadmap.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm">
-              <i class="bi bi-mic h2 blackText"></i>
-              <p class="small mt-2 blackText mb-0">Mock interviews to turn your nerves into confidence.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm">
-              <i class="bi bi-search h2 blackText"></i>
-              <p class="small mt-2 blackText mb-0">Don't just apply - get referred and get noticed.</p>
-            </div>
-          </div>
-        </div>
+      <div class="carousel-item">
+        <img src="images/cara2.png" class="d-block w-100" alt="Slide 2">
+      </div>
 
-        <div class="row g-4">
-          <div class="col-md-6">
-            <div class="d-flex align-items-center gap-3">
-              <img src="https://via.placeholder.com/60" class="rounded-circle border border-success border-2" alt="Sanh K.">
-              <div class="border-start border-secondary ps-3">
-                <p class="small blackText fst-italic mb-0">"Noah helped me land my dream job!"</p>
-                <footer class="blockquote-footer blackText mt-1 mb-0">Sanh K.</footer>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="d-flex align-items-center gap-3">
-              <img src="https://via.placeholder.com/60" class="rounded-circle border border-success border-2" alt="Mait M.">
-              <div class="border-start border-secondary ps-3">
-                <p class="small blackText fst-italic mb-0">"Found real confidence - get hired faster!"</p>
-                <footer class="blockquote-footer blackText mt-1 mb-0">Mait M.</footer>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="carousel-item">
+        <img src="images/cara3.png" class="d-block w-100" alt="Slide 3">
+      </div>
 
-      </div> </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
-</section>
 
+</div>
 
+<!-- card section -->
+<div class="container my-5">
+  <div class="row g-4">
 
+    <!-- Card 1 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="p-4 text-center text-white rounded white-card-box">
+        <h3 class="mb-3" style="color:#000">Programs</h3>
+        <img src="images/cardicon1.png" class="img-fluid mb-3" alt="Icon">
+        <p class="mb-4" style="color: #000">
+          Working with Noah Career Coaching gives you personalized guidance, practical tools, and the confidence to navigate your career journey. Our volunteer coaches are dedicated to helping you clarify your goals, build your skills, and connect with opportunities so you can take the next step forward with purpose.
+        </p>
+        <a href="#" class="btn orange-button">Learn More</a>
+      </div>
+    </div>
 
+    <!-- Card 2 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="p-4 text-center text-white rounded  white-card-box">
+        <h3 class="mb-3" style="color:#000">Get Involved</h3>
+        <img src="images/cardicon2.png" class="img-fluid mb-3" alt="Icon">
+        <p class="mb-4 " style="color:#000">
+          Supporting Noah Career Coaching as a donor directly invests in people’s futures. Your contributions expand free coaching, mentorship, and job placement services, helping more individuals achieve meaningful careers. Every gift, one-time or ongoing, strengthens our volunteer-driven mission.
+        </p>
+        <a href="#" class="btn orange-button">Learn More</a>
+      </div>
+    </div>
 
+    <!-- Card 3 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="p-4 text-center text-white rounded white-card-box">
+        <h3 class="mb-3" style="color:#000">Employers</h3>
+        <img src="images/cardicon3.png" class="img-fluid mb-3" alt="Icon">
+        <p class="mb-4" style="color:#000">
+          Noah Career Coaching partners with companies to connect qualified job seekers with meaningful opportunities. By matching candidates’ skills with employers’ needs, we help build strong teams and support individuals in reaching their career goals. Click below to find out how you can partner with us!
 
+        </p>
+        <a href="#" class="btn orange-button ">Learn More</a>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <!-- back to top -->
 <a href="#" class="glass-back" id="backToTop">
@@ -294,7 +297,3 @@
 
 </body>
 </html>
-
-
-
-

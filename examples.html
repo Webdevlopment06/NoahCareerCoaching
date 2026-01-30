@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Explore Careers - Noah Career Coaching</title>
+<title>Noah Career Coaching</title>
 
 <!-- Bootstrap 5 CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<!--  Navigation -->
+<!-- Navigation This naigation should be used on all pages-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <div class="container">
     <!-- Logo -->
@@ -37,12 +37,12 @@
 
         <!-- Home -->
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" href="index.html">Home</a>
         </li>
 
         <!-- About Dropdown -->
         <li class="nav-item dropdown position-static">
-          <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
             About
           </a>
           <div class="dropdown-menu w-100 p-4" aria-labelledby="aboutDropdown">
@@ -120,7 +120,7 @@
             <div class="container">
               <div class="row mb-2">
                 <div class="col-md-4">
-                  <a class="dropdown-item active" href="explore.html">Explore Careers</a>
+                  <a class="dropdown-item" href="explore.html">Explore Careers</a>
                 </div>
                 <div class="col-md-4">
                   <a class="dropdown-item" href="assessments.html">Career Assessments</a>
@@ -165,29 +165,105 @@
   </div>
 </nav>
 
-<!-- hero video -->
-<section class="explore-hero">
-  <!-- Video Background -->
-  <video autoplay muted loop playsinline>
-    <source src="images/explorcareers.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+<!-- Hero Section for index page, this can be used on other pages. -->
+<div class="container-fluid herobgimg py-5 ">
+    <div class="container py-5 " >
+        <div class="row align-items-center ">
+          <div class="col-lg-6 text-center">
+                <img src="images/ncc4.png" 
+                     class="img-fluid "
+                     alt="Hero Image">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-1 outfit-hero fw-bold mb-4" style="color:#ffb700">
+                    Transform Your Career Today 
+                </h1>
+                <p class=" heroParaFont mb-4">
+                    Noah Career Coaching inspires individuals to do better.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Hero Section End--> 
 
-  <!-- Content Box -->
-  <div class="explore-hero-content">
-    <h1 class="fw-bold">Explore Careers</h1>
-    <p class="lead explore-para">
-      At Noah Career Coaching, we help you navigate the vast world of careers with clarity and confidence. Through personalized guidance, hands-on experiences, and access to industry insights, we empower you to discover paths that align with your skills, interests, and values. From one-on-one coaching sessions to workshops, assessments, and real-world opportunities, we make career exploration intentional, informed, and inspiring, so you can make choices that set you up for long-term success.
-    </p>
-    <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+<!--  Carousel inside a container (sure you included the coresponding javascript (autoplay javascript)  -->
+<div class="container my-4">
+
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="images/cara1.png" class="d-block w-100" alt="Slide 1">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/cara2.png" class="d-block w-100" alt="Slide 2">
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/cara3.png" class="d-block w-100" alt="Slide 3">
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
-</section>
 
+</div>
 
+<!-- card section (this is a three card section) -->
+<div class="container my-5">
+  <div class="row g-4">
 
+    <!-- Card 1 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="p-4 text-center text-white rounded white-card-box">
+        <h3 class="mb-3" style="color:#000">Programs</h3>
+        <img src="images/cardicon1.png" class="img-fluid mb-3" alt="Icon">
+        <p class="mb-4" style="color: #000">
+          Working with Noah Career Coaching gives you personalized guidance, practical tools, and the confidence to navigate your career journey. Our volunteer coaches are dedicated to helping you clarify your goals, build your skills, and connect with opportunities so you can take the next step forward with purpose.
+        </p>
+        <a href="#" class="btn orange-button">Learn More</a>
+      </div>
+    </div>
 
+    <!-- Card 2 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="p-4 text-center text-white rounded  white-card-box">
+        <h3 class="mb-3" style="color:#000">Get Involved</h3>
+        <img src="images/cardicon2.png" class="img-fluid mb-3" alt="Icon">
+        <p class="mb-4 " style="color:#000">
+          Supporting Noah Career Coaching as a donor directly invests in people’s futures. Your contributions expand free coaching, mentorship, and job placement services, helping more individuals achieve meaningful careers. Every gift, one-time or ongoing, strengthens our volunteer-driven mission.
+        </p>
+        <a href="#" class="btn orange-button">Learn More</a>
+      </div>
+    </div>
 
-<!-- back to top -->
+    <!-- Card 3 -->
+    <div class="col-lg-4 col-md-6">
+      <div class="p-4 text-center text-white rounded white-card-box">
+        <h3 class="mb-3" style="color:#000">Employers</h3>
+        <img src="images/cardicon3.png" class="img-fluid mb-3" alt="Icon">
+        <p class="mb-4" style="color:#000">
+          Noah Career Coaching partners with companies to connect qualified job seekers with meaningful opportunities. By matching candidates’ skills with employers’ needs, we help build strong teams and support individuals in reaching their career goals. Click below to find out how you can partner with us!
+
+        </p>
+        <a href="#" class="btn orange-button ">Learn More</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- back to top (this is the back to top button make sure you included the coresponding javascript-->
 <a href="#" class="glass-back" id="backToTop">
   <i class="bi bi-arrow-up"></i>
 </a>
