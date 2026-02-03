@@ -91,6 +91,20 @@
   max-height: 60px;
 }
 
+/* Fixed navbar spacing: set a CSS variable for navbar height
+   and apply responsive values so page content isn't hidden */
+:root {
+  --nav-height: 60px;
+}
+
+body {
+  padding-top: var(--nav-height);
+}
+
+@media (max-width: 991.98px) {
+  :root { --nav-height: 110px; }
+}
+
 /* ==========================================================================
    3. HERO SECTIONS (ALL ORIGINAL HEIGHTS PRESERVED)
    ========================================================================== */

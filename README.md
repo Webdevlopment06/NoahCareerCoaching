@@ -8,7 +8,9 @@ Adding dark mode and theme detection
 
 Might want to merge one of the branches into main soon because they both have placeholders for each page (the github deployment is full of 404's)
 
-We could make the navbar position fixed so it will stay at the top of the screen when you scroll
+The style.css is HUGE. we should split it into multiple files.
+
+Because the navbar is fixed we could get rid of the back to top button but it is still useful on big pages
 
 
 ### PROBLEMS:
@@ -36,6 +38,8 @@ I wrapped all of the main content of every page in a main tag, I also got rid of
 There is a new file called favicon.ico, its just a copy of ncc4.png that gets automatically inserted as the favicon.
 
 all of the colors in style.css are now tied to vars at the top of the file, you can edit all of the colors of things at once this way.
+
+The navbar is now fixed position at the top with some space inserted via style.css
 
 ## Tri's notes
 Added a new hero image for resources/trades because it was blurry. The free source of the image used is [here](https://www.pexels.com/photo/photo-of-a-welder-at-work-4007300/). Feel free to replace if needed. Just found this one to fill in the blurry image spot

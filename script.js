@@ -1,5 +1,5 @@
 const navHTML = `
-<nav class="navbar navbar-expand-lg nav-bg shadow-sm">
+<nav class="navbar navbar-expand-lg nav-bg shadow-sm fixed-top">
   <div class="container">
     <!-- Logo -->
     <a class="navbar-brand" href="/src/index.html">
@@ -29,10 +29,10 @@ const navHTML = `
             <div class="container">
               <div class="row mb-2">
                 <div class="col-md-6">
-                  <a class="dropdown-item" href="about.html">Mission Statement</a>
+                  <a class="dropdown-item" href="/src/about.html">Mission Statement</a>
                 </div>
                 <div class="col-md-6">
-                  <a class="dropdown-item" href="about.html#founder">About Our Founder</a>
+                  <a class="dropdown-item" href="/src/about.html#founder">About Our Founder</a>
                 </div>
               </div>
               <div class="row">
