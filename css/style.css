@@ -273,6 +273,25 @@
     .banner-col-text h1 { font-size: 2rem; }
 }
 
+/* 9. RESUME TEMPLATE & UTILITIES */
+
+    .resume-template-container {max-width: 1200px; margin: 2rem auto; padding: 0 1rem;}
+    .resume-templates-grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .resume-template-card {background: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 16px rgba(0,0,0,0.08); transition: transform 0.2s ease, box-shadow 0.2s ease;}
+    .resume-template-card:hover {transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.12);}
+    .resume-template-preview {height: 320px; background: #e5e7eb; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #6b7280; }
+    .resume-template-body {padding: 1rem;}
+    .resume-template-body h3 {margin: 0 0 0.25rem 0;}
+    .resume-template-body p { font-size: 0.9rem; color: #4b5563; margin-bottom: 1rem;}
+    .resume-template-actions { display: flex; gap: 0.5rem;}
+    .resume-template-btn {flex: 1; padding: 0.5rem; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;}
+    .resume-template-btn-preview { background: #e5e7eb;}
+    .resume-template-btn-select { background: #2563eb; color: white;}
+    .resume-template-btn-select:hover { background: #1d4ed8;}
+
+   
+
+
 
 
 
