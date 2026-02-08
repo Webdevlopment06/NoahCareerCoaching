@@ -249,6 +249,8 @@
 .cq-list a { color: #0077cc; font-weight: 500; text-decoration: none; }
 .cq-list a:hover { text-decoration: underline; }
 
+.resume-banner{background-image:url('../images/resumeBanner.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;}
+
 .quiz1-image-container { width: 100px; height: 200px; overflow: hidden; margin: 10px auto; text-align: center; line-height: 200px; font-size: 0; }
 .quiz1-image-container img { width: 100%; height: auto; display: inline-block; }
 
