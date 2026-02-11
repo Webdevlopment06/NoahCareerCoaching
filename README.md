@@ -1,7 +1,15 @@
-# in order for this to work, go to the terminal and type:
+# Setup Instructions
 
-## npm i
-then run:
-## npm run dev
+## Installation
 
-### *make sure you are in the folder of your workspace 
+```bash
+npm i
+```
+
+## Running the Development Server
+
+```bash
+npm run dev
+```
+
+> **Note:** Make sure you are in the project folder before running these commands.
