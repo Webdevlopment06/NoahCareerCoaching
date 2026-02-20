@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
     return (
@@ -6,9 +7,9 @@ export default function Navbar() {
             <nav className="navbar navbar-expand-lg nav-bg shadow-sm fixed-top">
                 <div className="container">
                     {/* Logo */}
-                    <a className="navbar-brand" href="/src/index.html">
+                    <Link className="navbar-brand" to="/">
                         <img src="/images/nav-logo.png" height="40" alt="Logo" />
-                    </a>
+                    </Link>
 
                     {/* Mobile Toggle */}
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -21,30 +22,30 @@ export default function Navbar() {
 
                             {/* Home */}
                             <li className="nav-item" id="nav-home">
-                                <a className="nav-link navfont blackText" href="/src/index.html">HOME</a>
+                                <Link className="nav-link navfont blackText" to="/">HOME</Link>
                             </li>
 
                             {/* About Dropdown */}
                             <li className="nav-item dropdown position-static" id="nav-about">
-                                <a className="nav-link dropdown-toggle navfont blackText" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                                <a className="nav-link dropdown-toggle navfont blackText" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" onClick={(e) => e.preventDefault()}>
                                     ABOUT
                                 </a>
                                 <div className="dropdown-menu w-100 p-4 text-center" aria-labelledby="aboutDropdown">
                                     <div className="container">
                                         <div className="row mb-2">
                                             <div className="col-md-6">
-                                                <a className="dropdown-item" href="/src/about.html">Mission Statement</a>
+                                                <Link className="dropdown-item" to="/about">Mission Statement</Link>
                                             </div>
                                             <div className="col-md-6">
-                                                <a className="dropdown-item" href="/src/about.html#founder">About Our Founder</a>
+                                                <Link className="dropdown-item" to="/about#founder">About Our Founder</Link>
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="col-md-6">
-                                                <a className="dropdown-item" href="/src/about.html#join">How To Join</a>
+                                                <Link className="dropdown-item" to="/about#join">How To Join</Link>
                                             </div>
                                             <div className="col-md-6">
-                                                <a className="dropdown-item" href="/src/about.html#donation">Donation</a>
+                                                <Link className="dropdown-item" to="/about#donation">Donation</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -53,31 +54,31 @@ export default function Navbar() {
 
                             {/* Services Dropdown */}
                             <li className="nav-item dropdown position-static" id="nav-services">
-                                <a className="nav-link dropdown-toggle navfont blackText" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                                <a className="nav-link dropdown-toggle navfont blackText" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" onClick={(e) => e.preventDefault()}>
                                     SERVICES
                                 </a>
                                 <div className="dropdown-menu w-100 p-4 text-center" aria-labelledby="servicesDropdown">
                                     <div className="container">
                                         <div className="row mb-2">
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/services/resume.html">Resume Development</a>
+                                                <Link className="dropdown-item" to="/services/resume">Resume Development</Link>
                                             </div>
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/services/interview.html">Interview Coaching</a>
+                                                <Link className="dropdown-item" to="/services/interview">Interview Coaching</Link>
                                             </div>
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/services/jobSearch.html">Job Search Strategy</a>
+                                                <Link className="dropdown-item" to="/services/job-search">Job Search Strategy</Link>
                                             </div>
                                         </div>
                                         <div className="row mb-2">
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/services/professionalDev.html">Professional Development</a>
+                                                <Link className="dropdown-item" to="/services/professional-dev">Professional Development</Link>
                                             </div>
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/services/internshipPath.html">Internship Pathways</a>
+                                                <Link className="dropdown-item" to="/services/internship">Internship Pathways</Link>
                                             </div>
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/services/volunteer.html">Volunteer Opportunities</a>
+                                                <Link className="dropdown-item" to="/services/volunteer">Volunteer Opportunities</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -86,31 +87,31 @@ export default function Navbar() {
 
                             {/* Resources Dropdown */}
                             <li className="nav-item dropdown position-static" id="nav-resources">
-                                <a className="nav-link dropdown-toggle navfont blackText" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                                <a className="nav-link dropdown-toggle navfont blackText" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" onClick={(e) => e.preventDefault()}>
                                     RESOURCES
                                 </a>
                                 <div className="dropdown-menu w-100 p-4 text-center" aria-labelledby="resourcesDropdown">
                                     <div className="container">
                                         <div className="row mb-2">
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/resources/explore.html">Explore Careers</a>
+                                                <a className="dropdown-item" href="/src/pages/resources/explore.html">Explore Careers</a>
                                             </div>
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/resources/assessments.html">Career Assessments</a>
+                                                <Link className="dropdown-item" to="/resources/assessments">Career Assessments</Link>
                                             </div>
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/resources/stories.html">Career Change Stories</a>
+                                                <Link className="dropdown-item" to="/resources/stories">Career Change Stories</Link>
                                             </div>
                                         </div>
                                         <div className="row mb-2">
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/resources/equalE.html">Equal Employer Information</a>
+                                                <Link className="dropdown-item" to="/resources/equal-employer">Equal Employer Information</Link>
                                             </div>
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/resources/youth.html">Youth Information</a>
+                                                <Link className="dropdown-item" to="/resources/youth">Youth Information</Link>
                                             </div>
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/resources/state.html">Resources By State</a>
+                                                <a className="dropdown-item" href="/src/pages/resources/state.html">Resources By State</a>
                                             </div>
                                         </div>
                                     </div>
@@ -119,7 +120,7 @@ export default function Navbar() {
 
                             {/* Contact */}
                             <li className="nav-item" id="nav-contact">
-                                <a className="nav-link navfont blackText" href="/src/contact.html">GET INVOLVED</a>
+                                <Link className="nav-link navfont blackText" to="/contact">GET INVOLVED</Link>
                             </li>
                         </ul>
 
