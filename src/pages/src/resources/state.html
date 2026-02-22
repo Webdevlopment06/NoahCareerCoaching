@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Noah Career Coaching - Resources by State</title>
+  <script src="/script.js"></script>
+</head>
+
+<body>
+
+  <!--  Navigation -->
+  <div id="nav-inserter"></div>
+
+  <main>
+    <div class="container my-5">
+      <h2 class="mb-4 text-center"></h2>
+
+      <div class="row">
+
+        <div class="col-md-7">
+          <div id="map-container">
+            <img src="../../images/statemap.png" alt="USA Map">
+
+            <!-- state labels will be injected here by script -->
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <div id="state-info-box" class="p-3 border rounded ">
+            <h4>Job Resources By State</h4>
+            <p id="state-name-display" class="fw-bold fs-5 text-primary">Click a state to see details.</p>
+            <hr>
+            <div id="state-details">
+              <p>At Noah Career Coaching, we understand that every state offers unique opportunities, programs, and
+                support systems for career growth. Our “Select Your Resources by State” tool helps you quickly find
+                local
+                job boards, training programs, workforce centers, and community services available where you live.
+                Simply
+                choose your state to access personalized resources designed to help you take the next step in your
+                career
+                journey.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container my-5">
+      <div class="accordion accordion-flush" id="accordionFlushExample"></div>
+  </main>
+
+  </div><a href="#" class="glass-back" id="backToTop">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <script>
+    (function ($) {
+      const states = [
+        { abbr: 'al', name: 'Alabama' },{ abbr: 'ak', name: 'Alaska' },{ abbr: 'az', name: 'Arizona' },
+        { abbr: 'ar', name: 'Arkansas' },{ abbr: 'ca', name: 'California' },{ abbr: 'co', name: 'Colorado' },
+        { abbr: 'ct', name: 'Connecticut' },{ abbr: 'de', name: 'Delaware' },{ abbr: 'dc', name: 'District of Columbia' },
+        { abbr: 'fl', name: 'Florida' },{ abbr: 'ga', name: 'Georgia' },{ abbr: 'hi', name: 'Hawaii' },
+        { abbr: 'id', name: 'Idaho' },{ abbr: 'il', name: 'Illinois' },{ abbr: 'in', name: 'Indiana' },
+        { abbr: 'ia', name: 'Iowa' },{ abbr: 'ks', name: 'Kansas' },{ abbr: 'ky', name: 'Kentucky' },
+        { abbr: 'la', name: 'Louisiana' },{ abbr: 'me', name: 'Maine' },{ abbr: 'md', name: 'Maryland' },
+        { abbr: 'ma', name: 'Massachusetts' },{ abbr: 'mi', name: 'Michigan' },{ abbr: 'mn', name: 'Minnesota' },
+        { abbr: 'ms', name: 'Mississippi' },{ abbr: 'mo', name: 'Missouri' },{ abbr: 'mt', name: 'Montana' },
+        { abbr: 'ne', name: 'Nebraska' },{ abbr: 'nv', name: 'Nevada' },{ abbr: 'nh', name: 'New Hampshire' },
+        { abbr: 'nj', name: 'New Jersey' },{ abbr: 'nm', name: 'New Mexico' },{ abbr: 'ny', name: 'New York' },
+        { abbr: 'nc', name: 'North Carolina' },{ abbr: 'nd', name: 'North Dakota' },{ abbr: 'oh', name: 'Ohio' },
+        { abbr: 'ok', name: 'Oklahoma' },{ abbr: 'or', name: 'Oregon' },{ abbr: 'pa', name: 'Pennsylvania' },
+        { abbr: 'ri', name: 'Rhode Island' },{ abbr: 'sc', name: 'South Carolina' },{ abbr: 'sd', name: 'South Dakota' },
+        { abbr: 'tn', name: 'Tennessee' },{ abbr: 'tx', name: 'Texas' },{ abbr: 'ut', name: 'Utah' },
+        { abbr: 'vt', name: 'Vermont' },{ abbr: 'va', name: 'Virginia' },{ abbr: 'wa', name: 'Washington' },
+        { abbr: 'wv', name: 'West Virginia' },{ abbr: 'wi', name: 'Wisconsin' },{ abbr: 'wy', name: 'Wyoming' }
+      ];
+
+      function makeLabel(s) {
+        return `<a href="#" class="state-label" id="label-${s.abbr}" data-state="${s.name}">${s.abbr.toUpperCase()}</a>`;
+      }
+
+      function makeAccordionItem(s) {
+        const title = `${s.name} (${s.abbr.toUpperCase()})`;
+        const headingId = `heading-${s.abbr}`;
+        const collapseId = `collapse-${s.abbr}`;
+        // keep body simple; you can replace with state-specific HTML later
+        const body = `<p>${s.name} State-level Resources</p><p><a class="btn btn-sm btn-outline-primary" href="/state-data/${s.abbr}" target="_blank">Go to ${s.name} page</a></p>`;
+        return `
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="${headingId}">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}">
+                ${title}
+              </button>
+            </h2>
+            <div id="${collapseId}" class="accordion-collapse collapse" aria-labelledby="${headingId}" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">${body}</div>
+            </div>
+          </div>`;
+      }
+
+      $(function () {
+        // inject labels (preserve #map-container for absolute-positioned labels via existing CSS)
+        const $map = $('#map-container');
+        states.forEach(s => $map.append(makeLabel(s)));
+
+        // populate accordion
+        const $acc = $('#accordionFlushExample');
+        states.forEach(s => $acc.append(makeAccordionItem(s)));
+
+        // delegated click handler for labels
+        $map.on('click', '.state-label', function (e) {
+          e.preventDefault();
+          const $el = $(this);
+          $('.state-label').removeClass('active');
+          $el.addClass('active');
+          const name = $el.data('state');
+          const abbr = $el.attr('id').split('-')[1];
+          $('#state-name-display').text(`${name} (${abbr.toUpperCase()})`);
+          $('#state-details').html(`<p>This is the page for ${name}.</p><a href="/state-data/${abbr}" class="btn btn-sm btn-outline-primary mt-2" target="_blank">Go to ${name} Page</a>`);
+
+          const header = $(`#heading-${abbr}`);
+          const $btn = header.find('button');
+          if ($btn.attr('aria-expanded') === 'false') $btn.click();
+          $('html, body').animate({ scrollTop: header.offset().top - 100 }, 500);
+        });
+      });
+    })(jQuery);
+  </script>
+
+</body>
+
+</html>
