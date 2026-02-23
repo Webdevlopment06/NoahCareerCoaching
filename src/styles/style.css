@@ -17,6 +17,9 @@
 .whiteText { color: #ffffff; }
 .blackText { color: #000000; }
 
+/* Responsive images globally so JSX pages match the static HTML look */
+img { max-width: 100%; height: auto; display: block; }
+
 /* 2. NAVIGATION & LOGO */
 .nav-bg { background-color: #EDEDED; }
 .logoSize { max-height: 60px; }

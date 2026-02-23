@@ -1,5 +1,28 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+
+// Handle back-to-top visibility and initialize Bootstrap carousel when mounted
+function useNavbarScripts() {
+    useEffect(() => {
+        const backToTop = document.getElementById('backToTop');
+        const onScroll = () => {
+            if (!backToTop) return;
+            if (window.scrollY > 300) backToTop.classList.add('show');
+            else backToTop.classList.remove('show');
+        };
+
+        window.addEventListener('scroll', onScroll);
+
+        // initialize carousel if Bootstrap is available and carousel exists
+        if (window.bootstrap && document.querySelector('#heroCarousel')) {
+            const myCarousel = document.querySelector('#heroCarousel');
+            // eslint-disable-next-line no-undef
+            new window.bootstrap.Carousel(myCarousel, { interval: 2500, ride: 'carousel' });
+        }
+
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+}
 
 export default function Navbar() {
     return (
@@ -15,7 +38,7 @@ export default function Navbar() {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
                         <span className="navbar-toggler-icon"></span>
                     </button>
-        
+
                     {/* Links */}
                     <div className="collapse navbar-collapse justify-content-center" id="navMenu">
                         <ul className="navbar-nav mx-auto text-center">
