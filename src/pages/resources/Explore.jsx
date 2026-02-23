@@ -60,7 +60,7 @@ export default function Explore() {
         </div>
       </div>
 
-      <section className="container py-5">
+      <section >
         <div className="row g-4 row-cols-2 row-cols-md-3 row-cols-lg-5">
           {visible.map(c => (
             <div key={c.id} className="col career-item">

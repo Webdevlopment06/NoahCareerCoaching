@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Youth() {
   return (
-    <main className="container py-5">
+    <main>
       <section className="py-5 text-white" style={{background: 'linear-gradient(135deg, #FF6B6B 0%, #FFD93D 100%)'}}>
         <div className="container py-4">
           <div className="row align-items-center">

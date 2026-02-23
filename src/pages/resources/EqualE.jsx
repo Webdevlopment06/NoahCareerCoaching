@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function EqualE() {
   return (
-    <main className="container py-5">
+    <main>
     {/* hero section */}
     <section className="py-5 text-white" style={{background: 'linear-gradient(135deg, #2c3e50 0%, #000000 100%)'}}>
       <div className="container py-4">

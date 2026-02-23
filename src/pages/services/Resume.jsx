@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Resume() {
   return (
-    <main className="container py-5">
+    <main>
       <section className="py-5 bg-light border-bottom resume-banner">
         <div className="container">
           <div className="row align-items-center">
