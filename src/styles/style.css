@@ -109,15 +109,15 @@ img { max-width: 100%; height: auto; display: block; }
 [class*="-hero-bg"] > .container { position: relative; z-index: 2; }
 
 .arts-hero-bg      { background-image: url('/images/artherobg.png'); }
-.tech-hero-bg      { background-image: url('/images/tech-hero-bg.png'); }
+.tech-hero-bg      { background-image: url('/images/tech-hero-bg.jpg'); }
 .business-hero-bg  { background-image: url('/images/buisness-hero-bg.jpg'); }
 .education-hero-bg { background-image: url('/images/education-hero-bg.jpg'); }
-.finance-hero-bg   { background-image: url('/images/finance-hero-bg.png'); }
-.health-hero-bg    { background-image: url('/images/health-hero-bg.jpg'); }
+.finance-hero-bg   { background-image: url('/images/finance-hero-bg.jpg'); }
+.health-hero-bg    { background-image: url('/images/healthcare-hero-bg.png'); }
 .hosp-hero-bg      { background-image: url('/images/hosp-hero-bg.jpg'); }
 .law-hero-bg       { background-image: url('/images/law-hero-bg.jpg'); }
 .science-hero-bg   { background-image: url('/images/science-hero-bg.jpg'); }
-.trade-hero-bg     { background-image: url('/images/trade-hero-bg.jpg'); }
+.trades-hero-bg     { background-image: url('/images/trade-hero-bg.jpg'); }
 
 /* 5. CAROUSEL & CARDS */
 .carousel-item img { height: 400px; object-fit: cover; border-radius: 10px; }
