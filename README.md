@@ -14,4 +14,4 @@ npm run dev
 
 > **Note:** Make sure you are in the project folder before running these commands.
 
-Also the nav dropdowns do not work lol
+ok.... a lot of the styles are not being applied, but i'm working on it.

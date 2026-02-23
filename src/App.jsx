@@ -1,6 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import BackToTop from './components/BackToTop'
 
 // Page imports
 import Home from './pages/Home'
@@ -39,6 +40,7 @@ export default function App() {
   return (
     <>
       <Navbar />
+      <BackToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
