@@ -71,6 +71,7 @@ export default function App() {
         <Route path="/services/professional-dev" element={<ProfessionalDev />} />
         <Route path="/services/volunteer" element={<Volunteer />} />
         <Route path="/services/internship" element={<InternshipPath />} />
+        <Route path="/services/build-resume" element={<BuildAResume />} />
       </Routes>
     </>
   )

@@ -147,7 +147,7 @@ export default function Navbar() {
                                     <div className="container">
                                         <div className="row mb-2">
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/pages/resources/explore.html">Explore Careers</a>
+                                                <Link className="dropdown-item" to="/resources/explore">Explore Careers</Link>
                                             </div>
                                             <div className="col-md-4">
                                                 <Link className="dropdown-item" to="/resources/assessments">Career Assessments</Link>
@@ -164,7 +164,7 @@ export default function Navbar() {
                                                 <Link className="dropdown-item" to="/resources/youth">Youth Information</Link>
                                             </div>
                                             <div className="col-md-4">
-                                                <a className="dropdown-item" href="/src/pages/resources/state.html">Resources By State</a>
+                                                <Link className="dropdown-item" to="/resources/state">Resources By State</Link>
                                             </div>
                                         </div>
                                     </div>
