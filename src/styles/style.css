@@ -10,7 +10,7 @@
 .lora-para { font-family: "Lora", serif; font-optical-sizing: auto; font-weight: bold; font-style: normal; }
 .outfit-para { font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-weight: bold; font-style: normal; }
 .tasa-explorer-nav { font-family: "TASA Explorer", sans-serif; font-optical-sizing: auto; font-style: normal; }
-.navfont { font-family: "TASA Explorer", sans-serif; font-size: 18px; font-weight: bold; font-style: normal; }
+.navfont { font-family: var(--body-font); font-size: 0.95rem; font-weight: 600; font-style: normal; letter-spacing: 0.02em; }
 .heroFont { font-family: "TASA Explorer", sans-serif; font-size: 16px; font-weight: bold; font-style: normal; }
 .heroParaFont { color:#fff; font-size: 20px; }
 .main-hero-btn { font-family: "TASA Explorer", sans-serif; font-size: 15px; font-style: normal; }
@@ -29,6 +29,16 @@ img { max-width: 100%; height: auto; display: block; }
 /* 2. NAVIGATION & LOGO */
 .nav-bg { background-color: #EDEDED; }
 .logoSize { max-height: 60px; }
+
+/* Navbar tweaks: reduce link size and tighten spacing to match original */
+.navbar-nav .nav-link {
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+.dropdown-menu .dropdown-item { font-size: 0.95rem; }
+.navbar-brand img { max-height: 40px; }
 
 /* 3. HERO SECTIONS (ALL ORIGINAL HEIGHTS PRESERVED) */
 .herobgimg {

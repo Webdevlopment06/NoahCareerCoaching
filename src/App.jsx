@@ -34,7 +34,6 @@ import ProfessionalDev from './pages/services/ProfessionalDev'
 import Volunteer from './pages/services/Volunteer'
 import InternshipPath from './pages/services/InternshipPath'
 import BuildAResume from './pages/services/BuildAResume'
-import ResumeTemplates from './pages/ResumeTemplates'
 
 export default function App() {
   return (
@@ -72,8 +71,6 @@ export default function App() {
         <Route path="/services/professional-dev" element={<ProfessionalDev />} />
         <Route path="/services/volunteer" element={<Volunteer />} />
         <Route path="/services/internship" element={<InternshipPath />} />
-        <Route path="/build-a-resume" element={<BuildAResume />} />
-        <Route path="/resume-templates" element={<ResumeTemplates />} />
       </Routes>
     </>
   )
