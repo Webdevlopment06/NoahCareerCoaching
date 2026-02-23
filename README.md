@@ -14,4 +14,4 @@ npm run dev
 
 > **Note:** Make sure you are in the project folder before running these commands.
 
-ok.... a lot of the styles are not being applied, but i'm working on it.
+I think most of the pages are good I just need to check, It's just that all of the fonts are wrong for some reason

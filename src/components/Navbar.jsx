@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 
 
 export default function Navbar() {
+    const navigate = useNavigate()
+    const location = useLocation()
     useEffect(() => {
         const nav = document.querySelector('nav.navbar.fixed-top')
         if (!nav) return
@@ -32,6 +34,26 @@ export default function Navbar() {
             document.body.style.paddingTop = ''
         }
     }, [])
+
+    // handle navigation to routes with hash fragments (smooth scroll)
+    const handleHash = (e, path, id) => {
+        e.preventDefault()
+        if (location.pathname === path) {
+            const el = document.getElementById(id)
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            } else {
+                window.location.hash = id
+            }
+        } else {
+            navigate(path)
+            // small delay to allow route render, then scroll
+            setTimeout(() => {
+                const el = document.getElementById(id)
+                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }, 120)
+        }
+    }
 
     return (
         <>
@@ -68,15 +90,15 @@ export default function Navbar() {
                                                 <Link className="dropdown-item" to="/about">Mission Statement</Link>
                                             </div>
                                             <div className="col-md-6">
-                                                <Link className="dropdown-item" to="/about#founder">About Our Founder</Link>
+                                                <a className="dropdown-item" href="/about#founder" onClick={(e) => handleHash(e, '/about', 'founder')}>About Our Founder</a>
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="col-md-6">
-                                                <Link className="dropdown-item" to="/about#join">How To Join</Link>
+                                                <a className="dropdown-item" href="/about#join" onClick={(e) => handleHash(e, '/about', 'join')}>How To Join</a>
                                             </div>
                                             <div className="col-md-6">
-                                                <Link className="dropdown-item" to="/about#donation">Donation</Link>
+                                                <a className="dropdown-item" href="/about#donation" onClick={(e) => handleHash(e, '/about', 'donation')}>Donation</a>
                                             </div>
                                         </div>
                                     </div>

@@ -3,32 +3,21 @@ import React from 'react'
 export default function About() {
   return (
     <main>
-      <section className="hero d-flex align-items-center justify-content-center text-center text-white" style={{
-        background: 'url("/images/herobg.png") center/cover no-repeat',
-        minHeight: '70vh',
-        paddingLeft: '10%',
-        paddingRight: '10%',
-        position: 'relative'
-      }}>
-        <div style={{
-          position: 'absolute',
-          inset: '0',
-          background: 'rgba(0, 0, 0, 0.45)'
-        }}></div>
-
+      <section className="about-hero">
+        <div className="about-hero-overlay" />
         <div className="position-relative">
-          <h1 className="display-3 fw-bold mb-3" style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)', color: '#f1b327' }}>
+          <h1 className="display-3 fw-bold mb-3" style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)' }}>
             Our Mission
           </h1>
 
-          <p className="lead" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.4rem)', color: '#f1b327' }}>
+          <p className="lead" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.4rem)' }}>
             Empowering individuals to grow, transform, and find purpose through guidance,
             education, and meaningful support.
           </p>
         </div>
       </section>
 
-      <div id="founder" style={{ background: '#ffb700', padding: '40px 0' }}>
+      <div id="founder" className="about-founder">
         <div className="container my-5">
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
@@ -64,7 +53,7 @@ export default function About() {
         </div>
       </div>
 
-      <section id="join" className="py-5" style={{ backgroundColor: '#1800ad' }}>
+      <section id="join" className="py-5 about-join">
         <div className="container text-center text-white">
           <h2 className="fw-bold mb-4">How to Join</h2>
           <p className="mb-5">Choose the path that best fits your goals and start benefiting right away.</p>
@@ -135,7 +124,7 @@ export default function About() {
         </div>
       </section>
 
-      <section id="donation" className="py-5" style={{ backgroundColor: '#f1b327', color: 'white' }}>
+      <section id="donation" className="py-5 donation-section">
         <div className="container text-center">
           <blockquote className="fs-3 fw-semibold" style={{ lineHeight: '1.4' }}>
             "Your generosity fuels the mission — every donation helps non‑profits transform lives and build stronger

@@ -304,3 +304,23 @@ img { max-width: 100%; height: auto; display: block; }
     .resume-template-btn-preview { background: #e5e7eb;}
     .resume-template-btn-select { background: #2563eb; color: white;}
     .resume-template-btn-select:hover { background: #1d4ed8;}
+
+    /* About page specific classes to replace inline styles */
+    .about-hero {
+        background: url('/images/herobg.png') center/cover no-repeat;
+        min-height: 70vh;
+        padding-left: 10%;
+        padding-right: 10%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+    }
+    .about-hero-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.45); }
+    .about-founder { background: #ffb700; padding: 40px 0; }
+    .about-join { background-color: #1800ad; }
+    .donation-section { background-color: #f1b327; color: white; }
+    .about-hero .display-3 { color: #f1b327; }
+    .about-hero .lead { color: #f1b327; }
