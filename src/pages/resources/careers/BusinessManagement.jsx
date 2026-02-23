@@ -3,47 +3,614 @@ import React from 'react'
 export default function BusinessManagement() {
   return (
     <main>
+      {/* section with image container */}
       <section className="business-hero-bg d-flex align-items-center justify-content-center py-5">
         <div className="container">
-          <header className="rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
-            <h1 className="display-3 fw-bolder text-white mb-3">Your Future in <span className="text-white">Business &amp; Management</span></h1>
+          {/* heading */}
+          <header className=" rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+            <h1 className="display-3 fw-bolder text-white mb-3">
+              Your Future in{" "}
+              <span className="text-white">Business &amp; Management</span>
+            </h1>
             <p className="fs-5 text-white mx-auto mb-4" style={{ maxWidth: 800 }}>
               Management careers drive strategy, growth, and organizational success.
+              This guide explores paths in leadership, finance, operations, and
+              analysis across all major industries.
             </p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
-              <a href="#roles" className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark">Explore Roles</a>
-              <a href="#education" className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3">Find Your Path</a>
+              <a
+                href="#roles"
+                className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark"
+              >
+                Explore Roles
+              </a>
+              <a
+                href="#education"
+                className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
+              >
+                Find Your Path
+              </a>
             </div>
           </header>
+          {/* end of section and div */}
         </div>
       </section>
-
-      <div className="container-xl py-4 py-lg-5">
+      {/* end of art image */}
+      <main className="container-xl py-4 py-lg-5">
+        {/* start of second */}
+        {/* primary color backing */}
         <section id="roles" className="mb-5">
-          <h2 className="fs-2 fw-bold section-heading-custom text-black">Key Business &amp; Management Roles</h2>
-          <p className="text-muted mb-4">Strategy, finance, and operations roles across industries.</p>
-        </section>
-
-        <section id="roadmap" className="mb-5 py-5 bg-light rounded-4">
-          <div className="container">
-            <h2 className="fs-2 fw-bold section-heading-custom text-dark text-center mb-5">Business Career Roadmap</h2>
-            <div className="roadmap-wrapper position-relative">
-              <div className="roadmap-line d-none d-lg-block" />
-              <div className="row g-4 text-center justify-content-center">
-                <div className="col-lg-3 step-item"><div className="roadmap-node shadow">01</div><h4 className="fw-bold mt-3">Entry Level</h4></div>
-                <div className="col-lg-3 step-item"><div className="roadmap-node shadow">02</div><h4 className="fw-bold mt-3">Mid-Level</h4></div>
-                <div className="col-lg-3 step-item"><div className="roadmap-node shadow">03</div><h4 className="fw-bold mt-3">Director</h4></div>
-                <div className="col-lg-3 step-item"><div className="roadmap-node shadow">04</div><h4 className="fw-bold mt-3">Executive</h4></div>
+          <h2 className="fs-2 fw-bold section-heading-custom text-black">
+            Key Business &amp; Management Roles
+          </h2>
+          <p className="text-muted mb-4">
+            Detailing common and high-impact roles, organized by function.
+          </p>
+          {/* new section idea */}
+          <div className="container py-5">
+            <div className="row g-4">
+              <div className="col-lg-4">
+                <div className="card creative-card h-100 p-4 shadow-sm">
+                  <div className="icon-box bg-gradient-purple mb-3">
+                    <i className="bi bi-lightbulb text-white fs-3" />
+                  </div>
+                  <h3 className="fw-bold">Strategy &amp; Consulting</h3>
+                  <p className="text-muted">
+                    Master the art of high-level problem solving. Learn to analyze
+                    complex business landscapes, drive organizational change, and
+                    provide the strategic vision that guides companies toward
+                    sustainable growth.
+                  </p>
+                  <a
+                    href="#"
+                    className="btn btn-warning text-decoration-none fw-bold mt-auto "
+                    data-bs-toggle="modal"
+                    data-bs-target="#strategyModal"
+                  >
+                    Learn More →
+                  </a>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div className="card creative-card h-100 p-4 shadow-sm">
+                  <div className="icon-box bg-gradient-orange mb-3">
+                    <i className="bi bi-graph-up-arrow text-white fs-3" />
+                  </div>
+                  <h3 className="fw-bold">Financial &amp; Resource Management</h3>
+                  <p className="text-muted">
+                    Become the steward of organizational health. Focus on optimizing
+                    capital, managing talent, and leveraging data-driven insights to
+                    ensure every resource is positioned for maximum impact and ROI.
+                  </p>
+                  <a
+                    href="#"
+                    className="btn btn-warning text-decoration-none fw-bold mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#financeModal"
+                  >
+                    Learn More →
+                  </a>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div className="card creative-card h-100 p-4 shadow-sm">
+                  <div className="icon-box bg-gradient-green mb-3">
+                    <i className="bi bi-gear text-white fs-3" />
+                  </div>
+                  <h3 className="fw-bold">Operations &amp; Supply Chain</h3>
+                  <p className="text-muted">
+                    Architect the engines of efficiency. From global logistics to
+                    daily process improvement, learn how to streamline workflows and
+                    manage the critical systems that deliver products and services
+                    to the world.
+                  </p>
+                  <a
+                    href="#"
+                    className=" btn btn-warning text-decoration-none fw-bold mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#opsModal"
+                  >
+                    Learn More →
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </section>
 
-        <section className="rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
-          <h2 className="fs-3 text-dark fw-bold mb-3">Ready to Lead Your Career?</h2>
-          <p className="fs-5 mb-4 mx-auto" style={{ maxWidth: 700 }}>Start refining your leadership and analytical skills today.</p>
-          <a href="#roles" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">Define Your Strategy</a>
+          {/* road map section */}
+          <section id="roadmap" className="mb-5 py-5 bg-light rounded-4">
+            <div className="container">
+              <h2 className="fs-2 fw-bold section-heading-custom text-dark text-center mb-5">
+                Business Management Career Roadmap
+              </h2>
+              <div className="roadmap-wrapper position-relative">
+                <div className="roadmap-line d-none d-lg-block" />
+                <div className="row g-4 text-center justify-content-center">
+                  <div className="col-lg-3 step-item">
+                    <div className="roadmap-node shadow">01</div>
+                    <h4 className="fw-bold mt-3">Entry Level</h4>
+                    <p className="small text-muted">
+                      Business Analyst / Assistant Manager
+                      <br />
+                      <span className="badge bg-warning text-dark">Years 0-2</span>
+                    </p>
+                  </div>
+                  <div className="col-lg-3 step-item">
+                    <div className="roadmap-node shadow">02</div>
+                    <h4 className="fw-bold mt-3">Mid-Level</h4>
+                    <p className="small text-muted">
+                      Department Manager / Operations Lead
+                      <br />
+                      <span className="badge bg-warning text-dark">Years 3-6</span>
+                    </p>
+                  </div>
+                  <div className="col-lg-3 step-item">
+                    <div className="roadmap-node shadow">03</div>
+                    <h4 className="fw-bold mt-3">Director</h4>
+                    <p className="small text-muted">
+                      Regional Director / Strategic Planning
+                      <br />
+                      <span className="badge bg-warning text-dark">Years 7-12</span>
+                    </p>
+                  </div>
+                  <div className="col-lg-3 step-item">
+                    <div className="roadmap-node shadow">04</div>
+                    <h4 className="fw-bold mt-3">Executive</h4>
+                    <p className="small text-muted">
+                      VP / COO / Chief Executive Officer
+                      <br />
+                      <span className="badge bg-warning text-dark">Years 15+</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            id="skills"
+            className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5"
+          >
+            <h2 className="fs-2 fw-bold section-heading-custom text-dark">
+              Essential Skills and Knowledge
+            </h2>
+            <p className="text-muted mb-5">
+              Successful managers combine quantitative analysis with dynamic
+              leadership skills.
+            </p>
+            <div className="row g-5">
+              <div className="col-lg-6">
+                <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">
+                  Hard Skills (Analytical)
+                </h3>
+                <div className="row g-4">
+                  <div className="col-6 d-flex align-items-center">
+                    <i
+                      className="bi bi-calculator-fill me-3 fs-3"
+                      style={{ color: "#f1b327" }}
+                    />
+                    <span className="fw-medium">Financial Accounting</span>
+                  </div>
+                  <div className="col-6 d-flex align-items-center">
+                    <i
+                      className="bi bi-table me-3 fs-3"
+                      style={{ color: "#f1b327" }}
+                    />
+                    <span className="fw-medium">Data Modeling &amp; Excel</span>
+                  </div>
+                  <div className="col-6 d-flex align-items-center">
+                    <i
+                      className="bi bi-diagram-3-fill me-3 fs-3"
+                      style={{ color: "#f1b327" }}
+                    />
+                    <span className="fw-medium">Process Mapping</span>
+                  </div>
+                  <div className="col-6 d-flex align-items-center">
+                    <i
+                      className="bi bi-bar-chart-line-fill me-3 fs-3"
+                      style={{ color: "#f1b327" }}
+                    />
+                    <span className="fw-medium">Statistical Analysis</span>
+                  </div>
+                  <div className="col-6 d-flex align-items-center">
+                    <i
+                      className="bi bi-cloud-check-fill me-3 fs-3"
+                      style={{ color: "#f1b327" }}
+                    />
+                    <span className="fw-medium">CRM/ERP Software</span>
+                  </div>
+                  <div className="col-6 d-flex align-items-center">
+                    <i
+                      className="bi bi-shield-check me-3 fs-3"
+                      style={{ color: "#f1b327" }}
+                    />
+                    <span className="fw-medium">Legal &amp; Compliance</span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">
+                  Soft Skills (Leadership)
+                </h3>
+                <div className="row g-4">
+                  <div className="col-12 d-flex align-items-center">
+                    <i
+                      className="bi bi-people-fill me-3 fs-3"
+                      style={{ color: "#f1b327" }}
+                    />
+                    <span className="fw-medium">Leadership and Team Building</span>
+                  </div>
+                  <div className="col-12 d-flex align-items-center">
+                    <i
+                      className="bi bi-lightbulb-fill me-3 fs-3"
+                      style={{ color: "#f1b327" }}
+                    />
+                    <span className="fw-medium">
+                      Strategic Thinking and Planning
+                    </span>
+                  </div>
+                  <div className="col-12 d-flex align-items-center">
+                    <i
+                      className="bi bi-chat-dots-fill me-3 fs-3"
+                      style={{ color: "#f1b327" }}
+                    />
+                    <span className="fw-medium">
+                      Negotiation and Conflict Resolution
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* future trends */}
+          <section
+            id="future"
+            className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5"
+          >
+            <h2 className="fs-2 fw-bold section-heading-custom text-dark">
+              Future Trends and Growth
+            </h2>
+            <div className="row g-4">
+              <div className="col-md-4">
+                <div className="p-3 border-start border-4 border-custom-secondary bg-warning-subtle rounded-3">
+                  <h3 className="fs-5 fw-semibold text-custom-secondary mb-2">
+                    Global &amp; Sustainable Markets
+                  </h3>
+                  <ul className="text-muted small">
+                    <li>
+                      Emphasis on ESG (Environmental, Social, Governance) reporting.
+                    </li>
+                    <li>
+                      Increased complexity in international trade and operations.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="p-3 border-start border-4 border-custom-primary bg-primary-subtle rounded-3">
+                  <h3 className="fs-5 fw-semibold text-custom-primary mb-2 text-dark">
+                    Data-Driven Decision Making
+                  </h3>
+                  <p className="small text-muted mb-0">
+                    Managers must be proficient in interpreting Big Data analytics,
+                    visualization tools, and applying quantitative methods to
+                    strategy.
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-4">
+                <div className="p-3 border-start border-4 border-secondary bg-secondary-subtle rounded-3">
+                  <h3 className="fs-5 fw-semibold text-secondary mb-2">
+                    Agile &amp; Adaptive Leadership
+                  </h3>
+                  <p className="small text-muted mb-0">
+                    The shift towards flatter organizational structures requires
+                    leaders who can manage hybrid teams and rapid, iterative changes
+                    (Agile methodology).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
+      </main>
+      {/* hero section with buisness background */}
+      <section className="business-hero-bg d-flex align-items-center justify-content-center py-5">
+        <div className="container">
+          {/* VI. Conclusion Call to action */}
+          <section className=" rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+            <h2 className="fs-3 text-white fw-bold mb-3">
+              Ready to Lead Your Career?
+            </h2>
+            <p className="fs-5 mb-4 mx-auto text-white" style={{ maxWidth: 700 }}>
+              Management is about execution and vision. Start refining your
+              leadership and analytical skills today to take the helm of a
+              successful organization tomorrow.
+            </p>
+            <a
+              href="#roles"
+              className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
+            >
+              Define Your Business Strategy
+            </a>
+          </section>
+          {/* end of section and div */}
+        </div>
+      </section>
+      {/* modals */}
+      <div
+        className="modal fade"
+        id="strategyModal"
+        tabIndex={-1}
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered modal-xl">
+          <div className="modal-content border-0 rounded-4 shadow-lg">
+            <div className="modal-header bg-warning text-black rounded-top-4">
+              <h5 className="modal-title fw-bold">
+                Strategy and Consulting Deep-Dive
+              </h5>
+              <button
+                type="button"
+                className="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              />
+            </div>
+            <div className="modal-body p-4 p-md-5">
+              <div className="row g-4">
+                <div className="col-12 col-lg-6">
+                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
+                    <img
+                      src="images/buisness1.jpg"
+                      alt="Strategy Planning"
+                      className="img-fluid rounded-3 shadow-sm"
+                    />
+                  </div>
+                </div>
+                <div className="col-12 col-lg-6">
+                  <div className="row row-cols-1 row-cols-md-2 g-3">
+                    <div className="col">
+                      <div className="p-3 bg-warning-subtle rounded-3 border h-100">
+                        <p className="fw-bold fs-5 mb-1 text-dark">
+                          Management Consultant
+                        </p>
+                        <p className="mb-0 text-muted small">
+                          *Focus:* Solving complex business problems and driving
+                          organizational change.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col">
+                      <div className="p-3 bg-light rounded-3 border h-100">
+                        <p className="fw-bold fs-5 mb-1 text-dark">
+                          Business Analyst
+                        </p>
+                        <p className="mb-0 text-muted small">
+                          *Focus:* Bridging the gap between business needs and
+                          technological solutions.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col">
+                      <div className="p-3 bg-light rounded-3 border h-100">
+                        <p className="fw-bold fs-5 mb-1 text-dark">
+                          Product Manager
+                        </p>
+                        <p className="mb-0 text-muted small">
+                          *Focus:* Defining the product roadmap, coordinating
+                          engineering and marketing.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col">
+                      <div className="p-3 bg-primary-subtle rounded-3 border h-100">
+                        <p className="fw-bold fs-5 mb-1 text-dark">
+                          Chief of Staff
+                        </p>
+                        <p className="mb-0 text-muted small">
+                          *Focus:* High-level organizational support and strategic
+                          initiatives.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* modal for financial and resource management */}
+      <div
+        className="modal fade"
+        id="financeModal"
+        tabIndex={-1}
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered modal-xl">
+          <div className="modal-content border-0 rounded-4 shadow-lg">
+            <div className="modal-header bg-warning text-black rounded-top-4">
+              <h5 className="modal-title fw-bold">
+                Financial &amp; Resource Management Path
+              </h5>
+              <button
+                type="button"
+                className="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              />
+            </div>
+            <div className="modal-body p-4 p-md-5">
+              <div className="row g-4 align-items-center">
+                <div className="col-12 col-lg-6">
+                  <div className="d-flex flex-column gap-3 h-100">
+                    <div className="p-4 bg-warning-subtle rounded-3 border">
+                      <p className="fw-bold fs-5 text-dark mb-1">
+                        Financial Analyst
+                      </p>
+                      <p className="mb-0 text-muted small">
+                        *Focus:* Budgeting, forecasting, financial modeling, and
+                        investment decision support.
+                      </p>
+                    </div>
+                    <div className="p-4 bg-primary-subtle rounded-3 border">
+                      <p className="fw-bold fs-5 text-dark mb-1">
+                        Human Resources Manager
+                      </p>
+                      <p className="mb-0 text-muted small">
+                        *Focus:* Workforce planning, talent acquisition, and
+                        regulatory compliance.
+                      </p>
+                    </div>
+                    <div className="p-4 bg-light rounded-3 border">
+                      <p className="fw-bold fs-5 text-dark mb-1">
+                        Marketing Manager
+                      </p>
+                      <p className="mb-0 text-muted small">
+                        *Focus:* Developing and executing campaigns, market
+                        research, and brand strategy.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-12 col-lg-6">
+                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
+                    <img
+                      src="images/buisness2.jpeg"
+                      alt="Finance and HR"
+                      className="img-fluid rounded-3 shadow-sm"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* modal for opperations and supply chain */}
+      <div className="modal fade" id="opsModal" tabIndex={-1} aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered modal-xl">
+          <div className="modal-content border-0 rounded-4 shadow-lg">
+            <div className="modal-header bg-warning text-black rounded-top-4">
+              <h5 className="modal-title fw-bold">
+                Operations &amp; Supply Chain Insight
+              </h5>
+              <button
+                type="button"
+                className="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              />
+            </div>
+            <div className="modal-body p-4 p-md-5">
+              <div className="row g-4">
+                <div className="col-12 col-lg-6">
+                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
+                    <img
+                      src="images/buisness3.jpg"
+                      alt="Operations and PMP"
+                      className="img-fluid rounded-3 shadow-sm"
+                    />
+                  </div>
+                </div>
+                <div className="col-12 col-lg-6">
+                  <div className="d-flex flex-column gap-3 h-100">
+                    <div className="p-4 bg-warning-subtle rounded-3 border">
+                      <p className="fw-bold fs-5 text-dark mb-1">
+                        Operations Manager
+                      </p>
+                      <p className="mb-0 text-muted small">
+                        *Focus:* Optimizing daily processes, improving efficiency,
+                        and managing quality control.
+                      </p>
+                    </div>
+                    <div className="p-4 bg-primary-subtle rounded-3 border">
+                      <p className="fw-bold fs-5 text-dark mb-1">
+                        Supply Chain Specialist
+                      </p>
+                      <p className="mb-0 text-muted small">
+                        *Focus:* Managing logistics, procurement, and inventory
+                        smooth flow of goods.
+                      </p>
+                    </div>
+                    <div className="p-4 bg-light rounded-3 border">
+                      <p className="fw-bold fs-5 text-dark mb-1">
+                        Project Manager (PMP)
+                      </p>
+                      <p className="mb-0 text-muted small">
+                        *Focus:* Defining scope, managing resources, mitigating
+                        risks, and delivering projects.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* modal for essential skills and knowledge */}
+      <div className="modal fade" id="opsModal" tabIndex={-1} aria-hidden="true">
+        <div className="modal-dialog modal-dialog-centered modal-xl">
+          <div className="modal-content border-0 rounded-4 shadow-lg">
+            <div className="modal-header bg-warning text-black rounded-top-4">
+              <h5 className="modal-title fw-bold">
+                Operations &amp; Supply Chain Insight
+              </h5>
+              <button
+                type="button"
+                className="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              />
+            </div>
+            <div className="modal-body p-4 p-md-5">
+              <div className="row g-4">
+                <div className="col-12 col-lg-6">
+                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
+                    <img
+                      src="images/buisness3.jpg"
+                      alt="Operations and PMP"
+                      className="img-fluid rounded-3 shadow-sm"
+                    />
+                  </div>
+                </div>
+                <div className="col-12 col-lg-6">
+                  <div className="d-flex flex-column gap-3 h-100">
+                    <div className="p-4 bg-warning-subtle rounded-3 border">
+                      <p className="fw-bold fs-5 text-dark mb-1">
+                        Operations Manager
+                      </p>
+                      <p className="mb-0 text-muted small">
+                        *Focus:* Optimizing daily processes, improving efficiency,
+                        and managing quality control.
+                      </p>
+                    </div>
+                    <div className="p-4 bg-primary-subtle rounded-3 border">
+                      <p className="fw-bold fs-5 text-dark mb-1">
+                        Supply Chain Specialist
+                      </p>
+                      <p className="mb-0 text-muted small">
+                        *Focus:* Managing logistics, procurement, and inventory
+                        smooth flow of goods.
+                      </p>
+                    </div>
+                    <div className="p-4 bg-light rounded-3 border">
+                      <p className="fw-bold fs-5 text-dark mb-1">
+                        Project Manager (PMP)
+                      </p>
+                      <p className="mb-0 text-muted small">
+                        *Focus:* Defining scope, managing resources, mitigating
+                        risks, and delivering projects.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   )
