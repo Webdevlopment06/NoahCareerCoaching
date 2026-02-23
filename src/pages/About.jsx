@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
   return (
     <main>
-      <section className="about-hero">
+      <section id="hero" className="about-hero">
         <div className="about-hero-overlay" />
         <div className="position-relative">
           <h1 className="display-3 fw-bold mb-3" style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)' }}>

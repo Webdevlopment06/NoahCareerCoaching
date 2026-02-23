@@ -87,7 +87,7 @@ export default function Navbar() {
                                     <div className="container">
                                         <div className="row mb-2">
                                             <div className="col-md-6">
-                                                <Link className="dropdown-item" to="/about">Mission Statement</Link>
+                                                <a className="dropdown-item" to="/about#hero" onClick={(e) => handleHash(e, '/about', 'hero')}>Mission Statement</a>
                                             </div>
                                             <div className="col-md-6">
                                                 <a className="dropdown-item" href="/about#founder" onClick={(e) => handleHash(e, '/about', 'founder')}>About Our Founder</a>

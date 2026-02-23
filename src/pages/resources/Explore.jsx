@@ -1,17 +1,19 @@
 import React, { useMemo, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const CAREERS = [
-  { id: 'business', title: 'Business', subtitle: 'Management', category: 'corporate', icon: '/images/buisness-hero-bg.jpg' },
-  { id: 'creative', title: 'Creative Arts', subtitle: 'Design & Media', category: 'creative', icon: '/images/art1.png' },
-  { id: 'education', title: 'Education', subtitle: 'Teaching', category: 'service', icon: '/images/education-hero-bg.jpg' },
-  { id: 'finance', title: 'Finance', subtitle: 'Accounting', category: 'corporate', icon: '/images/finance1.png' },
-  { id: 'healthcare', title: 'Healthcare', subtitle: 'Medical', category: 'stem', icon: '/images/healthcare-hero-bg.png' },
-  { id: 'hospitality', title: 'Hospitality', subtitle: 'Service', category: 'service', icon: '/images/hosp-hero-bg.jpg' },
-  { id: 'law', title: 'Law & Safety', subtitle: 'Legal', category: 'corporate', icon: '/images/law-hero-bg.jpg' },
-  { id: 'science', title: 'Science', subtitle: 'Research', category: 'stem', icon: '/images/science-hero-bg.jpg' },
-  { id: 'trades', title: 'Skilled Trades', subtitle: 'Specialized', category: 'service', icon: '/images/trade-hero-bg.jpg' },
-  { id: 'technology', title: 'Technology', subtitle: 'IT & Coding', category: 'stem', icon: '/images/tech1.png' }
+  { id: 'business', slug: 'business-management', title: 'Business', subtitle: 'Management', category: 'corporate', icon: '/images/buisness-hero-bg.jpg' },
+  { id: 'creative', slug: 'arts-design', title: 'Creative Arts', subtitle: 'Design & Media', category: 'creative', icon: '/images/art1.png' },
+  { id: 'education', slug: 'education', title: 'Education', subtitle: 'Teaching', category: 'service', icon: '/images/education-hero-bg.jpg' },
+  { id: 'finance', slug: 'finance', title: 'Finance', subtitle: 'Accounting', category: 'corporate', icon: '/images/finance1.png' },
+  { id: 'healthcare', slug: 'healthcare', title: 'Healthcare', subtitle: 'Medical', category: 'stem', icon: '/images/healthcare-hero-bg.png' },
+  { id: 'hospitality', slug: 'hospitality', title: 'Hospitality', subtitle: 'Service', category: 'service', icon: '/images/hosp-hero-bg.jpg' },
+  { id: 'law', slug: 'law', title: 'Law & Safety', subtitle: 'Legal', category: 'corporate', icon: '/images/law-hero-bg.jpg' },
+  { id: 'science', slug: 'science', title: 'Science', subtitle: 'Research', category: 'stem', icon: '/images/science-hero-bg.jpg' },
+  { id: 'trades', slug: 'trades', title: 'Skilled Trades', subtitle: 'Specialized', category: 'service', icon: '/images/trade-hero-bg.jpg' },
+  { id: 'technology', slug: 'technology', title: 'Technology', subtitle: 'IT & Coding', category: 'stem', icon: '/images/tech1.png' }
 ]
+
 
 export default function Explore() {
   const [filter, setFilter] = useState('all')
@@ -67,7 +69,7 @@ export default function Explore() {
                 <div className="card-body p-3 text-center d-flex flex-column">
                   <h6 className="fw-bold mb-1">{c.title}</h6>
                   <p className="extra-small text-muted mb-3">{c.subtitle}</p>
-                  <button className="btn btn-primary btn-sm mt-auto rounded-pill">View Path</button>
+                  <Link className="btn btn-primary btn-sm mt-auto rounded-pill" to={`/resources/career/${c.slug || c.id}`}>View Path</Link>
                 </div>
               </div>
             </div>
