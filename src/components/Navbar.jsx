@@ -1,7 +1,38 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+
 export default function Navbar() {
+    useEffect(() => {
+        const nav = document.querySelector('nav.navbar.fixed-top')
+        if (!nav) return
+
+        const setBodyPadding = () => {
+            document.body.style.paddingTop = `${nav.offsetHeight}px`
+        }
+
+        // set initial padding and update on resize
+        setBodyPadding()
+        window.addEventListener('resize', setBodyPadding)
+
+        // update when bootstrap collapse toggles (mobile menu) change height
+        const navMenu = document.getElementById('navMenu')
+        const bsHandler = () => setBodyPadding()
+        if (navMenu) {
+            navMenu.addEventListener('shown.bs.collapse', bsHandler)
+            navMenu.addEventListener('hidden.bs.collapse', bsHandler)
+        }
+
+        return () => {
+            window.removeEventListener('resize', setBodyPadding)
+            if (navMenu) {
+                navMenu.removeEventListener('shown.bs.collapse', bsHandler)
+                navMenu.removeEventListener('hidden.bs.collapse', bsHandler)
+            }
+            document.body.style.paddingTop = ''
+        }
+    }, [])
+
     return (
         <>
             <nav className="navbar navbar-expand-lg nav-bg shadow-sm fixed-top">

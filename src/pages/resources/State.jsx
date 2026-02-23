@@ -80,9 +80,6 @@ export default function State() {
         </div>
       </div>
 
-      <a href="#" className="glass-back" id="backToTop">
-        <i className="bi bi-arrow-up"></i>
-      </a>
     </main>
   )
 }
