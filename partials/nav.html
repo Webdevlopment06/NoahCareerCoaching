@@ -1,79 +1,157 @@
 <nav class="navbar navbar-expand-lg navbar-light nav-bg shadow-sm">
   <div class="container">
 
-    <a class="navbar-brand" href="/NoahCareerCoaching/index.html">
-      <img src="/NoahCareerCoaching/images/nav-logo.png" height="40" alt="Logo">
+    <!-- LOGO -->
+    <a class="navbar-brand" href="/">
+      <img src="/images/nav-logo.png" height="40" alt="Noah Career Coaching Logo">
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <!-- TOGGLER -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navMenu"
+      aria-controls="navMenu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- NAV LINKS -->
     <div class="collapse navbar-collapse justify-content-center" id="navMenu">
       <ul class="navbar-nav mx-auto text-center">
 
         <li class="nav-item">
-          <a class="nav-link navfont blackText" href="/NoahCareerCoaching/index.html">HOME</a>
+          <a class="nav-link navfont blackText" href="/">HOME</a>
         </li>
 
         <!-- ABOUT -->
         <li class="nav-item dropdown position-static">
-          <a class="nav-link dropdown-toggle navfont blackText" href="#" data-bs-toggle="dropdown">
+          <a
+            class="nav-link dropdown-toggle navfont blackText"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             ABOUT
           </a>
+
           <div class="dropdown-menu w-100 p-4 text-center">
             <div class="container">
-              <a class="dropdown-item" href="/NoahCareerCoaching/about.html">Mission Statement</a>
-              <a class="dropdown-item" href="/NoahCareerCoaching/about.html">About Our Founder</a>
-              <a class="dropdown-item" href="/NoahCareerCoaching/about.html">How To Join</a>
-              <a class="dropdown-item" href="/NoahCareerCoaching/donation.html">Donation</a>
+              <div class="row">
+                <div class="col-md-6">
+                  <a class="dropdown-item" href="/about.html">Mission Statement</a>
+                </div>
+                <div class="col-md-6">
+                  <a class="dropdown-item" href="/about.html">About Our Founder</a>
+                </div>
+                <div class="col-md-6">
+                  <a class="dropdown-item" href="/about.html">How To Join</a>
+                </div>
+                <div class="col-md-6">
+                  <a class="dropdown-item" href="/donation.html">Donation</a>
+                </div>
+              </div>
             </div>
           </div>
         </li>
 
         <!-- SERVICES -->
         <li class="nav-item dropdown position-static">
-          <a class="nav-link dropdown-toggle navfont blackText" href="#" data-bs-toggle="dropdown">
+          <a
+            class="nav-link dropdown-toggle navfont blackText"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             SERVICES
           </a>
+
           <div class="dropdown-menu w-100 p-4 text-center">
             <div class="container">
-              <a class="dropdown-item" href="/NoahCareerCoaching/services/resume.html">Resume Development</a>
-              <a class="dropdown-item" href="/NoahCareerCoaching/services/interview.html">Interview Coaching</a>
-              <a class="dropdown-item" href="/NoahCareerCoaching/services/jobSearch.html">Job Search Strategy</a>
-              <a class="dropdown-item" href="/NoahCareerCoaching/services/professionalDev.html">Professional Development</a>
-              <a class="dropdown-item" href="/NoahCareerCoaching/services/internshipPath.html">Internship Pathways</a>
-              <a class="dropdown-item" href="/NoahCareerCoaching/services/volunteer.html">Volunteer Opportunities</a>
+              <div class="row">
+                <div class="col-md-4">
+                  <a class="dropdown-item" href="/services/resume.html">Resume Development</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="dropdown-item" href="/services/interview.html">Interview Coaching</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="dropdown-item" href="/services/jobSearch.html">Job Search Strategy</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="dropdown-item" href="/services/professionalDev.html">Professional Development</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="dropdown-item" href="/services/internshipPath.html">Internship Pathways</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="dropdown-item" href="/services/volunteer.html">Volunteer Opportunities</a>
+                </div>
+              </div>
             </div>
           </div>
         </li>
 
         <!-- RESOURCES -->
         <li class="nav-item dropdown position-static">
-          <a class="nav-link dropdown-toggle navfont blackText" href="#" data-bs-toggle="dropdown">
+          <a
+            class="nav-link dropdown-toggle navfont blackText"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             RESOURCES
           </a>
+
           <div class="dropdown-menu w-100 p-4 text-center">
             <div class="container">
-              <a class="dropdown-item" href="/NoahCareerCoaching/resources/explore.html">Explore Careers</a>
-              <a class="dropdown-item" href="/NoahCareerCoaching/resources/assessments.html">Career Assessments</a>
-              <a class="dropdown-item" href="/NoahCareerCoaching/resources/stories.html">Career Change Stories</a>
-              <a class="dropdown-item" href="/NoahCareerCoaching/resources/equalE.html">Equal Employer Information</a>
-              <a class="dropdown-item" href="/NoahCareerCoaching/resources/youth.html">Youth Information</a>
-              <a class="dropdown-item" href="/NoahCareerCoaching/resources/state.html">Resources By State</a>
+              <div class="row">
+                <div class="col-md-4">
+                  <a class="dropdown-item" href="/resources/explore.html">Explore Careers</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="dropdown-item" href="/resources/assessments.html">Career Assessments</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="dropdown-item" href="/resources/stories.html">Career Change Stories</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="dropdown-item" href="/resources/equalE.html">Equal Employer Information</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="dropdown-item" href="/resources/youth.html">Youth Information</a>
+                </div>
+                <div class="col-md-4">
+                  <a class="dropdown-item" href="/resources/state.html">Resources By State</a>
+                </div>
+              </div>
             </div>
           </div>
         </li>
 
+        <!-- GET INVOLVED -->
         <li class="nav-item">
-          <a class="nav-link navfont blackText" href="/NoahCareerCoaching/src/contact.html">GET INVOLVED</a>
+          <a class="nav-link navfont blackText" href="/src/contact.html">
+            GET INVOLVED
+          </a>
         </li>
 
       </ul>
 
+      <!-- CTA BUTTONS -->
       <div class="d-flex gap-2">
-        <button class="btn btn-warning navfont">GET FREE COACHING</button>
-        <button class="btn btn-warning navfont">DONATE</button>
+        <a href="/src/contact.html" class="btn btn-warning navfont">
+          GET FREE COACHING
+        </a>
+        <a href="/donation.html" class="btn btn-warning navfont">
+          DONATE
+        </a>
       </div>
 
     </div>
