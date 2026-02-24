@@ -96,19 +96,17 @@ export default function Assessments() {
           <div className="col-md-6 col-lg-3">
             <div className="card h-100 assessment-card text-center">
               <div className="card-body p-4">
-                <img src="/images/123test.png" alt="123Test" className="img-fluid mb-2 max-w-80" />
-                <h5 className="fw-bold">123Test Career Quiz</h5>
-                <p className="small text-muted">A fully free career-aptitude quiz based on the Holland Code model.</p>
+                <img src="/images/Onet.png" alt="O*net" className="img-fluid mb-2 max-w-80" />
+                <h5 className="fw-bold">O*NET</h5>
+                <p className="small text-muted">The industry standard for detailed job exploration.</p>
                 <p className="extra-small fw-bold mb-3">15 mins | Free</p>
-                <a href="https://www.123test.com/career-test/#its123-testAnchor" target="_blank" rel="noreferrer"
-                  className="btn btn-outline-dark btn-sm w-100">Take Quiz</a>
+                <a href="https://www.onetonline.org/" target="_blank" rel="noreferrer"
+                  className="btn btn-outline-dark btn-sm w-100">Go</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      
     </main>
   )
 }
