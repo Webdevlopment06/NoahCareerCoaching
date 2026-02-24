@@ -96,7 +96,7 @@ export default function Assessments() {
           <div className="col-md-6 col-lg-3">
             <div className="card h-100 assessment-card text-center">
               <div className="card-body p-4">
-                <img src="/images/123Test.png" alt="123Test" className="img-fluid mb-2 max-w-80" />
+                <img src="/images/123test.png" alt="123Test" className="img-fluid mb-2 max-w-80" />
                 <h5 className="fw-bold">123Test Career Quiz</h5>
                 <p className="small text-muted">A fully free career-aptitude quiz based on the Holland Code model.</p>
                 <p className="extra-small fw-bold mb-3">15 mins | Free</p>
