@@ -155,6 +155,17 @@ document.addEventListener('DOMContentLoaded', function () {
   const placeholder = document.getElementById('nav-inserter');
   if (placeholder) {
     placeholder.innerHTML = navHTML;
+
+    const nav = placeholder.querySelector('.navbar');
+    const applyNavOffset = () => {
+      if (!nav) return;
+      document.body.style.paddingTop = `${nav.offsetHeight}px`;
+    };
+
+    applyNavOffset();
+    window.addEventListener('resize', applyNavOffset);
+    window.addEventListener('load', applyNavOffset);
+
     // Set section active
     let activeSection = '';
     if (window.location.pathname === '/src/index.html') {
