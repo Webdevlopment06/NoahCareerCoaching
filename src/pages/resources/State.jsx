@@ -1,4 +1,6 @@
-import React, { useMemo, useState } from 'react'
+import React, { useMemo, useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import StateContent from '../../components/StateContent'
 
 const STATES = [
   { abbr: 'al', name: 'Alabama' },{ abbr: 'ak', name: 'Alaska' },{ abbr: 'az', name: 'Arizona' },
@@ -25,6 +27,35 @@ export default function State() {
 
   const labels = useMemo(() => STATES.map(s => ({ id: `label-${s.abbr}`, ...s })), [])
 
+  useEffect(() => {
+    // when selected changes, ensure the related accordion is visible
+    if (!selected) return
+    const collapseId = `collapse-${selected}`
+    const headerId = `heading-${selected}`
+    const collapseEl = document.getElementById(collapseId)
+    const headerEl = document.getElementById(headerId)
+
+    if (collapseEl) {
+      // Use Bootstrap's Collapse API if available so state toggling behaves correctly
+      const BS = window.bootstrap && window.bootstrap.Collapse
+      try {
+        if (BS) {
+          const inst = BS.getInstance(collapseEl) || new BS(collapseEl, { toggle: false })
+          inst.show()
+        } else {
+          collapseEl.classList.add('show')
+        }
+      } catch (err) {
+        collapseEl.classList.add('show')
+      }
+    }
+
+    // scroll into view after a small delay so collapse finishes
+    setTimeout(() => {
+      (headerEl || collapseEl)?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }, 150)
+  }, [selected])
+
   return (
     <main>
       <div className="container my-5">
@@ -35,10 +66,17 @@ export default function State() {
             <div id="map-container">
               <img src="/images/statemap.png" alt="USA Map" style={{ width: '100%' }} />
               {labels.map(l => (
-                <a key={l.id} href="#" className={`state-label ${selected === l.abbr ? 'active' : ''}`} id={l.id} data-state={l.name}
-                  onClick={(e) => { e.preventDefault(); setSelected(l.abbr) }}>
+                <button
+                  key={l.id}
+                  type="button"
+                  id={l.id}
+                  data-state={l.name}
+                  className={`state-label ${selected === l.abbr ? 'active' : ''}`}
+                  aria-pressed={selected === l.abbr}
+                  onClick={() => setSelected(l.abbr)}
+                >
                   {l.abbr.toUpperCase()}
-                </a>
+                </button>
               ))}
             </div>
           </div>
@@ -52,7 +90,7 @@ export default function State() {
                 {selected ? (
                   <>
                     <p>This is the page for {STATES.find(s => s.abbr === selected).name}.</p>
-                    <a className="btn btn-sm btn-outline-primary" href={`#/state-data/${selected}`}>Go to {selected.toUpperCase()} page</a>
+                    <Link className="btn btn-sm btn-outline-primary" to={`/resources/state/${selected}`}>Go to {selected.toUpperCase()} page</Link>
                   </>
                 ) : (
                   <p>At Noah Career Coaching, we provide local job boards, training programs, workforce centers, and community services available where you live. Click a state to access resources.</p>
@@ -73,7 +111,7 @@ export default function State() {
                 </button>
               </h2>
               <div id={`collapse-${s.abbr}`} className="accordion-collapse collapse" aria-labelledby={`heading-${s.abbr}`} data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body">{s.name} State-level Resources</div>
+                <div className="accordion-body"><StateContent abbr={s.abbr} /></div>
               </div>
             </div>
           ))}
