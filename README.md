@@ -16,8 +16,6 @@ Because the navbar is fixed we could get rid of the back to top button but it is
 ### PROBLEMS:
 the back to top button is not very noticable so you end up scrolling to the top manually anyways
 
-Text on the Logo looks really small in the favicon.ico.
-
 hospitality.html uses the image from buisnessmanegmnt.html at the bottom
 
 some career pages do not have images and image placeholders used in general
