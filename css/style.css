@@ -289,7 +289,17 @@
     .resume-template-btn-select { background: #2563eb; color: white;}
     .resume-template-btn-select:hover { background: #1d4ed8;}
 
-   
+    .filter-container {
+    margin-top: -30px;
+    position: relative;
+    z-index: 5;
+}
+
+.filter-card {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
 
 
 
