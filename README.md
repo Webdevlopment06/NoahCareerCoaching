@@ -15,7 +15,7 @@ some career pages do not have images and image placeholders used in general
 
 the back to top button can be clicked when it is invisible at the top (minor issue)
 
-in this branch, because we are inserting the styles from a script, there is one frame while loading where you can see the unstyled page (a simple fix would be to just put the styles back in the head, but i'm too stubborn)
+in this branch, because we are inserting the styles from a script, there is one frame while loading where you can see the unstyled page (a simple fix would be to just put the styles back in the head, but i'm too stubborn.) This is not a problem in the react version.
 
 We could use some more comments in some of the pages, particularly the career pages
 
@@ -30,7 +30,7 @@ because of the change in file structure, I use absolute links to avoid issues wi
 
 I wrapped all of the main content of every page in a main tag, I also got rid of the `<!-- content stars here -->`'s.(yes it was misspelled like that in every comment)
 
-There is a new file called favicon.ico, its just a copy of ncc4.png that gets automatically inserted as the favicon.
+There is a new file called favicon.ico, its just a cropped copy of ncc4.png that gets automatically inserted as the favicon (the icon in the browser tab).
 
 all of the colors in style.css are now tied to vars at the top of the file, you can edit all of the colors of things at once this way.
 
