@@ -12,6 +12,7 @@ export default function BackToTop() {
 
   const handleClick = (e) => {
     e.preventDefault()
+    if (!visible) return
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
