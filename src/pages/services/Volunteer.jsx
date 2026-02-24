@@ -3,7 +3,7 @@ import React from 'react'
 export default function Volunteer() {
   return (
     <main>
-      <section className="py-5 text-white" style={{ background: 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)' }}>
+      <section className="py-5 text-white bg-grad-teal">
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">
@@ -22,14 +22,14 @@ export default function Volunteer() {
                 <h5 className="fw-bold text-success mb-3">2025 Impact Report</h5>
                 <div className="text-start mb-2">
                   <small className="fw-bold">Meals Delivered</small>
-                  <div className="progress" style={{ height: 10 }}>
-                    <div className="progress-bar bg-success" style={{ width: '85%' }}></div>
+                  <div className="progress progress-h-10">
+                    <div className="progress-bar bg-success w-85"></div>
                   </div>
                 </div>
                 <div className="text-start mb-2">
                   <small className="fw-bold">Students Mentored</small>
-                  <div className="progress" style={{ height: 10 }}>
-                    <div className="progress-bar bg-primary" style={{ width: '60%' }}></div>
+                  <div className="progress progress-h-10">
+                    <div className="progress-bar bg-primary w-60"></div>
                   </div>
                 </div>
                 <p className="small text-muted mt-3">"Volunteering here changed my perspective on my city." — Jane D.</p>
@@ -78,7 +78,7 @@ export default function Volunteer() {
             </div>
             <div className="col-md-1 fs-2 fw-bold text-success">→</div>
             <div className="col-md-5">
-              <div className="p-4 rounded-4 text-white d-flex align-items-center shadow" style={{ background: 'linear-gradient(90deg, #11998e 0%, #38ef7d 100%)' }}>
+              <div className="p-4 rounded-4 text-white d-flex align-items-center shadow bg-grad-teal-90">
                 <i className="bi bi-infinity fs-2 me-3 text-warning"></i>
                 <span className="small fw-bold">"I am growing skills while creating real-world change."</span>
               </div>
@@ -87,7 +87,7 @@ export default function Volunteer() {
         </div>
       </section>
 
-      <section className="py-5" style={{ backgroundColor: '#e9f7ef' }}>
+      <section className="py-5 bg-e9f7ef">
         <div className="container">
           <h2 className="fw-bold mb-4 text-center">FIND YOUR PERFECT FIT</h2>
           <div className="row align-items-center justify-content-center">

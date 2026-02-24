@@ -12,7 +12,7 @@ export default function BusinessManagement() {
               Your Future in{" "}
               <span className="text-white">Business &amp; Management</span>
             </h1>
-            <p className="fs-5 text-white mx-auto mb-4" style={{ maxWidth: 800 }}>
+            <p className="fs-5 text-white mx-auto mb-4 max-w-800">
               Management careers drive strategy, growth, and organizational success.
               This guide explores paths in leadership, finance, operations, and
               analysis across all major industries.
@@ -185,43 +185,37 @@ export default function BusinessManagement() {
                 <div className="row g-4">
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-calculator-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-calculator-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Financial Accounting</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-table me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-table me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Data Modeling &amp; Excel</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-diagram-3-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-diagram-3-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Process Mapping</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-bar-chart-line-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-bar-chart-line-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Statistical Analysis</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-cloud-check-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-cloud-check-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">CRM/ERP Software</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-shield-check me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-shield-check me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Legal &amp; Compliance</span>
                   </div>
@@ -234,15 +228,13 @@ export default function BusinessManagement() {
                 <div className="row g-4">
                   <div className="col-12 d-flex align-items-center">
                     <i
-                      className="bi bi-people-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-people-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Leadership and Team Building</span>
                   </div>
                   <div className="col-12 d-flex align-items-center">
                     <i
-                      className="bi bi-lightbulb-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
                       Strategic Thinking and Planning
@@ -250,8 +242,7 @@ export default function BusinessManagement() {
                   </div>
                   <div className="col-12 d-flex align-items-center">
                     <i
-                      className="bi bi-chat-dots-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
                       Negotiation and Conflict Resolution

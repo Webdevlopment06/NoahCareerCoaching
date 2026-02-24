@@ -12,7 +12,7 @@ export default function Hospitality() {
               Your Future in{" "}
               <span className="text-white">Hospitality &amp; Tourism</span>
             </h1>
-            <p className="fs-5 text-white mx-auto mb-4" style={{ maxWidth: 800 }}>
+            <p className="fs-5 text-white mx-auto mb-4 max-w-800">
               Hospitality is a global industry focused on creating memorable guest
               experiences in hotels, restaurants, events, and travel services.
             </p>
@@ -214,44 +214,29 @@ export default function Hospitality() {
                 </h3>
                 <div className="row g-4">
                   <div className="col-6 d-flex align-items-center">
-                    <i
-                      className="bi bi-calculator-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
-                    />
+                    <i className="bi bi-calculator-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">
                       Property Management Systems (PMS)
                     </span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
-                    <i
-                      className="bi bi-table me-3 fs-3"
-                      style={{ color: "#f1b327" }}
-                    />
+                    <i className="bi bi-table me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">
                       Inventory &amp; Supply Chain Management
                     </span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
-                    <i
-                      className="bi bi-diagram-3-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
-                    />
+                    <i className="bi bi-diagram-3-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">
                       Food Safety &amp; Hygiene (HACCP)
                     </span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
-                    <i
-                      className="bi bi-bar-chart-line-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
-                    />
+                    <i className="bi bi-bar-chart-line-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">Multilingual Ability</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
-                    <i
-                      className="bi bi-cloud-check-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
-                    />
+                    <i className="bi bi-cloud-check-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">Budgeting and Cost Control</span>
                   </div>
                 </div>
@@ -262,37 +247,25 @@ export default function Hospitality() {
                 </h3>
                 <div className="row g-4">
                   <div className="col-12 d-flex align-items-center">
-                    <i
-                      className="bi bi-people-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
-                    />
+                    <i className="bi bi-people-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">
                       Exceptional Customer Service and Tact
                     </span>
                   </div>
                   <div className="col-12 d-flex align-items-center">
-                    <i
-                      className="bi bi-lightbulb-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
-                    />
+                    <i className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">
                       Stress Tolerance and Calm Under Pressure
                     </span>
                   </div>
                   <div className="col-12 d-flex align-items-center">
-                    <i
-                      className="bi bi-chat-dots-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
-                    />
+                    <i className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">
                       Conflict Resolution and Diplomacy
                     </span>
                   </div>
                   <div className="col-12 d-flex align-items-center">
-                    <i
-                      className="bi bi-lightbulb-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
-                    />
+                    <i className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">
                       Sales and Upselling Proficiency
                     </span>
@@ -363,7 +336,7 @@ export default function Hospitality() {
             <h2 className="fs-3 text-white fw-bold mb-3">
               Ready to Deliver Excellence?
             </h2>
-            <p className="fs-5 mb-4 mx-auto text-white" style={{ maxWidth: 700 }}>
+            <p className="fs-5 mb-4 mx-auto text-white max-w-700">
               Hospitality is a dynamic, people-centric career. Start building your
               network and focusing on service skills, which are the cornerstone of
               success in this industry.

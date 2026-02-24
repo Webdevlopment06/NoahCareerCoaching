@@ -3,7 +3,7 @@ import React from 'react'
 export default function InternshipPath() {
   return (
     <main>
-      <section className="py-5 text-white" style={{ background: 'linear-gradient(135deg, #f1b327 0%, #1800ad 100%)' }}>
+      <section className="py-5 text-white bg-grad-yellow-indigo">
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">
@@ -71,7 +71,7 @@ export default function InternshipPath() {
             </div>
             <div className="col-md-1 fs-2 fw-bold text-primary">→</div>
             <div className="col-md-5">
-              <div className="p-4 rounded-pill text-white d-flex align-items-center shadow" style={{ background: 'linear-gradient(135deg, #f1b327 0%, #1800ad 100%)' }}>
+              <div className="p-4 rounded-pill text-white d-flex align-items-center shadow bg-grad-yellow-indigo">
                 <i className="bi bi-cpu fs-2 me-3 text-warning"></i>
                 <span className="small fw-bold">"I built a scalable API that handled 5k requests."</span>
               </div>
@@ -80,7 +80,7 @@ export default function InternshipPath() {
         </div>
       </section>
 
-      <section className="py-5" style={{ backgroundColor: '#f0f4f8' }}>
+      <section className="py-5 bg-f0f4f8">
         <div className="container">
           <h2 className="fw-bold mb-4 text-center">LAND YOUR FIRST INTERNSHIP</h2>
           <div className="row align-items-center justify-content-center">

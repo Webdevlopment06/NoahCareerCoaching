@@ -3,7 +3,7 @@ import React from 'react'
 export default function Interview() {
   return (
     <main>
-      <section className="py-5 text-white" style={{ background: 'linear-gradient(135deg, #0f2027, #203a43, #2c5364)' }}>
+      <section className="py-5 text-white bg-grad-dark2">
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">
@@ -19,7 +19,7 @@ export default function Interview() {
             </div>
             <div className="col-lg-5 text-center">
               <div className="p-3 bg-white rounded-3 shadow-lg opacity-75">
-                <div style={{ height: 250, width: '100%', background: '#f0f0f0', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold', color: '#cc0000', fontSize: 80 }}>F</div>
+                <div className="letter-box">F</div>
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@ export default function Interview() {
             </div>
             <div className="col-md-1 text-center fs-2 fw-bold">=</div>
             <div className="col-md-5">
-              <div className="p-4 rounded-pill bg-info text-white d-flex align-items-center shadow" style={{ background: 'linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%)' }}>
+              <div className="p-4 rounded-pill bg-info text-white d-flex align-items-center shadow bg-grad-cyan">
                 <i className="bi bi-star-fill fs-2 me-3 text-warning"></i>
                 <span className="small fw-bold">Managed a cross-functional team of 5 to deliver $250k projects.</span>
               </div>
@@ -74,7 +74,7 @@ export default function Interview() {
         </div>
       </section>
 
-      <section className="py-5" style={{ backgroundColor: '#f1b327' }}>
+      <section className="py-5 bg-f1b327">
         <div className="container">
           <h2 className="fw-bold mb-4 text-center">1-ON-1 VIRTUAL STRATEGY SESSIONS</h2>
           <div className="row align-items-center justify-content-center">

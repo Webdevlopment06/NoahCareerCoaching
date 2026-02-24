@@ -12,7 +12,7 @@ export default function Trades() {
                 Skilled Trades &amp; Construction
               </span>
             </h1>
-            <p className="fs-5 text-muted mx-auto mb-4" style={{ maxWidth: 800 }}>
+            <p className="fs-5 text-muted mx-auto mb-4 max-w-800">
               Skilled trades are the backbone of our infrastructure, offering
               rewarding, hands-on careers with high demand, excellent pay, and
               pathways to self-employment.
@@ -234,31 +234,19 @@ export default function Trades() {
               </h3>
               <ul className="list-unstyled space-y-3 text-muted">
                 <li className="d-flex align-items-start mb-2">
-                  <span
-                    className="badge bg-custom-secondary rounded-pill me-2 mt-1"
-                    style={{ width: 8, height: 8 }}
-                  />
+                  <span className="badge bg-custom-secondary rounded-circle me-2 mt-1 dot-8" />
                   Attention to Detail and Quality Workmanship
                 </li>
                 <li className="d-flex align-items-start mb-2">
-                  <span
-                    className="badge bg-custom-secondary rounded-pill me-2 mt-1"
-                    style={{ width: 8, height: 8 }}
-                  />
+                  <span className="badge bg-custom-secondary rounded-circle me-2 mt-1 dot-8" />
                   Physical Stamina and Endurance
                 </li>
                 <li className="d-flex align-items-start mb-2">
-                  <span
-                    className="badge bg-custom-secondary rounded-pill me-2 mt-1"
-                    style={{ width: 8, height: 8 }}
-                  />
+                  <span className="badge bg-custom-secondary rounded-circle me-2 mt-1 dot-8" />
                   Punctuality and Reliability
                 </li>
                 <li className="d-flex align-items-start mb-2">
-                  <span
-                    className="badge bg-custom-secondary rounded-pill me-2 mt-1"
-                    style={{ width: 8, height: 8 }}
-                  />
+                  <span className="badge bg-custom-secondary rounded-circle me-2 mt-1 dot-8" />
                   Effective Teamwork and Communication on Site
                 </li>
               </ul>
@@ -388,7 +376,7 @@ export default function Trades() {
         <div className="container">
           <section className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
             <h2 className="fs-3 fw-bold mb-3">Ready to Build Your Career?</h2>
-            <p className="fs-5 mb-4 mx-auto" style={{ maxWidth: 700 }}>
+            <p className="fs-5 mb-4 mx-auto max-w-700">
               The trades offer financial independence and the pride of seeing your
               work come to life. Contact local unions or trade schools to start your
               apprenticeship application today.

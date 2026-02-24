@@ -11,7 +11,7 @@ export default function ArtsDesign() {
             <h1 className="display-3 fw-bolder text-white mb-3">
               Your Future in <span className="text-white">Creative Arts & Design</span>
             </h1>
-            <p className="fs-5 text-white mx-auto mb-4" style={{ maxWidth: '800px' }}>
+            <p className="fs-5 text-white mx-auto mb-4 max-w-800">
               Shape the visual and emotional world around us. Careers in design, media, and fine arts merge
               passion with commercial demand, requiring both artistry and technical skill.
             </p>
@@ -104,27 +104,27 @@ export default function ArtsDesign() {
                 <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Hard Skills (Analytical)</h3>
                 <div className="row g-4">
                   <div className="col-6 d-flex align-items-center">
-                    <i className="bi bi-calculator-fill me-3 fs-3" style={{ color: '#f1b327' }}></i>
+                    <i className="bi bi-calculator-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Adobe Creative Suite</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
-                    <i className="bi bi-table me-3 fs-3" style={{ color: '#f1b327' }}></i>
+                    <i className="bi bi-table me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Figma / Sketch</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
-                    <i className="bi bi-diagram-3-fill me-3 fs-3" style={{ color: '#f1b327' }}></i>
+                    <i className="bi bi-diagram-3-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">3D Modeling</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
-                    <i className="bi bi-bar-chart-line-fill me-3 fs-3" style={{ color: '#f1b327' }}></i>
+                    <i className="bi bi-bar-chart-line-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Video Editing</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
-                    <i className="bi bi-cloud-check-fill me-3 fs-3" style={{ color: '#f1b327' }}></i>
+                    <i className="bi bi-cloud-check-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Typography & Color Theory</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
-                    <i className="bi bi-shield-check me-3 fs-3" style={{ color: '#f1b327' }}></i>
+                    <i className="bi bi-shield-check me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Layout & Composition</span>
                   </div>
                 </div>
@@ -133,15 +133,15 @@ export default function ArtsDesign() {
                 <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Soft Skills (Leadership)</h3>
                 <div className="row g-4">
                   <div className="col-12 d-flex align-items-center">
-                    <i className="bi bi-people-fill me-3 fs-3" style={{ color: '#f1b327' }}></i>
+                    <i className="bi bi-people-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Unwavering Creativity & Originality</span>
                   </div>
                   <div className="col-12 d-flex align-items-center">
-                    <i className="bi bi-lightbulb-fill me-3 fs-3" style={{ color: '#f1b327' }}></i>
+                    <i className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Time Management & Meeting Deadlines</span>
                   </div>
                   <div className="col-12 d-flex align-items-center">
-                    <i className="bi bi-chat-dots-fill me-3 fs-3" style={{ color: '#f1b327' }}></i>
+                    <i className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Ability to Interpret & Apply Client Feedback</span>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export default function ArtsDesign() {
         <div className="container">
           <section className="rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
             <h2 className="fs-3 text-white fw-bold mb-3">Ready to Create Your Masterpiece?</h2>
-            <p className="fs-5 mb-4 mx-auto text-white" style={{ maxWidth: '700px' }}>
+            <p className="fs-5 mb-4 mx-auto text-white max-w-700">
               The only limits in the creative world are the ones you place on yourself. Dedicate yourself to practice and never stop sharing your work.
             </p>
             <a href="#roles" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">

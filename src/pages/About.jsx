@@ -6,11 +6,11 @@ export default function About() {
       <section id="hero" className="about-hero">
         <div className="about-hero-overlay" />
         <div className="position-relative">
-          <h1 className="display-3 fw-bold mb-3" style={{ fontSize: 'clamp(1.8rem, 4vw, 3rem)' }}>
+          <h1 className="display-3 fw-bold mb-3 fs-hero-clamp">
             Our Mission
           </h1>
 
-          <p className="lead" style={{ fontSize: 'clamp(1rem, 2.5vw, 1.4rem)' }}>
+          <p className="lead fs-lead-clamp">
             Empowering individuals to grow, transform, and find purpose through guidance,
             education, and meaningful support.
           </p>
@@ -21,15 +21,14 @@ export default function About() {
         <div className="container my-5">
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
-              <img src="/images/career.png" className="img-fluid w-100 h-100 object-fit-cover rounded"
-                alt="Large Section" style={{ minHeight: '400px' }} />
+              <img src="/images/career.png" className="img-fluid w-100 h-100 object-fit-cover rounded min-h-400"
+                alt="Large Section" />
             </div>
 
             <div className="col-lg-6 d-flex flex-column align-items-center text-center">
-              <img src="/images/chris.png" className="rounded-circle mb-3" alt="Christopher Noah"
-                style={{ width: '180px', height: '180px', objectFit: 'cover' }} />
+              <img src="/images/chris.png" className="rounded-circle mb-3 img-180" alt="Christopher Noah" />
 
-              <p className="mb-4 px-3" style={{ color: '#000' }}>
+              <p className="mb-4 px-3 text-dark">
                 Christopher Noah is the CEO and founder of Noah Career Coaching. His drive and passion to provide help to
                 people has motivated him to create this 100% volunteer non-profit.
               </p>
@@ -60,30 +59,30 @@ export default function About() {
 
           <div className="row g-5">
             <div className="col-lg-6">
-              <div className="p-4 rounded" style={{ backgroundColor: '#ffffff' }}>
+              <div className="p-4 rounded bg-white">
                 <h3 className="fw-bold text-dark mb-3">Join as a Volunteer</h3>
 
                 <div className="row gy-4">
                   <div className="col-12">
                     <div className="p-4 rounded shadow-sm">
-                      <h4 className="fw-bold" style={{ color: '#000' }}>1. Apply to Volunteer</h4>
-                      <p style={{ color: '#000' }}>Submit a short volunteer application to help us learn how you'd like to
+                      <h4 className="fw-bold text-dark">1. Apply to Volunteer</h4>
+                      <p className="text-dark">Submit a short volunteer application to help us learn how you'd like to
                         contribute.</p>
                     </div>
                   </div>
 
                   <div className="col-12">
                     <div className="p-4 rounded shadow-sm">
-                      <h4 className="fw-bold" style={{ color: '#000' }}>2. Orientation</h4>
-                      <p style={{ color: '#000' }}>Attend a brief orientation session to understand our mission, roles, and
+                      <h4 className="fw-bold text-dark">2. Orientation</h4>
+                      <p className="text-dark">Attend a brief orientation session to understand our mission, roles, and
                         expectations.</p>
                     </div>
                   </div>
 
                   <div className="col-12">
                     <div className="p-4 rounded shadow-sm">
-                      <h4 className="fw-bold" style={{ color: '#000' }}>3. Start Volunteering</h4>
-                      <p style={{ color: '#000' }}>Begin supporting our programs and making an impact in the community.</p>
+                      <h4 className="fw-bold text-dark">3. Start Volunteering</h4>
+                      <p className="text-dark">Begin supporting our programs and making an impact in the community.</p>
                     </div>
                   </div>
                 </div>
@@ -91,30 +90,30 @@ export default function About() {
             </div>
 
             <div className="col-lg-6">
-              <div className="p-4 rounded" style={{ backgroundColor: '#ffffff' }}>
+              <div className="p-4 rounded bg-white">
                 <h3 className="fw-bold text-dark mb-3">Join as a Client</h3>
 
                 <div className="row gy-4">
                   <div className="col-12">
                     <div className="p-4 rounded shadow-sm">
-                      <h4 className="fw-bold" style={{ color: '#000' }}>1. Apply Online</h4>
-                      <p style={{ color: '#000' }}>Submit your quick online application so we can understand your career goals.
+                      <h4 className="fw-bold text-dark">1. Apply Online</h4>
+                      <p className="text-dark">Submit your quick online application so we can understand your career goals.
                       </p>
                     </div>
                   </div>
 
                   <div className="col-12">
                     <div className="p-4 rounded shadow-sm">
-                      <h4 className="fw-bold" style={{ color: '#000' }}>2. Meet Our Team</h4>
-                      <p style={{ color: '#000' }}>Attend an introduction session so we can personalize your coaching experience.
+                      <h4 className="fw-bold text-dark">2. Meet Our Team</h4>
+                      <p className="text-dark">Attend an introduction session so we can personalize your coaching experience.
                       </p>
                     </div>
                   </div>
 
                   <div className="col-12">
                     <div className="p-4 rounded shadow-sm">
-                      <h4 className="fw-bold" style={{ color: '#000' }}>3. Get Started</h4>
-                      <p style={{ color: '#000' }}>Gain access to our career programs, resources, and personalized support.</p>
+                      <h4 className="fw-bold text-dark">3. Get Started</h4>
+                      <p className="text-dark">Gain access to our career programs, resources, and personalized support.</p>
                     </div>
                   </div>
                 </div>
@@ -126,7 +125,7 @@ export default function About() {
 
       <section id="donation" className="py-5 donation-section">
         <div className="container text-center">
-          <blockquote className="fs-3 fw-semibold" style={{ lineHeight: '1.4' }}>
+          <blockquote className="fs-3 fw-semibold lh-140">
             "Your generosity fuels the mission — every donation helps non‑profits transform lives and build stronger
             communities."
           </blockquote>
@@ -137,7 +136,7 @@ export default function About() {
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="fw-bold">Support Our Mission</h2>
-            <p className="lead mx-auto" style={{ maxWidth: '700px' }}>
+            <p className="lead mx-auto max-w-700">
               Your contribution helps us continue offering essential community support,
               career guidance, and resources to individuals in need. Every donation
               makes a difference.
@@ -171,7 +170,7 @@ export default function About() {
           </div>
 
           <div className="text-center mt-5">
-            <p className="text-muted" style={{ maxWidth: '700px', margin: 'auto' }}>
+            <p className="text-muted mx-auto max-w-700">
               Noah Career Coaching is committed to transparency and impact.
               All donations directly support program growth, client resources,
               and community outreach initiatives.

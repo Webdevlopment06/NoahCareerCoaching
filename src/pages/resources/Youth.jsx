@@ -3,12 +3,12 @@ import React from 'react'
 export default function Youth() {
   return (
     <main>
-      <section className="py-5 text-white" style={{background: 'linear-gradient(135deg, #FF6B6B 0%, #FFD93D 100%)'}}>
+      <section className="py-5 text-white bg-grad-ff6b6b">
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">
               <h1 className="display-4 fw-bold mb-3 text-uppercase">Start Your Story Here.</h1>
-              <p className="lead mb-4 fw-bold" style={{color: '#2D3436'}}>The "No Experience" paradox ends today. We help you
+              <p className="lead mb-4 fw-bold text-2d3436">The "No Experience" paradox ends today. We help you
                 translate school, hobbies, and grit into a professional profile that gets you hired.</p>
 
               <div className="bg-white bg-opacity-25 p-3 rounded-3 mb-4 border border-white">
@@ -128,7 +128,7 @@ export default function Youth() {
         </div>
       </section>
 
-      <section className="py-5" style={{backgroundColor: '#FFF9E6'}}>
+      <section className="py-5 bg-fff9e6">
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-md-5 text-center mb-4 mb-md-0">
@@ -165,7 +165,7 @@ export default function Youth() {
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-7">
-              <h2 className="fw-bold mb-4 text-uppercase" style={{color: '#FF6B6B'}}>The "Permission to Work" Roadmap</h2>
+              <h2 className="fw-bold mb-4 text-uppercase text-ff6b6b">The "Permission to Work" Roadmap</h2>
               <p className="text-muted mb-5">Before you can collect your first paycheck, you need to ensure you are legally
                 "Work Ready." Federal and State laws vary, but these are the non-negotiables for applicants under 18.</p>
 
@@ -227,7 +227,7 @@ export default function Youth() {
             </div>
 
             <div className="col-lg-5">
-              <div className="card border-0 rounded-4 shadow-lg p-4" style={{backgroundColor: '#2D3436', color: 'white'}}>
+              <div className="card border-0 rounded-4 shadow-lg p-4 bg-2d3436">
                 <h4 className="fw-bold mb-4 text-warning"><i className="bi bi-card-checklist me-2"></i>Grab These Documents</h4>
                 <p className="small opacity-75 mb-4">Have these ready in a folder before you go to your school or your
                   interview:</p>

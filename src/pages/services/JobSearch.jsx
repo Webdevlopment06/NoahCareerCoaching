@@ -3,7 +3,7 @@ import React from 'react'
 export default function JobSearch() {
   return (
     <main>
-      <section className="py-5 text-white" style={{ background: 'linear-gradient(135deg, #232526 0%, #414345 100%)' }}>
+      <section className="py-5 text-white bg-grad-dark">
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">
@@ -72,7 +72,7 @@ export default function JobSearch() {
             </div>
             <div className="col-md-1 fs-2 fw-bold text-dark">→</div>
             <div className="col-md-5">
-              <div className="p-4 rounded-4 text-white d-flex align-items-center shadow" style={{ background: 'linear-gradient(90deg, #1e3c72 0%, #2a5298 100%)' }}>
+              <div className="p-4 rounded-4 text-white d-flex align-items-center shadow bg-grad-blue">
                 <i className="bi bi-rocket-takeoff fs-2 me-3 text-info"></i>
                 <span className="small fw-bold">"I spoke with 3 insiders at my top target companies."</span>
               </div>
@@ -81,7 +81,7 @@ export default function JobSearch() {
         </div>
       </section>
 
-      <section className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
+      <section className="py-5 bg-light">
         <div className="container">
           <h2 className="fw-bold mb-4 text-center">BUILD YOUR SEARCH BLUEPRINT</h2>
           <div className="row align-items-center justify-content-center">

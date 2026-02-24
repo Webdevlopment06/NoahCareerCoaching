@@ -12,7 +12,7 @@ export default function Healthcare() {
               Your Future in{" "}
               <span className="text-white">Healthcare &amp; Wellness</span>
             </h1>
-            <p className="fs-5 text-white mx-auto mb-4" style={{ maxWidth: 800 }}>
+            <p className="fs-5 text-white mx-auto mb-4 max-w-800">
               Healthcare offers diverse, demanding, and immensely rewarding careers
               from direct patient care to research and administration.
             </p>
@@ -207,22 +207,19 @@ export default function Healthcare() {
                 <div className="row g-4">
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-calculator-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-calculator-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Anatomy &amp; Physiology</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-table me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-table me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Pharmacology</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-diagram-3-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-diagram-3-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
                       Diagnostic Testing &amp; Analysis
@@ -230,15 +227,13 @@ export default function Healthcare() {
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-bar-chart-line-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-bar-chart-line-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Infection Control</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-cloud-check-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-cloud-check-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
                       EHR/Medical Software Proficiency
@@ -246,8 +241,7 @@ export default function Healthcare() {
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-shield-check me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-shield-check me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Medical Terminology</span>
                   </div>
@@ -260,8 +254,7 @@ export default function Healthcare() {
                 <div className="row g-4">
                   <div className="col-12 d-flex align-items-center">
                     <i
-                      className="bi bi-people-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-people-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
                       Empathy and Compassionate Care
@@ -269,8 +262,7 @@ export default function Healthcare() {
                   </div>
                   <div className="col-12 d-flex align-items-center">
                     <i
-                      className="bi bi-lightbulb-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
                       Crisis Management and Calm Under Pressure
@@ -278,8 +270,7 @@ export default function Healthcare() {
                   </div>
                   <div className="col-12 d-flex align-items-center">
                     <i
-                      className="bi bi-chat-dots-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
                       Teamwork and Interprofessional Communication
@@ -287,8 +278,7 @@ export default function Healthcare() {
                   </div>
                   <div className="col-12 d-flex align-items-center">
                     <i
-                      className="bi bi-lightbulb-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
                       Attention to Detail and Accuracy
@@ -358,7 +348,7 @@ export default function Healthcare() {
             <h2 className="fs-3 text-white fw-bold mb-3">
               Ready to Make an Impact?
             </h2>
-            <p className="fs-5 mb-4 mx-auto text-white" style={{ maxWidth: 700 }}>
+            <p className="fs-5 mb-4 mx-auto text-white max-w-700">
               The journey into healthcare is challenging but incredibly rewarding.
               Start by seeking clinical experience today to solidify your commitment
               and path.

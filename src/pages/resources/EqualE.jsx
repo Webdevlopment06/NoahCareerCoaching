@@ -4,7 +4,7 @@ export default function EqualE() {
   return (
     <main>
     {/* hero section */}
-    <section className="py-5 text-white" style={{background: 'linear-gradient(135deg, #2c3e50 0%, #000000 100%)'}}>
+    <section className="py-5 text-white bg-grad-equale1">
       <div className="container py-4">
         <div className="row align-items-center">
           <div className="col-lg-8">
@@ -18,7 +18,7 @@ export default function EqualE() {
             </div>
           </div>
           <div className="col-lg-4 d-none d-lg-block text-center">
-            <i className="bi bi-shield-check text-info" style={{fontSize: '120px'}}></i>
+            <i className="bi bi-shield-check text-info icon-120"></i>
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@ export default function EqualE() {
     </section>
 
     {/* sexual harassment section */}
-    <section className="py-5 text-white" style={{background: 'linear-gradient(135deg, #4b6cb7 0%, #182848 100%)'}}>
+    <section className="py-5 text-white bg-grad-equale2">
       <div className="container py-4">
         <div className="row align-items-center">
           <div className="col-lg-8">
@@ -159,7 +159,7 @@ export default function EqualE() {
             </div>
           </div>
           <div className="col-lg-4 text-center d-none d-lg-block">
-            <i className="bi bi-person-check text-info shadow-sm" style={{fontSize: '100px'}}></i>
+            <i className="bi bi-person-check text-info shadow-sm icon-100"></i>
           </div>
         </div>
       </div>

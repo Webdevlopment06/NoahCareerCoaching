@@ -224,8 +224,7 @@ export default function Resume() {
 
       <section className="py-5">
         <div className="container">
-          <div className="card text-center text-white border-0 rounded-4 p-5 shadow-lg"
-            style={{ background: 'linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)' }}>
+          <div className="card text-center text-white border-0 rounded-4 p-5 shadow-lg bg-grad-blue">
             <div className="card-body">
               <h2 className="display-5 fw-bold mb-3">READY TO STAND OUT?</h2>
               <p className="lead mb-4 opacity-75">Join 10,000+ job seekers who used our templates to land roles at top-tier

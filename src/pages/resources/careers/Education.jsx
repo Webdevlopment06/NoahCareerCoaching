@@ -12,7 +12,7 @@ export default function Education() {
               Your Future in{" "}
               <span className="text-white">Education &amp; Training</span>
             </h1>
-            <p className="fs-5 text-white mx-auto mb-4" style={{ maxWidth: 800 }}>
+            <p className="fs-5 text-white mx-auto mb-4 max-w-800">
               Empower the next generation and shape professional talent. Careers in
               teaching, administration, and corporate learning are deeply impactful
               and constantly evolving.
@@ -199,15 +199,13 @@ export default function Education() {
                 <div className="row g-4">
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-calculator-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-calculator-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Classroom Management</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-table me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-table me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
                       Assessment and Evaluation Methods
@@ -215,8 +213,7 @@ export default function Education() {
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-diagram-3-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-diagram-3-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
                       Learning Management Systems (LMS)
@@ -224,22 +221,19 @@ export default function Education() {
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-bar-chart-line-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-bar-chart-line-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Differentiated Instruction</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-cloud-check-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-cloud-check-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Curriculum Mapping</span>
                   </div>
                   <div className="col-6 d-flex align-items-center">
                     <i
-                      className="bi bi-shield-check me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-shield-check me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Subject Matter Expertise</span>
                   </div>
@@ -252,15 +246,13 @@ export default function Education() {
                 <div className="row g-4">
                   <div className="col-12 d-flex align-items-center">
                     <i
-                      className="bi bi-people-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-people-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Patience and Empathy</span>
                   </div>
                   <div className="col-12 d-flex align-items-center">
                     <i
-                      className="bi bi-lightbulb-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
                       Dynamic Communication and Public Speaking
@@ -268,8 +260,7 @@ export default function Education() {
                   </div>
                   <div className="col-12 d-flex align-items-center">
                     <i
-                      className="bi bi-chat-dots-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
                       Conflict Resolution and Diplomacy (with parents/students
@@ -277,8 +268,7 @@ export default function Education() {
                   </div>
                   <div className="col-12 d-flex align-items-center">
                     <i
-                      className="bi bi-lightbulb-fill me-3 fs-3"
-                      style={{ color: "#f1b327" }}
+                      className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
                       Organizational and Planning Skills
@@ -349,7 +339,7 @@ export default function Education() {
             <h2 className="fs-3 text-white fw-bold mb-3">
               Ready to Create Your Masterpiece?
             </h2>
-            <p className="fs-5 mb-4 mx-auto text-white" style={{ maxWidth: 700 }}>
+            <p className="fs-5 mb-4 mx-auto text-white max-w-700">
               The only limits in the creative world are the ones you place on
               yourself. Dedicate yourself to practice and never stop sharing your
               work.

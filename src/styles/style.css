@@ -11,10 +11,20 @@
 .outfit-para { font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-weight: bold; font-style: normal; }
 .tasa-explorer-nav { font-family: "TASA Explorer", sans-serif; font-optical-sizing: auto; font-style: normal; }
 .navfont { font-family: var(--body-font); font-size: 0.95rem; font-weight: 600; font-style: normal; letter-spacing: 0.02em; }
+.bg-grad-blue { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
+.bg-grad-multi1 { background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); }
+.bg-grad-pink { background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%); }
+.bg-grad-dark { background: linear-gradient(135deg, #232526 0%, #414345 100%); }
+.bg-grad-dark2 { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); }
 .heroFont { font-family: "TASA Explorer", sans-serif; font-size: 16px; font-weight: bold; font-style: normal; }
 .heroParaFont { color:#fff; font-size: 20px; }
 .main-hero-btn { font-family: "TASA Explorer", sans-serif; font-size: 15px; font-style: normal; }
 .whiteText { color: #ffffff; }
+.w-85 { width: 85% !important; }
+.w-70 { width: 70% !important; }
+.w-60 { width: 60% !important; }
+.w-20 { width: 20% !important; }
+.w-10 { width: 10% !important; }
 .blackText { color: #000000; }
 
 /* Global font fallbacks and defaults */
@@ -324,3 +334,77 @@ img { max-width: 100%; height: auto; display: block; }
     .donation-section { background-color: #f1b327; color: white; }
     .about-hero .display-3 { color: #f1b327; }
     .about-hero .lead { color: #f1b327; }
+
+/* Utility classes to replace inline React style={{}} usage */
+.fs-hero-clamp { font-size: clamp(1.8rem, 4vw, 3rem); }
+.fs-lead-clamp { font-size: clamp(1rem, 2.5vw, 1.4rem); }
+.min-h-400 { min-height: 400px; }
+.img-180 { width: 180px; height: 180px; object-fit: cover; }
+.text-black { color: #000 !important; }
+.bg-e9f7ef { background-color: #e9f7ef !important; }
+.bg-e3e3e3 { background-color: #e3e3e3 !important; }
+.lh-140 { line-height: 1.4 !important; }
+.max-w-700 { max-width: 700px !important; }
+
+/* Gradient helpers used in services pages */
+.bg-grad-teal { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
+.bg-grad-teal-90 { background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%); }
+.bg-grad-blue { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
+.bg-grad-multi1 { background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); }
+.bg-grad-pink { background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%); }
+.bg-grad-dark { background: linear-gradient(135deg, #232526 0%, #414345 100%); }
+.bg-grad-dark2 { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); }
+
+/* Progress / width utilities used in a few places */
+.progress-h-10 { height: 10px; }
+.progress-h-30 { height: 30px; }
+.w-85 { width: 85% !important; }
+.w-70 { width: 70% !important; }
+.w-60 { width: 60% !important; }
+.w-20 { width: 20% !important; }
+.w-10 { width: 10% !important; }
+
+/* Yellow -> Indigo gradient used for internship and other CTAs */
+.bg-grad-yellow-indigo { background: linear-gradient(135deg, #f1b327 0%, #1800ad 100%); }
+
+/* Light page background helper */
+.bg-f0f4f8 { background-color: #f0f4f8; }
+
+/* Page header helper */
+.page-header { background: #1800AD; color: #f8f8f8; padding: 2rem; text-align: center; }
+
+/* Max width container used in BuildAResume */
+.max-w-900 { max-width: 900px; margin: 2rem auto; padding: 1rem; }
+
+/* Simple 2-column grid helper */
+.grid-2-col { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+
+/* Additional helpers for components using more complex inline styles */
+.letter-box { height: 250px; width: 100%; background: #f0f0f0; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #cc0000; font-size: 80px; }
+.bg-grad-cyan { background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%); }
+.bg-f1b327 { background-color: #f1b327 !important; }
+
+/* Additional utilities for pages migrated from static HTML */
+.bg-grad-ff6b6b { background: linear-gradient(135deg, #FF6B6B 0%, #FFD93D 100%); }
+.text-2d3436 { color: #2D3436 !important; }
+.bg-fff9e6 { background-color: #FFF9E6 !important; }
+.text-ff6b6b { color: #FF6B6B !important; }
+.bg-2d3436 { background-color: #2D3436 !important; color: #fff !important; }
+.icon-120 { font-size: 120px !important; }
+.icon-100 { font-size: 100px !important; }
+.max-w-800 { max-width: 800px !important; }
+.dot-8 { width: 8px; height: 8px; display: inline-block; border-radius: 50%; }
+.text-f1b327 { color: #f1b327 !important; }
+.max-w-140 { max-width: 140px !important; }
+.max-w-100 { max-width: 100px !important; }
+.max-w-80 { max-width: 80px !important; }
+.icon-60 { width: 60px; height: 60px; display: inline-flex; align-items: center; justify-content: center; }
+
+/* Home hero helper (replaces inline background + minHeight) */
+.home-hero { min-height: 80vh; background: url('/images/home-hero-bg.png') no-repeat center center/cover; display: flex; align-items: center; }
+
+/* Gradients used by Equal Employment pages */
+.bg-grad-equale1 { background: linear-gradient(135deg, #2c3e50 0%, #000000 100%); }
+.bg-grad-equale2 { background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%); }
+
+

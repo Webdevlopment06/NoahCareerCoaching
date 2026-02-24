@@ -12,7 +12,7 @@ export default function Technology() {
                 Technology &amp; Software Development
               </span>
             </h1>
-            <p className="fs-5 text-muted mx-auto mb-4" style={{ maxWidth: 800 }}>
+            <p className="fs-5 text-muted mx-auto mb-4 max-w-800">
               The digital world is booming, offering careers defined by growth,
               stability, and high earning potential. This guide will clarify the
               diverse roles, skills, and paths available to you.
@@ -225,31 +225,19 @@ export default function Technology() {
                 </h3>
                 <ul className="list-unstyled space-y-3 text-muted">
                   <li className="d-flex align-items-start mb-2">
-                    <span
-                      className="badge bg-custom-secondary rounded-pill me-2 mt-1"
-                      style={{ width: 8, height: 8 }}
-                    />
+                      <span className="badge bg-custom-secondary rounded-circle me-2 mt-1 dot-8" />
                     Problem-Solving and Critical Thinking
                   </li>
                   <li className="d-flex align-items-start mb-2">
-                    <span
-                      className="badge bg-custom-secondary rounded-pill me-2 mt-1"
-                      style={{ width: 8, height: 8 }}
-                    />
+                    <span className="badge bg-custom-secondary rounded-circle me-2 mt-1 dot-8" />
                     Continuous Learning and Adaptability (Tech is always changing!)
                   </li>
                   <li className="d-flex align-items-start mb-2">
-                    <span
-                      className="badge bg-custom-secondary rounded-pill me-2 mt-1"
-                      style={{ width: 8, height: 8 }}
-                    />
+                    <span className="badge bg-custom-secondary rounded-circle me-2 mt-1 dot-8" />
                     Collaboration and Communication
                   </li>
                   <li className="d-flex align-items-start mb-2">
-                    <span
-                      className="badge bg-custom-secondary rounded-pill me-2 mt-1"
-                      style={{ width: 8, height: 8 }}
-                    />
+                    <span className="badge bg-custom-secondary rounded-circle me-2 mt-1 dot-8" />
                     Attention to Detail
                   </li>
                 </ul>
@@ -375,7 +363,7 @@ export default function Technology() {
         <div className="container">
           <section className="bg-white p-5 rounded-4 shadow-lg text-center">
             <h2 className="fs-3 fw-bold mb-3">Ready to Start Building?</h2>
-            <p className="fs-5 mb-4 mx-auto" style={{ maxWidth: 700 }}>
+            <p className="fs-5 mb-4 mx-auto max-w-700">
               The most important step is choosing a path and starting your first
               project today. Don't wait for perfection—start learning and building
               now.

@@ -3,7 +3,7 @@ import React from 'react'
 export default function ProfessionalDev() {
   return (
     <main>
-      <section className="py-5 text-white" style={{ background: 'linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d)' }}>
+      <section className="py-5 text-white bg-grad-multi1">
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">
@@ -20,14 +20,14 @@ export default function ProfessionalDev() {
             <div className="col-lg-5 text-center">
               <div className="p-4 bg-white rounded-4 shadow-lg text-dark">
                 <h5 className="fw-bold text-primary">The 70-20-10 Model</h5>
-                <div className="progress mb-3" style={{ height: 30 }}>
-                  <div className="progress-bar bg-primary" style={{ width: '70%' }}>Experience</div>
+                <div className="progress mb-3 progress-h-30">
+                  <div className="progress-bar bg-primary w-70">Experience</div>
                 </div>
-                <div className="progress mb-3" style={{ height: 30 }}>
-                  <div className="progress-bar bg-info" style={{ width: '20%' }}>Mentorship</div>
+                <div className="progress mb-3 progress-h-30">
+                  <div className="progress-bar bg-info w-20">Mentorship</div>
                 </div>
-                <div className="progress" style={{ height: 30 }}>
-                  <div className="progress-bar bg-secondary" style={{ width: '10%' }}>Training</div>
+                <div className="progress progress-h-30">
+                  <div className="progress-bar bg-secondary w-10">Training</div>
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function ProfessionalDev() {
             </div>
             <div className="col-md-1 fs-2 fw-bold">→</div>
             <div className="col-md-5">
-              <div className="p-4 rounded-pill text-white d-flex align-items-center shadow" style={{ background: 'linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%)' }}>
+              <div className="p-4 rounded-pill text-white d-flex align-items-center shadow bg-grad-pink">
                 <i className="bi bi-rocket-takeoff-fill fs-2 me-3 text-warning"></i>
                 <span className="small fw-bold">"I identify gaps and solve problems proactively."</span>
               </div>
@@ -83,7 +83,7 @@ export default function ProfessionalDev() {
         </div>
       </section>
 
-      <section className="py-5" style={{ backgroundColor: '#e3e3e3' }}>
+      <section className="py-5 bg-light">
         <div className="container">
           <h2 className="fw-bold mb-4 text-center">ADVANCE YOUR CAREER WITH 1-ON-1 COACHING</h2>
           <div className="row align-items-center justify-content-center">

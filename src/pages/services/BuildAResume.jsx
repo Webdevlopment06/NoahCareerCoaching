@@ -11,13 +11,12 @@ export default function BuildAResume() {
 
   return (
     <main>
-      <header style={{ background: '#1800AD', color: '#f8f8f8', padding: '2rem', textAlign: 'center' }}>
+      <header className="page-header">
         <h1>Build Your Resume Step by Step</h1>
         <p>Fill out each section and see your resume update live</p>
       </header>
-
-      <div className="container" style={{ maxWidth: 900, margin: '2rem auto', padding: '1rem' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
+      <div className="container max-w-900">
+        <div className="grid-2-col">
           <div>
             <div className="step">
               <h2>Step 1: Personal Information</h2>

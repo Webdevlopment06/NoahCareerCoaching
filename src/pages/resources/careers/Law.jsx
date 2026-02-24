@@ -10,7 +10,7 @@ export default function Law() {
               Your Future in{" "}
               <span className="text-custom-primary">Law &amp; Public Service</span>
             </h1>
-            <p className="fs-5 text-muted mx-auto mb-4" style={{ maxWidth: 800 }}>
+            <p className="fs-5 text-muted mx-auto mb-4 max-w-800">
               A career in law demands intellectual rigor, ethical commitment, and a
               passion for justice. It offers pathways from litigation and corporate
               advising to public policy.
@@ -234,29 +234,25 @@ export default function Law() {
               <ul className="list-unstyled space-y-3 text-muted">
                 <li className="d-flex align-items-start mb-2">
                   <span
-                    className="badge bg-custom-secondary rounded-pill me-2 mt-1"
-                    style={{ width: 8, height: 8 }}
-                  />
+                    className="badge bg-custom-secondary rounded-pill me-2 mt-1 dot-8"
+                     />
                   Analytical and Critical Reasoning
                 </li>
                 <li className="d-flex align-items-start mb-2">
                   <span
-                    className="badge bg-custom-secondary rounded-pill me-2 mt-1"
-                    style={{ width: 8, height: 8 }}
+                    className="badge bg-custom-secondary rounded-pill me-2 mt-1 dot-8"
                   />
                   Oral Argument and Public Speaking
                 </li>
                 <li className="d-flex align-items-start mb-2">
                   <span
-                    className="badge bg-custom-secondary rounded-pill me-2 mt-1"
-                    style={{ width: 8, height: 8 }}
+                    className="badge bg-custom-secondary rounded-pill me-2 mt-1 dot-8"
                   />
                   Ethical Judgment and Integrity
                 </li>
                 <li className="d-flex align-items-start mb-2">
                   <span
-                    className="badge bg-custom-secondary rounded-pill me-2 mt-1"
-                    style={{ width: 8, height: 8 }}
+                    className="badge bg-custom-secondary rounded-pill me-2 mt-1 dot-8"
                   />
                   Negotiation and Mediation Skills
                 </li>
@@ -389,7 +385,7 @@ export default function Law() {
         <div className="container">
           <section className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
             <h2 className="fs-3 fw-bold mb-3">Commit to Justice and Service</h2>
-            <p className="fs-5 mb-4 mx-auto" style={{ maxWidth: 700 }}>
+            <p className="fs-5 mb-4 mx-auto max-w-700">
               These careers offer profound opportunities to impact society directly.
               If you seek a role that combines intellectual challenge with
               real-world consequence, your path is here.
