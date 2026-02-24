@@ -6,13 +6,6 @@
 
 Adding dark mode and theme detection
 
-Might want to merge one of the branches into main soon because they both have placeholders for each page (the github deployment is full of 404's)
-
-The style.css is HUGE. we should split it into multiple files.
-
-Because the navbar is fixed we could get rid of the back to top button but it is still useful on big pages
-
-
 ### PROBLEMS:
 the back to top button is not very noticable so you end up scrolling to the top manually anyways
 
@@ -22,11 +15,13 @@ some career pages do not have images and image placeholders used in general
 
 the back to top button can be clicked when it is invisible at the top (minor issue)
 
-in the branches, because we are inserting the styles from a script, there is one frame while loading where you can see the unstyled page (a simple fix would be to just put the styles back in the head, but i'm too stubborn)
+in this branch, because we are inserting the styles from a script, there is one frame while loading where you can see the unstyled page (a simple fix would be to just put the styles back in the head, but i'm too stubborn)
 
 We could use some more comments in some of the pages, particularly the career pages
 
-because of the new absolute position on the navbar some pages are spaced oddly and the back to top button stays invisible
+some of the new pages are broken here because of the new structure (like they are in main)
+
+main is broken because the new structure was only partly implemented
 
 ### NOTEABLE CHANGES FROM MAIN:
 There is a javascript file that inserts all the stuff every file will need, so the head stuff, the nav, the backtotop button, and the bootstrap link on the bottom. now the head just needs the title and the import of that script.
