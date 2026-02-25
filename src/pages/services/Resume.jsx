@@ -229,7 +229,7 @@ export default function Resume() {
               <h2 className="display-5 fw-bold mb-3">READY TO STAND OUT?</h2>
               <p className="lead mb-4 opacity-75">Join 10,000+ job seekers who used our templates to land roles at top-tier
                 companies.</p>
-              <a href="/build-a-resume" className="btn btn-warning btn-lg px-5 py-3 fw-bold rounded-pill text-primary shadow">
+              <a href="/services/build-resume" className="btn btn-warning btn-lg px-5 py-3 fw-bold rounded-pill text-primary shadow">
                 Build My Resume Now
               </a>
             </div>

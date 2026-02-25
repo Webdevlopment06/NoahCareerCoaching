@@ -35,6 +35,7 @@ import ProfessionalDev from './pages/services/ProfessionalDev'
 import Volunteer from './pages/services/Volunteer'
 import InternshipPath from './pages/services/InternshipPath'
 import BuildAResume from './pages/services/BuildAResume'
+import NotFound from './pages/NotFound'
 
 export default function App() {
   return (
@@ -74,6 +75,7 @@ export default function App() {
         <Route path="/services/volunteer" element={<Volunteer />} />
         <Route path="/services/internship" element={<InternshipPath />} />
         <Route path="/services/build-resume" element={<BuildAResume />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   )
