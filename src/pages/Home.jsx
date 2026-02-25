@@ -91,7 +91,9 @@ export default function Home() {
                 </div>
                 <div className="col-md-6">
                   <div className="d-flex align-items-center gap-3">
-                    <img src="/images/mait.jpg" className="rounded-circle border border-success border-2" style={{ width: '48px', height: '48px', objectFit: 'cover' }} alt="Mait M." />
+                    <svg className="h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" width="48" height="48" role="img">
+                      <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v1.6h19.2v-1.6c0-3.2-6.4-4.8-9.6-4.8z" />
+                    </svg>
                     <div className="border-start border-secondary ps-3">
                       <p className="small blackText fst-italic mb-0">"Found real confidence - get hired faster!"</p>
                       <footer className="blockquote-footer blackText mt-1 mb-0">Mait M.</footer>
