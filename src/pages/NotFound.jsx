@@ -8,6 +8,9 @@ export default function NotFound() {
         <h1 className="display-4 fw-bold mb-3">404 — Page Not Found</h1>
         <p className="lead mb-4">We couldn't find the page you're looking for.</p>
         <Link to="/" className="btn btn-primary btn-lg">Return Home</Link>
+        <button type="button" className="btn btn-secondary btn-lg ms-2" onClick={() => window.history.back()}>
+            Go Back
+        </button>
       </div>
     </main>
   )

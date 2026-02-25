@@ -15,7 +15,7 @@ export default function Resume() {
 
               <div className="d-flex gap-3">
                 <a href="#" className="btn btn-primary btn-lg px-4 rounded-pill">Get Started Free</a>
-                <a href="/resume-templates" className="btn btn-warning btn-lg px-4 rounded-pill">View Templates</a>
+                <a href="/services/resume-templates" className="btn btn-warning btn-lg px-4 rounded-pill">View Templates</a>
               </div>
             </div>
           </div>

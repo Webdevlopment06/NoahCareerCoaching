@@ -1,5 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
+
+// Component imports
 import Navbar from './components/Navbar'
 import BackToTop from './components/BackToTop'
 import ScrollToTop from './components/ScrollToTop'
@@ -8,6 +10,7 @@ import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import ResumeTemplates from './pages/services/ResumeTemplates'
 
 // Resources
 import Youth from './pages/resources/Youth'
@@ -75,6 +78,7 @@ export default function App() {
         <Route path="/services/volunteer" element={<Volunteer />} />
         <Route path="/services/internship" element={<InternshipPath />} />
         <Route path="/services/build-resume" element={<BuildAResume />} />
+        <Route path="/services/resume-templates" element={<ResumeTemplates />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
