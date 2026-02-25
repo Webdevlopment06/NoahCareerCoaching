@@ -219,5 +219,3 @@ document.addEventListener('DOMContentLoaded', function () {
   };
   document.body.appendChild(bootstrapScript);
 });
-
-

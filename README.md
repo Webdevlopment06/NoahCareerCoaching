@@ -6,14 +6,14 @@
 
 Adding dark mode and theme detection
 
+adding a footer with contact info and customer service, etc.
+
 ### PROBLEMS:
 the back to top button is not very noticable so you end up scrolling to the top manually anyways
 
 hospitality.html uses the image from buisnessmanegmnt.html at the bottom
 
 some career pages do not have images and image placeholders used in general
-
-the back to top button can be clicked when it is invisible at the top (minor issue)
 
 in this branch, because we are inserting the styles from a script, there is one frame while loading where you can see the unstyled page (a simple fix would be to just put the styles back in the head, but i'm too stubborn.) This is not a problem in the react version.
 
