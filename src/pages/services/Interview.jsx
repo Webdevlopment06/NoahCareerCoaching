@@ -79,7 +79,7 @@ export default function Interview() {
           <h2 className="fw-bold mb-4 text-center">1-ON-1 VIRTUAL STRATEGY SESSIONS</h2>
           <div className="row align-items-center justify-content-center">
             <div className="col-md-4 text-center mb-4 mb-md-0">
-              <img src="https://via.placeholder.com/200" className="rounded-circle border border-4 border-white shadow shadow-lg" alt="Coach" />
+              <img src="/images/coach.jpg" className="rounded-circle border border-4 border-white shadow shadow-lg" alt="Coach" />
             </div>
             <div className="col-md-6">
               <ul className="list-unstyled fs-5">
