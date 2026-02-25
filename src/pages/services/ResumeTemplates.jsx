@@ -38,7 +38,7 @@ export default function ResumeTemplates() {
                         <div className="resume-template-preview d-flex align-items-center justify-content-center">Creative</div>
                         <div className="resume-template-body">
                             <h3>Creative</h3>
-                            <p className="text-muted">Perfect for designers and creatives.</p>
+                            <p className="text-muted">Perfect for designers, artists, and creatives.</p>
                             <div className="resume-template-actions">
                                 <button className="resume-template-btn resume-template-btn-preview btn btn-outline-secondary me-2">Preview</button>
                                 <button className="resume-template-btn resume-template-btn-select btn btn-primary">Use Template</button>
