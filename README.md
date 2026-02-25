@@ -15,5 +15,5 @@ npm run dev
 > **Note:** Make sure you are in the project folder before running these commands.
 
 ## Romes Notes:
-- I think most of the pages are good I just need to check, It's just that a lot of the fonts are wrong for some reason
+- A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them.
 - the state content is in a component, so it keeps the size of the page down.

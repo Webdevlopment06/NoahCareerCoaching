@@ -34,16 +34,24 @@ export default function EqualE() {
         <div className="row g-4">
           <div className="col-md-4">
             <div className="h-100 p-4 border-start border-4 border-primary bg-light shadow-sm">
-              <h5 className="fw-bold">Title VII & ADEA</h5>
+              <h5 className="fw-bold">Title VII &amp; ADEA</h5>
               <p className="small">Protects against discrimination based on <strong>Race, Color, Religion, Sex, National
                   Origin</strong>, and <strong>Age</strong> (40 and older).</p>
+              <div className="d-flex gap-2 mt-3">
+                <a href="https://www.eeoc.gov/statutes/title-vii-civil-rights-act-1964" target="_blank" rel="noreferrer" className="btn btn-sm btn-outline-primary">Title VII — Learn more</a>
+                <a href="https://www.eeoc.gov/statutes/age-discrimination-employment-act-1967" target="_blank" rel="noreferrer" className="btn btn-sm btn-outline-primary">ADEA — Learn more</a>
+              </div>
             </div>
           </div>
           <div className="col-md-4">
             <div className="h-100 p-4 border-start border-4 border-info bg-light shadow-sm">
-              <h5 className="fw-bold">ADA & GINA</h5>
+              <h5 className="fw-bold">ADA &amp; GINA</h5>
               <p className="small">Protects qualified individuals with <strong>Physical or Mental Disabilities</strong> and
                 prohibits the use of <strong>Genetic Information</strong> in hiring.</p>
+              <div className="d-flex gap-2 mt-3">
+                <a href="https://www.ada.gov/" target="_blank" rel="noreferrer" className="btn btn-sm btn-outline-primary">ADA — Learn more</a>
+                <a href="https://www.eeoc.gov/statutes/genetic-information-nondiscrimination-act-2008" target="_blank" rel="noreferrer" className="btn btn-sm btn-outline-primary">GINA — Learn more</a>
+              </div>
             </div>
           </div>
           <div className="col-md-4">
@@ -51,6 +59,9 @@ export default function EqualE() {
               <h5 className="fw-bold">Equal Pay Act</h5>
               <p className="small">Requires that men and women in the same workplace be given <strong>equal pay for equal
                   work</strong> in all forms of compensation.</p>
+              <div className="d-flex gap-2 mt-3">
+                <a href="https://www.eeoc.gov/statutes/equal-pay-act-1963" target="_blank" rel="noreferrer" className="btn btn-sm btn-outline-primary">Learn more</a>
+              </div>
             </div>
           </div>
         </div>
