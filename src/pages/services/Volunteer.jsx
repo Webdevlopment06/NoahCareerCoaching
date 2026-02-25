@@ -92,7 +92,7 @@ export default function Volunteer() {
           <h2 className="fw-bold mb-4 text-center">FIND YOUR PERFECT FIT</h2>
           <div className="row align-items-center justify-content-center">
             <div className="col-md-4 text-center mb-4 mb-md-0">
-              <img src="https://via.placeholder.com/200" className="rounded-4 border border-4 border-white shadow" alt="Volunteer Coordinator" />
+              <img src="/images/volunteer-coordinator.jpg" className="rounded-4 border border-4 border-white shadow" alt="Volunteer Coordinator" />
             </div>
             <div className="col-md-6">
               <h4 className="fw-bold text-dark">Virtual Orientation Session</h4>

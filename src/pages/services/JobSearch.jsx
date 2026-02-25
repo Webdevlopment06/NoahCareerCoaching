@@ -87,8 +87,7 @@ export default function JobSearch() {
           <div className="row align-items-center justify-content-center">
             <div className="col-md-4 text-center mb-4 mb-md-0">
               <div className="position-relative d-inline-block">
-                <img src="https://via.placeholder.com/200" className="rounded-circle shadow" alt="Strategy Coach" />
-                <span className="position-absolute bottom-0 end-0 badge rounded-pill bg-info text-dark p-3 shadow border border-white">Zoom Session</span>
+                <img src="/images/strategy-coach.jpg" className="rounded-circle shadow" alt="Strategy Coach" />
               </div>
             </div>
             <div className="col-md-6">
