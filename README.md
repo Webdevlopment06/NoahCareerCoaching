@@ -18,7 +18,6 @@ npm run dev
 
 ### ISSUES:
 - A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them.
-- After you go to the contact page the title changes until you reload the page
 
 ### CHANGES:
 - The state content is in a component, so it keeps the size of the page down.

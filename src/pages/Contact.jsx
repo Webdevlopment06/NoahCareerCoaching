@@ -1,18 +1,6 @@
 import React, { useEffect } from 'react'
 
 export default function Contact() {
-  useEffect(() => {
-    document.title = 'Contact — Noah Career Coaching'
-    const meta = document.querySelector('meta[name="description"]')
-    const content = 'Contact Noah Career Coaching for career coaching, partnerships, and media inquiries.'
-    if (meta) meta.setAttribute('content', content)
-    else {
-      const m = document.createElement('meta')
-      m.name = 'description'
-      m.content = content
-      document.head.appendChild(m)
-    }
-  }, [])
 
   return (
     <main className="container py-5">
