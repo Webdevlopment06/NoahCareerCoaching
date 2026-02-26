@@ -36,7 +36,7 @@ all of the colors in style.css are now tied to vars at the top of the file, you 
 
 The navbar is now fixed position at the top with some space inserted via style.css
 
-the state page logic is contained within a script, significatly reducing its size
+the state page logic is contained within a script, significantly reducing its size
 
 ## Tri's notes
 Added a new hero image for resources/trades because it was blurry. The free source of the image used is [here](https://www.pexels.com/photo/photo-of-a-welder-at-work-4007300/). Feel free to replace if needed. Just found this one to fill in the blurry image spot
