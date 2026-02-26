@@ -2,16 +2,16 @@ import React, { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const CAREERS = [
-  { id: 'business', slug: 'business-management', title: 'Business', subtitle: 'Management', category: 'corporate', icon: '/images/buisness-hero-bg.jpg' },
-  { id: 'creative', slug: 'arts-design', title: 'Creative Arts', subtitle: 'Design & Media', category: 'creative', icon: '/images/art1.png' },
-  { id: 'education', slug: 'education', title: 'Education', subtitle: 'Teaching', category: 'service', icon: '/images/education-hero-bg.jpg' },
-  { id: 'finance', slug: 'finance', title: 'Finance', subtitle: 'Accounting', category: 'corporate', icon: '/images/finance1.png' },
-  { id: 'healthcare', slug: 'healthcare', title: 'Healthcare', subtitle: 'Medical', category: 'stem', icon: '/images/healthcare-hero-bg.png' },
-  { id: 'hospitality', slug: 'hospitality', title: 'Hospitality', subtitle: 'Service', category: 'service', icon: '/images/hosp-hero-bg.jpg' },
-  { id: 'law', slug: 'law', title: 'Law & Safety', subtitle: 'Legal', category: 'corporate', icon: '/images/law-hero-bg.jpg' },
-  { id: 'science', slug: 'science', title: 'Science', subtitle: 'Research', category: 'stem', icon: '/images/science-hero-bg.jpg' },
-  { id: 'trades', slug: 'trades', title: 'Skilled Trades', subtitle: 'Specialized', category: 'service', icon: '/images/trade-hero-bg.jpg' },
-  { id: 'technology', slug: 'technology', title: 'Technology', subtitle: 'IT & Coding', category: 'stem', icon: '/images/tech1.png' }
+  { id: 'business', slug: 'business-management', title: 'Business', subtitle: 'Management', category: 'corporate', icon: '/images/business-icon.png' },
+  { id: 'creative', slug: 'arts-design', title: 'Creative Arts', subtitle: 'Design & Media', category: 'creative', icon: '/images/art-icon.png' },
+  { id: 'education', slug: 'education', title: 'Education', subtitle: 'Teaching', category: 'service', icon: '/images/education-icon.png' },
+  { id: 'finance', slug: 'finance', title: 'Finance', subtitle: 'Accounting', category: 'corporate', icon: '/images/finance-icon.png' },
+  { id: 'healthcare', slug: 'healthcare', title: 'Healthcare', subtitle: 'Medical', category: 'stem', icon: '/images/healthcare-icon.png' },
+  { id: 'hospitality', slug: 'hospitality', title: 'Hospitality', subtitle: 'Service', category: 'service', icon: '/images/hospitality-icon.png' },
+  { id: 'law', slug: 'law', title: 'Law & Safety', subtitle: 'Legal', category: 'corporate', icon: '/images/law-icon.png' },
+  { id: 'science', slug: 'science', title: 'Science', subtitle: 'Research', category: 'stem', icon: '/images/science-icon.png' },
+  { id: 'trades', slug: 'trades', title: 'Skilled Trades', subtitle: 'Specialized', category: 'service', icon: '/images/trades-icon.png' },
+  { id: 'technology', slug: 'technology', title: 'Technology', subtitle: 'IT & Coding', category: 'stem', icon: '/images/tech-icon.png' }
 ]
 
 
