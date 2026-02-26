@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/Webdevlopment06/noahCareerCoaching-react/issues"
   },
-  "homepage": "https://github.com/Webdevlopment06/noahCareerCoaching-react#readme",
+  "homepage": "https://webdevlopment06.github.io/noahCareerCoaching-react",
   "dependencies": {
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
