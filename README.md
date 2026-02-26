@@ -18,12 +18,13 @@ npm run dev
 
 ### ISSUES:
 - A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them.
+- After you go to the contact page the title changes until you reload the page
 
 ### CHANGES:
 - The state content is in a component, so it keeps the size of the page down.
 - I added some new icons to explore, they are all from flaticon.com
 - The Navbar is position absolute and there is some javascript to make each page 
+- The Navbar page you are on is indicated in blue.
 
 ### IDEAS:
 - there are starting to be a lot of images. we should think about a way to organize them.
-- I'm thinking about making the navbar change color depending on what page you are on
