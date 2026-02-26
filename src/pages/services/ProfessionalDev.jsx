@@ -88,7 +88,7 @@ export default function ProfessionalDev() {
           <h2 className="fw-bold mb-4 text-center">ADVANCE YOUR CAREER WITH 1-ON-1 COACHING</h2>
           <div className="row align-items-center justify-content-center">
             <div className="col-md-4 text-center mb-4 mb-md-0">
-              <img src="/images/mentor.jpg" className="rounded-4 border border-4 border-white shadow shadow-lg" alt="Mentor" />
+              <img src="/images/mentor1.jpg" className="rounded-4 border border-4 border-white shadow shadow-lg" alt="Mentor" />
             </div>
             <div className="col-md-6">
               <h4 className="fw-bold text-dark">Personalized Leadership Strategy</h4>

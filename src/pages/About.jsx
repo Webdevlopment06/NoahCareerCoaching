@@ -34,13 +34,13 @@ export default function About() {
               </p>
 
               <div className="d-flex gap-3">
-                <a href="#" target="_blank" className="text-dark">
+                <a href="https://www.facebook.com/p/Noah-Career-Coaching-61578635225209/" target="_blank" className="text-dark">
                   <i className="bi bi-facebook fs-3"></i>
                 </a>
-                <a href="#" target="_blank" className="text-dark">
+                <a href="https://www.instagram.com/p/DOytPcRkRr5/" target="_blank" className="text-dark">
                   <i className="bi bi-instagram fs-3"></i>
                 </a>
-                <a href="#" target="_blank" className="text-dark">
+                <a href="https://www.linkedin.com/in/christopher-noah-a48a8a376" target="_blank" className="text-dark">
                   <i className="bi bi-linkedin fs-3"></i>
                 </a>
                 <a href="#" target="_blank" className="text-dark">
