@@ -17,7 +17,7 @@ npm run dev
 ## Romes Notes:
 
 ### ISSUES:
-- A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them.
+- A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them. However, This not really an issue and more of just a change. The site still looks and works fine with this.
 
 ### CHANGES:
 - The state content is in a component, so it keeps the size of the page down.
