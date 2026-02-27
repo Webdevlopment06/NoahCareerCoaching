@@ -18,6 +18,7 @@ npm run dev
 
 ### ISSUES:
 - A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them.
+- The active within the dropdown menu for the about page is finicky
 
 ### CHANGES:
 - The state content is in a component, so it keeps the size of the page down.
