@@ -27,3 +27,5 @@ npm run dev
 
 ### IDEAS:
 - there are starting to be a lot of images. we should think about a way to organize them.
+- We could add dark mode, but its not at all necessary.
+- footer with contact info and whatnot
