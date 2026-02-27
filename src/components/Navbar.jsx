@@ -58,7 +58,7 @@ export default function Navbar() {
         }
     }
 
-    // Observe About page sections and update activeAboutSection when visible
+    // Highlight about-page sections based on scroll position range
     useEffect(() => {
         if (location.pathname !== '/about') {
             setActiveAboutSection(null)
@@ -66,27 +66,50 @@ export default function Navbar() {
         }
 
         const ids = ['hero', 'founder', 'join', 'donation']
-        const elems = ids.map(id => document.getElementById(id)).filter(Boolean)
-        if (!elems.length) return
 
-        const observer = new IntersectionObserver((entries) => {
-            const visible = entries.filter(e => e.isIntersecting)
-            if (visible.length) {
-                visible.sort((a,b) => b.intersectionRatio - a.intersectionRatio)
-                setActiveAboutSection(visible[0].target.id)
+        const getSections = () => ids.map(id => document.getElementById(id)).filter(Boolean)
+
+        const computeActive = () => {
+            const sections = getSections()
+            if (!sections.length) return
+
+            const viewportMid = window.scrollY + window.innerHeight * 0.35
+
+            let chosen = null
+            for (const el of sections) {
+                const top = el.offsetTop
+                const bottom = top + el.offsetHeight
+                if (viewportMid >= top && viewportMid < bottom) {
+                    chosen = el.id
+                    break
+                }
             }
-        }, { root: null, threshold: [0.25, 0.5, 0.75] })
 
-        elems.forEach(el => observer.observe(el))
+            // fallback: if nothing contains midpoint, pick nearest by distance
+            if (!chosen) {
+                let best = { id: null, dist: Infinity }
+                for (const el of sections) {
+                    const top = el.offsetTop
+                    const mid = (top + (top + el.offsetHeight)) / 2
+                    const d = Math.abs(mid - viewportMid)
+                    if (d < best.dist) best = { id: el.id, dist: d }
+                }
+                chosen = best.id
+            }
 
-        // in case sections aren't immediately present (route change), try again shortly
-        const recheck = setTimeout(() => {
-            elems.forEach(el => { if (el) observer.observe(el) })
-        }, 120)
+            setActiveAboutSection(chosen || null)
+        }
+
+        // update on scroll/resize and run once after a short delay to allow content render
+        window.addEventListener('scroll', computeActive, { passive: true })
+        window.addEventListener('resize', computeActive)
+
+        const initial = setTimeout(computeActive, 120)
 
         return () => {
-            clearTimeout(recheck)
-            observer.disconnect()
+            clearTimeout(initial)
+            window.removeEventListener('scroll', computeActive)
+            window.removeEventListener('resize', computeActive)
             setActiveAboutSection(null)
         }
     }, [location.pathname])
