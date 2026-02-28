@@ -64,7 +64,7 @@ export default function State() {
         <div className="row">
           <div className="col-md-7">
             <div id="map-container">
-                <img src="/images/statemap.png" alt="USA Map" className="img-fluid" />
+                <img src="/images/resources-imgs/statemap.png" alt="USA Map" className="img-fluid" />
               {labels.map(l => (
                 <button
                   key={l.id}

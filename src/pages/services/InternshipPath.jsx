@@ -85,7 +85,7 @@ export default function InternshipPath() {
           <h2 className="fw-bold mb-4 text-center">LAND YOUR FIRST INTERNSHIP</h2>
           <div className="row align-items-center justify-content-center">
             <div className="col-md-4 text-center mb-4 mb-md-0">
-              <img src="/images/mentor2.jpg" className="rounded-pill border border-4 border-white shadow shadow-lg" alt="Mentor" />
+              <img src="/images/services-imgs/mentor2.jpg" className="rounded-pill border border-4 border-white shadow shadow-lg" alt="Mentor" />
             </div>
             <div className="col-md-6">
               <h4 className="fw-bold text-dark">Early Career Strategy</h4>

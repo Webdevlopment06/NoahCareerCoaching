@@ -3,7 +3,7 @@ import React from 'react'
 export default function Home() {
   return (
     <main>
-      <section className="hero-section d-flex align-items-center" style={{ minHeight: '80vh', background: "url('/images/home-hero-bg.png') no-repeat center center/cover" }}>
+      <section className="hero-section d-flex align-items-center" style={{ minHeight: '80vh', background: "url('/images/home-imgs/home-hero-bg.png') no-repeat center center/cover" }}>
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-lg-4">
@@ -82,7 +82,7 @@ export default function Home() {
               <div className="row g-4">
                 <div className="col-md-6">
                   <div className="d-flex align-items-center gap-3">
-                    <img src="/images/sanh.jpg" className="rounded-circle border border-success border-2" style={{ width: '48px', height: '48px', objectFit: 'cover' }} alt="Sanh K." />
+                    <img src="/images/home-imgs/sanh.jpg" className="rounded-circle border border-success border-2" style={{ width: '48px', height: '48px', objectFit: 'cover' }} alt="Sanh K." />
                     <div className="border-start border-secondary ps-3">
                       <p className="small blackText fst-italic mb-0">"Noah helped me land my dream job!"</p>
                       <footer className="blockquote-footer blackText mt-1 mb-0">Sanh K.</footer>

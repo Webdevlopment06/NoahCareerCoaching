@@ -21,12 +21,12 @@ export default function About() {
         <div className="container my-5">
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
-              <img src="/images/career.png" className="img-fluid w-100 h-100 object-fit-cover rounded min-h-400"
+              <img src="/images/about-imgs/career.png" className="img-fluid w-100 h-100 object-fit-cover rounded min-h-400"
                 alt="Large Section" />
             </div>
 
             <div className="col-lg-6 d-flex flex-column align-items-center text-center">
-              <img src="/images/chris.png" className="rounded-circle mb-3 img-180" alt="Christopher Noah" />
+              <img src="/images/about-imgs/chris.png" className="rounded-circle mb-3 img-180" alt="Christopher Noah" />
 
               <p className="mb-4 px-3 text-dark">
                 Christopher Noah is the CEO and founder of Noah Career Coaching. His drive and passion to provide help to

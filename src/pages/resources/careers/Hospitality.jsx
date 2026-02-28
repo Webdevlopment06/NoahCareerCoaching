@@ -4,7 +4,7 @@ export default function Hospitality() {
   return (
     <main>
       {/* section with image container */}
-      <section className="finance-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="hosp-hero-bg d-flex align-items-center justify-content-center py-5">
         <div className="container">
           {/* heading */}
           <header className=" rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
@@ -329,7 +329,7 @@ export default function Hospitality() {
         </section>
       </main>
       {/* hero section with buisness background */}
-      <section className="business-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="hosp-hero-bg d-flex align-items-center justify-content-center py-5">
         <div className="container">
           {/* VI. Conclusion Call to action */}
           <section className=" rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">

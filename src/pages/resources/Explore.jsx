@@ -2,16 +2,16 @@ import React, { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const CAREERS = [
-  { id: 'business', slug: 'business-management', title: 'Business', subtitle: 'Management', category: 'corporate', icon: '/images/business-icon.png' },
-  { id: 'creative', slug: 'arts-design', title: 'Creative Arts', subtitle: 'Design & Media', category: 'creative', icon: '/images/art-icon.png' },
-  { id: 'education', slug: 'education', title: 'Education', subtitle: 'Teaching', category: 'service', icon: '/images/education-icon.png' },
-  { id: 'finance', slug: 'finance', title: 'Finance', subtitle: 'Accounting', category: 'corporate', icon: '/images/finance-icon.png' },
-  { id: 'healthcare', slug: 'healthcare', title: 'Healthcare', subtitle: 'Medical', category: 'stem', icon: '/images/healthcare-icon.png' },
-  { id: 'hospitality', slug: 'hospitality', title: 'Hospitality', subtitle: 'Service', category: 'service', icon: '/images/hospitality-icon.png' },
-  { id: 'law', slug: 'law', title: 'Law & Safety', subtitle: 'Legal', category: 'corporate', icon: '/images/law-icon.png' },
-  { id: 'science', slug: 'science', title: 'Science', subtitle: 'Research', category: 'stem', icon: '/images/science-icon.png' },
-  { id: 'trades', slug: 'trades', title: 'Skilled Trades', subtitle: 'Specialized', category: 'service', icon: '/images/trades-icon.png' },
-  { id: 'technology', slug: 'technology', title: 'Technology', subtitle: 'IT & Coding', category: 'stem', icon: '/images/tech-icon.png' }
+  { id: 'business', slug: 'business-management', title: 'Business', subtitle: 'Management', category: 'corporate', icon: '/images/resources-imgs/explore-imgs/explore-icons/business-icon.png' },
+  { id: 'creative', slug: 'arts-design', title: 'Creative Arts', subtitle: 'Design & Media', category: 'creative', icon: '/images/resources-imgs/explore-imgs/explore-icons/art-icon.png' },
+  { id: 'education', slug: 'education', title: 'Education', subtitle: 'Teaching', category: 'service', icon: '/images/resources-imgs/explore-imgs/explore-icons/education-icon.png' },
+  { id: 'finance', slug: 'finance', title: 'Finance', subtitle: 'Accounting', category: 'corporate', icon: '/images/resources-imgs/explore-imgs/explore-icons/finance-icon.png' },
+  { id: 'healthcare', slug: 'healthcare', title: 'Healthcare', subtitle: 'Medical', category: 'stem', icon: '/images/resources-imgs/explore-imgs/explore-icons/healthcare-icon.png' },
+  { id: 'hospitality', slug: 'hospitality', title: 'Hospitality', subtitle: 'Service', category: 'service', icon: '/images/resources-imgs/explore-imgs/explore-icons/hospitality-icon.png' },
+  { id: 'law', slug: 'law', title: 'Law & Safety', subtitle: 'Legal', category: 'corporate', icon: '/images/resources-imgs/explore-imgs/explore-icons/law-icon.png' },
+  { id: 'science', slug: 'science', title: 'Science', subtitle: 'Research', category: 'stem', icon: '/images/resources-imgs/explore-imgs/explore-icons/science-icon.png' },
+  { id: 'trades', slug: 'trades', title: 'Skilled Trades', subtitle: 'Specialized', category: 'service', icon: '/images/resources-imgs/explore-imgs/explore-icons/trades-icon.png' },
+  { id: 'technology', slug: 'technology', title: 'Technology', subtitle: 'IT & Coding', category: 'stem', icon: '/images/resources-imgs/explore-imgs/explore-icons/tech-icon.png' }
 ]
 
 
@@ -32,7 +32,7 @@ export default function Explore() {
     <main>
       <section className="explore-hero">
         <video autoPlay muted loop playsInline className="hero-video">
-          <source src="/images/explorcareers.mp4" type="video/mp4" />
+          <source src="/images/resources-imgs/explore-imgs/explorcareers.mp4" type="video/mp4" />
         </video>
         <div className="container position-relative z-1 text-center text-white">
           <h1 className="fw-bold display-6">Explore Career Pathways</h1>

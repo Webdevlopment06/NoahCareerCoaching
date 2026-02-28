@@ -87,7 +87,7 @@ export default function JobSearch() {
           <div className="row align-items-center justify-content-center">
             <div className="col-md-4 text-center mb-4 mb-md-0">
               <div className="position-relative d-inline-block">
-                <img src="/images/strategy-coach.jpg" className="rounded-circle shadow" alt="Strategy Coach" />
+                <img src="/images/services-imgs/strategy-coach.jpg" className="rounded-circle shadow" alt="Strategy Coach" />
               </div>
             </div>
             <div className="col-md-6">

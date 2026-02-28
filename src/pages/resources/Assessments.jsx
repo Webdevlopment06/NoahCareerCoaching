@@ -5,7 +5,7 @@ export default function Assessments() {
     <main>
       <section className="career-top-banner">
         <div className="banner-row">
-          <div className="banner-col banner-col-img">
+            <div className="banner-col banner-col-img">
             <img src="/images/ncc4.png" alt="Banner" />
           </div>
           <div className="banner-col banner-col-text">
@@ -28,7 +28,7 @@ export default function Assessments() {
             <div className="card h-100 assessment-card featured">
               <div className="card-body d-md-flex align-items-center">
                 <div className="p-3 text-center">
-                  <img src="/images/16personalities.png" alt="16Personalities" className="img-fluid mb-3 mb-md-0 max-w-140" />
+                  <img src="/images/resources-imgs/assessments-imgs/16personalities.png" alt="16Personalities" className="img-fluid mb-3 mb-md-0 max-w-140" />
                 </div>
                 <div className="ps-md-4 d-flex flex-column">
                   <span className="badge bg-info mb-2">Featured Assessment</span>
@@ -46,7 +46,7 @@ export default function Assessments() {
           <div className="col-lg-4">
             <div className="card h-100 assessment-card text-center">
               <div className="card-body d-flex flex-column">
-                <img src="/images/truity.png" alt="Truity" className="img-fluid mb-3 max-w-100 mx-auto" />
+                <img src="/images/resources-imgs/assessments-imgs/truity.png" alt="Truity" className="img-fluid mb-3 max-w-100 mx-auto" />
                 <h3 className="card-title h4 fw-bold">Truity</h3>
                 <p className="card-text text-muted">A 15-minute free assessment to match you with suitable careers.</p>
                 <p className="small fw-bold mb-3">Quick Stat: 15 mins | Free</p>
@@ -60,7 +60,7 @@ export default function Assessments() {
           <div className="col-md-6 col-lg-3">
             <div className="card h-100 assessment-card text-center">
               <div className="card-body p-4 d-flex flex-column">
-                <img src="/images/careerfitter.png" alt="CareerFitter" className="img-fluid mb-2 max-w-80" />
+                <img src="/images/resources-imgs/assessments-imgs/careerfitter.png" alt="CareerFitter" className="img-fluid mb-2 max-w-80" />
                 <h5 className="fw-bold">CareerFitter</h5>
                 <p className="small text-muted">Focuses on work personality and home/work balance.</p>
                 <p className="extra-small fw-bold mb-3">10 mins | Free</p>
@@ -72,7 +72,7 @@ export default function Assessments() {
           <div className="col-md-6 col-lg-3">
             <div className="card h-100 assessment-card text-center">
               <div className="card-body p-4 d-flex flex-column">
-                <img src="/images/bigfuture.png" alt="BigFuture" className="img-fluid mb-2 max-w-80" />
+                <img src="/images/resources-imgs/assessments-imgs/bigfuture.png" alt="BigFuture" className="img-fluid mb-2 max-w-80" />
                 <h5 className="fw-bold">BigFuture</h5>
                 <p className="small text-muted">College Board quiz matching interests to careers.</p>
                 <p className="extra-small fw-bold mb-3">15 mins | Free</p>
@@ -84,7 +84,7 @@ export default function Assessments() {
           <div className="col-md-6 col-lg-3">
             <div className="card h-100 assessment-card text-center">
               <div className="card-body p-4 d-flex flex-column">
-                <img src="/images/coursera.png" alt="Coursera" className="img-fluid mb-2 max-w-80" />
+                <img src="/images/resources-imgs/assessments-imgs/coursera.png" alt="Coursera" className="img-fluid mb-2 max-w-80" />
                 <h5 className="fw-bold">Coursera</h5>
                 <p className="small text-muted">A deep dive into skills, interests, and working styles.</p>
                 <p className="extra-small fw-bold mb-3">20 mins | Free</p>
@@ -96,7 +96,7 @@ export default function Assessments() {
           <div className="col-md-6 col-lg-3">
             <div className="card h-100 assessment-card text-center">
               <div className="card-body p-4 d-flex flex-column">
-                <img src="/images/Onet.png" alt="O*net" className="img-fluid mb-2 max-w-80" />
+                <img src="/images/resources-imgs/assessments-imgs/Onet.png" alt="O*net" className="img-fluid mb-2 max-w-80" />
                 <h5 className="fw-bold">O*NET</h5>
                 <p className="small text-muted">The industry standard for detailed job exploration.</p>
                 <p className="extra-small fw-bold mb-3">15 mins | Free</p>
