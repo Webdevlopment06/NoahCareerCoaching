@@ -33,8 +33,6 @@ npm run dev
 
 ### IDEAS:
 - We could add dark mode, but its not at all necessary.
-- footer with contact info and whatnot --DOING--
 
-### DOING (first priority anyway):
-- footer
+### DOING (first priority anyway) 
 - fixing deployment images

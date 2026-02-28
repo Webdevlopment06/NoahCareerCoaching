@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import BackToTop from './components/BackToTop'
 import ScrollToTop from './components/ScrollToTop'
+import Footer from './components/Footer'
 
 // Page imports
 import Home from './pages/Home'
@@ -81,6 +82,7 @@ export default function App() {
         <Route path="/services/resume-templates" element={<ResumeTemplates />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </>
   )
 }
