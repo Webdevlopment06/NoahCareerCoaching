@@ -32,9 +32,9 @@ npm run dev
 - the services pages all use a css animation gradient for the top
 
 ### IDEAS:
-- there are starting to be a lot of images. we should think about a way to organize them.
 - We could add dark mode, but its not at all necessary.
-- footer with contact info and whatnot
+- footer with contact info and whatnot --DOING--
 
 ### DOING (first priority anyway):
+- footer
 - fixing deployment images
