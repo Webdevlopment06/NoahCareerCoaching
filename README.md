@@ -36,5 +36,5 @@ npm run dev
 - footer with contact info and whatnot
 
 ### DOING (first priority anyway):
-career pages implement css animation
-fixing deployment images
+- career pages implement css animation
+- fixing deployment images
