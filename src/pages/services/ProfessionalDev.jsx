@@ -3,7 +3,7 @@ import React from 'react'
 export default function ProfessionalDev() {
   return (
     <main>
-      <section className="py-5 text-white bg-grad-multi1">
+      <section className="hero-gradient-indigo-orange py-5 text-white">
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">

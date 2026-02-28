@@ -3,7 +3,7 @@ import React from 'react'
 export default function Interview() {
   return (
     <main>
-      <section className="py-5 text-white bg-grad-dark2">
+      <section className="hero-gradient-indigo-orange py-5 text-white">
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">

@@ -29,6 +29,7 @@ npm run dev
 - The Navbar is position absolute and there is some javascript to make each page 
 - The Navbar page you are on is indicated in blue.
 - images in now organized simlarly to how the pages are, with 2 other folders, one for unused imgs with no references, and one for imgs with refs but that do not appear in the website
+- the services pages all use a css animation gradient for the top
 
 ### IDEAS:
 - there are starting to be a lot of images. we should think about a way to organize them.
@@ -36,5 +37,4 @@ npm run dev
 - footer with contact info and whatnot
 
 ### DOING (first priority anyway):
-- career pages implement css animation
 - fixing deployment images

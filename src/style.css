@@ -409,4 +409,28 @@ img { max-width: 100%; height: auto; display: block; }
 .bg-grad-equale1 { background: linear-gradient(135deg, #2c3e50 0%, #000000 100%); }
 .bg-grad-equale2 { background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%); }
 
+/* Top-hero animated gradient used on services pages */
+.hero-gradient-indigo-orange {
+    background: linear-gradient(270deg, #1800ad, #f1b327);
+    background-size: 400% 400%;
 
+    -webkit-animation: gradientBg 20s ease infinite;
+    -moz-animation: gradientBg 20s ease infinite;
+    animation: gradientBg 20s ease infinite;
+}
+
+@-webkit-keyframes gradientBg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes gradientBg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes gradientBg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
