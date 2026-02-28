@@ -18,10 +18,10 @@ npm run dev
 
 ### ISSUES:
 - A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them. However, This not really an issue and more of just a change. The site still looks and works fine with this.
-the images are broken in the deployment for some reason
-some files still use in line styles instead of bootstrap
-some of the career pages hero-bgs are kind of odd and low resolution
-trades is still using the old career page look
+- the images are broken in the deployment for some reason
+- some files still use in line styles instead of bootstrap
+- some of the career pages hero-bgs are kind of odd and low resolution
+- trades is still using the old career page look
 
 ### CHANGES:
 - The state content is in a component, so it keeps the size of the page down.
