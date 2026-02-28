@@ -14,7 +14,7 @@ export default function Resume() {
               </h2>
 
               <div className="d-flex gap-3">
-                <a href="#" className="btn btn-primary btn-lg px-4 rounded-pill">Get Started Free</a>
+                <a href="/contact" className="btn btn-primary btn-lg px-4 rounded-pill">Get Started Free</a>
                 <a href="/services/resume-templates" className="btn btn-warning btn-lg px-4 rounded-pill">View Templates</a>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function Resume() {
                   <div className="col-9 border-start">
                     <h5 className="card-title mb-1">The Blueprint</h5>
                     <p className="card-text small text-muted">Entry-level or students starting from scratch.</p>
-                    <button className="btn btn-warning">Get Started</button>
+                    <a href="/services/build-resume" className="btn btn-warning">Get Started</a>
                   </div>
                 </div>
               </div>
@@ -105,7 +105,7 @@ export default function Resume() {
                   <div className="col-9 border-start">
                     <h5 className="card-title mb-1">The Career Pivot</h5>
                     <p className="card-text small text-muted">Career changers needing to highlight transferable skills.</p>
-                    <button className="btn btn-warning">View Guide</button>
+                    <a href="/services/professional-dev" className="btn btn-warning">View Guide</a>
                   </div>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function Resume() {
                   <div className="col-9 border-start">
                     <h5 className="card-title mb-1">The Executive</h5>
                     <p className="card-text small text-muted">Senior leaders focusing on ROI and Strategy</p>
-                    <button className="btn btn-warning">See Examples</button>
+                    <a href="/services/resume-templates" className="btn btn-warning">See Examples</a>
                   </div>
                 </div>
               </div>

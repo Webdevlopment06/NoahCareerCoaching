@@ -3,7 +3,7 @@ import React from 'react'
 export default function Youth() {
   return (
     <main>
-      <section className="py-5 text-white bg-grad-ff6b6b">
+      <section className="py-5 text-white hero-gradient-indigo-orange">
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">
@@ -154,7 +154,7 @@ export default function Youth() {
                 <div className="col-sm-6"><i className="bi bi-check-circle-fill text-danger"></i> Resume Review</div>
               </div>
 
-              <a href="#" className="btn btn-danger btn-lg rounded-pill px-5 py-3 mt-4 shadow fw-bold text-uppercase">Book My
+              <a href="/contact" className="btn btn-danger btn-lg rounded-pill px-5 py-3 mt-4 shadow fw-bold text-uppercase">Book My
                 Practice Session</a>
             </div>
           </div>

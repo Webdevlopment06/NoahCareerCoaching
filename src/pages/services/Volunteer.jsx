@@ -102,7 +102,7 @@ export default function Volunteer() {
                 <li className="mb-2"><i className="bi bi-shield-lock text-success me-2"></i> Safety & Ethics Training</li>
                 <li className="mb-2"><i className="bi bi-chat-dots text-success me-2"></i> Meet Fellow Volunteers</li>
               </ul>
-              <a href="#" className="btn btn-success rounded-pill px-4 py-2 mt-3 shadow-sm">Schedule My Orientation</a>
+              <a href="/contact" className="btn btn-success rounded-pill px-4 py-2 mt-3 shadow-sm">Schedule My Orientation</a>
             </div>
           </div>
         </div>

@@ -373,10 +373,10 @@ export default function Navbar() {
                         </ul>
 
                         <div className="text-center">
-                            <a href="#donate" className="btn btn-warning navfont ms-lg-3">GET FREE COACHING</a>
+                            <a href="/contact" className="btn btn-warning navfont ms-lg-3">GET FREE COACHING</a>
                         </div>
                         <div className="text-center">
-                            <a href="#donate" className="btn btn-warning navfont ms-lg-3">DONATE</a>
+                            <a href="/about#donation" onClick={(e) => handleHash(e, '/about', 'donation')} className="btn btn-warning navfont ms-lg-3">DONATE</a>
                         </div>
                     </div>
                 </div>

@@ -98,7 +98,7 @@ export default function JobSearch() {
                 <li className="mb-2"><i className="bi bi-check2-square text-primary me-2"></i> Hidden Market Research</li>
                 <li className="mb-2"><i className="bi bi-check2-square text-primary me-2"></i> Weekly Action Planner</li>
               </ul>
-              <a href="#" className="btn btn-dark rounded-pill px-5 py-3 mt-3 shadow-lg">Start My Strategy Sprint</a>
+              <a href="/contact" className="btn btn-dark rounded-pill px-5 py-3 mt-3 shadow-lg">Start My Strategy Sprint</a>
             </div>
           </div>
         </div>

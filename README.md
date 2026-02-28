@@ -22,6 +22,7 @@ npm run dev
 - some files still use in line styles instead of bootstrap
 - some of the career pages hero-bgs are kind of odd and low resolution
 - trades is still using the old career page look
+- I found where some images in the career pages are and because of the image sorting it can't find them I need to fix that.
 
 ### CHANGES:
 - The state content is in a component, so it keeps the size of the page down.
@@ -35,4 +36,4 @@ npm run dev
 - We could add dark mode, but its not at all necessary.
 
 ### DOING (first priority anyway) 
-- fixing deployment images
+fixing images in career pages
