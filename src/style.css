@@ -411,7 +411,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Top-hero animated gradient used on services pages */
 .hero-gradient-indigo-orange {
-    background: linear-gradient(270deg, #1800ad, #f1b327);
+    /* swapped: yellow -> indigo, using only the two licensed colors */
+    background: linear-gradient(270deg, #f1b327 0%, #f1b327 35%, #1800ad 65%, #1800ad 100%);
     background-size: 400% 400%;
 
     -webkit-animation: gradientBg 20s ease infinite;
