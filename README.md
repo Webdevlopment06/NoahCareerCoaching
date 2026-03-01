@@ -26,6 +26,8 @@ npm run dev
 - Education uses the business images for the learn more dropdowns
 - Healthcare and Hospitality use the finance images for the learn more dropdowns
 - when you press explore roles on a career page it gets all jittery
+- all of the image refs in science and trades do not have images
+
 
 ### CHANGES:
 - The state content is in a component, so it keeps the size of the page down.

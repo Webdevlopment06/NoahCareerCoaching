@@ -51,7 +51,7 @@ export default function Technology() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/techpath/tech1.png"
+                      src="/images/career-imgs/tech-imgs/tech1.png"
                       alt="Software Development Illustration"
                       className="img-fluid rounded-2"
                     />
@@ -132,7 +132,7 @@ export default function Technology() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/techpath/tech3.png"
+                      src="/images/career-imgs/tech-imgs/tech3.png"
                       alt="Cloud Infrastructure Illustration"
                       className="img-fluid rounded-2"
                     />
@@ -150,7 +150,7 @@ export default function Technology() {
                 <div className="col-12 col-lg-6 order-lg-1">
                   <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/techpath/tech2.png"
+                      src="/images/career-imgs/tech-imgs/tech2.png"
                       alt="Specialized Roles Illustration"
                       className="img-fluid rounded-2"
                     />
@@ -304,7 +304,7 @@ export default function Technology() {
                 <div className="col-12 col-lg-6 order-lg-2">
                   <div className="h-100 bg-light rounded-4 shadow-sm border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/techpath/tech4.png"
+                      src="/images/career-imgs/tech-imgs/tech4.png"
                       alt="Diagram showing different technology career pathways"
                       className="img-fluid rounded-2"
                     />
