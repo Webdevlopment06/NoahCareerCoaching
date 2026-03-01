@@ -380,7 +380,7 @@ export default function Education() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/buisness1.jpg"
+                      src="/images/career-imgs/business-imgs/buisness1.jpg"
                       alt="Strategy Planning"
                       className="img-fluid rounded-3 shadow-sm"
                     />
@@ -495,7 +495,7 @@ export default function Education() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/buisness2.jpeg"
+                      src="/images/career-imgs/business-imgs/buisness2.jpg"
                       alt="Finance and HR"
                       className="img-fluid rounded-3 shadow-sm"
                     />
@@ -526,7 +526,7 @@ export default function Education() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/buisness3.jpg"
+                      src="/images/career-imgs/business-imgs/buisness3.jpg"
                       alt="Operations and PMP"
                       className="img-fluid rounded-3 shadow-sm"
                     />

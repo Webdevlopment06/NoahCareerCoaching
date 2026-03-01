@@ -353,7 +353,7 @@ export default function BusinessManagement() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/buisness1.jpg"
+                      src="/images/career-imgs/business-imgs/buisness1.jpg"
                       alt="Strategy Planning"
                       className="img-fluid rounded-3 shadow-sm"
                     />
@@ -468,7 +468,7 @@ export default function BusinessManagement() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/buisness2.jpeg"
+                      src="/images/career-imgs/business-imgs/buisness2.jpeg"
                       alt="Finance and HR"
                       className="img-fluid rounded-3 shadow-sm"
                     />
@@ -499,7 +499,7 @@ export default function BusinessManagement() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/buisness3.jpg"
+                      src="/images/career-imgs/business-imgs/buisness3.jpg"
                       alt="Operations and PMP"
                       className="img-fluid rounded-3 shadow-sm"
                     />
@@ -540,69 +540,7 @@ export default function BusinessManagement() {
             </div>
           </div>
         </div>
-      </div>
-      {/* modal for essential skills and knowledge */}
-      <div className="modal fade" id="opsModal" tabIndex={-1} aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered modal-xl">
-          <div className="modal-content border-0 rounded-4 shadow-lg">
-            <div className="modal-header bg-warning text-black rounded-top-4">
-              <h5 className="modal-title fw-bold">
-                Operations &amp; Supply Chain Insight
-              </h5>
-              <button
-                type="button"
-                className="btn-close btn-close-white"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              />
-            </div>
-            <div className="modal-body p-4 p-md-5">
-              <div className="row g-4">
-                <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
-                    <img
-                      src="images/buisness3.jpg"
-                      alt="Operations and PMP"
-                      className="img-fluid rounded-3 shadow-sm"
-                    />
-                  </div>
-                </div>
-                <div className="col-12 col-lg-6">
-                  <div className="d-flex flex-column gap-3 h-100">
-                    <div className="p-4 bg-warning-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">
-                        Operations Manager
-                      </p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Optimizing daily processes, improving efficiency,
-                        and managing quality control.
-                      </p>
-                    </div>
-                    <div className="p-4 bg-primary-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">
-                        Supply Chain Specialist
-                      </p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Managing logistics, procurement, and inventory
-                        smooth flow of goods.
-                      </p>
-                    </div>
-                    <div className="p-4 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">
-                        Project Manager (PMP)
-                      </p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Defining scope, managing resources, mitigating
-                        risks, and delivering projects.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </div>      
     </main>
   )
 }

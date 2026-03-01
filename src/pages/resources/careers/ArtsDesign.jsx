@@ -31,7 +31,7 @@ export default function ArtsDesign() {
           <div className="container py-5">
             <div className="row g-4">
               <div className="col-lg-4">
-                <div className="card creative-card card-flyer h-100 p-4 shadow-sm">
+                  <div className="card creative-card h-100 p-4 shadow-sm">
                   <div className="icon-box mb-3">
                     <i className="bi bi-lightbulb fs-3"></i>
                   </div>
@@ -42,7 +42,7 @@ export default function ArtsDesign() {
               </div>
 
               <div className="col-lg-4">
-                <div className="card creative-card card-flyer h-100 p-4 shadow-sm">
+                <div className="card creative-card h-100 p-4 shadow-sm">
                   <div className="icon-box mb-3">
                     <i className="bi bi-graph-up-arrow fs-3"></i>
                   </div>
@@ -53,7 +53,7 @@ export default function ArtsDesign() {
               </div>
 
               <div className="col-lg-4">
-                <div className="card creative-card card-flyer h-100 p-4 shadow-sm">
+                <div className="card creative-card h-100 p-4 shadow-sm">
                   <div className="icon-box mb-3">
                     <i className="bi bi-gear fs-3"></i>
                   </div>
@@ -185,7 +185,7 @@ export default function ArtsDesign() {
             <p className="fs-5 mb-4 mx-auto text-white max-w-700">
               The only limits in the creative world are the ones you place on yourself. Dedicate yourself to practice and never stop sharing your work.
             </p>
-            <a href="#roles" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">
+            <a href="/contact" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">
               Start Sketching Your Career
             </a>
           </section>
@@ -204,7 +204,7 @@ export default function ArtsDesign() {
               <div className="row g-4">
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
-                    <img src="/images/art1.png" alt="Strategy Planning" className="img-fluid rounded-3 shadow-sm" />
+                    <img src="/images/career-imgs/art-imgs/art1.png" alt="Strategy Planning" className="img-fluid rounded-3 shadow-sm" />
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">
@@ -268,7 +268,7 @@ export default function ArtsDesign() {
                 </div>
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
-                    <img src="/images/art2.png" alt="Finance and HR" className="img-fluid rounded-3 shadow-sm" />
+                    <img src="/images/career-imgs/art-imgs/art2.png" alt="Finance and HR" className="img-fluid rounded-3 shadow-sm" />
                   </div>
                 </div>
               </div>
@@ -288,7 +288,7 @@ export default function ArtsDesign() {
               <div className="row g-4">
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
-                    <img src="/images/art3.png" alt="Operations and PMP" className="img-fluid rounded-3 shadow-sm" />
+                    <img src="/images/career-imgs/art-imgs/art3.png" alt="Operations and PMP" className="img-fluid rounded-3 shadow-sm" />
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">

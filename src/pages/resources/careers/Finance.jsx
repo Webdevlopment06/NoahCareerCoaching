@@ -376,7 +376,7 @@ export default function Finance() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="/images/finance1.png"
+                      src="/images/career-imgs/finance-imgs/finance1.png"
                       alt="Investment Banking and Advisory"
                       className="img-fluid rounded-3 shadow-sm"
                     />
@@ -491,7 +491,7 @@ export default function Finance() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="/images/finance2.png"
+                      src="/images/career-imgs/finance-imgs/finance2.png"
                       alt="Finance and HR"
                       className="img-fluid rounded-3 shadow-sm"
                     />
@@ -520,7 +520,7 @@ export default function Finance() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="/images/finance3.png"
+                      src="/images/career-imgs/finance-imgs/finance3.png"
                       alt="Operations and PMP"
                       className="img-fluid rounded-3 shadow-sm"
                     />

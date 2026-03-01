@@ -118,16 +118,16 @@ img { max-width: 100%; height: auto; display: block; }
 
 [class*="-hero-bg"] > .container { position: relative; z-index: 2; }
 
-.arts-hero-bg      { background-image: url('/images/career-imgs/artherobg.png'); }
-.tech-hero-bg      { background-image: url('/images/career-imgs/tech-hero-bg.jpg'); }
-.business-hero-bg  { background-image: url('/images/career-imgs/buisness-hero-bg.jpg'); }
-.education-hero-bg { background-image: url('/images/career-imgs/education-hero-bg.jpg'); }
-.finance-hero-bg   { background-image: url('/images/career-imgs/finance-hero-bg.jpg'); }
-.health-hero-bg    { background-image: url('/images/career-imgs/healthcare-hero-bg.png'); }
-.hosp-hero-bg      { background-image: url('/images/career-imgs/hosp-hero-bg.jpg'); }
-.law-hero-bg       { background-image: url('/images/career-imgs/law-hero-bg.jpg'); }
-.science-hero-bg   { background-image: url('/images/career-imgs/science-hero-bg.jpg'); }
-.trades-hero-bg     { background-image: url('/images/career-imgs/trade-hero-bg.jpg'); }
+.arts-hero-bg      { background-image: url('/images/career-imgs/bgs/artherobg.png'); }
+.tech-hero-bg      { background-image: url('/images/career-imgs/bgs/tech-hero-bg.jpg'); }
+.business-hero-bg  { background-image: url('/images/career-imgs/bgs/buisness-hero-bg.jpg'); }
+.education-hero-bg { background-image: url('/images/career-imgs/bgs/education-hero-bg.jpg'); }
+.finance-hero-bg   { background-image: url('/images/career-imgs/bgs/finance-hero-bg.jpg'); }
+.health-hero-bg    { background-image: url('/images/career-imgs/bgs/healthcare-hero-bg.png'); }
+.hosp-hero-bg      { background-image: url('/images/career-imgs/bgs/hosp-hero-bg.jpg'); }
+.law-hero-bg       { background-image: url('/images/career-imgs/bgs/law-hero-bg.jpg'); }
+.science-hero-bg   { background-image: url('/images/career-imgs/bgs/science-hero-bg.jpg'); }
+.trades-hero-bg     { background-image: url('/images/career-imgs/bgs/trade-hero-bg.jpg'); }
 
 /* 5. CAROUSEL & CARDS */
 .carousel-item img { height: 400px; object-fit: cover; border-radius: 10px; }
