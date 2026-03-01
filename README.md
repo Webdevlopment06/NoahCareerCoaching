@@ -25,7 +25,6 @@ npm run dev
 - I found where some images in the career pages are and because of the image sorting it can't find them I need to fix that.
 - Education uses the business images for the learn more dropdowns
 - Healthcare and Hospitality use the finance images for the learn more dropdowns
-- when you press explore roles on a career page it gets all jittery
 - all of the image refs in science and trades do not have images
 
 
@@ -41,4 +40,4 @@ npm run dev
 - We could add dark mode, but its not at all necessary.
 
 ### DOING (first priority anyway) 
-- fixing images in career pages
+cleaning code and styles
