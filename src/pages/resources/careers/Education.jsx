@@ -1,12 +1,11 @@
 import React from 'react'
+import SmoothScrollLink from '/src/components/SmoothScrollLink'
 
 export default function Education() {
   return (
     <main>
-      {/* section with image container */}
       <section className="education-hero-bg d-flex align-items-center justify-content-center py-5">
         <div className="container">
-          {/* heading */}
           <header className=" rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
             <h1 className="display-3 fw-bolder text-white mb-3">
               Your Future in{" "}
@@ -18,12 +17,12 @@ export default function Education() {
               and constantly evolving.
             </p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
-              <a
-                href="#roles"
+              <SmoothScrollLink
+                to="roles"
                 className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark"
               >
                 Explore Roles
-              </a>
+              </SmoothScrollLink>
               <a
                 href="#education"
                 className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
@@ -32,14 +31,13 @@ export default function Education() {
               </a>
             </div>
           </header>
-          {/* end of section and div */}
         </div>
       </section>
       {/* end of art image */}
-      <main className="container-xl py-4 py-lg-5">
+      <div className="container-xl py-4 py-lg-5">
         {/* start of second */}
         {/* primary color backing */}
-        <section id="roles" className="mb-5">
+          <section id="roles" className="mb-5">
           <h2 className="fs-2 fw-bold section-heading-custom text-black">
             Key Education &amp; Training Roles
           </h2>
@@ -185,12 +183,6 @@ export default function Education() {
             id="skills"
             className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5"
           >
-            <h2 className="fs-2 fw-bold section-heading-custom text-dark">
-              Essential Skills and Knowledge
-            </h2>
-            <p className="text-muted mb-5">
-              The combination of pedagogical knowledge and interpersonal mastery.
-            </p>
             <div className="row g-5">
               <div className="col-lg-6">
                 <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">
@@ -330,7 +322,7 @@ export default function Education() {
             </div>
           </section>
         </section>
-      </main>
+      </div>
       {/* hero section with buisness background */}
       <section className="education-hero-bg d-flex align-items-center justify-content-center py-5">
         <div className="container">
@@ -344,12 +336,12 @@ export default function Education() {
               yourself. Dedicate yourself to practice and never stop sharing your
               work.
             </p>
-            <a
-              href="#roles"
+            <SmoothScrollLink
+              to="roles"
               className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
             >
               Start Sketching Your Career
-            </a>
+            </SmoothScrollLink>
           </section>
           {/* end of section and div */}
         </div>
@@ -568,6 +560,6 @@ export default function Education() {
           </div>
         </div>
       </div>
-    </main>
+      </main>
   )
 }

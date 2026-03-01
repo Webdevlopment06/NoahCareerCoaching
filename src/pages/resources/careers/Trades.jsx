@@ -1,4 +1,5 @@
 import React from 'react'
+import SmoothScrollLink from '/src/components/SmoothScrollLink'
 
 export default function Trades() {
   return (
@@ -18,18 +19,18 @@ export default function Trades() {
               pathways to self-employment.
             </p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
-              <a
-                href="#roles"
+              <SmoothScrollLink
+                to="roles"
                 className="btn btn-danger btn-lg fw-semibold shadow-sm rounded-3 text-white"
               >
                 Explore Trades
-              </a>
-              <a
-                href="#education"
+              </SmoothScrollLink>
+              <SmoothScrollLink
+                to="education"
                 className="btn btn-custom-secondary btn-lg fw-semibold shadow-sm rounded-3 text-white"
               >
                 Find an Apprenticeship
-              </a>
+              </SmoothScrollLink>
             </div>
           </header>
         </div>
@@ -381,12 +382,12 @@ export default function Trades() {
               work come to life. Contact local unions or trade schools to start your
               apprenticeship application today.
             </p>
-            <a
-              href="#roles"
+            <SmoothScrollLink
+              to="roles"
               className="btn btn-danger btn-lg fw-bold rounded-3 shadow-lg text-white"
             >
               Apply Your Skills
-            </a>
+            </SmoothScrollLink>
           </section>
         </div>
       </section>

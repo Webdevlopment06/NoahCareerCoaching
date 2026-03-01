@@ -1,4 +1,5 @@
 import React from 'react'
+import SmoothScrollLink from '/src/components/SmoothScrollLink'
 
 export default function Hospitality() {
   return (
@@ -17,12 +18,12 @@ export default function Hospitality() {
               experiences in hotels, restaurants, events, and travel services.
             </p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
-              <a
-                href="#roles"
+              <SmoothScrollLink
+                to="roles"
                 className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark"
               >
                 Explore Roles
-              </a>
+              </SmoothScrollLink>
               <a
                 href="#education"
                 className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
@@ -31,7 +32,6 @@ export default function Hospitality() {
               </a>
             </div>
           </header>
-          {/* end of section and div */}
         </div>
       </section>
       {/* end of art image */}
@@ -341,12 +341,12 @@ export default function Hospitality() {
               network and focusing on service skills, which are the cornerstone of
               success in this industry.
             </p>
-            <a
-              href="#roles"
+            <SmoothScrollLink
+              to="roles"
               className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
             >
               Book Your Career Journey
-            </a>
+            </SmoothScrollLink>
           </section>
           {/* end of section and div */}
         </div>

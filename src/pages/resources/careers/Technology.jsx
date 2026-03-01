@@ -1,4 +1,5 @@
 import React from 'react'
+import SmoothScrollLink from '/src/components/SmoothScrollLink'
 
 export default function Technology() {
   return (
@@ -18,18 +19,18 @@ export default function Technology() {
               diverse roles, skills, and paths available to you.
             </p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
-              <a
-                href="#roles"
+              <SmoothScrollLink
+                to="roles"
                 className="btn btn-danger btn-lg fw-semibold shadow-sm rounded-3 text-white"
               >
                 Explore Roles
-              </a>
-              <a
-                href="#education"
+              </SmoothScrollLink>
+              <SmoothScrollLink
+                to="education"
                 className="btn btn-custom-secondary btn-lg fw-semibold shadow-sm rounded-3"
               >
                 Find Your Path
-              </a>
+              </SmoothScrollLink>
             </div>
           </header>
         </div>
@@ -368,12 +369,12 @@ export default function Technology() {
               project today. Don't wait for perfection—start learning and building
               now.
             </p>
-            <a
-              href="#roles"
+            <SmoothScrollLink
+              to="roles"
               className="btn btn-light btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
             >
               Choose Your Tech Career Path
-            </a>
+            </SmoothScrollLink>
           </section>
         </div>
       </section>

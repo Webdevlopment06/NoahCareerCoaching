@@ -1,4 +1,5 @@
 import React from 'react'
+import SmoothScrollLink from '/src/components/SmoothScrollLink'
 
 export default function Science() {
   return (
@@ -18,18 +19,18 @@ export default function Science() {
               and environmental solutions.
             </p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
-              <a
-                href="#roles"
+              <SmoothScrollLink
+                to="roles"
                 className="btn btn-success btn-lg fw-semibold shadow-sm rounded-3 text-white"
               >
                 Explore Research Fields
-              </a>
-              <a
-                href="#education"
+              </SmoothScrollLink>
+              <SmoothScrollLink
+                to="education"
                 className="btn btn-info btn-lg fw-semibold shadow-sm rounded-3 text-dark"
               >
                 View Academic Paths
-              </a>
+              </SmoothScrollLink>
             </div>
           </header>
         </div>
@@ -391,12 +392,12 @@ export default function Science() {
               research or laboratory work early to validate your passion and build
               essential practical skills.
             </p>
-            <a
-              href="#roles"
+            <SmoothScrollLink
+              to="roles"
               className="btn btn-success btn-lg fw-bold rounded-3 shadow-lg text-white"
             >
               Begin Your Research
-            </a>
+            </SmoothScrollLink>
           </section>
         </div>
       </section>

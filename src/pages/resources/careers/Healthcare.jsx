@@ -1,4 +1,5 @@
 import React from 'react'
+import SmoothScrollLink from '/src/components/SmoothScrollLink'
 
 export default function Healthcare() {
   return (
@@ -17,12 +18,12 @@ export default function Healthcare() {
               from direct patient care to research and administration.
             </p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
-              <a
-                href="#roles"
+              <SmoothScrollLink
+                to="roles"
                 className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark"
               >
                 Explore Roles
-              </a>
+              </SmoothScrollLink>
               <a
                 href="#education"
                 className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
@@ -31,7 +32,6 @@ export default function Healthcare() {
               </a>
             </div>
           </header>
-          {/* end of section and div */}
         </div>
       </section>
       {/* end of art image */}
@@ -353,12 +353,12 @@ export default function Healthcare() {
               Start by seeking clinical experience today to solidify your commitment
               and path.
             </p>
-            <a
-              href="#roles"
+            <SmoothScrollLink
+              to="roles"
               className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
             >
               Find Your Healthcare Calling
-            </a>
+            </SmoothScrollLink>
           </section>
           {/* end of section and div */}
         </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import SmoothScrollLink from '/src/components/SmoothScrollLink'
 
 export default function ArtsDesign() {
   return (
@@ -16,7 +17,7 @@ export default function ArtsDesign() {
               passion with commercial demand, requiring both artistry and technical skill.
             </p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
-              <a href="#roles" className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark">Explore Roles</a>
+              <SmoothScrollLink to="roles" className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark">Explore Roles</SmoothScrollLink>
               <a href="#education" className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3">Find Your Path</a>
             </div>
           </header>
