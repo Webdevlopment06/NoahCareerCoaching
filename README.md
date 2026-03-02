@@ -22,7 +22,6 @@ npm run dev
 - some files still use in line styles instead of bootstrap
 - some of the career pages hero-bgs are kind of odd and low resolution
 - trades, technology, science, and law are still using the old career page look
-- I found where some images in the career pages are and because of the image sorting it can't find them I need to fix that.
 - Education uses the business images for the learn more dropdowns
 - Healthcare and Hospitality use the finance images for the learn more dropdowns
 - all of the image refs in science and trades do not have images
@@ -33,8 +32,7 @@ npm run dev
 - I added some new icons to explore, they are all from flaticon.com
 - The Navbar is position absolute and there is some javascript to make each page 
 - The Navbar page you are on is indicated in blue.
-- images in now organized simlarly to how the pages are, with 2 other folders, one for unused imgs with no references, and one for imgs with refs but that do not appear in the website
-- the services pages all use a css animation gradient for the top
+- images in now organized simlarly to how the pages are.
 
 ### IDEAS:
 - We could add dark mode, but its not at all necessary.

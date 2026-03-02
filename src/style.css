@@ -162,7 +162,14 @@ img { max-width: 100%; height: auto; display: block; }
     transition: transform 0.3s ease;
 }
 
-.career-mini-card:hover .career-icon { transform: scale(1.1); }
+.career-mini-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.career-mini-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.career-mini-card:hover .career-icon { transform: scale(1.2); }
 
 /* 6. BUTTONS */
 .orange-button { background-color: #f1b327; color: #fff; border: none; }
@@ -435,3 +442,4 @@ img { max-width: 100%; height: auto; display: block; }
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+/* End of stylesheet */

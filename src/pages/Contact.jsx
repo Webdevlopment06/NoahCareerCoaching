@@ -27,7 +27,7 @@ export default function Contact() {
               <a href="https://www.instagram.com/noahcareercoaching/" target="_blank" rel="noreferrer">Instagram</a>
             </li>
             <li className="mb-2">
-              <i className="bi bi-camera-video me-2"></i>
+              <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tiktok.svg" alt="TikTok" className="me-2" style={{ width: '1.25em', height: '1.25em', display: 'inline-block', verticalAlign: '-0.125em' }} />
               <a href="https://www.tiktok.com/@noahcareercoaching" target="_blank" rel="noreferrer">TikTok</a>
             </li>
           </ul>
