@@ -53,7 +53,7 @@ export default function Science() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/sciencepath/biology1.png"
+                      src="/images/career-imgs/sci-imgs/science1.jpg"
                       alt="Biologists and Medical Researchers in a lab"
                       className="img-fluid rounded-2"
                     />
@@ -138,7 +138,7 @@ export default function Science() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/sciencepath/physical2.png"
+                      src="/images/career-imgs/sci-imgs/science2.jpeg"
                       alt="Environmental Science and Chemistry Lab"
                       className="img-fluid rounded-2"
                     />
@@ -156,7 +156,7 @@ export default function Science() {
                 <div className="col-12 col-lg-6 order-lg-1">
                   <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/sciencepath/data3.png"
+                      src="/images/career-imgs/sci-imgs/science3.jpg"
                       alt="Data Scientist and Computational Modeling"
                       className="img-fluid rounded-2"
                     />
@@ -321,7 +321,7 @@ export default function Science() {
               <div className="col-12 col-lg-6 order-lg-2">
                 <div className="h-100 bg-light rounded-4 shadow-sm border d-flex align-items-center justify-content-center p-3">
                   <img
-                    src="images/sciencepath/education4.png"
+                    src="/images/career-imgs/sci-imgs/science4.png"
                     alt="Scientific Career Path Diagram showing degree and research flow"
                     className="img-fluid rounded-2"
                   />
