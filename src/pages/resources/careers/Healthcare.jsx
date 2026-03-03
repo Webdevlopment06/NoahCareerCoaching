@@ -389,7 +389,7 @@ export default function Healthcare() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="/images/career-imgs/finance-imgs/finance1.png"
+                      src="/images/career-imgs/health-imgs/health1.jpg"
                       alt="Investment Banking and Advisory"
                       className="img-fluid rounded-3 shadow-sm"
                     />
@@ -502,7 +502,7 @@ export default function Healthcare() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="/images/career-imgs/finance-imgs/finance2.png"
+                      src="/images/career-imgs/health-imgs/health2.jpg"
                       alt="Finance and HR"
                       className="img-fluid rounded-3 shadow-sm"
                     />
@@ -531,7 +531,7 @@ export default function Healthcare() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="/images/career-imgs/business-imgs/buisness3.jpg"
+                      src="/images/career-imgs/health-imgs/health3.jpg"
                       alt="Operations and PMP"
                       className="img-fluid rounded-3 shadow-sm"
                     />
