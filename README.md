@@ -24,6 +24,7 @@ npm run dev
 - Hospitality uses the finance images for the learn more dropdowns
 - Law needs images
 - some of the career pages have odd button colors
+- the hospitality career page uses the healcare info in the learn mores, despite me replacing the images
 
 
 ### CHANGES:
