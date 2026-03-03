@@ -255,7 +255,7 @@ export default function Education() {
                       className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">
-                      Conflict Resolution and Diplomacy (with parents/students
+                      Conflict Resolution and Diplomacy with parents/students
                     </span>
                   </div>
                   <div className="col-12 d-flex align-items-center">
@@ -372,7 +372,7 @@ export default function Education() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="/images/career-imgs/business-imgs/buisness1.jpg"
+                      src="/images/career-imgs/education-imgs/Education1.jpg"
                       alt="Strategy Planning"
                       className="img-fluid rounded-3 shadow-sm"
                     />
@@ -487,7 +487,7 @@ export default function Education() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="/images/career-imgs/business-imgs/buisness2.jpg"
+                      src="/images/career-imgs/education-imgs/Education2.jpg"
                       alt="Finance and HR"
                       className="img-fluid rounded-3 shadow-sm"
                     />
@@ -518,7 +518,7 @@ export default function Education() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="/images/career-imgs/business-imgs/buisness3.jpg"
+                      src="/images/career-imgs/education-imgs/Education3.jpg"
                       alt="Operations and PMP"
                       className="img-fluid rounded-3 shadow-sm"
                     />

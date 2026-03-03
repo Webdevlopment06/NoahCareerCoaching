@@ -21,7 +21,6 @@ npm run dev
 - I need to test if the images are still broken in the deployment
 - some of the career pages hero-bgs are kind of odd and low resolution
 - trades, technology, science, and law are still using the old career page look
-- Education uses the business images for the learn more dropdowns
 - Healthcare and Hospitality use the finance images for the learn more dropdowns
 - all of the image refs in science and trades do not have images
 
@@ -37,4 +36,4 @@ npm run dev
 - We could add dark mode, but its not at all necessary.
 
 ### DOING (first priority anyway) 
-career page fixes
+career page images
