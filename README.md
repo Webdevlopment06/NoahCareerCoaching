@@ -22,7 +22,8 @@ npm run dev
 - some of the career pages hero-bgs are kind of odd and low resolution
 - trades, technology, science, and law are still using the old career page look
 - Healthcare and Hospitality use the finance images for the learn more dropdowns
-- all of the image refs in science and trades do not have images
+- all of the image refs in trades do not have images
+- some of the career pages have odd button colors
 
 
 ### CHANGES:
@@ -30,7 +31,7 @@ npm run dev
 - I added some new icons to explore, they are all from flaticon.com
 - The Navbar is position absolute and there is some javascript to make each page 
 - The Navbar page you are on is indicated in blue.
-- images in now organized simlarly to how the pages are.
+- images are now organized simlarly to how the pages are.
 
 ### IDEAS:
 - We could add dark mode, but its not at all necessary.

@@ -53,7 +53,7 @@ export default function Trades() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/tradespath/electrical1.png"
+                      src="/images/career-imgs/trades-imgs/trades1.jpg"
                       alt="Electrician wiring a panel"
                       className="img-fluid rounded-2"
                     />
@@ -137,7 +137,7 @@ export default function Trades() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/tradespath/construction2.png"
+                      src="/images/career-imgs/trades-imgs/trades2.png"
                       alt="Construction workers and carpenters"
                       className="img-fluid rounded-2"
                     />
@@ -155,7 +155,7 @@ export default function Trades() {
                 <div className="col-12 col-lg-6 order-lg-1">
                   <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/tradespath/automotive3.png"
+                      src="/images/career-imgs/trades-imgs/trades3.jpg"
                       alt="Auto mechanic working on a car"
                       className="img-fluid rounded-2"
                     />
@@ -312,7 +312,7 @@ export default function Trades() {
               <div className="col-12 col-lg-6 order-lg-2">
                 <div className="h-100 bg-light rounded-4 shadow-sm border d-flex align-items-center justify-content-center p-3">
                   <img
-                    src="images/tradespath/education4.png"
+                    src="/images/career-imgs/trades-imgs/trades4.jpg"
                     alt="Trades Career Path Diagram showing apprentice, journeyman, and master progression"
                     className="img-fluid rounded-2"
                   />
