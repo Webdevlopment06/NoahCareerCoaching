@@ -62,17 +62,17 @@ export default function BuildAResume() {
 
               <div className="mb-3">
                 <h6 className="mb-1">Summary</h6>
-                <p id="preview-summary" className="mb-0" style={{whiteSpace:'pre-wrap'}}>{summary}</p>
+                <p id="preview-summary" className="mb-0 pre-wrap">{summary}</p>
               </div>
 
               <div className="mb-3">
                 <h6 className="mb-1">Experience</h6>
-                <p id="preview-experience" className="mb-0" style={{whiteSpace:'pre-wrap'}}>{experience}</p>
+                <p id="preview-experience" className="mb-0 pre-wrap">{experience}</p>
               </div>
 
               <div className="mb-3">
                 <h6 className="mb-1">Education</h6>
-                <p id="preview-education" className="mb-0" style={{whiteSpace:'pre-wrap'}}>{education}</p>
+                <p id="preview-education" className="mb-0 pre-wrap">{education}</p>
               </div>
 
               <div>

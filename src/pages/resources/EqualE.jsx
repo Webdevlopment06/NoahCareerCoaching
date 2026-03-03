@@ -251,7 +251,7 @@ export default function EqualE() {
     <section className="py-5 bg-white">
       <div className="container text-center">
         <h2 className="fw-bold mb-4">Be an Upstander, Not a Bystander</h2>
-        <p className="mb-5 text-muted mx-auto" style={{maxWidth: '700px'}}>A safe workplace is everyone's responsibility. If
+        <p className="mb-5 text-muted mx-auto max-w-700">A safe workplace is everyone's responsibility. If
           you witness harassment, we encourage a "See Something, Say Something" culture.</p>
 
         <div className="row justify-content-center g-4">

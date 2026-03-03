@@ -40,7 +40,7 @@ export default function Footer() {
 							<a className="text-dark fs-5" href="https://www.linkedin.com/company/noah-career-coaching" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
 							<a className="text-dark fs-5" href="https://www.instagram.com/noahcareercoaching/" target="_blank" rel="noreferrer"><i className="bi bi-instagram"></i></a>
 							<a className="text-dark fs-5" href="https://www.tiktok.com/@noahcareercoaching" target="_blank" rel="noreferrer" aria-label="TikTok">
-								<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tiktok.svg" alt="TikTok" style={{ width: '1.25em', height: '1.25em', display: 'inline-block', verticalAlign: '-0.125em' }} />
+								<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tiktok.svg" alt="TikTok" className="icon-svg-small" />
 							</a>
 						</div>
 					</div>

@@ -52,7 +52,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* 3. HERO SECTIONS (ALL ORIGINAL HEIGHTS PRESERVED) */
 .herobgimg {
-    background-image: url("/images/herobg.png");
+    background-image: url('/images/about-imgs/herobg.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -354,6 +354,11 @@ img { max-width: 100%; height: auto; display: block; }
 .bg-e3e3e3 { background-color: #e3e3e3 !important; }
 .lh-140 { line-height: 1.4 !important; }
 .max-w-700 { max-width: 700px !important; }
+.pre-wrap { white-space: pre-wrap; }
+.min-h-70vh { min-height: 70vh; }
+.avatar-48 { width: 48px; height: 48px; object-fit: cover; }
+.nav-active { color: #1800AD !important; font-weight: 700 !important; }
+.icon-svg-small { width: 1.25em; height: 1.25em; display: inline-block; vertical-align: -0.125em; }
 
 /* Gradient helpers used in services pages */
 .bg-grad-teal { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
@@ -410,7 +415,7 @@ img { max-width: 100%; height: auto; display: block; }
 .icon-60 { width: 60px; height: 60px; display: inline-flex; align-items: center; justify-content: center; }
 
 /* Home hero helper (replaces inline background + minHeight) */
-.home-hero { min-height: 80vh; background: url('/images/home-hero-bg.png') no-repeat center center/cover; display: flex; align-items: center; }
+.home-hero { min-height: 80vh; background: url('/images/home-imgs/home-hero-bg.png') no-repeat center center/cover; display: flex; align-items: center; }
 
 /* Gradients used by Equal Employment pages */
 .bg-grad-equale1 { background: linear-gradient(135deg, #2c3e50 0%, #000000 100%); }

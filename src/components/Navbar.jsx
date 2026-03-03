@@ -135,19 +135,17 @@ export default function Navbar() {
                             {/* Home */}
                             <li className="nav-item" id="nav-home">
                                 <Link
-                                    className={`nav-link navfont ${isActive('/') ? 'nav-active active' : 'blackText'}`}
-                                    style={isActive('/') ? { color: '#1800AD', fontWeight: 700 } : undefined}
-                                    to="/"
-                                >
-                                    HOME
-                                </Link>
+                                        className={`nav-link navfont ${isActive('/') ? 'nav-active active' : 'blackText'}`}
+                                        to="/"
+                                    >
+                                        HOME
+                                    </Link>
                             </li>
 
                             {/* About Dropdown */}
                             <li className="nav-item dropdown position-static" id="nav-about">
                                 <a
                                     className={`nav-link dropdown-toggle navfont ${isSectionActive('/about') ? 'nav-active active' : 'blackText'}`}
-                                    style={isSectionActive('/about') ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                     href="#"
                                     id="aboutDropdown"
                                     role="button"
@@ -161,20 +159,18 @@ export default function Navbar() {
                                         <div className="row mb-2">
                                             <div className="col-md-6">
                                                 <a
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${(location.pathname === '/about' && (location.hash === '#hero' || activeAboutSection === 'hero')) ? 'nav-active' : ''}`}
                                                     href="/about#hero"
                                                     onClick={(e) => handleHash(e, '/about', 'hero')}
-                                                    style={(location.pathname === '/about' && (location.hash === '#hero' || activeAboutSection === 'hero')) ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Mission Statement
                                                 </a>
                                             </div>
                                             <div className="col-md-6">
                                                 <a
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${(location.pathname === '/about' && (location.hash === '#founder' || activeAboutSection === 'founder')) ? 'nav-active' : ''}`}
                                                     href="/about#founder"
                                                     onClick={(e) => handleHash(e, '/about', 'founder')}
-                                                    style={(location.pathname === '/about' && (location.hash === '#founder' || activeAboutSection === 'founder')) ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     About Our Founder
                                                 </a>
@@ -183,20 +179,18 @@ export default function Navbar() {
                                         <div className="row">
                                             <div className="col-md-6">
                                                 <a
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${(location.pathname === '/about' && (location.hash === '#join' || activeAboutSection === 'join')) ? 'nav-active' : ''}`}
                                                     href="/about#join"
                                                     onClick={(e) => handleHash(e, '/about', 'join')}
-                                                    style={(location.pathname === '/about' && (location.hash === '#join' || activeAboutSection === 'join')) ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     How To Join
                                                 </a>
                                             </div>
                                             <div className="col-md-6">
                                                 <a
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${(location.pathname === '/about' && (location.hash === '#donation' || activeAboutSection === 'donation')) ? 'nav-active' : ''}`}
                                                     href="/about#donation"
                                                     onClick={(e) => handleHash(e, '/about', 'donation')}
-                                                    style={(location.pathname === '/about' && (location.hash === '#donation' || activeAboutSection === 'donation')) ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Donation
                                                 </a>
@@ -210,7 +204,6 @@ export default function Navbar() {
                             <li className="nav-item dropdown position-static" id="nav-services">
                                 <a
                                     className={`nav-link dropdown-toggle navfont ${isSectionActive('/services') ? 'nav-active active' : 'blackText'}`}
-                                    style={isSectionActive('/services') ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                     href="#"
                                     id="servicesDropdown"
                                     role="button"
@@ -224,27 +217,24 @@ export default function Navbar() {
                                         <div className="row mb-2">
                                             <div className="col-md-4">
                                                 <Link
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${location.pathname === '/services/resume' ? 'nav-active' : ''}`}
                                                     to="/services/resume"
-                                                    style={location.pathname === '/services/resume' ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Resume Development
                                                 </Link>
                                             </div>
                                             <div className="col-md-4">
                                                 <Link
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${location.pathname === '/services/interview' ? 'nav-active' : ''}`}
                                                     to="/services/interview"
-                                                    style={location.pathname === '/services/interview' ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Interview Coaching
                                                 </Link>
                                             </div>
                                             <div className="col-md-4">
                                                 <Link
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${location.pathname === '/services/job-search' ? 'nav-active' : ''}`}
                                                     to="/services/job-search"
-                                                    style={location.pathname === '/services/job-search' ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Job Search Strategy
                                                 </Link>
@@ -253,27 +243,24 @@ export default function Navbar() {
                                         <div className="row mb-2">
                                             <div className="col-md-4">
                                                 <Link
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${location.pathname === '/services/professional-dev' ? 'nav-active' : ''}`}
                                                     to="/services/professional-dev"
-                                                    style={location.pathname === '/services/professional-dev' ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Professional Development
                                                 </Link>
                                             </div>
                                             <div className="col-md-4">
                                                 <Link
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${location.pathname === '/services/internship' ? 'nav-active' : ''}`}
                                                     to="/services/internship"
-                                                    style={location.pathname === '/services/internship' ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Internship Pathways
                                                 </Link>
                                             </div>
                                             <div className="col-md-4">
                                                 <Link
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${location.pathname === '/services/volunteer' ? 'nav-active' : ''}`}
                                                     to="/services/volunteer"
-                                                    style={location.pathname === '/services/volunteer' ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Volunteer Opportunities
                                                 </Link>
@@ -287,7 +274,6 @@ export default function Navbar() {
                             <li className="nav-item dropdown position-static" id="nav-resources">
                                 <a
                                     className={`nav-link dropdown-toggle navfont ${isSectionActive('/resources') ? 'nav-active active' : 'blackText'}`}
-                                    style={isSectionActive('/resources') ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                     href="#"
                                     id="resourcesDropdown"
                                     role="button"
@@ -301,27 +287,24 @@ export default function Navbar() {
                                         <div className="row mb-2">
                                             <div className="col-md-4">
                                                 <Link
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${location.pathname === '/resources/explore' ? 'nav-active' : ''}`}
                                                     to="/resources/explore"
-                                                    style={location.pathname === '/resources/explore' ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Explore Careers
                                                 </Link>
                                             </div>
                                             <div className="col-md-4">
                                                 <Link
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${location.pathname === '/resources/assessments' ? 'nav-active' : ''}`}
                                                     to="/resources/assessments"
-                                                    style={location.pathname === '/resources/assessments' ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Career Assessments
                                                 </Link>
                                             </div>
                                             <div className="col-md-4">
                                                 <Link
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${location.pathname === '/resources/stories' ? 'nav-active' : ''}`}
                                                     to="/resources/stories"
-                                                    style={location.pathname === '/resources/stories' ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Career Change Stories
                                                 </Link>
@@ -330,27 +313,24 @@ export default function Navbar() {
                                         <div className="row mb-2">
                                             <div className="col-md-4">
                                                 <Link
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${location.pathname === '/resources/equal-employer' ? 'nav-active' : ''}`}
                                                     to="/resources/equal-employer"
-                                                    style={location.pathname === '/resources/equal-employer' ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Equal Employer Information
                                                 </Link>
                                             </div>
                                             <div className="col-md-4">
                                                 <Link
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${location.pathname === '/resources/youth' ? 'nav-active' : ''}`}
                                                     to="/resources/youth"
-                                                    style={location.pathname === '/resources/youth' ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Youth Information
                                                 </Link>
                                             </div>
                                             <div className="col-md-4">
                                                 <Link
-                                                    className="dropdown-item"
+                                                    className={`dropdown-item ${location.pathname === '/resources/state' ? 'nav-active' : ''}`}
                                                     to="/resources/state"
-                                                    style={location.pathname === '/resources/state' ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                                 >
                                                     Resources By State
                                                 </Link>
@@ -364,7 +344,6 @@ export default function Navbar() {
                             <li className="nav-item" id="nav-contact">
                                 <Link
                                     className={`nav-link navfont ${isActive('/contact') ? 'nav-active active' : 'blackText'}`}
-                                    style={isActive('/contact') ? { color: '#1800AD', fontWeight: 700 } : undefined}
                                     to="/contact"
                                 >
                                     GET INVOLVED

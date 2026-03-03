@@ -328,7 +328,7 @@ export default function BusinessManagement() {
             <h2 className="fs-3 text-white fw-bold mb-3">
               Ready to Lead Your Career?
             </h2>
-            <p className="fs-5 mb-4 mx-auto text-white" style={{ maxWidth: 700 }}>
+            <p className="fs-5 mb-4 mx-auto text-white max-w-700">
               Management is about execution and vision. Start refining your
               leadership and analytical skills today to take the helm of a
               successful organization tomorrow.
