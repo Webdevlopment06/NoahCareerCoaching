@@ -52,7 +52,7 @@ export default function Law() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/lawpath/corporate1.png"
+                      src="/images/career-imgs/law-imgs/law1.jpg"
                       alt="Corporate Law and Advisory"
                       className="img-fluid rounded-2"
                     />
@@ -139,7 +139,7 @@ export default function Law() {
                 <div className="col-12 col-lg-6">
                   <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/lawpath/public2.png"
+                      src="/images/career-imgs/law-imgs/law2.jpg"
                       alt="Public Defender and Prosecution"
                       className="img-fluid rounded-2"
                     />
@@ -157,7 +157,7 @@ export default function Law() {
                 <div className="col-12 col-lg-6 order-lg-1">
                   <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
                     <img
-                      src="images/lawpath/support3.png"
+                      src="/images/career-imgs/law-imgs/law3.jpg"
                       alt="Paralegal and Legal Research"
                       className="img-fluid rounded-2"
                     />
@@ -322,7 +322,7 @@ export default function Law() {
               <div className="col-12 col-lg-6 order-lg-2">
                 <div className="h-100 bg-light rounded-4 shadow-sm border d-flex align-items-center justify-content-center p-3">
                   <img
-                    src="images/lawpath/education4.png"
+                    src="/images/career-imgs/law-imgs/law4.png"
                     alt="Legal Career Path Diagram showing degree, LSAT, and bar exam flow"
                     className="img-fluid rounded-2"
                   />

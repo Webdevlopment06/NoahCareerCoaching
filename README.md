@@ -22,7 +22,6 @@ npm run dev
 - some of the career pages hero-bgs are kind of odd and low resolution
 - trades, technology, science, and law are still using the old career page look
 - Hospitality uses the finance images for the learn more dropdowns
-- Law needs images
 - some of the career pages have odd button colors
 - the hospitality career page uses the healcare info in the learn mores, despite me replacing the images
 
