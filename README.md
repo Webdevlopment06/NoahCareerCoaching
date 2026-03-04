@@ -21,7 +21,6 @@ npm run dev
 - I need to test if the images are still broken in the deployment
 - trades, technology, science, and law are still using the old career page look
 - some of the career pages have odd button colors
-- the hospitality career page uses the healcare info in the learn mores, despite me replacing the images
 
 
 ### CHANGES:

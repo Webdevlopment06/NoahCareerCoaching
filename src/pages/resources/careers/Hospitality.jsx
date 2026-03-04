@@ -363,7 +363,7 @@ export default function Hospitality() {
           <div className="modal-content border-0 rounded-4 shadow-lg">
             <div className="modal-header bg-warning text-black rounded-top-4">
               <h5 className="modal-title fw-bold">
-                Clinical and Direct Patient Care
+                Accommodation &amp; Front Desk Operations
               </h5>
               <button
                 type="button"
@@ -378,7 +378,7 @@ export default function Hospitality() {
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
                       src="/images/career-imgs/hos-imgs/hospitality1.png"
-                      alt="Investment Banking and Advisory"
+                      alt="Front Desk and Guest Services"
                       className="img-fluid rounded-3 shadow-sm"
                     />
                   </div>
@@ -388,44 +388,44 @@ export default function Hospitality() {
                     <div className="col">
                       <div className="p-3 bg-warning-subtle rounded-3 border h-100">
                         <p className="fw-bold fs-5 mb-1 text-dark">
-                          Physician (MD/DO)
+                          Front Desk Agent / Guest Services Associate
                         </p>
                         <p className="mb-0 text-muted small">
-                          Diagnosing and treating complex diseases; surgical or
-                          specialized care.
+                          Welcome guests, handle check-in/out, manage reservations,
+                          and resolve guest needs to create positive experiences.
                         </p>
                       </div>
                     </div>
                     <div className="col">
                       <div className="p-3 bg-light rounded-3 border h-100">
                         <p className="fw-bold fs-5 mb-1 text-dark">
-                          Registered Nurse (RN)
+                          Concierge / Guest Relations
                         </p>
                         <p className="mb-0 text-muted small">
-                          Administering care, patient education, and coordinating
-                          treatment teams.
+                          Provide local recommendations, book services, and deliver
+                          personalized assistance to enhance guest stays.
                         </p>
                       </div>
                     </div>
                     <div className="col">
                       <div className="p-3 bg-light rounded-3 border h-100">
                         <p className="fw-bold fs-5 mb-1 text-dark">
-                          Nurse Practitioner (NP)
+                          Reservations Specialist / Revenue Coordinator
                         </p>
                         <p className="mb-0 text-muted small">
-                          Advanced nursing roles, often with prescriptive authority
-                          and independent practice.
+                          Manage booking systems, optimize occupancy and pricing,
+                          and coordinate groups and blocks.
                         </p>
                       </div>
                     </div>
                     <div className="col">
                       <div className="p-3 bg-primary-subtle rounded-3 border h-100">
                         <p className="fw-bold fs-5 mb-1 text-dark">
-                          Physician Assistant (PA)
+                          Housekeeping Supervisor / Room Attendant
                         </p>
                         <p className="mb-0 text-muted small">
-                          Practicing medicine under the supervision of a physician,
-                          conducting exams and diagnosing.
+                          Ensure cleanliness, manage room turnover, supervise staff,
+                          and maintain quality standards.
                         </p>
                       </div>
                     </div>
@@ -446,7 +446,7 @@ export default function Hospitality() {
         <div className="modal-dialog modal-dialog-centered modal-xl">
           <div className="modal-content border-0 rounded-4 shadow-lg">
             <div className="modal-header bg-warning text-black rounded-top-4">
-              <h5 className="modal-title fw-bold">Allied Health and Therapy</h5>
+              <h5 className="modal-title fw-bold">Food &amp; Beverage and Culinary Services</h5>
               <button
                 type="button"
                 className="btn-close btn-close-white"
@@ -460,29 +460,29 @@ export default function Hospitality() {
                   <div className="d-flex flex-column gap-3 h-100">
                     <div className="p-4 bg-warning-subtle rounded-3 border">
                       <p className="fw-bold fs-5 text-dark mb-1">
-                        Physical Therapist (PT)
+                        Executive Chef / Sous Chef
                       </p>
                       <p className="mb-0 text-muted small">
-                        Helping patients regain movement and manage pain after
-                        injury or illness.
+                        Lead kitchen operations, design menus, manage staff, and
+                        maintain food quality and safety standards.
                       </p>
                     </div>
                     <div className="p-4 bg-primary-subtle rounded-3 border">
                       <p className="fw-bold fs-5 text-dark mb-1">
-                        Medical Technologist
+                        Restaurant Manager / Floor Supervisor
                       </p>
                       <p className="mb-0 text-muted small">
-                        Performing complex laboratory tests and analyzing results to
-                        aid in diagnosis and treatment.
+                        Oversee service, staffing, guest satisfaction, and daily
+                        restaurant operations.
                       </p>
                     </div>
                     <div className="p-4 bg-light rounded-3 border">
                       <p className="fw-bold fs-5 text-dark mb-1">
-                        Radiologic Technologist
+                        Pastry Chef / Line Cook
                       </p>
                       <p className="mb-0 text-muted small">
-                        Operating imaging equipment (X-rays, CT scans, MRIs) to
-                        create diagnostic images.
+                        Execute menu items, maintain consistency, and support
+                        culinary production under the chef's direction.
                       </p>
                     </div>
                   </div>
@@ -491,7 +491,7 @@ export default function Hospitality() {
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
                       src="/images/career-imgs/hos-imgs/hospitality2.jpg"
-                      alt="Finance and HR"
+                      alt="Food and Beverage Operations"
                       className="img-fluid rounded-3 shadow-sm"
                     />
                   </div>
@@ -506,7 +506,7 @@ export default function Hospitality() {
         <div className="modal-dialog modal-dialog-centered modal-xl">
           <div className="modal-content border-0 rounded-4 shadow-lg">
             <div className="modal-header bg-warning text-black rounded-top-4">
-              <h5 className="modal-title fw-bold">Management and Informatics</h5>
+              <h5 className="modal-title fw-bold">Events, Operations &amp; Revenue Management</h5>
               <button
                 type="button"
                 className="btn-close btn-close-white"
@@ -520,7 +520,7 @@ export default function Hospitality() {
                   <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
                     <img
                       src="/images/career-imgs/hos-imgs/hospitality3.jpg"
-                      alt="Operations and PMP"
+                      alt="Events and Operations"
                       className="img-fluid rounded-3 shadow-sm"
                     />
                   </div>
@@ -529,29 +529,29 @@ export default function Hospitality() {
                   <div className="d-flex flex-column gap-3 h-100">
                     <div className="p-4 bg-warning-subtle rounded-3 border">
                       <p className="fw-bold fs-5 text-dark mb-1">
-                        Hospital Administrator
+                        Event Coordinator
                       </p>
                       <p className="mb-0 text-muted small">
-                        Overseeing operations, finance, and quality control of
-                        healthcare facilities.
+                        Plan and execute events, manage vendors, timelines, and
+                        on-site logistics to ensure successful experiences.
                       </p>
                     </div>
                     <div className="p-4 bg-primary-subtle rounded-3 border">
                       <p className="fw-bold fs-5 text-dark mb-1">
-                        Health Informatics Specialist
+                        Operations Manager
                       </p>
                       <p className="mb-0 text-muted small">
-                        Managing patient data, electronic health records (EHR), and
-                        IT security.
+                        Oversee daily property operations, staffing, procurement,
+                        and guest service standards.
                       </p>
                     </div>
                     <div className="p-4 bg-light rounded-3 border">
                       <p className="fw-bold fs-5 text-dark mb-1">
-                        Public Health Specialist
+                        Revenue Manager / Sales &amp; Catering
                       </p>
                       <p className="mb-0 text-muted small">
-                        Analyzing community health trends, developing preventative
-                        programs, and managing epidemics.
+                        Manage pricing strategies, group sales, and catering
+                        contracts to maximize revenue and occupancy.
                       </p>
                     </div>
                   </div>
