@@ -19,9 +19,7 @@ npm run dev
 ### ISSUES:
 - A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them. However, This not really an issue and more of just a change. The site still looks and works fine with this.
 - I need to test if the images are still broken in the deployment
-- some of the career pages hero-bgs are kind of odd and low resolution
 - trades, technology, science, and law are still using the old career page look
-- Hospitality uses the finance images for the learn more dropdowns
 - some of the career pages have odd button colors
 - the hospitality career page uses the healcare info in the learn mores, despite me replacing the images
 
