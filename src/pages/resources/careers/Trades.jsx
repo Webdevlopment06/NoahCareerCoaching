@@ -32,165 +32,129 @@ export default function Trades() {
                 Find Your Path
               </SmoothScrollLink>
             </div>
+      {/* Modals moved to bottom to avoid nested markup/backdrop issues. */}
           </header>
         </div>
       </section>
       <main className="container-xl py-4 py-lg-5">
         <section id="roles" className="mb-5">
           <h2 className="fs-2 fw-bold section-heading-custom text-dark">
-            Key Construction and Industrial Trades
+            Key Trades &amp; Industry Roles
           </h2>
           <p className="text-muted mb-4">
-            Detailing careers across construction, mechanical installation, and
-            maintenance.
+            Explore common high-impact roles across skilled trades, construction, and maintenance.
           </p>
-          <div className="container py-4">
-            <div className="bg-white p-4 rounded-4 shadow-sm mb-4">
-              <h3 className="fs-4 fw-semibold text-custom-secondary mb-3">
-                Mechanical and Electrical Systems
-              </h3>
-              <div className="row g-4">
-                <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
-                    <img
-                      src="/images/career-imgs/trades-imgs/trades1.jpg"
-                      alt="Electrician wiring a panel"
-                      className="img-fluid rounded-2"
-                    />
+          <div className="container py-5">
+            <div className="row g-4">
+              <div className="col-lg-4">
+                <div className="card creative-card h-100 p-4 shadow-sm">
+                  <div className="icon-box bg-gradient-red mb-3">
+                    <i className="bi bi-tools text-white fs-3" />
                   </div>
+                  <h3 className="fw-bold">Mechanical &amp; Electrical</h3>
+                  <p className="text-muted">
+                    Work on power, HVAC, and control systems that keep buildings and
+                    industry running smoothly.
+                  </p>
+                  <a
+                    href="#"
+                    className="btn btn-warning text-decoration-none fw-bold mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#strategyModal"
+                  >
+                    Learn More →
+                  </a>
                 </div>
-                <div className="col-12 col-lg-6">
-                  <div className="row row-cols-1 row-cols-md-2 g-4">
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5">Electrician</p>
-                        <p className="mb-0 text-muted small">
-                          *Focus:* Installing and maintaining power, lighting, and
-                          control systems in buildings and factories.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5">Plumber / Pipefitter</p>
-                        <p className="mb-0 text-muted small">
-                          *Focus:* Installing and repairing water, waste, and gas
-                          systems; often specializing in residential or industrial
-                          sites.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5">HVAC Technician</p>
-                        <p className="mb-0 text-muted small">
-                          *Focus:* Installing, repairing, and maintaining heating,
-                          ventilation, air conditioning, and refrigeration systems.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5">Welder / Fabricator</p>
-                        <p className="mb-0 text-muted small">
-                          *Focus:* Joining metals using heat and gas; essential for
-                          infrastructure, manufacturing, and construction projects.
-                        </p>
-                      </div>
-                    </div>
+              </div>
+              <div className="col-lg-4">
+                <div className="card creative-card h-100 p-4 shadow-sm">
+                  <div className="icon-box bg-gradient-orange mb-3">
+                    <i className="bi bi-building text-white fs-3" />
                   </div>
+                  <h3 className="fw-bold">Construction &amp; Finishing</h3>
+                  <p className="text-muted">
+                    Roles from carpentry to site supervision focused on building and finishing projects.
+                  </p>
+                  <a
+                    href="#"
+                    className="btn btn-warning text-decoration-none fw-bold mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#financeModal"
+                  >
+                    Learn More →
+                  </a>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div className="card creative-card h-100 p-4 shadow-sm">
+                  <div className="icon-box bg-gradient-green mb-3">
+                    <i className="bi bi-gear text-white fs-3" />
+                  </div>
+                  <h3 className="fw-bold">Automotive &amp; Maintenance</h3>
+                  <p className="text-muted">
+                    From automotive technicians to industrial maintenance specialists, keep machines moving.
+                  </p>
+                  <a
+                    href="#"
+                    className="btn btn-warning text-decoration-none fw-bold mt-auto"
+                    data-bs-toggle="modal"
+                    data-bs-target="#opsModal"
+                  >
+                    Learn More →
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <div className="container py-4">
-            <div className="bg-white p-4 rounded-4 shadow-sm mb-4">
-              <h3 className="fs-4 fw-semibold text-custom-secondary mb-3">
-                Construction and Finishing Trades
-              </h3>
-              <div className="row g-4">
-                <div className="col-12 col-lg-6">
-                  <div className="d-flex flex-column gap-4 h-100">
-                    <div className="p-3 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5">Carpenter</p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Building and repairing frameworks, roofs, and other
-                        wooden structures; includes rough and finish work.
-                      </p>
-                    </div>
-                    <div className="p-3 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5">Heavy Equipment Operator</p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Operating machinery like bulldozers, cranes, and
-                        excavators for large-scale construction or road building.
-                      </p>
-                    </div>
-                    <div className="p-3 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5">Mason (Bricklayer/Stonemason)</p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Laying brick, concrete block, and stone to
-                        construct walls, patios, and decorative elements.
-                      </p>
-                    </div>
+
+          <section id="roadmap" className="mb-5 py-5 bg-light rounded-4">
+            <div className="container">
+              <h2 className="fs-2 fw-bold section-heading-custom text-dark text-center mb-5">
+                Trades Career Roadmap
+              </h2>
+              <div className="roadmap-wrapper position-relative">
+                <div className="roadmap-line d-none d-lg-block" />
+                <div className="row g-4 text-center justify-content-center">
+                  <div className="col-lg-3 step-item">
+                    <div className="roadmap-node shadow">01</div>
+                    <h4 className="fw-bold mt-3">Entry Level</h4>
+                    <p className="small text-muted">
+                      Apprentice / Junior Technician
+                      <br />
+                      <span className="badge bg-warning text-dark">Years 0-2</span>
+                    </p>
                   </div>
-                </div>
-                <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
-                    <img
-                      src="/images/career-imgs/trades-imgs/trades2.png"
-                      alt="Construction workers and carpenters"
-                      className="img-fluid rounded-2"
-                    />
+                  <div className="col-lg-3 step-item">
+                    <div className="roadmap-node shadow">02</div>
+                    <h4 className="fw-bold mt-3">Mid-Level</h4>
+                    <p className="small text-muted">
+                      Journeyman / Supervisor
+                      <br />
+                      <span className="badge bg-warning text-dark">Years 3-6</span>
+                    </p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="container py-4">
-            <div className="bg-white p-4 rounded-4 shadow-sm">
-              <h3 className="fs-4 fw-semibold text-custom-secondary mb-3">
-                Automotive and Maintenance Trades
-              </h3>
-              <div className="row g-4">
-                <div className="col-12 col-lg-6 order-lg-1">
-                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
-                    <img
-                      src="/images/career-imgs/trades-imgs/trades3.jpg"
-                      alt="Auto mechanic working on a car"
-                      className="img-fluid rounded-2"
-                    />
+                  <div className="col-lg-3 step-item">
+                    <div className="roadmap-node shadow">03</div>
+                    <h4 className="fw-bold mt-3">Site Lead</h4>
+                    <p className="small text-muted">
+                      Foreman / Project Manager
+                      <br />
+                      <span className="badge bg-warning text-dark">Years 7-12</span>
+                    </p>
                   </div>
-                </div>
-                <div className="col-12 col-lg-6 order-lg-2">
-                  <div className="d-flex flex-column gap-4 h-100">
-                    <div className="p-3 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5">Automotive Technician</p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Diagnosing, repairing, and maintaining cars,
-                        trucks, and other motorized vehicles.
-                      </p>
-                    </div>
-                    <div className="p-3 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5">
-                        Industrial Maintenance Mechanic
-                      </p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Keeping factory and plant machinery operational,
-                        specializing in diagnostics and preventive repair.
-                      </p>
-                    </div>
-                    <div className="p-3 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5">Diesel Mechanic</p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Specializing in the repair and maintenance of heavy
-                        diesel engines in buses, trucks, and construction equipment.
-                      </p>
-                    </div>
+                  <div className="col-lg-3 step-item">
+                    <div className="roadmap-node shadow">04</div>
+                    <h4 className="fw-bold mt-3">Owner / Contractor</h4>
+                    <p className="small text-muted">
+                      Business Owner / Lead Contractor
+                      <br />
+                      <span className="badge bg-warning text-dark">Years 15+</span>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </section>
         <section
           id="skills"
@@ -254,73 +218,6 @@ export default function Trades() {
             </div>
           </div>
         </section>
-        <div className="container py-4">
-          <section id="education" className="mb-5">
-            <h2 className="fs-2 fw-bold section-heading-custom text-dark mb-4">
-              Educational and Entry Paths 🛠️
-            </h2>
-            <div className="row g-4">
-              <div className="col-12 col-lg-6 order-lg-1">
-                <div className="row row-cols-1 row-cols-md-2 g-4 h-100">
-                  <div className="col">
-                    <div className="card p-4 rounded-4 shadow-sm h-100 border-0">
-                      <h3 className="fs-5 fw-semibold text-custom-primary mb-2">
-                        Apprenticeship (The Primary Path)
-                      </h3>
-                      <p className="card-text small text-muted">
-                        Combining paid, on-the-job training (4,000 to 8,000 hours)
-                        with classroom instruction (typically 144 hours/year).
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <div className="card p-4 rounded-4 shadow-sm h-100 border-0">
-                      <h3 className="fs-5 fw-semibold text-custom-primary mb-2">
-                        Trade / Vocational School
-                      </h3>
-                      <p className="card-text small text-muted">
-                        Short-term programs (6 months to 2 years) providing
-                        fundamental knowledge and practical skills before an
-                        apprenticeship.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <div className="card p-4 rounded-4 shadow-sm h-100 border-0">
-                      <h3 className="fs-5 fw-semibold text-custom-primary mb-2">
-                        Journeyman Status
-                      </h3>
-                      <p className="card-text small text-muted">
-                        Achieved upon completion of an apprenticeship and passing a
-                        licensing exam, allowing independent work.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <div className="card p-4 rounded-4 shadow-sm h-100 border-0">
-                      <h3 className="fs-5 fw-semibold text-custom-primary mb-2">
-                        Master/Contractor License
-                      </h3>
-                      <p className="card-text small text-muted">
-                        Achieved after several years as a journeyman, allowing you
-                        to hire employees and run your own business.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-12 col-lg-6 order-lg-2">
-                <div className="h-100 bg-light rounded-4 shadow-sm border d-flex align-items-center justify-content-center p-3">
-                  <img
-                    src="/images/career-imgs/trades-imgs/trades4.jpg"
-                    alt="Trades Career Path Diagram showing apprentice, journeyman, and master progression"
-                    className="img-fluid rounded-2"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
         <section
           id="future"
           className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5"
@@ -372,7 +269,152 @@ export default function Trades() {
             </div>
           </div>
         </section>
-      </main>
+          </main>
+          {/* Learn-more modals placed at end to avoid nested/header markup issues */}
+          <div className="modal fade" id="strategyModal" tabIndex={-1} aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+            <div className="modal-dialog modal-dialog-centered modal-xl">
+              <div className="modal-content border-0 rounded-4 shadow-lg">
+                <div className="modal-header bg-warning text-black rounded-top-4">
+                  <h5 className="modal-title fw-bold">Mechanical &amp; Electrical</h5>
+                  <button
+                    type="button"
+                    className="btn-close btn-close-white"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body p-4 p-md-5">
+                  <div className="row g-4">
+                    <div className="col-12 col-lg-6">
+                      <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
+                        <img
+                          src="/images/career-imgs/trades-imgs/trades1.jpg"
+                          alt="Electrician wiring a panel"
+                          className="img-fluid rounded-3 shadow-sm"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12 col-lg-6">
+                      <div className="row row-cols-1 row-cols-md-2 g-3">
+                        <div className="col">
+                          <div className="p-3 bg-warning-subtle rounded-3 border h-100">
+                            <p className="fw-bold fs-5 text-dark mb-1">Electrician</p>
+                            <p className="mb-0 text-muted small">Power systems, wiring, and control panels.</p>
+                          </div>
+                        </div>
+                        <div className="col">
+                          <div className="p-3 bg-light rounded-3 border h-100">
+                            <p className="fw-bold fs-5 text-dark mb-1">HVAC Technician</p>
+                            <p className="mb-0 text-muted small">Climate systems installation and maintenance.</p>
+                          </div>
+                        </div>
+                        <div className="col">
+                          <div className="p-3 bg-light rounded-3 border h-100">
+                            <p className="fw-bold fs-5 text-dark mb-1">Controls Technician</p>
+                            <p className="mb-0 text-muted small">PLCs, automation, and building controls.</p>
+                          </div>
+                        </div>
+                        <div className="col">
+                          <div className="p-3 bg-primary-subtle rounded-3 border h-100">
+                            <p className="fw-bold fs-5 text-dark mb-1">Maintenance Electrician</p>
+                            <p className="mb-0 text-muted small">Troubleshooting and preventive maintenance.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="modal fade" id="financeModal" tabIndex={-1} aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+            <div className="modal-dialog modal-dialog-centered modal-xl">
+              <div className="modal-content border-0 rounded-4 shadow-lg">
+                <div className="modal-header bg-warning text-black rounded-top-4">
+                  <h5 className="modal-title fw-bold">Construction &amp; Finishing</h5>
+                  <button
+                    type="button"
+                    className="btn-close btn-close-white"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body p-4 p-md-5">
+                  <div className="row g-4 align-items-center">
+                    <div className="col-12 col-lg-6">
+                      <div className="d-flex flex-column gap-3 h-100">
+                        <div className="p-4 bg-warning-subtle rounded-3 border">
+                          <p className="fw-bold fs-5 text-dark mb-1">Carpenter</p>
+                          <p className="mb-0 text-muted small">Framing, finish carpentry, and site layout.</p>
+                        </div>
+                        <div className="p-4 bg-primary-subtle rounded-3 border">
+                          <p className="fw-bold fs-5 text-dark mb-1">Site Supervisor</p>
+                          <p className="mb-0 text-muted small">Managing crews, schedules, and safety compliance.</p>
+                        </div>
+                        <div className="p-4 bg-light rounded-3 border">
+                          <p className="fw-bold fs-5 text-dark mb-1">Finisher / Painter</p>
+                          <p className="mb-0 text-muted small">Final finishes, quality control, and client handoffs.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-12 col-lg-6">
+                      <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
+                        <img
+                          src="/images/career-imgs/trades-imgs/trades2.png"
+                          alt="Construction workers and carpenters"
+                          className="img-fluid rounded-3 shadow-sm"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="modal fade" id="opsModal" tabIndex={-1} aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+            <div className="modal-dialog modal-dialog-centered modal-xl">
+              <div className="modal-content border-0 rounded-4 shadow-lg">
+                <div className="modal-header bg-warning text-black rounded-top-4">
+                  <h5 className="modal-title fw-bold">Automotive &amp; Maintenance</h5>
+                  <button
+                    type="button"
+                    className="btn-close btn-close-white"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body p-4 p-md-5">
+                  <div className="row g-4">
+                    <div className="col-12 col-lg-6">
+                      <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
+                        <img
+                          src="/images/career-imgs/trades-imgs/trades3.jpg"
+                          alt="Auto mechanic working on a car"
+                          className="img-fluid rounded-3 shadow-sm"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12 col-lg-6">
+                      <div className="d-flex flex-column gap-3 h-100">
+                        <div className="p-4 bg-warning-subtle rounded-3 border">
+                          <p className="fw-bold fs-5 text-dark mb-1">Automotive Technician</p>
+                          <p className="mb-0 text-muted small">Diagnostics, repair, and vehicle systems.</p>
+                        </div>
+                        <div className="p-4 bg-primary-subtle rounded-3 border">
+                          <p className="fw-bold fs-5 text-dark mb-1">Industrial Maintenance</p>
+                          <p className="mb-0 text-muted small">Heavy equipment servicing and preventive maintenance.</p>
+                        </div>
+                        <div className="p-4 bg-light rounded-3 border">
+                          <p className="fw-bold fs-5 text-dark mb-1">Diesel Specialist</p>
+                          <p className="mb-0 text-muted small">Diesel engine repair and fleet maintenance.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
       <section className="trades-hero-bg d-flex align-items-center justify-content-center py-5">
         <div className="container">
           <section className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
