@@ -21,15 +21,15 @@ export default function Science() {
             <div className="d-grid gap-3 d-md-flex justify-content-center">
               <SmoothScrollLink
                 to="roles"
-                className="btn btn-success btn-lg fw-semibold shadow-sm rounded-3 text-white"
+                className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark"
               >
-                Explore Research Fields
+                Explore Roles
               </SmoothScrollLink>
               <SmoothScrollLink
                 to="education"
-                className="btn btn-info btn-lg fw-semibold shadow-sm rounded-3 text-dark"
+                className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
               >
-                View Academic Paths
+                Find Your Path
               </SmoothScrollLink>
             </div>
           </header>
@@ -394,7 +394,7 @@ export default function Science() {
             </p>
             <SmoothScrollLink
               to="roles"
-              className="btn btn-success btn-lg fw-bold rounded-3 shadow-lg text-white"
+              className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
             >
               Begin Your Research
             </SmoothScrollLink>

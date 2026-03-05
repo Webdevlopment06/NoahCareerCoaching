@@ -21,15 +21,15 @@ export default function Trades() {
             <div className="d-grid gap-3 d-md-flex justify-content-center">
               <SmoothScrollLink
                 to="roles"
-                className="btn btn-danger btn-lg fw-semibold shadow-sm rounded-3 text-white"
+                className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark"
               >
-                Explore Trades
+                Explore Roles
               </SmoothScrollLink>
               <SmoothScrollLink
                 to="education"
-                className="btn btn-custom-secondary btn-lg fw-semibold shadow-sm rounded-3 text-white"
+                className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
               >
-                Find an Apprenticeship
+                Find Your Path
               </SmoothScrollLink>
             </div>
           </header>
@@ -384,7 +384,7 @@ export default function Trades() {
             </p>
             <SmoothScrollLink
               to="roles"
-              className="btn btn-danger btn-lg fw-bold rounded-3 shadow-lg text-white"
+              className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
             >
               Apply Your Skills
             </SmoothScrollLink>

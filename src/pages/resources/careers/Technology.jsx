@@ -21,13 +21,13 @@ export default function Technology() {
             <div className="d-grid gap-3 d-md-flex justify-content-center">
               <SmoothScrollLink
                 to="roles"
-                className="btn btn-danger btn-lg fw-semibold shadow-sm rounded-3 text-white"
+                className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark"
               >
                 Explore Roles
               </SmoothScrollLink>
               <SmoothScrollLink
                 to="education"
-                className="btn btn-custom-secondary btn-lg fw-semibold shadow-sm rounded-3"
+                className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
               >
                 Find Your Path
               </SmoothScrollLink>
@@ -371,7 +371,7 @@ export default function Technology() {
             </p>
             <SmoothScrollLink
               to="roles"
-              className="btn btn-light btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
+              className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
             >
               Choose Your Tech Career Path
             </SmoothScrollLink>

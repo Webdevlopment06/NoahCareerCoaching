@@ -19,15 +19,15 @@ export default function Law() {
             <div className="d-grid gap-3 d-md-flex justify-content-center">
               <SmoothScrollLink
                 to="roles"
-                className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3 text-white"
+                className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark"
               >
-                Explore Legal Roles
+                Explore Roles
               </SmoothScrollLink>
               <SmoothScrollLink
                 to="education"
-                className="btn btn-secondary btn-lg fw-semibold shadow-sm rounded-3"
+                className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
               >
-                Start Training
+                Find Your Path
               </SmoothScrollLink>
               
             </div>
@@ -394,7 +394,7 @@ export default function Law() {
             </p>
             <SmoothScrollLink
               to="roles"
-              className="btn btn-primary btn-lg fw-bold rounded-3 shadow-lg text-white"
+              className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
             >
               Start Your Journey
             </SmoothScrollLink>

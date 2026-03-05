@@ -20,7 +20,6 @@ npm run dev
 - A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them. However, This not really an issue and more of just a change. The site still looks and works fine with this.
 - I need to test if the images are still broken in the deployment
 - trades, technology, science, and law are still using the old career page look
-- some of the career pages have odd button colors
 
 
 ### CHANGES:
@@ -34,4 +33,4 @@ npm run dev
 - We could add dark mode, but its not at all necessary.
 
 ### DOING (first priority anyway) 
-career page images
+career page issues
