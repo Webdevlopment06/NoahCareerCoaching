@@ -19,7 +19,7 @@ npm run dev
 ### ISSUES:
 - A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them. However, This not really an issue and more of just a change. The site still looks and works fine with this.
 - I need to test if the images are still broken in the deployment
-- technology, science, and law are still using the old career page look
+- science, and law are still using the old career page look
 
 
 ### CHANGES:
