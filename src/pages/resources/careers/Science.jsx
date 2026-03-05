@@ -3,15 +3,12 @@ import SmoothScrollLink from '/src/components/SmoothScrollLink'
 
 export default function Science() {
   return (
-    <main>
+    <>
       <section className="science-hero-bg d-flex align-items-center justify-content-center py-5">
         <div className="container">
           <header className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
             <h1 className="display-3 fw-bolder text-dark mb-3">
-              Your Future in{" "}
-              <span className="text-custom-primary">
-                Science, Research &amp; Discovery
-              </span>
+              Your Future in <span className="text-custom-primary">Science, Research &amp; Discovery</span>
             </h1>
             <p className="fs-5 text-muted mx-auto mb-4 max-w-800">
               The scientific field is the bedrock of innovation, offering careers
@@ -19,388 +16,187 @@ export default function Science() {
               and environmental solutions.
             </p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
-              <SmoothScrollLink
-                to="roles"
-                className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark"
-              >
-                Explore Roles
-              </SmoothScrollLink>
-              <SmoothScrollLink
-                to="education"
-                className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
-              >
-                Find Your Path
-              </SmoothScrollLink>
+              <SmoothScrollLink to="roles" className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark">Explore Roles</SmoothScrollLink>
+              <SmoothScrollLink to="education" className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3">Find Your Path</SmoothScrollLink>
             </div>
           </header>
         </div>
       </section>
+
       <main className="container-xl py-4 py-lg-5">
         <section id="roles" className="mb-5">
-          <h2 className="fs-2 fw-bold section-heading-custom text-dark">
-            Key Scientific and Research Roles
-          </h2>
-          <p className="text-muted mb-4">
-            Detailing high-impact roles across fundamental science, biotechnology,
-            and environmental research.
-          </p>
-          <div className="container py-4">
-            <div className="bg-white p-4 rounded-4 shadow-sm mb-4">
-              <h3 className="fs-4 fw-semibold text-custom-secondary mb-3">
-                Biological and Medical Sciences
-              </h3>
-              <div className="row g-4">
-                <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
-                    <img
-                      src="/images/career-imgs/sci-imgs/science1.jpg"
-                      alt="Biologists and Medical Researchers in a lab"
-                      className="img-fluid rounded-2"
-                    />
-                  </div>
-                </div>
-                <div className="col-12 col-lg-6">
-                  <div className="row row-cols-1 row-cols-md-2 g-4">
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5">Research Biologist</p>
-                        <p className="mb-0 text-muted small">
-                          *Focus:* Conducting experiments to study living organisms,
-                          ecosystems, and biological processes.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5">Biotechnologist</p>
-                        <p className="mb-0 text-muted small">
-                          *Focus:* Developing new products and techniques in
-                          medicine, agriculture, and industry using living systems.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5">Epidemiologist</p>
-                        <p className="mb-0 text-muted small">
-                          *Focus:* Investigating disease patterns and causes in
-                          populations to inform public health strategies.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5">
-                          Clinical Research Coordinator
-                        </p>
-                        <p className="mb-0 text-muted small">
-                          *Focus:* Managing and overseeing clinical trials for new
-                          drugs and treatments.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="container py-4">
-            <div className="bg-white p-4 rounded-4 shadow-sm mb-4">
-              <h3 className="fs-4 fw-semibold text-custom-secondary mb-3">
-                Physical and Environmental Sciences
-              </h3>
-              <div className="row g-4">
-                <div className="col-12 col-lg-6">
-                  <div className="d-flex flex-column gap-4 h-100">
-                    <div className="p-3 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5">Chemist / Materials Scientist</p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Studying the composition, structure, and properties
-                        of matter and developing new substances.
-                      </p>
-                    </div>
-                    <div className="p-3 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5">Environmental Consultant</p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Advising organizations on environmental compliance,
-                        pollution control, and sustainability practices.
-                      </p>
-                    </div>
-                    <div className="p-3 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5">Physicist / Astronomer</p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Investigating the fundamental laws of nature, from
-                        subatomic particles to the structure of the universe.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
-                    <img
-                      src="/images/career-imgs/sci-imgs/science2.jpeg"
-                      alt="Environmental Science and Chemistry Lab"
-                      className="img-fluid rounded-2"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="container py-4">
-            <div className="bg-white p-4 rounded-4 shadow-sm">
-              <h3 className="fs-4 fw-semibold text-custom-secondary mb-3">
-                Data and Computational Science
-              </h3>
-              <div className="row g-4">
-                <div className="col-12 col-lg-6 order-lg-1">
-                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
-                    <img
-                      src="/images/career-imgs/sci-imgs/science3.jpg"
-                      alt="Data Scientist and Computational Modeling"
-                      className="img-fluid rounded-2"
-                    />
-                  </div>
-                </div>
-                <div className="col-12 col-lg-6 order-lg-2">
-                  <div className="d-flex flex-column gap-4 h-100">
-                    <div className="p-3 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5">Data Scientist (Science Focus)</p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Applying advanced statistical and computational
-                        methods to massive scientific datasets (e.g., genomics,
-                        climate).
-                      </p>
-                    </div>
-                    <div className="p-3 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5">Bioinformatician</p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Developing software and algorithms to analyze
-                        complex biological data, particularly DNA and protein
-                        sequences.
-                      </p>
-                    </div>
-                    <div className="p-3 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5">Science Writer / Communicator</p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Translating complex scientific research and
-                        findings for public consumption, policy makers, or
-                        specialized journals.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section
-          id="skills"
-          className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5"
-        >
-          <h2 className="fs-2 fw-bold section-heading-custom text-dark">
-            Essential Skills and Knowledge
-          </h2>
-          <p className="text-muted mb-4">
-            Core competencies include methodological rigor, statistical mastery, and
-            intellectual curiosity.
-          </p>
-          <div className="row g-4">
-            <div className="col-lg-6">
-              <h3 className="fs-4 fw-semibold text-custom-primary mb-3">
-                Technical &amp; Research Skills
-              </h3>
-              <div className="d-flex flex-wrap gap-2">
-                <span className="badge text-bg-success-subtle border border-success px-3 py-2 fs-6 text-dark">
-                  Statistical Modeling (R, Python)
-                </span>
-                <span className="badge text-bg-success-subtle border border-success px-3 py-2 fs-6 text-dark">
-                  Experimental Design (DOE)
-                </span>
-                <span className="badge text-bg-success-subtle border border-success px-3 py-2 fs-6 text-dark">
-                  Laboratory Techniques (PCR, Chromatography)
-                </span>
-                <span className="badge text-bg-success-subtle border border-success px-3 py-2 fs-6 text-dark">
-                  Data Visualization
-                </span>
-                <span className="badge text-bg-success-subtle border border-success px-3 py-2 fs-6 text-dark">
-                  Grant Writing
-                </span>
-                <span className="badge text-bg-success-subtle border border-success px-3 py-2 fs-6 text-dark">
-                  Scientific Ethics &amp; Compliance
-                </span>
-              </div>
-            </div>
-            <div className="col-lg-6">
-              <h3 className="fs-4 fw-semibold text-custom-secondary mb-3">
-                Cognitive &amp; Interpersonal Skills
-              </h3>
-              <ul className="list-unstyled space-y-3 text-muted">
-                <li className="d-flex align-items-start mb-2">
-                  <span
-                    className="badge bg-custom-secondary rounded-pill me-2 mt-1 dot-8"
-                  />
-                  Intellectual Curiosity and Problem-Solving
-                </li>
-                <li className="d-flex align-items-start mb-2">
-                  <span
-                    className="badge bg-custom-secondary rounded-pill me-2 mt-1 dot-8"
-                  />
-                  Attention to Detail and Accuracy in Data Collection
-                </li>
-                <li className="d-flex align-items-start mb-2">
-                  <span
-                    className="badge bg-custom-secondary rounded-pill me-2 mt-1 dot-8"
-                  />
-                  Patience and Resilience in the Face of Failure
-                </li>
-                <li className="d-flex align-items-start mb-2">
-                  <span
-                    className="badge bg-custom-secondary rounded-pill me-2 mt-1 dot-8"
-                  />
-                  Interdisciplinary Collaboration
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <div className="container py-4">
-          <section id="education" className="mb-5">
-            <h2 className="fs-2 fw-bold section-heading-custom text-dark mb-4">
-              Educational and Entry Paths 🔬
-            </h2>
+          <h2 className="fs-2 fw-bold section-heading-custom text-dark">Key Scientific and Research Roles</h2>
+          <p className="text-muted mb-4">High-impact roles across biological, physical, and computational science.</p>
+
+          <div className="container py-5">
             <div className="row g-4">
-              <div className="col-12 col-lg-6 order-lg-1">
-                <div className="row row-cols-1 row-cols-md-2 g-4 h-100">
-                  <div className="col">
-                    <div className="card p-4 rounded-4 shadow-sm h-100 border-0">
-                      <h3 className="fs-5 fw-semibold text-custom-primary mb-2">
-                        Bachelor's Degree (Entry Level)
-                      </h3>
-                      <p className="card-text small text-muted">
-                        A BS/BA is the starting point, enabling roles like Lab
-                        Technician, Research Assistant, or Data Analyst.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <div className="card p-4 rounded-4 shadow-sm h-100 border-0">
-                      <h3 className="fs-5 fw-semibold text-custom-primary mb-2">
-                        Master's Degree (Mid-Level)
-                      </h3>
-                      <p className="card-text small text-muted">
-                        The MS/MA leads to specialized roles like Bioinformatician,
-                        Senior Analyst, or Environmental Scientist.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <div className="card p-4 rounded-4 shadow-sm h-100 border-0">
-                      <h3 className="fs-5 fw-semibold text-custom-primary mb-2">
-                        Doctoral Degree (Lead Researcher)
-                      </h3>
-                      <p className="card-text small text-muted">
-                        A PhD is typically required for Principal Investigator,
-                        Academic Professor, or Senior R&amp;D Scientist positions.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col">
-                    <div className="card p-4 rounded-4 shadow-sm h-100 border-0">
-                      <h3 className="fs-5 fw-semibold text-custom-primary mb-2">
-                        Postdoctoral Fellowships
-                      </h3>
-                      <p className="card-text small text-muted">
-                        Essential for academic track careers; a period of intensive,
-                        specialized research following the PhD.
-                      </p>
-                    </div>
-                  </div>
+              <div className="col-lg-4">
+                <div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
+                  <h3 className="fw-bold">Biological &amp; Medical Sciences</h3>
+                  <p className="text-muted">Research biologists, biotechnologists, and clinical researchers advancing medicine.</p>
+                  <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#sciBioModal">Learn More →</a>
                 </div>
               </div>
-              <div className="col-12 col-lg-6 order-lg-2">
-                <div className="h-100 bg-light rounded-4 shadow-sm border d-flex align-items-center justify-content-center p-3">
-                  <img
-                    src="/images/career-imgs/sci-imgs/science4.png"
-                    alt="Scientific Career Path Diagram showing degree and research flow"
-                    className="img-fluid rounded-2"
-                  />
+              <div className="col-lg-4">
+                <div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
+                  <h3 className="fw-bold">Physical &amp; Environmental Sciences</h3>
+                  <p className="text-muted">Chemistry, materials, physics, and environmental research addressing global challenges.</p>
+                  <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#sciEnvModal">Learn More →</a>
+                </div>
+              </div>
+              <div className="col-lg-4">
+                <div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
+                  <h3 className="fw-bold">Data &amp; Computational Science</h3>
+                  <p className="text-muted">Data scientists, bioinformaticians, and computational modelers powering discovery.</p>
+                  <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#sciDataModal">Learn More →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section id="roadmap" className="mb-5 py-5 bg-light rounded-4">
+            <div className="container">
+              <h2 className="fs-2 fw-bold section-heading-custom text-dark text-center mb-5">Science Career Roadmap</h2>
+              <div className="row g-4 text-center justify-content-center">
+                <div className="col-lg-3">
+                  <div className="roadmap-node shadow">01</div>
+                  <h4 className="fw-bold mt-3">Entry Level</h4>
+                  <p className="small text-muted">Lab Technician / Research Assistant<br /><span className="badge bg-warning text-dark">Years 0-2</span></p>
+                </div>
+                <div className="col-lg-3">
+                  <div className="roadmap-node shadow">02</div>
+                  <h4 className="fw-bold mt-3">Mid-Level</h4>
+                  <p className="small text-muted">Research Scientist / Specialist<br /><span className="badge bg-warning text-dark">Years 3-6</span></p>
+                </div>
+                <div className="col-lg-3">
+                  <div className="roadmap-node shadow">03</div>
+                  <h4 className="fw-bold mt-3">Senior / Lead</h4>
+                  <p className="small text-muted">Senior Scientist / Group Lead<br /><span className="badge bg-warning text-dark">Years 7-12</span></p>
+                </div>
+                <div className="col-lg-3">
+                  <div className="roadmap-node shadow">04</div>
+                  <h4 className="fw-bold mt-3">PI / Director</h4>
+                  <p className="small text-muted">Principal Investigator / Lab Director<br /><span className="badge bg-warning text-dark">Years 15+</span></p>
                 </div>
               </div>
             </div>
           </section>
-        </div>
-        <section
-          id="future"
-          className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5"
-        >
-          <h2 className="fs-2 fw-bold section-heading-custom text-dark">
-            Future Trends and Growth
-          </h2>
-          <div className="row g-4">
-            <div className="col-md-4">
-              <div className="p-3 border-start border-4 border-custom-secondary bg-info-subtle rounded-3">
-                <h3 className="fs-5 fw-semibold text-custom-secondary mb-2 text-dark">
-                  Personalized Medicine (Genomics)
-                </h3>
-                <ul className="text-muted small">
-                  <li>
-                    Explosion of careers in genetic counseling, genome sequencing,
-                    and targeted drug development.
-                  </li>
-                  <li>
-                    Requires deep understanding of biochemistry and large-scale data
-                    analysis.
-                  </li>
-                </ul>
-              </div>
+        </section>
+
+        <section id="skills" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
+          <h2 className="fs-2 fw-bold section-heading-custom text-dark">Essential Skills and Knowledge</h2>
+          <p className="text-muted mb-4">Methodological rigor, statistical mastery, and collaborative research practice.</p>
+        </section>
+
+        <section id="future" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
+          <h2 className="fs-2 fw-bold section-heading-custom text-dark">Future Trends and Growth</h2>
+        </section>
+      </main>
+
+      {/* Modals */}
+      <div className="modal fade" id="sciBioModal" tabIndex={-1} aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+        <div className="modal-dialog modal-dialog-centered modal-xl">
+          <div className="modal-content border-0 rounded-4 shadow-lg">
+            <div className="modal-header bg-warning text-black rounded-top-4">
+              <h5 className="modal-title fw-bold">Biological &amp; Medical Sciences</h5>
+              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div className="col-md-4">
-              <div className="p-3 border-start border-4 border-custom-primary bg-success-subtle rounded-3">
-                <h3 className="fs-5 fw-semibold text-custom-primary mb-2 text-dark">
-                  Climate Technology (ClimaTech)
-                </h3>
-                <p className="small text-muted mb-0">
-                  Growing need for atmospheric scientists, geoscientists, and
-                  chemical engineers focused on carbon capture, renewable energy
-                  storage, and climate modeling.
-                </p>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="p-3 border-start border-4 border-secondary bg-secondary-subtle rounded-3">
-                <h3 className="fs-5 fw-semibold text-secondary mb-2">
-                  Quantum Computing and Physics
-                </h3>
-                <p className="small text-muted mb-0">
-                  Front-line research careers in developing new quantum computing
-                  hardware, algorithms, and applications for complex simulations.
-                </p>
+            <div className="modal-body p-4 p-md-5">
+              <div className="row g-4">
+                <div className="col-12 col-lg-6">
+                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
+                    <img src="/images/career-imgs/sci-imgs/science1.jpg" alt="Biologists in lab" className="img-fluid rounded-2" />
+                  </div>
+                </div>
+                <div className="col-12 col-lg-6">
+                  <div className="p-3 bg-light rounded-3 border mb-3">
+                    <p className="fw-bold fs-5">Research Biologist</p>
+                    <p className="mb-0 text-muted small">Conducting experiments to study living organisms, ecosystems, and biological processes.</p>
+                  </div>
+                  <div className="p-3 bg-light rounded-3 border mb-3">
+                    <p className="fw-bold fs-5">Biotechnologist</p>
+                    <p className="mb-0 text-muted small">Developing new products and techniques in medicine, agriculture, and industry using living systems.</p>
+                  </div>
+                  <div className="p-3 bg-light rounded-3 border">
+                    <p className="fw-bold fs-5">Clinical Research Coordinator</p>
+                    <p className="mb-0 text-muted small">Managing and overseeing clinical trials for new drugs and treatments.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </div>
+
+      <div className="modal fade" id="sciEnvModal" tabIndex={-1} aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+        <div className="modal-dialog modal-dialog-centered modal-xl">
+          <div className="modal-content border-0 rounded-4 shadow-lg">
+            <div className="modal-header bg-warning text-black rounded-top-4">
+              <h5 className="modal-title fw-bold">Physical &amp; Environmental Sciences</h5>
+              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body p-4 p-md-5">
+              <div className="row g-4 align-items-center">
+                <div className="col-12 col-lg-6">
+                  <div className="p-3 bg-light rounded-3 border mb-3">
+                    <p className="fw-bold fs-5">Chemist / Materials Scientist</p>
+                    <p className="mb-0 text-muted small">Studying the composition, structure, and properties of matter and developing new substances.</p>
+                  </div>
+                  <div className="p-3 bg-light rounded-3 border">
+                    <p className="fw-bold fs-5">Environmental Consultant</p>
+                    <p className="mb-0 text-muted small">Advising organizations on environmental compliance, pollution control, and sustainability practices.</p>
+                  </div>
+                </div>
+                <div className="col-12 col-lg-6">
+                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
+                    <img src="/images/career-imgs/sci-imgs/science2.jpeg" alt="Environmental lab" className="img-fluid rounded-2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="modal fade" id="sciDataModal" tabIndex={-1} aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+        <div className="modal-dialog modal-dialog-centered modal-xl">
+          <div className="modal-content border-0 rounded-4 shadow-lg">
+            <div className="modal-header bg-warning text-black rounded-top-4">
+              <h5 className="modal-title fw-bold">Data &amp; Computational Science</h5>
+              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div className="modal-body p-4 p-md-5">
+              <div className="row g-4">
+                <div className="col-12 col-lg-6">
+                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
+                    <img src="/images/career-imgs/sci-imgs/science3.jpg" alt="Data science" className="img-fluid rounded-2" />
+                  </div>
+                </div>
+                <div className="col-12 col-lg-6">
+                  <div className="p-3 bg-light rounded-3 border mb-3">
+                    <p className="fw-bold fs-5">Data Scientist (Science Focus)</p>
+                    <p className="mb-0 text-muted small">Applying advanced statistical and computational methods to massive scientific datasets.</p>
+                  </div>
+                  <div className="p-3 bg-light rounded-3 border">
+                    <p className="fw-bold fs-5">Bioinformatician</p>
+                    <p className="mb-0 text-muted small">Developing software and algorithms to analyze complex biological data.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section className="science-hero-bg d-flex align-items-center justify-content-center py-5">
         <div className="container">
           <section className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
-            <h2 className="fs-3 fw-bold mb-3">
-              Ready to Make the Next Great Discovery?
-            </h2>
-            <p className="fs-5 mb-4 mx-auto max-w-700">
-              The foundation of science is curiosity. Get involved in undergraduate
-              research or laboratory work early to validate your passion and build
-              essential practical skills.
-            </p>
-            <SmoothScrollLink
-              to="roles"
-              className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
-            >
-              Begin Your Research
-            </SmoothScrollLink>
+            <h2 className="fs-3 fw-bold mb-3">Ready to Make the Next Great Discovery?</h2>
+            <p className="fs-5 mb-4 mx-auto max-w-700">Get involved in undergraduate research or laboratory work early to validate your passion and build essential practical skills.</p>
+            <SmoothScrollLink to="roles" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">Begin Your Research</SmoothScrollLink>
           </section>
         </div>
       </section>
-    </main>
+    </>
   )
 }
