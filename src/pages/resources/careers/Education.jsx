@@ -62,14 +62,14 @@ export default function Education() {
                     personal development across a wide range of subjects and grade
                     levels.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto "
                     data-bs-toggle="modal"
-                    data-bs-target="#strategyModal"
+                    data-bs-target="#strategyModal-education"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -85,14 +85,14 @@ export default function Education() {
                     new hires, and delivering professional development to improve
                     performance, compliance, and career growth.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto"
                     data-bs-toggle="modal"
-                    data-bs-target="#financeModal"
+                    data-bs-target="#financeModal-education"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -108,14 +108,14 @@ export default function Education() {
                     strategy, and ensuring individuals have the resources and
                     support needed to succeed.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className=" btn btn-warning text-decoration-none fw-bold mt-auto"
                     data-bs-toggle="modal"
-                    data-bs-target="#opsModal"
+                    data-bs-target="#opsModal-education"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -350,7 +350,7 @@ export default function Education() {
       {/* modal 1 */}
       <div
         className="modal fade"
-        id="strategyModal"
+        id="strategyModal-education"
         tabIndex={-1}
         aria-hidden="true"
       >
@@ -434,7 +434,7 @@ export default function Education() {
       {/* modal 2 */}
       <div
         className="modal fade"
-        id="financeModal"
+        id="financeModal-education"
         tabIndex={-1}
         aria-hidden="true"
       >
@@ -499,7 +499,7 @@ export default function Education() {
         </div>
       </div>
       {/* modal 3 */}
-      <div className="modal fade" id="opsModal" tabIndex={-1} aria-hidden="true">
+      <div className="modal fade" id="opsModal-education" tabIndex={-1} aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-xl">
           <div className="modal-content border-0 rounded-4 shadow-lg">
             <div className="modal-header bg-warning text-black rounded-top-4">

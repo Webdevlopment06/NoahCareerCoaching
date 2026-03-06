@@ -31,7 +31,7 @@ export default function Law() {
                   </div>
                   <h3 className="fw-bold">Private Practice &amp; Corporate Law</h3>
                   <p className="text-muted">Advises organizations on commercial law, transactions, and risk management. Work involves negotiating contracts, counseling on regulatory compliance, and partnering with business teams to structure deals. Ideal for detail-oriented problem-solvers who enjoy commercial strategy.</p>
-                  <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#lawCorpModal">Learn More →</a>
+                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#lawCorpModal">Learn More →</button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -41,7 +41,7 @@ export default function Law() {
                   </div>
                   <h3 className="fw-bold">Public Service &amp; Advocacy</h3>
                   <p className="text-muted">Serves the public through courtroom advocacy, policy, and community representation. Roles range from trial work and client advocacy to shaping public policy and legal reform. Suited to those driven by public service, strong oral advocacy, and ethical judgment.</p>
-                  <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#lawPublicModal">Learn More →</a>
+                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#lawPublicModal">Learn More →</button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -51,7 +51,7 @@ export default function Law() {
                   </div>
                   <h3 className="fw-bold">Legal Support &amp; Paralegal Roles</h3>
                   <p className="text-muted">Provides essential support to legal teams via research, document drafting, and case coordination. These roles build practical litigation and transactional experience and often lead to specialized careers in compliance, legal ops, or further legal study. Great for organized communicators who thrive on supporting complex workflows.</p>
-                  <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#lawSupportModal">Learn More →</a>
+                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#lawSupportModal">Learn More →</button>
                 </div>
               </div>
             </div>

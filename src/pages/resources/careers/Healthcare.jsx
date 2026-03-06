@@ -35,7 +35,7 @@ export default function Healthcare() {
         </div>
       </section>
       {/* end of art image */}
-      <main className="container-xl py-4 py-lg-5">
+      <div className="container-xl py-4 py-lg-5">
         {/* start of second */}
         {/* primary color backing */}
         <section id="roles" className="mb-5">
@@ -64,14 +64,14 @@ export default function Healthcare() {
                     plans, and ensuring patient safety and comfort throughout the
                     healthcare process.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto "
                     data-bs-toggle="modal"
-                    data-bs-target="#strategyModal"
+                    data-bs-target="#strategyModal-healthcare"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -89,14 +89,14 @@ export default function Healthcare() {
                     quality of life while collaborating closely with clinical care
                     teams
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto"
                     data-bs-toggle="modal"
-                    data-bs-target="#financeModal"
+                    data-bs-target="#financeModal-healthcare"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -113,14 +113,14 @@ export default function Healthcare() {
                     workflows to enhance efficiency, compliance, and patient
                     outcomes across healthcare organizations.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className=" btn btn-warning text-decoration-none fw-bold mt-auto"
                     data-bs-toggle="modal"
-                    data-bs-target="#opsModal"
+                    data-bs-target="#opsModal-healthcare"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -339,7 +339,7 @@ export default function Healthcare() {
             </div>
           </section>
         </section>
-      </main>
+      </div>
       {/* hero section with buisness background */}
       <section className="health-hero-bg d-flex align-items-center justify-content-center py-5">
         <div className="container">
@@ -367,7 +367,7 @@ export default function Healthcare() {
       {/* modal 1 */}
       <div
         className="modal fade"
-        id="strategyModal"
+        id="strategyModal-healthcare"
         tabIndex={-1}
         aria-hidden="true"
       >
@@ -451,7 +451,7 @@ export default function Healthcare() {
       {/* modal 2 */}
       <div
         className="modal fade"
-        id="financeModal"
+        id="financeModal-healthcare"
         tabIndex={-1}
         aria-hidden="true"
       >

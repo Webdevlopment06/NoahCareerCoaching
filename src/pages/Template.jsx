@@ -24,9 +24,9 @@ export default function Template() {
             </main>
 
             {/* back to top */}
-            <a href="#" className="glass-back" id="backToTop">
+            <button type="button" className="glass-back" id="backToTop">
                 <i className="bi bi-arrow-up"></i>
-            </a>
+            </button>
         </>
     )
 }

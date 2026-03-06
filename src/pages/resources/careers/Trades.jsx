@@ -53,14 +53,14 @@ export default function Trades() {
                     </div>
                   <h3 className="fw-bold">Mechanical &amp; Electrical</h3>
                   <p className="text-muted">Electricians, HVAC technicians, and controls specialists who install, maintain, and troubleshoot power distribution, climate systems, and automated control equipment to keep buildings and industrial facilities operating safely and efficiently.</p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto"
                     data-bs-toggle="modal"
-                    data-bs-target="#strategyModal"
+                    data-bs-target="#strategyModal-trades"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -70,14 +70,14 @@ export default function Trades() {
                   </div>
                   <h3 className="fw-bold">Construction &amp; Finishing</h3>
                   <p className="text-muted">Carpenters, finishers, and site supervisors responsible for framing, structural assembly, interior finishes, and coordinating crews to deliver quality construction on schedule and to code.</p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto"
                     data-bs-toggle="modal"
-                    data-bs-target="#financeModal"
+                    data-bs-target="#financeModal-trades"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -87,14 +87,14 @@ export default function Trades() {
                   </div>
                   <h3 className="fw-bold">Automotive &amp; Maintenance</h3>
                   <p className="text-muted">Automotive technicians, diesel specialists, and industrial maintenance mechanics who perform diagnostics, repair, and preventive maintenance to maximize equipment uptime and safety.</p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto"
                     data-bs-toggle="modal"
-                    data-bs-target="#opsModal"
+                    data-bs-target="#opsModal-trades"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -246,7 +246,7 @@ export default function Trades() {
         </section>
           </div>
           {/* Learn-more modals placed at end to avoid nested/header markup issues */}
-          <div className="modal fade" id="strategyModal" tabIndex={-1} aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+          <div className="modal fade" id="strategyModal-trades" tabIndex={-1} aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
             <div className="modal-dialog modal-dialog-centered modal-xl">
               <div className="modal-content border-0 rounded-4 shadow-lg">
                 <div className="modal-header bg-warning text-black rounded-top-4">
@@ -302,7 +302,7 @@ export default function Trades() {
               </div>
             </div>
           </div>
-          <div className="modal fade" id="financeModal" tabIndex={-1} aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+          <div className="modal fade" id="financeModal-trades" tabIndex={-1} aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
             <div className="modal-dialog modal-dialog-centered modal-xl">
               <div className="modal-content border-0 rounded-4 shadow-lg">
                 <div className="modal-header bg-warning text-black rounded-top-4">
@@ -346,7 +346,7 @@ export default function Trades() {
               </div>
             </div>
           </div>
-          <div className="modal fade" id="opsModal" tabIndex={-1} aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
+          <div className="modal fade" id="opsModal-trades" tabIndex={-1} aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
             <div className="modal-dialog modal-dialog-centered modal-xl">
               <div className="modal-content border-0 rounded-4 shadow-lg">
                 <div className="modal-header bg-warning text-black rounded-top-4">

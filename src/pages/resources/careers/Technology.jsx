@@ -41,7 +41,7 @@ export default function Technology() {
 									</div>
 									<h3 className="fw-bold">Software &amp; Development</h3>
 									<p className="text-muted">Design, build, and maintain scalable applications, APIs, and data platforms. Collaborate with product and design, write tests, and optimize performance to deliver reliable user experiences at scale.</p>
-									<a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#techDevModal">Learn More →</a>
+									<button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#techDevModal">Learn More →</button>
 								</div>
 							</div>
 							<div className="col-lg-4">
@@ -51,7 +51,7 @@ export default function Technology() {
 									</div>
 									<h3 className="fw-bold">Infrastructure &amp; Ops</h3>
 									<p className="text-muted">Architect and operate cloud platforms, CI/CD pipelines, and networking. Focus on automation, observability, reliability engineering, and incident response to keep services secure and performant.</p>
-									<a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#techInfraModal">Learn More →</a>
+									<button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#techInfraModal">Learn More →</button>
 								</div>
 							</div>
 							<div className="col-lg-4">
@@ -61,7 +61,7 @@ export default function Technology() {
 									</div>
 									<h3 className="fw-bold">Specialized &amp; Support</h3>
 									<p className="text-muted">Specialized roles—cybersecurity, UX/UI, data, and project management—that protect systems, shape product experiences, and coordinate cross-functional delivery to help teams ship safely and effectively.</p>
-									<a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#techSupportModal">Learn More →</a>
+									<button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#techSupportModal">Learn More →</button>
 								</div>
 							</div>
 						</div>

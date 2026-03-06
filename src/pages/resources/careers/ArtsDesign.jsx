@@ -24,7 +24,7 @@ export default function ArtsDesign() {
         </div>
       </section>
 
-      <main className="container-xl py-4 py-lg-5">
+      <div className="container-xl py-4 py-lg-5">
         <section id="roles" className="mb-5">
           <h2 className="fs-2 fw-bold section-heading-custom text-black">Key Business & Management Roles</h2>
           <p className="text-muted mb-4">Detailing common and high-impact roles, organized by function.</p>
@@ -38,7 +38,7 @@ export default function ArtsDesign() {
                   </div>
                   <h3 className="fw-bold">Digital & UX/UI Design</h3>
                   <p className="text-muted">This field bridges the gap between human behavior and technology by crafting intuitive, user-centered interfaces for digital products.</p>
-                  <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#strategyModal">Learn More →</a>
+                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#strategyModal-artsdesign">Learn More →</button>
                 </div>
               </div>
 
@@ -49,7 +49,7 @@ export default function ArtsDesign() {
                   </div>
                   <h3 className="fw-bold">Visual Arts & Media Production</h3>
                   <p className="text-muted">This sector serves as a powerful storytelling engine that communicates complex ideas through high-impact imagery and multimedia content.</p>
-                  <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#financeModal">Learn More →</a>
+                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#financeModal-artsdesign">Learn More →</button>
                 </div>
               </div>
 
@@ -60,7 +60,7 @@ export default function ArtsDesign() {
                   </div>
                   <h3 className="fw-bold">Management & Strategy</h3>
                   <p className="text-muted">Acting as the vital link between creative vision and business goals, this discipline focuses on leading teams.</p>
-                  <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#opsModal">Learn More →</a>
+                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#opsModal-artsdesign">Learn More →</button>
                 </div>
               </div>
             </div>
@@ -177,7 +177,7 @@ export default function ArtsDesign() {
             </div>
           </section>
         </section>
-      </main>
+      </div>
 
       <section className="arts-hero-bg d-flex align-items-center justify-content-center py-5">
         <div className="container">
@@ -194,7 +194,7 @@ export default function ArtsDesign() {
       </section>
 
       {/* Modals */}
-      <div className="modal fade" id="strategyModal" tabIndex="-1" aria-hidden="true">
+      <div className="modal fade" id="strategyModal-artsdesign" tabIndex="-1" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-xl">
           <div className="modal-content border-0 rounded-4 shadow-lg">
             <div className="modal-header bg-warning text-black rounded-top-4">
@@ -242,7 +242,7 @@ export default function ArtsDesign() {
         </div>
       </div>
 
-      <div className="modal fade" id="financeModal" tabIndex="-1" aria-hidden="true">
+      <div className="modal fade" id="financeModal-artsdesign" tabIndex="-1" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-xl">
           <div className="modal-content border-0 rounded-4 shadow-lg">
             <div className="modal-header bg-warning text-black rounded-top-4">
@@ -278,7 +278,7 @@ export default function ArtsDesign() {
         </div>
       </div>
 
-      <div className="modal fade" id="opsModal" tabIndex="-1" aria-hidden="true">
+      <div className="modal fade" id="opsModal-artsdesign" tabIndex="-1" aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-xl">
           <div className="modal-content border-0 rounded-4 shadow-lg">
             <div className="modal-header bg-warning text-black rounded-top-4">

@@ -36,7 +36,7 @@ export default function Finance() {
         </div>
       </section>
       {/* end of art image */}
-      <main className="container-xl py-4 py-lg-5">
+      <div className="container-xl py-4 py-lg-5">
         {/* start of second */}
         {/* primary color backing */}
         <section id="roles" className="mb-5">
@@ -62,14 +62,14 @@ export default function Finance() {
                     Professionals analyze markets, advise clients, and build
                     strategies to achieve long-term financial goals.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto "
                     data-bs-toggle="modal"
-                    data-bs-target="#strategyModal"
+                    data-bs-target="#strategyModal-finance"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -84,14 +84,14 @@ export default function Finance() {
                     analyze performance, and guide decisions that drive growth and
                     efficiency.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto"
                     data-bs-toggle="modal"
-                    data-bs-target="#financeModal"
+                    data-bs-target="#financeModal-finance"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -106,14 +106,14 @@ export default function Finance() {
                     audits, and help organizations meet legal and financial
                     standards.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className=" btn btn-warning text-decoration-none fw-bold mt-auto"
                     data-bs-toggle="modal"
-                    data-bs-target="#opsModal"
+                    data-bs-target="#opsModal-finance"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -328,7 +328,7 @@ export default function Finance() {
             </div>
           </section>
         </section>
-      </main>
+      </div>
       {/* hero section with buisness background */}
       <section className="finance-hero-bg d-flex align-items-center justify-content-center py-5">
         <div className="container">
@@ -356,7 +356,7 @@ export default function Finance() {
       {/* modal 1 */}
       <div
         className="modal fade"
-        id="strategyModal"
+        id="strategyModal-finance"
         tabIndex={-1}
         aria-hidden="true"
       >
@@ -438,7 +438,7 @@ export default function Finance() {
       {/* modal 2 */}
       <div
         className="modal fade"
-        id="financeModal"
+        id="financeModal-finance"
         tabIndex={-1}
         aria-hidden="true"
       >
@@ -503,7 +503,7 @@ export default function Finance() {
         </div>
       </div>
       {/* modal 3 */}
-      <div className="modal fade" id="opsModal" tabIndex={-1} aria-hidden="true">
+      <div className="modal fade" id="opsModal-finance" tabIndex={-1} aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-xl">
           <div className="modal-content border-0 rounded-4 shadow-lg">
             <div className="modal-header bg-warning text-black rounded-top-4">

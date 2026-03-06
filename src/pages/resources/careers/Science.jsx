@@ -37,7 +37,7 @@ export default function Science() {
                   </div>
                   <h3 className="fw-bold">Biological &amp; Medical Sciences</h3>
                   <p className="text-muted">Research biologists, biotechnologists, and clinical researchers designing experiments, analyzing biological systems, and translating discoveries into diagnostics, therapeutics, and biomanufacturing processes.</p>
-                  <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#sciBioModal">Learn More →</a>
+                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#sciBioModal">Learn More →</button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -47,7 +47,7 @@ export default function Science() {
                   </div>
                   <h3 className="fw-bold">Physical &amp; Environmental Sciences</h3>
                   <p className="text-muted">Chemists, materials scientists, physicists, and environmental researchers developing sustainable materials, studying climate impacts, and creating technologies for pollution mitigation and resource management.</p>
-                  <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#sciEnvModal">Learn More →</a>
+                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#sciEnvModal">Learn More →</button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -57,7 +57,7 @@ export default function Science() {
                   </div>
                   <h3 className="fw-bold">Data &amp; Computational Science</h3>
                   <p className="text-muted">Data scientists, bioinformaticians, and computational modelers who build pipelines, analyze large-scale datasets, and develop models that reveal patterns and accelerate scientific discovery.</p>
-                  <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#sciDataModal">Learn More →</a>
+                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#sciDataModal">Learn More →</button>
                 </div>
               </div>
             </div>

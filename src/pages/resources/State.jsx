@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from 'react'
+import React, { useMemo, useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import StateContent from '../../components/StateContent'
 
@@ -32,8 +32,9 @@ export default function State() {
     if (!selected) return
     const collapseId = `collapse-${selected}`
     const headerId = `heading-${selected}`
-    const collapseEl = document.getElementById(collapseId)
-    const headerEl = document.getElementById(headerId)
+    const container = accordionRef.current
+    const collapseEl = container ? container.querySelector(`#${collapseId}`) : document.getElementById(collapseId)
+    const headerEl = container ? container.querySelector(`#${headerId}`) : document.getElementById(headerId)
 
     if (collapseEl) {
       // Use Bootstrap's Collapse API if available so state toggling behaves correctly
@@ -55,6 +56,8 @@ export default function State() {
       (headerEl || collapseEl)?.scrollIntoView({ behavior: 'smooth', block: 'center' })
     }, 150)
   }, [selected])
+
+  const accordionRef = useRef(null)
 
   return (
     <main>
@@ -102,7 +105,7 @@ export default function State() {
       </div>
 
       <div className="container my-5">
-        <div className="accordion accordion-flush" id="accordionFlushExample">
+        <div ref={accordionRef} className="accordion accordion-flush" id="accordionFlushExample">
           {STATES.map(s => (
             <div className="accordion-item" key={s.abbr}>
               <h2 className="accordion-header" id={`heading-${s.abbr}`}>

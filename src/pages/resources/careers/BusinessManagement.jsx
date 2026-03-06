@@ -2,19 +2,6 @@ import React from 'react'
 import SmoothScrollLink from '/src/components/SmoothScrollLink'
 
 export default function BusinessManagement() {
-  const smoothScroll = (e, id) => {
-    if (e && typeof e.preventDefault === 'function') e.preventDefault();
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-      try {
-        window.history.replaceState(null, "", `#${id}`);
-      } catch (err) {
-        /* ignore */
-      }
-    }
-  };
-
   return (
     <main>
       {/* section with image container */}
@@ -32,13 +19,12 @@ export default function BusinessManagement() {
               analysis across all major industries.
             </p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
-              <a
-                href="#roles"
-                onClick={(e) => smoothScroll(e, "roles")}
+              <SmoothScrollLink
+                to="roles"
                 className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark"
               >
                 Explore Roles
-              </a>
+              </SmoothScrollLink>
               <a
                 href="/resources/explore"
                 className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
@@ -51,7 +37,7 @@ export default function BusinessManagement() {
         </div>
       </section>
       {/* end of art image */}
-      <main className="container-xl py-4 py-lg-5">
+      <div className="container-xl py-4 py-lg-5">
         {/* start of second */}
         {/* primary color backing */}
         <section id="roles" className="mb-5">
@@ -76,14 +62,14 @@ export default function BusinessManagement() {
                     provide the strategic vision that guides companies toward
                     sustainable growth.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto "
                     data-bs-toggle="modal"
-                    data-bs-target="#strategyModal"
+                    data-bs-target="#strategyModal-businessmanagement"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -97,14 +83,14 @@ export default function BusinessManagement() {
                     capital, managing talent, and leveraging data-driven insights to
                     ensure every resource is positioned for maximum impact and ROI.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto"
                     data-bs-toggle="modal"
-                    data-bs-target="#financeModal"
+                    data-bs-target="#financeModal-businessmanagement"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -119,14 +105,14 @@ export default function BusinessManagement() {
                     manage the critical systems that deliver products and services
                     to the world.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className=" btn btn-warning text-decoration-none fw-bold mt-auto"
                     data-bs-toggle="modal"
-                    data-bs-target="#opsModal"
+                    data-bs-target="#opsModal-businessmanagement"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -319,7 +305,7 @@ export default function BusinessManagement() {
             </div>
           </section>
         </section>
-      </main>
+      </div>
       {/* hero section with buisness background */}
       <section className="business-hero-bg d-flex align-items-center justify-content-center py-5">
         <div className="container">
@@ -333,13 +319,12 @@ export default function BusinessManagement() {
               leadership and analytical skills today to take the helm of a
               successful organization tomorrow.
             </p>
-            <a
-              href="#roles"
-              onClick={(e) => smoothScroll(e, "roles")}
+            <SmoothScrollLink
+              to="roles"
               className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
             >
               Define Your Business Strategy
-            </a>
+            </SmoothScrollLink>
           </section>
           {/* end of section and div */}
         </div>
@@ -347,7 +332,7 @@ export default function BusinessManagement() {
       {/* modals */}
       <div
         className="modal fade"
-        id="strategyModal"
+        id="strategyModal-businessmanagement"
         tabIndex={-1}
         aria-hidden="true"
       >
@@ -431,7 +416,7 @@ export default function BusinessManagement() {
       {/* modal for financial and resource management */}
       <div
         className="modal fade"
-        id="financeModal"
+        id="financeModal-businessmanagement"
         tabIndex={-1}
         aria-hidden="true"
       >
@@ -496,7 +481,7 @@ export default function BusinessManagement() {
         </div>
       </div>
       {/* modal for opperations and supply chain */}
-      <div className="modal fade" id="opsModal" tabIndex={-1} aria-hidden="true">
+      <div className="modal fade" id="opsModal-businessmanagement" tabIndex={-1} aria-hidden="true">
         <div className="modal-dialog modal-dialog-centered modal-xl">
           <div className="modal-content border-0 rounded-4 shadow-lg">
             <div className="modal-header bg-warning text-black rounded-top-4">

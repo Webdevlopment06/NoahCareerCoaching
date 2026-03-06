@@ -43,7 +43,7 @@ export default function About() {
                 <a href="https://www.linkedin.com/in/christopher-noah-a48a8a376" target="_blank" className="text-dark">
                   <i className="bi bi-linkedin fs-3"></i>
                 </a>
-                <a href="#" target="_blank" className="text-dark">
+                <a href="#" onClick={(e) => e.preventDefault()} className="text-dark">
                   <i className="bi bi-twitter-x fs-3"></i>
                 </a>
               </div>
@@ -148,7 +148,7 @@ export default function About() {
               <div className="card shadow-sm h-100 text-center p-4">
                 <h4 className="fw-bold mb-3">$25</h4>
                 <p>Helps us provide educational materials and resources to clients.</p>
-                <a href="#" className="btn btn-primary mt-auto">Donate $25</a>
+                <button type="button" className="btn btn-primary mt-auto">Donate $25</button>
               </div>
             </div>
 
@@ -156,7 +156,7 @@ export default function About() {
               <div className="card shadow-sm h-100 text-center p-4">
                 <h4 className="fw-bold mb-3">$50</h4>
                 <p>Supports one-on-one coaching sessions for individuals in need.</p>
-                <a href="#" className="btn btn-primary mt-auto">Donate $50</a>
+                <button type="button" className="btn btn-primary mt-auto">Donate $50</button>
               </div>
             </div>
 
@@ -164,7 +164,7 @@ export default function About() {
               <div className="card shadow-sm h-100 text-center p-4">
                 <h4 className="fw-bold mb-3">Custom Amount</h4>
                 <p>Your generosity helps us expand our programs and reach more people.</p>
-                <a href="#" className="btn btn-primary mt-auto">Donate Any Amount</a>
+                <button type="button" className="btn btn-primary mt-auto">Donate Any Amount</button>
               </div>
             </div>
           </div>

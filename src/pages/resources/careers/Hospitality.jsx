@@ -35,7 +35,7 @@ export default function Hospitality() {
         </div>
       </section>
       {/* end of art image */}
-      <main className="container-xl py-4 py-lg-5">
+      <div className="container-xl py-4 py-lg-5">
         {/* start of second */}
         {/* primary color backing */}
         <section id="roles" className="mb-5">
@@ -64,14 +64,14 @@ export default function Hospitality() {
                     plans, and ensuring patient safety and comfort throughout the
                     healthcare process.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto "
                     data-bs-toggle="modal"
-                    data-bs-target="#strategyModal"
+                    data-bs-target="#strategyModal-hospitality"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -89,14 +89,14 @@ export default function Hospitality() {
                     Strong teamwork, time management, and food safety knowledge are
                     essential.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto"
                     data-bs-toggle="modal"
-                    data-bs-target="#financeModal"
+                    data-bs-target="#financeModal-hospitality"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="col-lg-4">
@@ -113,14 +113,14 @@ export default function Hospitality() {
                     experiences. Creativity, organization, and strong communication
                     skills are key to success.
                   </p>
-                  <a
-                    href="#"
+                  <button
+                    type="button"
                     className=" btn btn-warning text-decoration-none fw-bold mt-auto"
                     data-bs-toggle="modal"
-                    data-bs-target="#opsModal"
+                    data-bs-target="#opsModal-hospitality"
                   >
                     Learn More →
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -327,7 +327,7 @@ export default function Hospitality() {
             </div>
           </section>
         </section>
-      </main>
+      </div>
       {/* hero section with buisness background */}
       <section className="hosp-hero-bg d-flex align-items-center justify-content-center py-5">
         <div className="container">
@@ -355,7 +355,7 @@ export default function Hospitality() {
       {/* modal 1 */}
       <div
         className="modal fade"
-        id="strategyModal"
+        id="strategyModal-hospitality"
         tabIndex={-1}
         aria-hidden="true"
       >
@@ -439,7 +439,7 @@ export default function Hospitality() {
       {/* modal 2 */}
       <div
         className="modal fade"
-        id="financeModal"
+        id="financeModal-hospitality"
         tabIndex={-1}
         aria-hidden="true"
       >
