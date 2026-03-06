@@ -36,7 +36,7 @@ export default function Trades() {
           </header>
         </div>
       </section>
-      <main className="container-xl py-4 py-lg-5">
+      <div className="container-xl py-4 py-lg-5">
         <section id="roles" className="mb-5">
           <h2 className="fs-2 fw-bold section-heading-custom text-dark">
             Key Trades &amp; Industry Roles
@@ -244,7 +244,7 @@ export default function Trades() {
             </div>
           </div>
         </section>
-          </main>
+          </div>
           {/* Learn-more modals placed at end to avoid nested/header markup issues */}
           <div className="modal fade" id="strategyModal" tabIndex={-1} aria-hidden="true" data-bs-backdrop="true" data-bs-keyboard="true">
             <div className="modal-dialog modal-dialog-centered modal-xl">

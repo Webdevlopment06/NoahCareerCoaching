@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Link, useNavigate, useLocation } from 'react-router-dom'
 
 
@@ -8,8 +8,10 @@ export default function Navbar() {
     const isActive = (path) => location.pathname === path
     const isSectionActive = (prefix) => location.pathname.startsWith(prefix)
     const [activeAboutSection, setActiveAboutSection] = useState(null)
+    const navRef = useRef(null)
+
     useEffect(() => {
-        const nav = document.querySelector('nav.navbar.fixed-top')
+        const nav = navRef.current
         if (!nav) return
 
         const setBodyPadding = () => {
@@ -21,7 +23,7 @@ export default function Navbar() {
         window.addEventListener('resize', setBodyPadding)
 
         // update when bootstrap collapse toggles (mobile menu) change height
-        const navMenu = document.getElementById('navMenu')
+        const navMenu = nav.querySelector('#navMenu')
         const bsHandler = () => setBodyPadding()
         if (navMenu) {
             navMenu.addEventListener('shown.bs.collapse', bsHandler)
@@ -116,7 +118,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg nav-bg shadow-sm fixed-top">
+            <nav ref={navRef} className="navbar navbar-expand-lg nav-bg shadow-sm fixed-top">
                 <div className="container">
                     {/* Logo */}
                     <Link className="navbar-brand" to="/">

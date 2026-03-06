@@ -32,4 +32,4 @@ npm run dev
 - We could add dark mode, but its not at all necessary.
 
 ### DOING (first priority anyway) 
-career page issues
+Fixing whatever I find

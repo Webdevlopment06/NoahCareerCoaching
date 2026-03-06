@@ -12,13 +12,13 @@ export default function ScrollToTop() {
       setTimeout(() => {
         const el = document.getElementById(id)
         if (el) {
-          el.scrollIntoView({ behavior: 'instant', block: 'start' })
+          el.scrollIntoView({ behavior: 'auto', block: 'start' })
         } else {
-          window.scrollTo({ top: 0, behavior: 'instant' })
+          window.scrollTo({ top: 0, behavior: 'auto' })
         }
       }, 80)
     } else {
-      window.scrollTo({ top: 0, behavior: 'instant' })
+      window.scrollTo({ top: 0, behavior: 'auto' })
     }
   }, [pathname, hash])
 
