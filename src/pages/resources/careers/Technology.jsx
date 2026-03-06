@@ -4,7 +4,7 @@ import SmoothScrollLink from '/src/components/SmoothScrollLink'
 export default function Technology() {
 	return (
 		<>
-			<section className="trades-hero-bg d-flex align-items-center justify-content-center py-5">
+			<section className="tech-hero-bg d-flex align-items-center justify-content-center py-5">
 				<div className="container">
 					<header className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
 						<h1 className="display-3 fw-bolder text-dark mb-3">
@@ -36,22 +36,31 @@ export default function Technology() {
 						<div className="row g-4">
 							<div className="col-lg-4">
 								<div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
+									<div className="icon-box mb-3">
+										<i className="bi bi-code-slash fs-3 text-f1b327"></i>
+									</div>
 									<h3 className="fw-bold">Software &amp; Development</h3>
-									<p className="text-muted">Build applications, services, and data systems used by millions.</p>
+									<p className="text-muted">Design, build, and maintain scalable applications, APIs, and data platforms. Collaborate with product and design, write tests, and optimize performance to deliver reliable user experiences at scale.</p>
 									<a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#techDevModal">Learn More →</a>
 								</div>
 							</div>
 							<div className="col-lg-4">
 								<div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
+									<div className="icon-box mb-3">
+										<i className="bi bi-cloud-arrow-up-fill fs-3 text-f1b327"></i>
+									</div>
 									<h3 className="fw-bold">Infrastructure &amp; Ops</h3>
-									<p className="text-muted">Design and maintain cloud, networks, and systems that scale.</p>
+									<p className="text-muted">Architect and operate cloud platforms, CI/CD pipelines, and networking. Focus on automation, observability, reliability engineering, and incident response to keep services secure and performant.</p>
 									<a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#techInfraModal">Learn More →</a>
 								</div>
 							</div>
 							<div className="col-lg-4">
 								<div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
+									<div className="icon-box mb-3">
+										<i className="bi bi-shield-lock-fill fs-3 text-f1b327"></i>
+									</div>
 									<h3 className="fw-bold">Specialized &amp; Support</h3>
-									<p className="text-muted">Security, design, and project roles that support product teams.</p>
+									<p className="text-muted">Specialized roles—cybersecurity, UX/UI, data, and project management—that protect systems, shape product experiences, and coordinate cross-functional delivery to help teams ship safely and effectively.</p>
 									<a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#techSupportModal">Learn More →</a>
 								</div>
 							</div>

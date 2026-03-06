@@ -66,8 +66,8 @@ export default function BusinessManagement() {
             <div className="row g-4">
               <div className="col-lg-4">
                 <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box bg-gradient-purple mb-3">
-                    <i className="bi bi-lightbulb text-white fs-3" />
+                  <div className="icon-box mb-3">
+                    <i className="bi bi-lightbulb fs-3"></i>
                   </div>
                   <h3 className="fw-bold">Strategy &amp; Consulting</h3>
                   <p className="text-muted">
@@ -88,8 +88,8 @@ export default function BusinessManagement() {
               </div>
               <div className="col-lg-4">
                 <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box bg-gradient-orange mb-3">
-                    <i className="bi bi-graph-up-arrow text-white fs-3" />
+                  <div className="icon-box mb-3">
+                    <i className="bi bi-graph-up-arrow fs-3"></i>
                   </div>
                   <h3 className="fw-bold">Financial &amp; Resource Management</h3>
                   <p className="text-muted">
@@ -109,8 +109,8 @@ export default function BusinessManagement() {
               </div>
               <div className="col-lg-4">
                 <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box bg-gradient-green mb-3">
-                    <i className="bi bi-gear text-white fs-3" />
+                  <div className="icon-box mb-3">
+                    <i className="bi bi-gear fs-3"></i>
                   </div>
                   <h3 className="fw-bold">Operations &amp; Supply Chain</h3>
                   <p className="text-muted">

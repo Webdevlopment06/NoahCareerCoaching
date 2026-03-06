@@ -26,22 +26,31 @@ export default function Law() {
             <div className="row g-4">
               <div className="col-lg-4">
                 <div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
+                  <div className="icon-box mb-3">
+                    <i className="bi bi-briefcase fs-3"></i>
+                  </div>
                   <h3 className="fw-bold">Private Practice &amp; Corporate Law</h3>
-                  <p className="text-muted">Corporate attorneys, IP lawyers, and transactional specialists advising businesses.</p>
+                  <p className="text-muted">Advises organizations on commercial law, transactions, and risk management. Work involves negotiating contracts, counseling on regulatory compliance, and partnering with business teams to structure deals. Ideal for detail-oriented problem-solvers who enjoy commercial strategy.</p>
                   <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#lawCorpModal">Learn More →</a>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
+                  <div className="icon-box mb-3">
+                    <i className="bi bi-people-fill fs-3"></i>
+                  </div>
                   <h3 className="fw-bold">Public Service &amp; Advocacy</h3>
-                  <p className="text-muted">Public defenders, prosecutors, and judges serving communities and the public interest.</p>
+                  <p className="text-muted">Serves the public through courtroom advocacy, policy, and community representation. Roles range from trial work and client advocacy to shaping public policy and legal reform. Suited to those driven by public service, strong oral advocacy, and ethical judgment.</p>
                   <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#lawPublicModal">Learn More →</a>
                 </div>
               </div>
               <div className="col-lg-4">
                 <div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
+                  <div className="icon-box mb-3">
+                    <i className="bi bi-file-earmark-text fs-3" />
+                  </div>
                   <h3 className="fw-bold">Legal Support &amp; Paralegal Roles</h3>
-                  <p className="text-muted">Paralegals, court reporters, and mediators who enable legal work behind the scenes.</p>
+                  <p className="text-muted">Provides essential support to legal teams via research, document drafting, and case coordination. These roles build practical litigation and transactional experience and often lead to specialized careers in compliance, legal ops, or further legal study. Great for organized communicators who thrive on supporting complex workflows.</p>
                   <a href="#" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#lawSupportModal">Learn More →</a>
                 </div>
               </div>
@@ -80,10 +89,84 @@ export default function Law() {
         <section id="skills" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
           <h2 className="fs-2 fw-bold section-heading-custom text-dark">Essential Skills and Knowledge</h2>
           <p className="text-muted mb-4">Research, persuasive writing, ethical judgment, and courtroom presentation skills.</p>
+          <div className="row g-5">
+            <div className="col-lg-6">
+              <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Hard Skills (Legal)</h3>
+              <div className="row g-4">
+                <div className="col-12 d-flex align-items-start">
+                  <i className="bi bi-book-half me-3 fs-3 text-f1b327" />
+                  <div>
+                    <div className="fw-medium">Legal Research &amp; Writing</div>
+                    <div className="small text-muted">Statutes, case law, drafting pleadings, and memos with precise citation.</div>
+                  </div>
+                </div>
+                <div className="col-12 d-flex align-items-start">
+                  <i className="bi bi-search me-3 fs-3 text-f1b327" />
+                  <div>
+                    <div className="fw-medium">Case Analysis &amp; Strategy</div>
+                    <div className="small text-muted">Issue spotting, evidence assessment, and developing litigation or negotiation plans.</div>
+                  </div>
+                </div>
+                <div className="col-12 d-flex align-items-start">
+                  <i className="bi bi-server me-3 fs-3 text-f1b327" />
+                  <div>
+                    <div className="fw-medium">E-Discovery &amp; Legal Technology</div>
+                    <div className="small text-muted">Managing digital evidence, e-filing systems, and using tools for document review.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Soft Skills (Professional)</h3>
+              <div className="row g-4">
+                <div className="col-12 d-flex align-items-start">
+                  <i className="bi bi-people-fill me-3 fs-3 text-f1b327" />
+                  <div>
+                    <div className="fw-medium">Advocacy &amp; Oral Argument</div>
+                    <div className="small text-muted">Persuasive courtroom presence, clear oral advocacy, and concise cross-examination.</div>
+                  </div>
+                </div>
+                <div className="col-12 d-flex align-items-start">
+                  <i className="bi bi-shield-check me-3 fs-3 text-f1b327" />
+                  <div>
+                    <div className="fw-medium">Ethical Judgment &amp; Professionalism</div>
+                    <div className="small text-muted">Client confidentiality, conflict checks, and sound ethical decision-making.</div>
+                  </div>
+                </div>
+                <div className="col-12 d-flex align-items-start">
+                  <i className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327" />
+                  <div>
+                    <div className="fw-medium">Negotiation &amp; Client Management</div>
+                    <div className="small text-muted">Managing expectations, settlement negotiation, and building client trust.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="future" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
           <h2 className="fs-2 fw-bold section-heading-custom text-dark">Future Trends and Growth</h2>
+          <div className="row g-4 mt-3">
+            <div className="col-md-4">
+              <div className="p-3 border-start border-4 border-custom-secondary bg-warning-subtle rounded-3">
+                <h3 className="fs-5 fw-semibold text-custom-secondary mb-2">Legal Tech &amp; AI</h3>
+                <p className="small text-muted mb-0">Automation for document review, AI-assisted research, and contract analysis will accelerate work but demand oversight and new skills.</p>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="p-3 border-start border-4 border-custom-primary bg-primary-subtle rounded-3">
+                <h3 className="fs-5 fw-semibold text-custom-primary mb-2 text-dark">Access to Justice</h3>
+                <p className="small text-muted mb-0">There is growing focus on pro bono services, alternative dispute resolution, and tools that expand legal help to underserved communities.</p>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="p-3 border-start border-4 border-secondary bg-secondary-subtle rounded-3">
+                <h3 className="fs-5 fw-semibold text-secondary mb-2">Regulatory Complexity</h3>
+                <p className="small text-muted mb-0">Increasing regulation across industries creates demand for specialized counsel in areas like privacy, compliance, and IP.</p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
 
@@ -103,11 +186,11 @@ export default function Law() {
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">
-                  <div className="p-3 bg-light rounded-3 border mb-3">
+                  <div className="p-3 bg-warning-subtle rounded-3 border mb-3">
                     <p className="fw-bold fs-5">Corporate Attorney</p>
                     <p className="mb-0 text-muted small">Advising businesses on contracts, mergers, regulations, and liability issues.</p>
                   </div>
-                  <div className="p-3 bg-light rounded-3 border mb-3">
+                  <div className="p-3 bg-primary-subtle rounded-3 border mb-3">
                     <p className="fw-bold fs-5">Litigation Attorney</p>
                     <p className="mb-0 text-muted small">Representing clients in civil lawsuits, including research, discovery, and trial.</p>
                   </div>
@@ -132,11 +215,11 @@ export default function Law() {
             <div className="modal-body p-4 p-md-5">
               <div className="row g-4 align-items-center">
                 <div className="col-12 col-lg-6">
-                  <div className="p-3 bg-light rounded-3 border mb-3">
+                  <div className="p-3 bg-warning-subtle rounded-3 border mb-3">
                     <p className="fw-bold fs-5">Public Defender</p>
                     <p className="mb-0 text-muted small">Providing legal defense to indigent defendants in criminal court cases.</p>
                   </div>
-                  <div className="p-3 bg-light rounded-3 border">
+                  <div className="p-3 bg-primary-subtle rounded-3 border">
                     <p className="fw-bold fs-5">Prosecutor (District Attorney)</p>
                     <p className="mb-0 text-muted small">Representing the government in criminal cases and upholding the law.</p>
                   </div>
@@ -167,11 +250,11 @@ export default function Law() {
                   </div>
                 </div>
                 <div className="col-12 col-lg-6 order-lg-2">
-                  <div className="p-3 bg-light rounded-3 border mb-3">
+                  <div className="p-3 bg-warning-subtle rounded-3 border mb-3">
                     <p className="fw-bold fs-5">Paralegal / Legal Assistant</p>
                     <p className="mb-0 text-muted small">Conducting legal research, drafting documents, and assisting attorneys in case preparation.</p>
                   </div>
-                  <div className="p-3 bg-light rounded-3 border">
+                  <div className="p-3 bg-primary-subtle rounded-3 border">
                     <p className="fw-bold fs-5">Mediator / Arbitrator</p>
                     <p className="mb-0 text-muted small">Facilitating resolution between parties outside of formal trial settings.</p>
                   </div>

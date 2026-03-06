@@ -48,14 +48,11 @@ export default function Trades() {
             <div className="row g-4">
               <div className="col-lg-4">
                 <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box bg-gradient-red mb-3">
-                    <i className="bi bi-tools text-white fs-3" />
-                  </div>
+                  <div className="icon-box mb-3">
+                      <i className="bi bi-tools fs-3 text-f1b327"></i>
+                    </div>
                   <h3 className="fw-bold">Mechanical &amp; Electrical</h3>
-                  <p className="text-muted">
-                    Work on power, HVAC, and control systems that keep buildings and
-                    industry running smoothly.
-                  </p>
+                  <p className="text-muted">Electricians, HVAC technicians, and controls specialists who install, maintain, and troubleshoot power distribution, climate systems, and automated control equipment to keep buildings and industrial facilities operating safely and efficiently.</p>
                   <a
                     href="#"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto"
@@ -68,13 +65,11 @@ export default function Trades() {
               </div>
               <div className="col-lg-4">
                 <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box bg-gradient-orange mb-3">
-                    <i className="bi bi-building text-white fs-3" />
+                  <div className="icon-box mb-3">
+                    <i className="bi bi-building fs-3 text-f1b327"></i>
                   </div>
                   <h3 className="fw-bold">Construction &amp; Finishing</h3>
-                  <p className="text-muted">
-                    Roles from carpentry to site supervision focused on building and finishing projects.
-                  </p>
+                  <p className="text-muted">Carpenters, finishers, and site supervisors responsible for framing, structural assembly, interior finishes, and coordinating crews to deliver quality construction on schedule and to code.</p>
                   <a
                     href="#"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto"
@@ -87,13 +82,11 @@ export default function Trades() {
               </div>
               <div className="col-lg-4">
                 <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box bg-gradient-green mb-3">
-                    <i className="bi bi-gear text-white fs-3" />
+                  <div className="icon-box mb-3">
+                    <i className="bi bi-gear fs-3 text-f1b327"></i>
                   </div>
                   <h3 className="fw-bold">Automotive &amp; Maintenance</h3>
-                  <p className="text-muted">
-                    From automotive technicians to industrial maintenance specialists, keep machines moving.
-                  </p>
+                  <p className="text-muted">Automotive technicians, diesel specialists, and industrial maintenance mechanics who perform diagnostics, repair, and preventive maintenance to maximize equipment uptime and safety.</p>
                   <a
                     href="#"
                     className="btn btn-warning text-decoration-none fw-bold mt-auto"
@@ -156,65 +149,47 @@ export default function Trades() {
             </div>
           </section>
         </section>
-        <section
-          id="skills"
-          className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5"
-        >
-          <h2 className="fs-2 fw-bold section-heading-custom text-dark">
-            Essential Skills and Knowledge
-          </h2>
-          <p className="text-muted mb-4">
-            The core of the trades is technical skill combined with safety awareness
-            and physical capability.
-          </p>
-          <div className="row g-4">
+        <section id="skills" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
+          <h2 className="fs-2 fw-bold section-heading-custom text-dark">Essential Skills and Knowledge</h2>
+          <p className="text-muted mb-4">Technical mastery, safety-first practices, and effective team coordination are essential for long-term success in the trades.</p>
+          <div className="row g-5">
             <div className="col-lg-6">
-              <h3 className="fs-4 fw-semibold text-custom-primary mb-3">
-                Technical &amp; Practical Skills
-              </h3>
-              <div className="d-flex flex-wrap gap-2">
-                <span className="badge text-bg-danger-subtle border border-danger px-3 py-2 fs-6 text-dark">
-                  Blueprint Reading
-                </span>
-                <span className="badge text-bg-danger-subtle border border-danger px-3 py-2 fs-6 text-dark">
-                  Code Compliance (e.g., NEC, IBC)
-                </span>
-                <span className="badge text-bg-danger-subtle border border-danger px-3 py-2 fs-6 text-dark">
-                  Measurement &amp; Calculation
-                </span>
-                <span className="badge text-bg-danger-subtle border border-danger px-3 py-2 fs-6 text-dark">
-                  Precision Tool Use
-                </span>
-                <span className="badge text-bg-danger-subtle border border-danger px-3 py-2 fs-6 text-dark">
-                  Advanced Diagnostics
-                </span>
-                <span className="badge text-bg-danger-subtle border border-danger px-3 py-2 fs-6 text-dark">
-                  Safety Training (OSHA)
-                </span>
+              <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Hard Skills (Technical)</h3>
+              <div className="row g-4">
+                <div className="col-6 d-flex align-items-center">
+                  <i className="bi bi-tools me-3 fs-3 text-f1b327" />
+                  <span className="fw-medium">Blueprint Reading &amp; Layout</span>
+                </div>
+                <div className="col-6 d-flex align-items-center">
+                  <i className="bi bi-calculator-fill me-3 fs-3 text-f1b327" />
+                  <span className="fw-medium">Measurement &amp; Diagnostics</span>
+                </div>
+                <div className="col-6 d-flex align-items-center">
+                  <i className="bi bi-wrench me-3 fs-3 text-f1b327" />
+                  <span className="fw-medium">Power Systems &amp; HVAC</span>
+                </div>
+                <div className="col-6 d-flex align-items-center">
+                  <i className="bi bi-gear me-3 fs-3 text-f1b327" />
+                  <span className="fw-medium">Equipment Maintenance</span>
+                </div>
               </div>
             </div>
             <div className="col-lg-6">
-              <h3 className="fs-4 fw-semibold text-custom-secondary mb-3">
-                Workplace &amp; Physical Skills
-              </h3>
-              <ul className="list-unstyled space-y-3 text-muted">
-                <li className="d-flex align-items-start mb-2">
-                  <span className="badge bg-custom-secondary rounded-circle me-2 mt-1 dot-8" />
-                  Attention to Detail and Quality Workmanship
-                </li>
-                <li className="d-flex align-items-start mb-2">
-                  <span className="badge bg-custom-secondary rounded-circle me-2 mt-1 dot-8" />
-                  Physical Stamina and Endurance
-                </li>
-                <li className="d-flex align-items-start mb-2">
-                  <span className="badge bg-custom-secondary rounded-circle me-2 mt-1 dot-8" />
-                  Punctuality and Reliability
-                </li>
-                <li className="d-flex align-items-start mb-2">
-                  <span className="badge bg-custom-secondary rounded-circle me-2 mt-1 dot-8" />
-                  Effective Teamwork and Communication on Site
-                </li>
-              </ul>
+              <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Soft Skills (Collaborative)</h3>
+              <div className="row g-4">
+                <div className="col-12 d-flex align-items-center">
+                  <i className="bi bi-people-fill me-3 fs-3 text-f1b327" />
+                  <span className="fw-medium">Crew Communication &amp; Coordination</span>
+                </div>
+                <div className="col-12 d-flex align-items-center">
+                  <i className="bi bi-shield-check me-3 fs-3 text-f1b327" />
+                  <span className="fw-medium">Safety &amp; Compliance Mindset</span>
+                </div>
+                <div className="col-12 d-flex align-items-center">
+                  <i className="bi bi-clock-fill me-3 fs-3 text-f1b327" />
+                  <span className="fw-medium">Scheduling &amp; Reliability</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
