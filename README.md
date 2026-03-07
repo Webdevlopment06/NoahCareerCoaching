@@ -30,6 +30,7 @@ npm run dev
 
 ### IDEAS:
 - We could add dark mode, but its not at all necessary.
+- We could put similar pages into a component template and then have all the data for each page in json to reduce duplicate code and file size
 
 ### DOING (first priority anyway) 
 Fixing whatever I find
