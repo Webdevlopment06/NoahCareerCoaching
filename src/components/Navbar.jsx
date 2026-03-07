@@ -146,16 +146,15 @@ export default function Navbar() {
 
                             {/* About Dropdown */}
                             <li className="nav-item dropdown position-static" id="nav-about">
-                                <a
+                                <button
                                     className={`nav-link dropdown-toggle navfont ${isSectionActive('/about') ? 'nav-active active' : 'blackText'}`}
-                                    href="#"
+                                    type="button"
                                     id="aboutDropdown"
-                                    role="button"
                                     data-bs-toggle="dropdown"
-                                    onClick={(e) => e.preventDefault()}
+                                    aria-expanded="false"
                                 >
                                     ABOUT
-                                </a>
+                                </button>
                                 <div className="dropdown-menu w-100 p-4 text-center" aria-labelledby="aboutDropdown">
                                     <div className="container">
                                         <div className="row mb-2">
@@ -204,16 +203,15 @@ export default function Navbar() {
 
                             {/* Services Dropdown */}
                             <li className="nav-item dropdown position-static" id="nav-services">
-                                <a
+                                <button
                                     className={`nav-link dropdown-toggle navfont ${isSectionActive('/services') ? 'nav-active active' : 'blackText'}`}
-                                    href="#"
+                                    type="button"
                                     id="servicesDropdown"
-                                    role="button"
                                     data-bs-toggle="dropdown"
-                                    onClick={(e) => e.preventDefault()}
+                                    aria-expanded="false"
                                 >
                                     SERVICES
-                                </a>
+                                </button>
                                 <div className="dropdown-menu w-100 p-4 text-center" aria-labelledby="servicesDropdown">
                                     <div className="container">
                                         <div className="row mb-2">
@@ -274,16 +272,15 @@ export default function Navbar() {
 
                             {/* Resources Dropdown */}
                             <li className="nav-item dropdown position-static" id="nav-resources">
-                                <a
+                                <button
                                     className={`nav-link dropdown-toggle navfont ${isSectionActive('/resources') ? 'nav-active active' : 'blackText'}`}
-                                    href="#"
+                                    type="button"
                                     id="resourcesDropdown"
-                                    role="button"
                                     data-bs-toggle="dropdown"
-                                    onClick={(e) => e.preventDefault()}
+                                    aria-expanded="false"
                                 >
                                     RESOURCES
-                                </a>
+                                </button>
                                 <div className="dropdown-menu w-100 p-4 text-center" aria-labelledby="resourcesDropdown">
                                     <div className="container">
                                         <div className="row mb-2">

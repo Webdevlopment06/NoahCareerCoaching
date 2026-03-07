@@ -21,12 +21,12 @@ export default function About() {
         <div className="container my-5">
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
-              <img src="/images/about-imgs/career.png" className="img-fluid w-100 h-100 object-fit-cover rounded min-h-400"
+              <img loading="lazy" src="/images/about-imgs/career.png" className="img-fluid w-100 h-100 object-fit-cover rounded min-h-400"
                 alt="Large Section" />
             </div>
 
             <div className="col-lg-6 d-flex flex-column align-items-center text-center">
-              <img src="/images/about-imgs/chris.png" className="rounded-circle mb-3 img-180" alt="Christopher Noah" />
+              <img loading="lazy" src="/images/about-imgs/chris.png" className="rounded-circle mb-3 img-180" alt="Christopher Noah" />
 
               <p className="mb-4 px-3 text-dark">
                 Christopher Noah is the CEO and founder of Noah Career Coaching. His drive and passion to provide help to
@@ -34,13 +34,13 @@ export default function About() {
               </p>
 
               <div className="d-flex gap-3">
-                <a href="https://www.facebook.com/p/Noah-Career-Coaching-61578635225209/" target="_blank" className="text-dark">
+                <a href="https://www.facebook.com/p/Noah-Career-Coaching-61578635225209/" target="_blank" rel="noreferrer noopener" className="text-dark">
                   <i className="bi bi-facebook fs-3"></i>
                 </a>
-                <a href="https://www.instagram.com/p/DOytPcRkRr5/" target="_blank" className="text-dark">
+                <a href="https://www.instagram.com/p/DOytPcRkRr5/" target="_blank" rel="noreferrer noopener" className="text-dark">
                   <i className="bi bi-instagram fs-3"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/christopher-noah-a48a8a376" target="_blank" className="text-dark">
+                <a href="https://www.linkedin.com/in/christopher-noah-a48a8a376" target="_blank" rel="noreferrer noopener" className="text-dark">
                   <i className="bi bi-linkedin fs-3"></i>
                 </a>
                 <a href="#" onClick={(e) => e.preventDefault()} className="text-dark">

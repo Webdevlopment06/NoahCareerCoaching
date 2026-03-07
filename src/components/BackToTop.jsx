@@ -16,9 +16,10 @@ export default function BackToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
+  // Don't change this to a button, it messes with the styles.
   return (
     <a
-      href="#"
+      type="button"
       className={"glass-back" + (visible ? ' show' : '')}
       id="backToTop"
       onClick={handleClick}

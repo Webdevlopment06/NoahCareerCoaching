@@ -82,7 +82,7 @@ export default function Home() {
               <div className="row g-4">
                 <div className="col-md-6">
                   <div className="d-flex align-items-center gap-3">
-                    <img src="/images/home-imgs/sanh.jpg" className="rounded-circle border border-success border-2 avatar-48" alt="Sanh K." />
+                    <img loading="lazy" src="/images/home-imgs/sanh.jpg" className="rounded-circle border border-success border-2 avatar-48" alt="Sanh K." />
                     <div className="border-start border-secondary ps-3">
                       <p className="small blackText fst-italic mb-0">"Noah helped me land my dream job!"</p>
                       <footer className="blockquote-footer blackText mt-1 mb-0">Sanh K.</footer>

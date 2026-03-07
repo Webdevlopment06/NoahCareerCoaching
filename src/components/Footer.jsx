@@ -37,9 +37,9 @@ export default function Footer() {
 					<div className="col-md-2">
 						<h6 className="fw-bold">Follow</h6>
 						<div className="d-flex gap-2">
-							<a className="text-dark fs-5" href="https://www.linkedin.com/company/noah-career-coaching" target="_blank" rel="noreferrer"><i className="bi bi-linkedin"></i></a>
-							<a className="text-dark fs-5" href="https://www.instagram.com/noahcareercoaching/" target="_blank" rel="noreferrer"><i className="bi bi-instagram"></i></a>
-							<a className="text-dark fs-5" href="https://www.tiktok.com/@noahcareercoaching" target="_blank" rel="noreferrer" aria-label="TikTok">
+							<a className="text-dark fs-5" href="https://www.linkedin.com/company/noah-career-coaching" target="_blank" rel="noreferrer noopener"><i className="bi bi-linkedin"></i></a>
+							<a className="text-dark fs-5" href="https://www.instagram.com/noahcareercoaching/" target="_blank" rel="noreferrer noopener"><i className="bi bi-instagram"></i></a>
+							<a className="text-dark fs-5" href="https://www.tiktok.com/@noahcareercoaching" target="_blank" rel="noreferrer noopener" aria-label="TikTok">
 								<img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tiktok.svg" alt="TikTok" className="icon-svg-small" />
 							</a>
 						</div>

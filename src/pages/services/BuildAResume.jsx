@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 export default function BuildAResume() {
-  const [name, setName] = useState('Your Name')
+  const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [summary, setSummary] = useState('')
@@ -22,7 +22,7 @@ export default function BuildAResume() {
               <h5 className="mb-2">Step 1: Personal Information</h5>
               <div className="mb-2">
                 <label className="form-label">Name</label>
-                <input value={name === 'Your Name' ? '' : name} onChange={e => setName(e.target.value || 'Your Name')} className="form-control" />
+                <input value={name} onChange={e => setName(e.target.value)} className="form-control" />
               </div>
               <div className="mb-2">
                 <label className="form-label">Email</label>

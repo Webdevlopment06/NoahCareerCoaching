@@ -20,15 +20,15 @@ export default function Contact() {
             </li>
             <li className="mb-2">
               <i className="bi bi-linkedin me-2"></i>
-              <a href="https://www.linkedin.com/company/noah-career-coaching" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://www.linkedin.com/company/noah-career-coaching" target="_blank" rel="noreferrer noopener">LinkedIn</a>
             </li>
             <li className="mb-2">
               <i className="bi bi-instagram me-2"></i>
-              <a href="https://www.instagram.com/noahcareercoaching/" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://www.instagram.com/noahcareercoaching/" target="_blank" rel="noreferrer noopener">Instagram</a>
             </li>
             <li className="mb-2">
-              <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tiktok.svg" alt="TikTok" className="me-2 icon-svg-small" />
-              <a href="https://www.tiktok.com/@noahcareercoaching" target="_blank" rel="noreferrer">TikTok</a>
+              <img loading="lazy" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tiktok.svg" alt="TikTok" className="me-2 icon-svg-small" />
+              <a href="https://www.tiktok.com/@noahcareercoaching" target="_blank" rel="noreferrer noopener">TikTok</a>
             </li>
           </ul>
 
