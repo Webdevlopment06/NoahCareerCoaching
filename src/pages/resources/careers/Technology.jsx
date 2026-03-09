@@ -99,10 +99,87 @@ export default function Technology() {
 				<section id="skills" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
 					<h2 className="fs-2 fw-bold section-heading-custom text-dark">Essential Skills and Knowledge</h2>
 					<p className="text-muted mb-4">Core technical skills, tooling, and collaboration practices.</p>
+					<div className="row g-5">
+						<div className="col-lg-6">
+							<h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Hard Skills (Technical)</h3>
+							<div className="row g-4">
+								<div className="col-12 d-flex align-items-start">
+									<i className="bi bi-code-slash me-3 fs-3 text-f1b327" />
+									<div>
+										<div className="fw-medium">Programming &amp; Data Structures</div>
+										<p className="small text-muted mb-0">Strong fundamentals in at least one language (JavaScript, Python, Java), algorithms, and design patterns.</p>
+									</div>
+								</div>
+								<div className="col-12 d-flex align-items-start">
+									<i className="bi bi-database me-3 fs-3 text-f1b327" />
+									<div>
+										<div className="fw-medium">Databases &amp; Data Engineering</div>
+										<p className="small text-muted mb-0">SQL, NoSQL, ETL basics, and working with data pipelines.</p>
+									</div>
+								</div>
+								<div className="col-12 d-flex align-items-start">
+									<i className="bi bi-cloud-upload me-3 fs-3 text-f1b327" />
+									<div>
+										<div className="fw-medium">Cloud &amp; Infrastructure</div>
+										<p className="small text-muted mb-0">Familiarity with AWS/Azure/GCP, containers, and CI/CD workflows.</p>
+									</div>
+								</div>
+								<div className="col-12 d-flex align-items-start">
+									<i className="bi bi-shield-lock-fill me-3 fs-3 text-f1b327" />
+									<div>
+										<div className="fw-medium">Security &amp; Testing</div>
+										<p className="small text-muted mb-0">Secure coding practices, automated testing, and basic threat awareness.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="col-lg-6">
+							<h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Soft Skills (Collaboration)</h3>
+							<div className="row g-4">
+								<div className="col-12 d-flex align-items-center">
+									<i className="bi bi-people-fill me-3 fs-3 text-f1b327" />
+									<span className="fw-medium">Communication &amp; Cross-Functional Work</span>
+								</div>
+								<div className="col-12 d-flex align-items-center">
+									<i className="bi bi-gear-fill me-3 fs-3 text-f1b327" />
+									<span className="fw-medium">Problem Solving &amp; Ownership</span>
+								</div>
+								<div className="col-12 d-flex align-items-center">
+									<i className="bi bi-clock-history me-3 fs-3 text-f1b327" />
+									<span className="fw-medium">Agile Practices &amp; Time Management</span>
+								</div>
+								<div className="col-12 d-flex align-items-center">
+									<i className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327" />
+									<span className="fw-medium">Continuous Learning &amp; Curiosity</span>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 
 				<section id="future" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
 					<h2 className="fs-2 fw-bold section-heading-custom text-dark">Future Trends and Growth</h2>
+					<p className="text-muted mb-4">Where the industry is headed and the skills that will grow in demand.</p>
+					<div className="row g-4">
+						<div className="col-md-4">
+							<div className="p-3 border-start border-4 border-custom-secondary bg-warning-subtle rounded-3">
+								<h3 className="fs-5 fw-semibold text-custom-secondary mb-2">AI &amp; Machine Learning</h3>
+								<p className="small text-muted mb-0">AI is reshaping product features, tooling, and developer workflows—skills in ML pipelines and model ops will be valuable.</p>
+							</div>
+						</div>
+						<div className="col-md-4">
+							<div className="p-3 border-start border-4 border-custom-primary bg-primary-subtle rounded-3">
+								<h3 className="fs-5 fw-semibold text-custom-primary mb-2 text-dark">Cloud-Native &amp; Edge</h3>
+								<p className="small text-muted mb-0">Serverless, containers, and edge computing enable scalable, distributed systems—expertise in cloud platforms remains essential.</p>
+							</div>
+						</div>
+						<div className="col-md-4">
+							<div className="p-3 border-start border-4 border-secondary bg-secondary-subtle rounded-3">
+								<h3 className="fs-5 fw-semibold text-secondary mb-2">Security &amp; Privacy</h3>
+								<p className="small text-muted mb-0">As online systems grow, secure development, privacy-by-design, and regulatory compliance become non-negotiable.</p>
+							</div>
+						</div>
+					</div>
 				</section>
 			</main>
 
