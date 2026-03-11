@@ -18,7 +18,6 @@ npm run dev
 
 ### ISSUES:
 - A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them. However, This not really an issue and more of just a change. The site still looks and works fine with this.
-- I need to test if the images are still broken in the deployment
 - the footer has some links that do not work and send you to 404s (they are placholders)
 - the find your path button in career pages does not go anywhere
 
@@ -29,7 +28,7 @@ npm run dev
 - The Navbar is position absolute and there is some javascript to make each page 
 - The Navbar page you are on is indicated in blue.
 - images are now organized simlarly to how the pages are.
-Made a component for the cards in the career pages.
+- Made a component for the cards in the career pages.
 
 ### IDEAS:
 - We could add dark mode, but its not at all necessary.
