@@ -1,5 +1,6 @@
 import React from 'react'
 import SmoothScrollLink from '/src/components/SmoothScrollLink'
+import RoleCard from '/src/components/RoleCard'
 
 export default function ArtsDesign() {
   return (
@@ -32,36 +33,33 @@ export default function ArtsDesign() {
           <div className="container py-5">
             <div className="row g-4">
               <div className="col-lg-4">
-                  <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-lightbulb fs-3"></i>
-                  </div>
-                  <h3 className="fw-bold">Digital & UX/UI Design</h3>
-                  <p className="text-muted">This field bridges the gap between human behavior and technology by crafting intuitive, user-centered interfaces for digital products.</p>
-                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#strategyModal-artsdesign">Learn More →</button>
-                </div>
+                <RoleCard
+                  icon="bi bi-lightbulb"
+                  title="Digital &amp; UX/UI Design"
+                  modalTarget="#strategyModal-artsdesign"
+                >
+                  This field bridges the gap between human behavior and technology by crafting intuitive, user-centered interfaces for digital products. It focuses on optimizing the functionality and accessibility of websites and applications to ensure a seamless interaction for every user.
+                </RoleCard>
               </div>
 
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-graph-up-arrow fs-3"></i>
-                  </div>
-                  <h3 className="fw-bold">Visual Arts & Media Production</h3>
-                  <p className="text-muted">This sector serves as a powerful storytelling engine that communicates complex ideas through high-impact imagery and multimedia content.</p>
-                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#financeModal-artsdesign">Learn More →</button>
-                </div>
+                <RoleCard
+                  icon="bi bi-graph-up-arrow"
+                  title="Visual Arts &amp; Media Production"
+                  modalTarget="#financeModal-artsdesign"
+                >
+                  This sector serves as a powerful storytelling engine that communicates complex ideas through high-impact imagery and multimedia content. By blending technical skills in cinematography, graphics, and sound, it creates immersive experiences that define brand identities and capture audience attention.
+                </RoleCard>
               </div>
 
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-gear fs-3"></i>
-                  </div>
-                  <h3 className="fw-bold">Management & Strategy</h3>
-                  <p className="text-muted">Acting as the vital link between creative vision and business goals, this discipline focuses on leading teams.</p>
-                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#opsModal-artsdesign">Learn More →</button>
-                </div>
+                <RoleCard
+                  icon="bi bi-gear"
+                  title="Management &amp; Strategy"
+                  modalTarget="#opsModal-artsdesign"
+                >
+                  Acting as the vital link between creative vision and business goals, this discipline focuses on leading teams and defining the "why" behind every project. It utilizes design thinking and strategic planning to ensure that artistic output is not only high-quality but also commercially viable and impactful.
+                </RoleCard>
               </div>
             </div>
           </div>

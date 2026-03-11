@@ -18,8 +18,8 @@ export default function Footer() {
 					<div className="col-md-3">
 						<h6 className="fw-bold">Explore</h6>
 						<ul className="list-unstyled small">
-							<li><a className="text-decoration-none text-dark" href="/services">Services</a></li>
-							<li className="mt-1"><a className="text-decoration-none text-dark" href="/resources">Resources</a></li>
+							<li><a className="text-decoration-none text-dark" href="/services/resume">Services</a></li>
+							<li className="mt-1"><a className="text-decoration-none text-dark" href="/resources/explore">Resources</a></li>
 							<li className="mt-1"><a className="text-decoration-none text-dark" href="/about">About</a></li>
 							<li className="mt-1"><a className="text-decoration-none text-dark" href="/contact">Contact</a></li>
 						</ul>

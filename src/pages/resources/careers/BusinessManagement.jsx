@@ -1,5 +1,6 @@
 import React from 'react'
 import SmoothScrollLink from '/src/components/SmoothScrollLink'
+import RoleCard from '/src/components/RoleCard'
 
 export default function BusinessManagement() {
   return (
@@ -51,69 +52,39 @@ export default function BusinessManagement() {
           <div className="container py-5">
             <div className="row g-4">
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-lightbulb fs-3"></i>
-                  </div>
-                  <h3 className="fw-bold">Strategy &amp; Consulting</h3>
-                  <p className="text-muted">
-                    Master the art of high-level problem solving. Learn to analyze
-                    complex business landscapes, drive organizational change, and
-                    provide the strategic vision that guides companies toward
-                    sustainable growth.
-                  </p>
-                  <button
-                    type="button"
-                    className="btn btn-warning text-decoration-none fw-bold mt-auto "
-                    data-bs-toggle="modal"
-                    data-bs-target="#strategyModal-businessmanagement"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-lightbulb"
+                  title="Strategy &amp; Consulting"
+                  modalTarget="#strategyModal-businessmanagement"
+                >
+                  Master the art of high-level problem solving. Learn to analyze
+                  complex business landscapes, drive organizational change, and
+                  provide the strategic vision that guides companies toward
+                  sustainable growth.
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-graph-up-arrow fs-3"></i>
-                  </div>
-                  <h3 className="fw-bold">Financial &amp; Resource Management</h3>
-                  <p className="text-muted">
-                    Become the steward of organizational health. Focus on optimizing
-                    capital, managing talent, and leveraging data-driven insights to
-                    ensure every resource is positioned for maximum impact and ROI.
-                  </p>
-                  <button
-                    type="button"
-                    className="btn btn-warning text-decoration-none fw-bold mt-auto"
-                    data-bs-toggle="modal"
-                    data-bs-target="#financeModal-businessmanagement"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-graph-up-arrow"
+                  title="Financial &amp; Resource Management"
+                  modalTarget="#financeModal-businessmanagement"
+                >
+                  Become the steward of organizational health. Focus on optimizing
+                  capital, managing talent, and leveraging data-driven insights to
+                  ensure every resource is positioned for maximum impact and ROI.
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-gear fs-3"></i>
-                  </div>
-                  <h3 className="fw-bold">Operations &amp; Supply Chain</h3>
-                  <p className="text-muted">
-                    Architect the engines of efficiency. From global logistics to
-                    daily process improvement, learn how to streamline workflows and
-                    manage the critical systems that deliver products and services
-                    to the world.
-                  </p>
-                  <button
-                    type="button"
-                    className=" btn btn-warning text-decoration-none fw-bold mt-auto"
-                    data-bs-toggle="modal"
-                    data-bs-target="#opsModal-businessmanagement"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-gear"
+                  title="Operations &amp; Supply Chain"
+                  modalTarget="#opsModal-businessmanagement"
+                >
+                  Architect the engines of efficiency. From global logistics to
+                  daily process improvement, learn how to streamline workflows and
+                  manage the critical systems that deliver products and services
+                  to the world.
+                </RoleCard>
               </div>
             </div>
           </div>

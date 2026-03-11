@@ -1,5 +1,6 @@
 import React from 'react'
 import SmoothScrollLink from '/src/components/SmoothScrollLink'
+import RoleCard from '/src/components/RoleCard'
 
 export default function Hospitality() {
   return (
@@ -50,78 +51,39 @@ export default function Hospitality() {
           <div className="container py-5">
             <div className="row g-4">
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box  mb-3">
-                    <i className="bi bi-lightbulb fs-3" />
-                  </div>
-                  <h3 className="fw-bold">Accommodation and Lodging</h3>
-                  <p className="text-muted">
-                    This field focuses on providing hands-on medical services
-                    directly to patients, including conducting examinations,
-                    administering treatments, monitoring conditions, and offering
-                    education and emotional support. Professionals in this field
-                    play a critical role in diagnosing illnesses, managing care
-                    plans, and ensuring patient safety and comfort throughout the
-                    healthcare process.
-                  </p>
-                  <button
-                    type="button"
-                    className="btn btn-warning text-decoration-none fw-bold mt-auto "
-                    data-bs-toggle="modal"
-                    data-bs-target="#strategyModal-hospitality"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-lightbulb"
+                  title="Accommodation and Lodging"
+                  modalTarget="#strategyModal-hospitality"
+                >
+                  This field focuses on welcoming guests and managing lodging
+                  operations including front desk, reservations, housekeeping,
+                  and guest services to ensure comfortable, reliable stays.
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-graph-up-arrow fs-3" />
-                  </div>
-                  <h3 className="fw-bold">Food and Beverage Services</h3>
-                  <p className="text-muted">
-                    Food and Beverage Services centers on the preparation,
-                    presentation, and service of meals and drinks in restaurants,
-                    cafés, catering companies, and bars. Roles range from culinary
-                    and service staff to management and operations, all working
-                    together to deliver quality, consistency, and hospitality.
-                    Strong teamwork, time management, and food safety knowledge are
-                    essential.
-                  </p>
-                  <button
-                    type="button"
-                    className="btn btn-warning text-decoration-none fw-bold mt-auto"
-                    data-bs-toggle="modal"
-                    data-bs-target="#financeModal-hospitality"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-graph-up-arrow"
+                  title="Food and Beverage Services"
+                  modalTarget="#financeModal-hospitality"
+                >
+                  Food and Beverage Services centers on the preparation,
+                  presentation, and service of meals and drinks in restaurants,
+                  cafés, catering companies, and bars. Roles range from culinary
+                  and service staff to management and operations.
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-gear  fs-3" />
-                  </div>
-                  <h3 className="fw-bold">Tourism and Events</h3>
-                  <p className="text-muted">
-                    This field involves planning, promoting, and delivering travel
-                    experiences and organized events such as conferences, festivals,
-                    and tours. Professionals coordinate logistics, marketing,
-                    vendors, and guest experiences to create memorable and well-run
-                    experiences. Creativity, organization, and strong communication
-                    skills are key to success.
-                  </p>
-                  <button
-                    type="button"
-                    className=" btn btn-warning text-decoration-none fw-bold mt-auto"
-                    data-bs-toggle="modal"
-                    data-bs-target="#opsModal-hospitality"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-gear"
+                  title="Tourism and Events"
+                  modalTarget="#opsModal"
+                >
+                  This field involves planning, promoting, and delivering travel
+                  experiences and organized events such as conferences, festivals,
+                  and tours. Professionals coordinate logistics, marketing, vendors,
+                  and guest experiences to create memorable and well-run events.
+                </RoleCard>
               </div>
             </div>
           </div>

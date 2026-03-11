@@ -1,5 +1,6 @@
 import React from 'react'
 import SmoothScrollLink from '/src/components/SmoothScrollLink'
+import RoleCard from '/src/components/RoleCard'
 
 export default function Technology() {
 	return (
@@ -35,34 +36,31 @@ export default function Technology() {
 					<div className="container py-5">
 						<div className="row g-4">
 							<div className="col-lg-4">
-								<div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
-									<div className="icon-box mb-3">
-										<i className="bi bi-code-slash fs-3 text-f1b327"></i>
-									</div>
-									<h3 className="fw-bold">Software &amp; Development</h3>
-									<p className="text-muted">Design, build, and maintain scalable applications, APIs, and data platforms. Collaborate with product and design, write tests, and optimize performance to deliver reliable user experiences at scale.</p>
-									<button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#techDevModal">Learn More →</button>
-								</div>
+								<RoleCard
+									icon="bi bi-code-slash"
+									title="Software &amp; Development"
+									modalTarget="#techDevModal"
+								>
+									Design, build, and maintain scalable applications, APIs, and data platforms. Collaborate with product and design, write tests, and optimize performance to deliver reliable user experiences at scale.
+								</RoleCard>
 							</div>
 							<div className="col-lg-4">
-								<div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
-									<div className="icon-box mb-3">
-										<i className="bi bi-cloud-arrow-up-fill fs-3 text-f1b327"></i>
-									</div>
-									<h3 className="fw-bold">Infrastructure &amp; Ops</h3>
-									<p className="text-muted">Architect and operate cloud platforms, CI/CD pipelines, and networking. Focus on automation, observability, reliability engineering, and incident response to keep services secure and performant.</p>
-									<button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#techInfraModal">Learn More →</button>
-								</div>
+								<RoleCard
+									icon="bi bi-cloud-arrow-up-fill"
+									title="Infrastructure &amp; Ops"
+									modalTarget="#techInfraModal"
+								>
+									Architect and operate cloud platforms, CI/CD pipelines, and networking. Focus on automation, observability, reliability engineering, and incident response to keep services secure and performant.
+								</RoleCard>
 							</div>
 							<div className="col-lg-4">
-								<div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
-									<div className="icon-box mb-3">
-										<i className="bi bi-shield-lock-fill fs-3 text-f1b327"></i>
-									</div>
-									<h3 className="fw-bold">Specialized &amp; Support</h3>
-									<p className="text-muted">Specialized roles—cybersecurity, UX/UI, data, and project management—that protect systems, shape product experiences, and coordinate cross-functional delivery to help teams ship safely and effectively.</p>
-									<button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#techSupportModal">Learn More →</button>
-								</div>
+								<RoleCard
+									icon="bi bi-shield-lock-fill"
+									title="Specialized &amp; Support"
+									modalTarget="#techSupportModal"
+								>
+									Specialized roles—cybersecurity, UX/UI, data, and project management—that protect systems, shape product experiences, and coordinate cross-functional delivery to help teams ship safely and effectively.
+								</RoleCard>
 							</div>
 						</div>
 					</div>
@@ -194,26 +192,26 @@ export default function Technology() {
 							<div className="row g-4">
 								<div className="col-12 col-lg-6">
 									<div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
-										<img src="/images/career-imgs/tech-imgs/tech1.png" alt="Software Development Illustration" className="img-fluid rounded-2" />
+										<img src="/images/career-imgs/tech-imgs/tech1.png" alt="Software Development Illustration" className="img-fluid rounded-3 shadow-sm" />
 									</div>
 								</div>
 								<div className="col-12 col-lg-6">
-									<div className="row row-cols-1 row-cols-md-2 g-3">
-										<div className="col">
-											<div className="p-3 bg-light rounded-3 border h-100">
-												<p className="fw-bold fs-5">Software Engineer</p>
+									<div className="row g-3">
+										<div className="col-12">
+											<div className="p-3 bg-warning-subtle rounded-3 border h-100">
+												<p className="fw-bold fs-5 text-dark">Software Engineer</p>
 												<p className="mb-0 text-muted small">Building, maintaining, and testing software applications.</p>
 											</div>
 										</div>
-										<div className="col">
-											<div className="p-3 bg-light rounded-3 border h-100">
-												<p className="fw-bold fs-5">Mobile Developer</p>
+										<div className="col-12">
+											<div className="p-3 bg-primary-subtle rounded-3 border h-100">
+												<p className="fw-bold fs-5 text-dark">Mobile Developer</p>
 												<p className="mb-0 text-muted small">Creating applications for iOS and Android platforms.</p>
 											</div>
 										</div>
-										<div className="col">
+										<div className="col-12">
 											<div className="p-3 bg-light rounded-3 border h-100">
-												<p className="fw-bold fs-5">DevOps Engineer</p>
+												<p className="fw-bold fs-5 text-dark">DevOps Engineer</p>
 												<p className="mb-0 text-muted small">Automation, CI/CD, bridging development and operations.</p>
 											</div>
 										</div>
@@ -248,7 +246,7 @@ export default function Technology() {
 								</div>
 								<div className="col-12 col-lg-6">
 									<div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
-										<img src="/images/career-imgs/tech-imgs/tech3.png" alt="Cloud Infrastructure Illustration" className="img-fluid rounded-2" />
+										<img src="/images/career-imgs/tech-imgs/tech3.png" alt="Cloud Infrastructure Illustration" className="img-fluid rounded-3 shadow-sm" />
 									</div>
 								</div>
 							</div>
@@ -268,17 +266,17 @@ export default function Technology() {
 							<div className="row g-4">
 								<div className="col-12 col-lg-6 order-lg-1">
 									<div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
-										<img src="/images/career-imgs/tech-imgs/tech2.png" alt="Specialized Roles Illustration" className="img-fluid rounded-2" />
+										<img src="/images/career-imgs/tech-imgs/tech2.png" alt="Specialized Roles Illustration" className="img-fluid rounded-3 shadow-sm" />
 									</div>
 								</div>
 								<div className="col-12 col-lg-6 order-lg-2">
 									<div className="d-flex flex-column gap-3 h-100">
-										<div className="p-3 bg-light rounded-3 border">
-											<p className="fw-bold fs-5">Cybersecurity Analyst</p>
+										<div className="p-3 bg-warning-subtle rounded-3 border">
+											<p className="fw-bold fs-5 text-dark">Cybersecurity Analyst</p>
 											<p className="mb-0 text-muted small">Protecting systems and data, incident response.</p>
 										</div>
 										<div className="p-3 bg-light rounded-3 border">
-											<p className="fw-bold fs-5">UX/UI Designer</p>
+											<p className="fw-bold fs-5 text-dark">UX/UI Designer</p>
 											<p className="mb-0 text-muted small">Improving user experience and designing intuitive interfaces.</p>
 										</div>
 									</div>

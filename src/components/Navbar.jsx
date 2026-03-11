@@ -46,7 +46,10 @@ export default function Navbar() {
         if (location.pathname === path) {
             const el = document.getElementById(id)
             if (el) {
-                el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                const navHeight = navRef.current ? navRef.current.offsetHeight : 0
+                const extra = 12 // small extra offset in px
+                const top = el.getBoundingClientRect().top + window.scrollY - navHeight - extra
+                window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' })
             } else {
                 window.location.hash = id
             }
@@ -55,7 +58,12 @@ export default function Navbar() {
             // small delay to allow route render, then scroll
             setTimeout(() => {
                 const el = document.getElementById(id)
-                if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                if (el) {
+                    const navHeight = navRef.current ? navRef.current.offsetHeight : 0
+                    const extra = 12
+                    const top = el.getBoundingClientRect().top + window.scrollY - navHeight - extra
+                    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' })
+                }
             }, 120)
         }
     }

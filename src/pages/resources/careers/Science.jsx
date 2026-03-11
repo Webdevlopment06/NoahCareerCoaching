@@ -1,5 +1,6 @@
 import React from 'react'
 import SmoothScrollLink from '/src/components/SmoothScrollLink'
+import RoleCard from '/src/components/RoleCard'
 
 export default function Science() {
   return (
@@ -31,34 +32,31 @@ export default function Science() {
           <div className="container py-5">
             <div className="row g-4">
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-bandaid fs-3"></i>
-                  </div>
-                  <h3 className="fw-bold">Biological &amp; Medical Sciences</h3>
-                  <p className="text-muted">Research biologists, biotechnologists, and clinical researchers designing experiments, analyzing biological systems, and translating discoveries into diagnostics, therapeutics, and biomanufacturing processes.</p>
-                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#sciBioModal">Learn More →</button>
-                </div>
+                <RoleCard
+                  icon="bi bi-bandaid"
+                  title="Biological &amp; Medical Sciences"
+                  modalTarget="#sciBioModal"
+                >
+                  Research biologists, biotechnologists, and clinical researchers designing experiments, analyzing biological systems, and translating discoveries into diagnostics, therapeutics, and biomanufacturing processes.
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-geo-alt fs-3"></i>
-                  </div>
-                  <h3 className="fw-bold">Physical &amp; Environmental Sciences</h3>
-                  <p className="text-muted">Chemists, materials scientists, physicists, and environmental researchers developing sustainable materials, studying climate impacts, and creating technologies for pollution mitigation and resource management.</p>
-                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#sciEnvModal">Learn More →</button>
-                </div>
+                <RoleCard
+                  icon="bi bi-geo-alt"
+                  title="Physical &amp; Environmental Sciences"
+                  modalTarget="#sciEnvModal"
+                >
+                  Chemists, materials scientists, physicists, and environmental researchers developing sustainable materials, studying climate impacts, and creating technologies for pollution mitigation and resource management.
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-bar-chart-line-fill fs-3"></i>
-                  </div>
-                  <h3 className="fw-bold">Data &amp; Computational Science</h3>
-                  <p className="text-muted">Data scientists, bioinformaticians, and computational modelers who build pipelines, analyze large-scale datasets, and develop models that reveal patterns and accelerate scientific discovery.</p>
-                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#sciDataModal">Learn More →</button>
-                </div>
+                <RoleCard
+                  icon="bi bi-bar-chart-line-fill"
+                  title="Data &amp; Computational Science"
+                  modalTarget="#sciDataModal"
+                >
+                  Data scientists, bioinformaticians, and computational modelers who build pipelines, analyze large-scale datasets, and develop models that reveal patterns and accelerate scientific discovery.
+                </RoleCard>
               </div>
             </div>
           </div>
@@ -139,6 +137,26 @@ export default function Science() {
 
         <section id="future" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
           <h2 className="fs-2 fw-bold section-heading-custom text-dark">Future Trends and Growth</h2>
+          <div className="row g-4">
+            <div className="col-md-4">
+              <div className="p-3 border-start border-4 border-custom-primary bg-primary-subtle rounded-3">
+                <h3 className="fs-5 fw-semibold text-custom-primary mb-2 text-dark">Data-driven &amp; AI-accelerated Research</h3>
+                <p className="small text-muted mb-0">Machine learning, AI, and large-scale data analysis are transforming hypothesis generation and experiment design — increasing demand for computationally literate scientists and bioinformaticians.</p>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="p-3 border-start border-4 border-custom-secondary bg-warning-subtle rounded-3">
+                <h3 className="fs-5 fw-semibold text-custom-secondary mb-2">Interdisciplinary &amp; Translational Science</h3>
+                <p className="small text-muted mb-0">Cross-disciplinary teams combining biology, engineering, and clinical expertise speed the translation of discoveries into real-world solutions and therapies.</p>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="p-3 border-start border-4 border-secondary bg-secondary-subtle rounded-3">
+                <h3 className="fs-5 fw-semibold text-secondary mb-2">Automation, High-throughput &amp; Sustainability</h3>
+                <p className="small text-muted mb-0">Lab automation, high-throughput screening, and greener lab practices lower costs, increase reproducibility, and reduce environmental impact.</p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
 

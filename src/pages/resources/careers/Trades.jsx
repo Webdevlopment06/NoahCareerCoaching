@@ -1,5 +1,6 @@
 import React from 'react'
 import SmoothScrollLink from '/src/components/SmoothScrollLink'
+import RoleCard from '/src/components/RoleCard'
 
 export default function Trades() {
   return (
@@ -47,55 +48,31 @@ export default function Trades() {
           <div className="container py-5">
             <div className="row g-4">
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                      <i className="bi bi-tools fs-3 text-f1b327"></i>
-                    </div>
-                  <h3 className="fw-bold">Mechanical &amp; Electrical</h3>
-                  <p className="text-muted">Electricians, HVAC technicians, and controls specialists who install, maintain, and troubleshoot power distribution, climate systems, and automated control equipment to keep buildings and industrial facilities operating safely and efficiently.</p>
-                  <button
-                    type="button"
-                    className="btn btn-warning text-decoration-none fw-bold mt-auto"
-                    data-bs-toggle="modal"
-                    data-bs-target="#strategyModal-trades"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-tools"
+                  title="Mechanical &amp; Electrical"
+                  modalTarget="#strategyModal-trades"
+                >
+                  Electricians, HVAC technicians, and controls specialists who install, maintain, and troubleshoot power distribution, climate systems, and automated control equipment to keep buildings and industrial facilities operating safely and efficiently.
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-building fs-3 text-f1b327"></i>
-                  </div>
-                  <h3 className="fw-bold">Construction &amp; Finishing</h3>
-                  <p className="text-muted">Carpenters, finishers, and site supervisors responsible for framing, structural assembly, interior finishes, and coordinating crews to deliver quality construction on schedule and to code.</p>
-                  <button
-                    type="button"
-                    className="btn btn-warning text-decoration-none fw-bold mt-auto"
-                    data-bs-toggle="modal"
-                    data-bs-target="#financeModal-trades"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-building"
+                  title="Construction &amp; Finishing"
+                  modalTarget="#financeModal-trades"
+                >
+                  Carpenters, finishers, and site supervisors responsible for framing, structural assembly, interior finishes, and coordinating crews to deliver quality construction on schedule and to code.
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-gear fs-3 text-f1b327"></i>
-                  </div>
-                  <h3 className="fw-bold">Automotive &amp; Maintenance</h3>
-                  <p className="text-muted">Automotive technicians, diesel specialists, and industrial maintenance mechanics who perform diagnostics, repair, and preventive maintenance to maximize equipment uptime and safety.</p>
-                  <button
-                    type="button"
-                    className="btn btn-warning text-decoration-none fw-bold mt-auto"
-                    data-bs-toggle="modal"
-                    data-bs-target="#opsModal-trades"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-gear"
+                  title="Automotive &amp; Maintenance"
+                  modalTarget="#opsModal-trades"
+                >
+                  Automotive technicians, diesel specialists, and industrial maintenance mechanics who perform diagnostics, repair, and preventive maintenance to maximize equipment uptime and safety.
+                </RoleCard>
               </div>
             </div>
           </div>

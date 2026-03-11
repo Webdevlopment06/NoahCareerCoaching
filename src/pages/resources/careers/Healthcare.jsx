@@ -1,5 +1,6 @@
 import React from 'react'
 import SmoothScrollLink from '/src/components/SmoothScrollLink'
+import RoleCard from '/src/components/RoleCard'
 
 export default function Healthcare() {
   return (
@@ -50,78 +51,48 @@ export default function Healthcare() {
           <div className="container py-5">
             <div className="row g-4">
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box  mb-3">
-                    <i className="bi bi-lightbulb fs-3" />
-                  </div>
-                  <h3 className="fw-bold">Clinical &amp; Direct Patient Care</h3>
-                  <p className="text-muted">
-                    This field focuses on providing hands-on medical services
-                    directly to patients, including conducting examinations,
-                    administering treatments, monitoring conditions, and offering
-                    education and emotional support. Professionals in this field
-                    play a critical role in diagnosing illnesses, managing care
-                    plans, and ensuring patient safety and comfort throughout the
-                    healthcare process.
-                  </p>
-                  <button
-                    type="button"
-                    className="btn btn-warning text-decoration-none fw-bold mt-auto "
-                    data-bs-toggle="modal"
-                    data-bs-target="#strategyModal-healthcare"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-lightbulb"
+                  title="Clinical &amp; Direct Patient Care"
+                  modalTarget="#strategyModal-healthcare"
+                >
+                  This field focuses on providing hands-on medical services
+                  directly to patients, including conducting examinations,
+                  administering treatments, monitoring conditions, and offering
+                  education and emotional support. Professionals in this field
+                  play a critical role in diagnosing illnesses, managing care
+                  plans, and ensuring patient safety and comfort throughout the
+                  healthcare process.
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-graph-up-arrow fs-3" />
-                  </div>
-                  <h3 className="fw-bold">Allied Health &amp; Therapy</h3>
-                  <p className="text-muted">
-                    Careers in this area encompasses a wide range of specialized
-                    healthcare roles that support diagnosis, treatment, and
-                    rehabilitation. These professionals—such as therapists,
-                    technologists, and technicians—help patients restore function,
-                    improve mobility, manage chronic conditions, and enhance overall
-                    quality of life while collaborating closely with clinical care
-                    teams
-                  </p>
-                  <button
-                    type="button"
-                    className="btn btn-warning text-decoration-none fw-bold mt-auto"
-                    data-bs-toggle="modal"
-                    data-bs-target="#financeModal-healthcare"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-graph-up-arrow"
+                  title="Allied Health &amp; Therapy"
+                  modalTarget="#financeModal-healthcare"
+                >
+                  Careers in this area encompasses a wide range of specialized
+                  healthcare roles that support diagnosis, treatment, and
+                  rehabilitation. These professionals—such as therapists,
+                  technologists, and technicians—help patients restore function,
+                  improve mobility, manage chronic conditions, and enhance overall
+                  quality of life while collaborating closely with clinical care
+                  teams
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-gear  fs-3" />
-                  </div>
-                  <h3 className="fw-bold">Management &amp; Informatics</h3>
-                  <p className="text-muted">
-                    This field combines healthcare leadership, administration, and
-                    technology to optimize how healthcare systems operate. This
-                    field focuses on managing staff and resources, implementing
-                    health information systems, analyzing data, and improving
-                    workflows to enhance efficiency, compliance, and patient
-                    outcomes across healthcare organizations.
-                  </p>
-                  <button
-                    type="button"
-                    className=" btn btn-warning text-decoration-none fw-bold mt-auto"
-                    data-bs-toggle="modal"
-                    data-bs-target="#opsModal-healthcare"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-gear"
+                  title="Management &amp; Informatics"
+                  modalTarget="#opsModal"
+                >
+                  This field combines healthcare leadership, administration, and
+                  technology to optimize how healthcare systems operate. This
+                  field focuses on managing staff and resources, implementing
+                  health information systems, analyzing data, and improving
+                  workflows to enhance efficiency, compliance, and patient
+                  outcomes across healthcare organizations.
+                </RoleCard>
               </div>
             </div>
           </div>

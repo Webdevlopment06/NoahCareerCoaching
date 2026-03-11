@@ -1,5 +1,6 @@
 import React from 'react'
 import SmoothScrollLink from '/src/components/SmoothScrollLink'
+import RoleCard from '/src/components/RoleCard'
 
 export default function Finance() {
   return (
@@ -51,70 +52,40 @@ export default function Finance() {
           <div className="container py-5">
             <div className="row g-4">
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box  mb-3">
-                    <i className="bi bi-lightbulb fs-3" />
-                  </div>
-                  <h3 className="fw-bold">Investment and Advisory</h3>
-                  <p className="text-muted">
-                    This field focuses on helping individuals and organizations
-                    manage investments, assess risk, and plan for financial growth.
-                    Professionals analyze markets, advise clients, and build
-                    strategies to achieve long-term financial goals.
-                  </p>
-                  <button
-                    type="button"
-                    className="btn btn-warning text-decoration-none fw-bold mt-auto "
-                    data-bs-toggle="modal"
-                    data-bs-target="#strategyModal-finance"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-lightbulb"
+                  title="Investment and Advisory"
+                  modalTarget="#strategyModal-finance"
+                >
+                  This field focuses on helping individuals and organizations
+                  manage investments, assess risk, and plan for financial growth.
+                  Professionals analyze markets, advise clients, and build
+                  strategies to achieve long-term financial goals.
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-graph-up-arrow fs-3" />
-                  </div>
-                  <h3 className="fw-bold">Corporate Finance &amp; Management</h3>
-                  <p className="text-muted">
-                    Careers in this area support the financial performance and
-                    strategic direction of businesses. Professionals manage budgets,
-                    analyze performance, and guide decisions that drive growth and
-                    efficiency.
-                  </p>
-                  <button
-                    type="button"
-                    className="btn btn-warning text-decoration-none fw-bold mt-auto"
-                    data-bs-toggle="modal"
-                    data-bs-target="#financeModal-finance"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-graph-up-arrow"
+                  title="Corporate Finance &amp; Management"
+                  modalTarget="#financeModal-finance"
+                >
+                  Careers in this area support the financial performance and
+                  strategic direction of businesses. Professionals manage budgets,
+                  analyze performance, and guide decisions that drive growth and
+                  efficiency.
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-gear  fs-3" />
-                  </div>
-                  <h3 className="fw-bold">Accounting &amp; Compliance</h3>
-                  <p className="text-muted">
-                    This field ensures financial accuracy, transparency, and
-                    regulatory compliance. Professionals prepare reports, oversee
-                    audits, and help organizations meet legal and financial
-                    standards.
-                  </p>
-                  <button
-                    type="button"
-                    className=" btn btn-warning text-decoration-none fw-bold mt-auto"
-                    data-bs-toggle="modal"
-                    data-bs-target="#opsModal-finance"
-                  >
-                    Learn More →
-                  </button>
-                </div>
+                <RoleCard
+                  icon="bi bi-gear"
+                  title="Accounting &amp; Compliance"
+                  modalTarget="#opsModal-finance"
+                >
+                  This field ensures financial accuracy, transparency, and
+                  regulatory compliance. Professionals prepare reports, oversee
+                  audits, and help organizations meet legal and financial
+                  standards.
+                </RoleCard>
               </div>
             </div>
           </div>

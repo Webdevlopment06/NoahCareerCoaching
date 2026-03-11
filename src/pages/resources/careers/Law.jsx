@@ -1,5 +1,6 @@
 import React from 'react'
 import SmoothScrollLink from '/src/components/SmoothScrollLink'
+import RoleCard from '/src/components/RoleCard'
 
 export default function Law() {
   return (
@@ -25,34 +26,31 @@ export default function Law() {
           <div className="container py-5">
             <div className="row g-4">
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-briefcase fs-3"></i>
-                  </div>
-                  <h3 className="fw-bold">Private Practice &amp; Corporate Law</h3>
-                  <p className="text-muted">Advises organizations on commercial law, transactions, and risk management. Work involves negotiating contracts, counseling on regulatory compliance, and partnering with business teams to structure deals. Ideal for detail-oriented problem-solvers who enjoy commercial strategy.</p>
-                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#lawCorpModal">Learn More →</button>
-                </div>
+                <RoleCard
+                  icon="bi bi-briefcase"
+                  title="Private Practice &amp; Corporate Law"
+                  modalTarget="#lawCorpModal"
+                >
+                  Advises organizations on commercial law, transactions, and risk management. Work involves negotiating contracts, counseling on regulatory compliance, and partnering with business teams to structure deals. Ideal for detail-oriented problem-solvers who enjoy commercial strategy.
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-people-fill fs-3"></i>
-                  </div>
-                  <h3 className="fw-bold">Public Service &amp; Advocacy</h3>
-                  <p className="text-muted">Serves the public through courtroom advocacy, policy, and community representation. Roles range from trial work and client advocacy to shaping public policy and legal reform. Suited to those driven by public service, strong oral advocacy, and ethical judgment.</p>
-                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#lawPublicModal">Learn More →</button>
-                </div>
+                <RoleCard
+                  icon="bi bi-people-fill"
+                  title="Public Service &amp; Advocacy"
+                  modalTarget="#lawPublicModal"
+                >
+                  Serves the public through courtroom advocacy, policy, and community representation. Roles range from trial work and client advocacy to shaping public policy and legal reform.
+                </RoleCard>
               </div>
               <div className="col-lg-4">
-                <div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
-                  <div className="icon-box mb-3">
-                    <i className="bi bi-file-earmark-text fs-3" />
-                  </div>
-                  <h3 className="fw-bold">Legal Support &amp; Paralegal Roles</h3>
-                  <p className="text-muted">Provides essential support to legal teams via research, document drafting, and case coordination. These roles build practical litigation and transactional experience and often lead to specialized careers in compliance, legal ops, or further legal study. Great for organized communicators who thrive on supporting complex workflows.</p>
-                  <button type="button" className="btn btn-warning text-decoration-none fw-bold mt-auto" data-bs-toggle="modal" data-bs-target="#lawSupportModal">Learn More →</button>
-                </div>
+                <RoleCard
+                  icon="bi bi-file-earmark-text"
+                  title="Legal Support &amp; Paralegal Roles"
+                  modalTarget="#lawSupportModal"
+                >
+                  Provides essential support to legal teams via research, document drafting, and case coordination. These roles build practical litigation and transactional experience.
+                </RoleCard>
               </div>
             </div>
           </div>
