@@ -3,7 +3,7 @@ import React from 'react'
 export default function Home() {
   return (
     <main>
-      <section className="hero-section d-flex align-items-center home-hero">
+      <section className="hero-section flex-ai-center home-hero">
         <div className="container">
           <div className="row">
             <div className="col-md-8 col-lg-4">
@@ -30,20 +30,20 @@ export default function Home() {
 
                 <div className="d-flex gap-3 mb-5">
                   <div className="d-flex gap-3 mb-5">
-                    <div className="icon-circle icon-60 border border-dark rounded-circle d-flex align-items-center justify-content-center">
+                    <div className="icon-circle icon-60 border border-dark rounded-circle flex-ai-center justify-content-center">
                       <i className="bi bi-shield-check blackText h4 mb-0"></i>
                     </div>
-                    <div className="icon-circle icon-60 border border-dark rounded-circle d-flex align-items-center justify-content-center">
+                    <div className="icon-circle icon-60 border border-dark rounded-circle flex-ai-center justify-content-center">
                       <i className="bi bi-pen blackText h4 mb-0"></i>
                     </div>
-                    <div className="icon-circle icon-60 border border-dark rounded-circle d-flex align-items-center justify-content-center">
+                    <div className="icon-circle icon-60 border border-dark rounded-circle flex-ai-center justify-content-center">
                       <i className="bi bi-mortarboard blackText h4 mb-0"></i>
                     </div>
                   </div>
                 </div>
 
                 <h2 className="fw-bold blackText h4">Social Proof</h2>
-                <div className="d-flex align-items-center gap-4 mt-3">
+                <div className="flex-ai-center gap-4 mt-3">
                   <div>
                     <span className="h3 fw-bold blackText">500+</span>
                     <p className="small blackText mb-0">Lives Impacted</p>
@@ -81,7 +81,7 @@ export default function Home() {
 
               <div className="row g-4">
                 <div className="col-md-6">
-                  <div className="d-flex align-items-center gap-3">
+                  <div className="flex-ai-center gap-3">
                     <img loading="lazy" src="/images/home-imgs/sanh.jpg" className="rounded-circle border border-success border-2 avatar-48" alt="Sanh K." />
                     <div className="border-start border-secondary ps-3">
                       <p className="small blackText fst-italic mb-0">"Noah helped me land my dream job!"</p>
@@ -90,7 +90,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="d-flex align-items-center gap-3">
+                  <div className="flex-ai-center gap-3">
                     <svg className="h-5 w-5 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" width="48" height="48" role="img">
                       <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v1.6h19.2v-1.6c0-3.2-6.4-4.8-9.6-4.8z" />
                     </svg>

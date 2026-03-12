@@ -37,12 +37,12 @@ export default function InternshipPath() {
           <h2 className="text-center fw-bold mb-5">THE ANATOMY OF A STANDOUT INTERN</h2>
           <div className="row g-4 align-items-center">
             <div className="col-md-6">
-              <div className="d-flex align-items-center mb-3 text-center">
+              <div className="flex-ai-center mb-3 text-center">
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-muted">[Academic Projects]</div>
                 <div className="px-3 fs-3">+</div>
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-muted">[Soft Skills]</div>
               </div>
-              <div className="d-flex align-items-center text-center">
+              <div className="flex-ai-center text-center">
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-muted">[Technical Certs]</div>
                 <div className="px-3 fs-3">=</div>
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-primary">The High-Potential Hire</div>
@@ -64,14 +64,14 @@ export default function InternshipPath() {
           <h3 className="fw-bold mb-5">FROM THEORY TO IMPACT</h3>
           <div className="row justify-content-center align-items-center">
             <div className="col-md-5">
-              <div className="p-4 rounded-pill bg-light border border-primary text-primary d-flex align-items-center shadow-sm">
+              <div className="p-4 rounded-pill bg-light border border-primary text-primary flex-ai-center shadow-sm">
                 <i className="bi bi-book fs-2 me-3"></i>
                 <span className="small">"I learned how to code in Java."</span>
               </div>
             </div>
             <div className="col-md-1 fs-2 fw-bold text-primary">→</div>
             <div className="col-md-5">
-              <div className="p-4 rounded-pill text-white d-flex align-items-center shadow bg-grad-yellow-indigo">
+              <div className="p-4 rounded-pill text-white flex-ai-center shadow bg-grad-yellow-indigo">
                 <i className="bi bi-cpu fs-2 me-3 text-warning"></i>
                 <span className="small fw-bold">"I built a scalable API that handled 5k requests."</span>
               </div>

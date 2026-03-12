@@ -5,9 +5,9 @@ import RoleCard from '/src/components/RoleCard'
 export default function Education() {
   return (
     <main>
-      <section className="education-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="education-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
-          <header className=" rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+          <header className="hero-panel">
             <h1 className="display-3 fw-bolder text-white mb-3">
               Your Future in{' '}
               <span className="text-white">Education &amp; Training</span>
@@ -154,7 +154,7 @@ export default function Education() {
 
           <section
             id="skills"
-            className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5"
+            className="skills-panel"
           >
             <div className="row g-5">
               <div className="col-lg-6">
@@ -162,27 +162,27 @@ export default function Education() {
                   Hard Skills (Analytical)
                 </h3>
                 <div className="row g-4">
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i className="bi bi-calculator-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">Classroom Management</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i className="bi bi-table me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">Assessment and Evaluation Methods</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i className="bi bi-diagram-3-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">Learning Management Systems (LMS)</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i className="bi bi-bar-chart-line-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">Differentiated Instruction</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i className="bi bi-cloud-check-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">Curriculum Mapping</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i className="bi bi-shield-check me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">Subject Matter Expertise</span>
                   </div>
@@ -191,19 +191,19 @@ export default function Education() {
               <div className="col-lg-6">
                 <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Soft Skills</h3>
                 <div className="row g-4">
-                  <div className="col-12 d-flex align-items-center">
+                  <div className="col-12 flex-ai-center">
                     <i className="bi bi-people-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">Patience and Empathy</span>
                   </div>
-                  <div className="col-12 d-flex align-items-center">
+                  <div className="col-12 flex-ai-center">
                     <i className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">Dynamic Communication and Public Speaking</span>
                   </div>
-                  <div className="col-12 d-flex align-items-center">
+                  <div className="col-12 flex-ai-center">
                     <i className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">Conflict Resolution and Diplomacy with parents/students</span>
                   </div>
-                  <div className="col-12 d-flex align-items-center">
+                  <div className="col-12 flex-ai-center">
                     <i className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327" />
                     <span className="fw-medium">Organizational and Planning Skills</span>
                   </div>
@@ -213,7 +213,7 @@ export default function Education() {
           </section>
 
           {/* future trends */}
-          <section id="future" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
+          <section id="future" className="skills-panel">
             <h2 className="fs-2 fw-bold section-heading-custom text-dark">Future Trends and Growth</h2>
             <div className="row g-4">
               <div className="col-md-4">
@@ -243,10 +243,10 @@ export default function Education() {
       </div>
 
       {/* hero section with buisness background */}
-      <section className="education-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="education-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
           {/* VI. Conclusion Call to action */}
-          <section className=" rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+          <section className="hero-panel">
             <h2 className="fs-3 text-white fw-bold mb-3">Ready to Create Your Masterpiece?</h2>
             <p className="fs-5 mb-4 mx-auto text-white max-w-700">The only limits in the creative world are the ones you place on yourself. Dedicate yourself to practice and never stop sharing your work.</p>
             <SmoothScrollLink to="roles" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">Start Sketching Your Career</SmoothScrollLink>
@@ -267,8 +267,8 @@ export default function Education() {
             <div className="modal-body p-4 p-md-5">
               <div className="row g-4">
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
-                    <img src="/images/career-imgs/education-imgs/Education1.jpg" alt="Strategy Planning" className="img-fluid rounded-3 shadow-sm" />
+                  <div className="center-card h-100">
+                    <img src="/images/career-imgs/education-imgs/Education1.jpg" alt="Strategy Planning" className="img-round-shadow" />
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">
@@ -332,8 +332,8 @@ export default function Education() {
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
-                    <img src="/images/career-imgs/education-imgs/Education2.jpg" alt="Finance and HR" className="img-fluid rounded-3 shadow-sm" />
+                  <div className="center-card h-100">
+                    <img src="/images/career-imgs/education-imgs/Education2.jpg" alt="Finance and HR" className="img-round-shadow" />
                   </div>
                 </div>
               </div>
@@ -353,8 +353,8 @@ export default function Education() {
             <div className="modal-body p-4 p-md-5">
               <div className="row g-4">
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
-                    <img src="/images/career-imgs/education-imgs/Education3.jpg" alt="Operations and PMP" className="img-fluid rounded-3 shadow-sm" />
+                  <div className="center-card h-100">
+                    <img src="/images/career-imgs/education-imgs/Education3.jpg" alt="Operations and PMP" className="img-round-shadow" />
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">

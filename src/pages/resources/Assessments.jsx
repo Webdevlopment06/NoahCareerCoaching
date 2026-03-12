@@ -26,7 +26,7 @@ export default function Assessments() {
         <div className="row g-4 mb-4">
           <div className="col-lg-8">
             <div className="card h-100 assessment-card featured">
-              <div className="card-body d-md-flex align-items-center">
+              <div className="card-body d-md-flex flex-ai-center">
                 <div className="p-3 text-center">
                   <img loading="lazy" src="/images/resources-imgs/assessments-imgs/16personalities.png" alt="16Personalities" className="img-fluid mb-3 mb-md-0 max-w-140" />
                 </div>

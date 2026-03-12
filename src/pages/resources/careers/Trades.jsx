@@ -5,9 +5,9 @@ import RoleCard from '/src/components/RoleCard'
 export default function Trades() {
   return (
     <main>
-      <section className="trades-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="trades-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
-          <header className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+          <header className="bg-white hero-panel">
             <h1 className="display-3 fw-bolder text-dark mb-3">
               Your Future in{" "}
               <span className="text-custom-primary">
@@ -126,26 +126,26 @@ export default function Trades() {
             </div>
           </section>
         </section>
-        <section id="skills" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
+        <section id="skills" className="skills-panel">
           <h2 className="fs-2 fw-bold section-heading-custom text-dark">Essential Skills and Knowledge</h2>
           <p className="text-muted mb-4">Technical mastery, safety-first practices, and effective team coordination are essential for long-term success in the trades.</p>
           <div className="row g-5">
             <div className="col-lg-6">
               <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Hard Skills (Technical)</h3>
               <div className="row g-4">
-                <div className="col-6 d-flex align-items-center">
+                <div className="col-6 flex-ai-center">
                   <i className="bi bi-tools me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Blueprint Reading &amp; Layout</span>
                 </div>
-                <div className="col-6 d-flex align-items-center">
+                <div className="col-6 flex-ai-center">
                   <i className="bi bi-calculator-fill me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Measurement &amp; Diagnostics</span>
                 </div>
-                <div className="col-6 d-flex align-items-center">
+                <div className="col-6 flex-ai-center">
                   <i className="bi bi-wrench me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Power Systems &amp; HVAC</span>
                 </div>
-                <div className="col-6 d-flex align-items-center">
+                <div className="col-6 flex-ai-center">
                   <i className="bi bi-gear me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Equipment Maintenance</span>
                 </div>
@@ -154,15 +154,15 @@ export default function Trades() {
             <div className="col-lg-6">
               <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Soft Skills (Collaborative)</h3>
               <div className="row g-4">
-                <div className="col-12 d-flex align-items-center">
+                <div className="col-12 flex-ai-center">
                   <i className="bi bi-people-fill me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Crew Communication &amp; Coordination</span>
                 </div>
-                <div className="col-12 d-flex align-items-center">
+                <div className="col-12 flex-ai-center">
                   <i className="bi bi-shield-check me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Safety &amp; Compliance Mindset</span>
                 </div>
-                <div className="col-12 d-flex align-items-center">
+                <div className="col-12 flex-ai-center">
                   <i className="bi bi-clock-fill me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Scheduling &amp; Reliability</span>
                 </div>
@@ -172,7 +172,7 @@ export default function Trades() {
         </section>
         <section
           id="future"
-          className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5"
+          className="skills-panel"
         >
           <h2 className="fs-2 fw-bold section-heading-custom text-dark">
             Future Trends and Growth
@@ -238,11 +238,11 @@ export default function Trades() {
                 <div className="modal-body p-4 p-md-5">
                   <div className="row g-4">
                     <div className="col-12 col-lg-6">
-                      <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
+                      <div className="center-card h-100">
                         <img
                           src="/images/career-imgs/trades-imgs/trades1.jpg"
                           alt="Electrician wiring a panel"
-                          className="img-fluid rounded-3 shadow-sm"
+                          className="img-round-shadow"
                         />
                       </div>
                     </div>
@@ -310,11 +310,11 @@ export default function Trades() {
                       </div>
                     </div>
                     <div className="col-12 col-lg-6">
-                      <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
+                      <div className="center-card h-100">
                         <img
                           src="/images/career-imgs/trades-imgs/trades2.png"
                           alt="Construction workers and carpenters"
-                          className="img-fluid rounded-3 shadow-sm"
+                          className="img-round-shadow"
                         />
                       </div>
                     </div>
@@ -338,11 +338,11 @@ export default function Trades() {
                 <div className="modal-body p-4 p-md-5">
                   <div className="row g-4">
                     <div className="col-12 col-lg-6">
-                      <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
+                      <div className="center-card h-100">
                         <img
                           src="/images/career-imgs/trades-imgs/trades3.jpg"
                           alt="Auto mechanic working on a car"
-                          className="img-fluid rounded-3 shadow-sm"
+                          className="img-round-shadow"
                         />
                       </div>
                     </div>
@@ -367,9 +367,9 @@ export default function Trades() {
               </div>
             </div>
           </div>
-      <section className="trades-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="trades-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
-          <section className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+          <section className="bg-white hero-panel">
             <h2 className="fs-3 fw-bold mb-3">Ready to Build Your Career?</h2>
             <p className="fs-5 mb-4 mx-auto max-w-700">
               The trades offer financial independence and the pride of seeing your

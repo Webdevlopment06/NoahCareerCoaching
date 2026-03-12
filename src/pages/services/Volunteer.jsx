@@ -44,12 +44,12 @@ export default function Volunteer() {
           <h2 className="text-center fw-bold mb-5">THE ANATOMY OF A CHANGE-MAKER</h2>
           <div className="row g-4 align-items-center">
             <div className="col-md-6">
-              <div className="d-flex align-items-center mb-3 text-center">
-                <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-muted">[Unique Skills]</div>
+                <div className="flex-ai-center mb-3 text-center">
+                  <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-muted">[Unique Skills]</div>
                 <div className="px-3 fs-3">+</div>
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-muted">[2 Hours / Week]</div>
               </div>
-              <div className="d-flex align-items-center text-center">
+              <div className="flex-ai-center text-center">
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-muted">[Shared Mission]</div>
                 <div className="px-3 fs-3">=</div>
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-success">Sustainable Impact</div>
@@ -71,14 +71,14 @@ export default function Volunteer() {
           <h3 className="fw-bold mb-5">WHY VOLUNTEER WITH US?</h3>
           <div className="row justify-content-center align-items-center">
             <div className="col-md-5">
-              <div className="p-4 rounded-4 bg-white border border-success text-success d-flex align-items-center shadow-sm">
+              <div className="p-4 rounded-4 bg-white border border-success text-success flex-ai-center shadow-sm">
                 <i className="bi bi-gift fs-2 me-3"></i>
                 <span className="small">"I am giving back to my community."</span>
               </div>
             </div>
             <div className="col-md-1 fs-2 fw-bold text-success">→</div>
             <div className="col-md-5">
-              <div className="p-4 rounded-4 text-white d-flex align-items-center shadow bg-grad-teal-90">
+              <div className="p-4 rounded-4 text-white flex-ai-center shadow bg-grad-teal-90">
                 <i className="bi bi-infinity fs-2 me-3 text-warning"></i>
                 <span className="small fw-bold">"I am growing skills while creating real-world change."</span>
               </div>

@@ -5,9 +5,9 @@ import RoleCard from '/src/components/RoleCard'
 export default function Technology() {
 	return (
 		<>
-			<section className="tech-hero-bg d-flex align-items-center justify-content-center py-5">
+			<section className="tech-hero-bg flex-ai-center justify-content-center py-5">
 				<div className="container">
-					<header className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+					<header className="bg-white hero-panel">
 						<h1 className="display-3 fw-bolder text-dark mb-3">
 							Your Future in <span className="text-custom-primary">Technology &amp; Software</span>
 						</h1>
@@ -94,7 +94,7 @@ export default function Technology() {
 					</section>
 				</section>
 
-				<section id="skills" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
+				<section id="skills" className="skills-panel">
 					<h2 className="fs-2 fw-bold section-heading-custom text-dark">Essential Skills and Knowledge</h2>
 					<p className="text-muted mb-4">Core technical skills, tooling, and collaboration practices.</p>
 					<div className="row g-5">
@@ -134,19 +134,19 @@ export default function Technology() {
 						<div className="col-lg-6">
 							<h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Soft Skills (Collaboration)</h3>
 							<div className="row g-4">
-								<div className="col-12 d-flex align-items-center">
+								<div className="col-12 flex-ai-center">
 									<i className="bi bi-people-fill me-3 fs-3 text-f1b327" />
 									<span className="fw-medium">Communication &amp; Cross-Functional Work</span>
 								</div>
-								<div className="col-12 d-flex align-items-center">
+								<div className="col-12 flex-ai-center">
 									<i className="bi bi-gear-fill me-3 fs-3 text-f1b327" />
 									<span className="fw-medium">Problem Solving &amp; Ownership</span>
 								</div>
-								<div className="col-12 d-flex align-items-center">
+								<div className="col-12 flex-ai-center">
 									<i className="bi bi-clock-history me-3 fs-3 text-f1b327" />
 									<span className="fw-medium">Agile Practices &amp; Time Management</span>
 								</div>
-								<div className="col-12 d-flex align-items-center">
+								<div className="col-12 flex-ai-center">
 									<i className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327" />
 									<span className="fw-medium">Continuous Learning &amp; Curiosity</span>
 								</div>
@@ -155,7 +155,7 @@ export default function Technology() {
 					</div>
 				</section>
 
-				<section id="future" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
+				<section id="future" className="skills-panel">
 					<h2 className="fs-2 fw-bold section-heading-custom text-dark">Future Trends and Growth</h2>
 					<p className="text-muted mb-4">Where the industry is headed and the skills that will grow in demand.</p>
 					<div className="row g-4">
@@ -191,8 +191,8 @@ export default function Technology() {
 						<div className="modal-body p-4 p-md-5">
 							<div className="row g-4">
 								<div className="col-12 col-lg-6">
-									<div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
-										<img src="/images/career-imgs/tech-imgs/tech1.png" alt="Software Development Illustration" className="img-fluid rounded-3 shadow-sm" />
+									<div className="center-card h-100">
+										<img src="/images/career-imgs/tech-imgs/tech1.png" alt="Software Development Illustration" className="img-round-shadow" />
 									</div>
 								</div>
 								<div className="col-12 col-lg-6">
@@ -245,8 +245,8 @@ export default function Technology() {
 									</div>
 								</div>
 								<div className="col-12 col-lg-6">
-									<div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
-										<img src="/images/career-imgs/tech-imgs/tech3.png" alt="Cloud Infrastructure Illustration" className="img-fluid rounded-3 shadow-sm" />
+									<div className="center-card h-100">
+										<img src="/images/career-imgs/tech-imgs/tech3.png" alt="Cloud Infrastructure Illustration" className="img-round-shadow" />
 									</div>
 								</div>
 							</div>
@@ -265,8 +265,8 @@ export default function Technology() {
 						<div className="modal-body p-4 p-md-5">
 							<div className="row g-4">
 								<div className="col-12 col-lg-6 order-lg-1">
-									<div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
-										<img src="/images/career-imgs/tech-imgs/tech2.png" alt="Specialized Roles Illustration" className="img-fluid rounded-3 shadow-sm" />
+									<div className="center-card h-100">
+										<img src="/images/career-imgs/tech-imgs/tech2.png" alt="Specialized Roles Illustration" className="img-round-shadow" />
 									</div>
 								</div>
 								<div className="col-12 col-lg-6 order-lg-2">
@@ -287,9 +287,9 @@ export default function Technology() {
 				</div>
 			</div>
 
-			<section className="tech-hero-bg d-flex align-items-center justify-content-center py-5">
+			<section className="tech-hero-bg flex-ai-center justify-content-center py-5">
 				<div className="container">
-					<section className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+					<section className="bg-white hero-panel">
 						<h2 className="fs-3 fw-bold mb-3">Ready to Start Building?</h2>
 						<p className="fs-5 mb-4 mx-auto max-w-700">Take the first step: build a project, join a bootcamp, or apply for internships.</p>
 						<SmoothScrollLink to="roles" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">Choose Your Tech Career Path</SmoothScrollLink>

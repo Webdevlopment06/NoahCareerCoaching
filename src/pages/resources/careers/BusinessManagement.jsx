@@ -6,10 +6,10 @@ export default function BusinessManagement() {
   return (
     <main>
       {/* section with image container */}
-      <section className="business-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="business-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
           {/* heading */}
-          <header className=" rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+          <header className="hero-panel">
             <h1 className="display-3 fw-bolder text-white mb-3">
               Your Future in{" "}
               <span className="text-white">Business &amp; Management</span>
@@ -140,7 +140,7 @@ export default function BusinessManagement() {
           </section>
           <section
             id="skills"
-            className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5"
+            className="skills-panel"
           >
             <h2 className="fs-2 fw-bold section-heading-custom text-dark">
               Essential Skills and Knowledge
@@ -155,37 +155,37 @@ export default function BusinessManagement() {
                   Hard Skills (Analytical)
                 </h3>
                 <div className="row g-4">
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i
                       className="bi bi-calculator-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Financial Accounting</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i
                       className="bi bi-table me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Data Modeling &amp; Excel</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i
                       className="bi bi-diagram-3-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Process Mapping</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i
                       className="bi bi-bar-chart-line-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Statistical Analysis</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i
                       className="bi bi-cloud-check-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">CRM/ERP Software</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i
                       className="bi bi-shield-check me-3 fs-3 text-f1b327"
                     />
@@ -198,13 +198,13 @@ export default function BusinessManagement() {
                   Soft Skills (Leadership)
                 </h3>
                 <div className="row g-4">
-                  <div className="col-12 d-flex align-items-center">
+                  <div className="col-12 flex-ai-center">
                     <i
                       className="bi bi-people-fill me-3 fs-3 text-f1b327"
                     />
                     <span className="fw-medium">Leadership and Team Building</span>
                   </div>
-                  <div className="col-12 d-flex align-items-center">
+                  <div className="col-12 flex-ai-center">
                     <i
                       className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327"
                     />
@@ -212,7 +212,7 @@ export default function BusinessManagement() {
                       Strategic Thinking and Planning
                     </span>
                   </div>
-                  <div className="col-12 d-flex align-items-center">
+                  <div className="col-12 flex-ai-center">
                     <i
                       className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327"
                     />
@@ -228,7 +228,7 @@ export default function BusinessManagement() {
           {/* future trends */}
           <section
             id="future"
-            className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5"
+            className="skills-panel"
           >
             <h2 className="fs-2 fw-bold section-heading-custom text-dark">
               Future Trends and Growth
@@ -278,10 +278,10 @@ export default function BusinessManagement() {
         </section>
       </div>
       {/* hero section with buisness background */}
-      <section className="business-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="business-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
           {/* VI. Conclusion Call to action */}
-          <section className=" rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+          <section className="hero-panel">
             <h2 className="fs-3 text-white fw-bold mb-3">
               Ready to Lead Your Career?
             </h2>
@@ -323,11 +323,11 @@ export default function BusinessManagement() {
             <div className="modal-body p-4 p-md-5">
               <div className="row g-4">
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
+                  <div className="center-card h-100">
                     <img
                       src="/images/career-imgs/business-imgs/buisness1.jpg"
                       alt="Strategy Planning"
-                      className="img-fluid rounded-3 shadow-sm"
+                      className="img-round-shadow"
                     />
                   </div>
                 </div>
@@ -438,11 +438,11 @@ export default function BusinessManagement() {
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
+                  <div className="center-card h-100">
                     <img
                       src="/images/career-imgs/business-imgs/buisness2.jpeg"
                       alt="Finance and HR"
-                      className="img-fluid rounded-3 shadow-sm"
+                      className="img-round-shadow"
                     />
                   </div>
                 </div>
@@ -469,11 +469,11 @@ export default function BusinessManagement() {
             <div className="modal-body p-4 p-md-5">
               <div className="row g-4">
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
+                  <div className="center-card h-100">
                     <img
                       src="/images/career-imgs/business-imgs/buisness3.jpg"
                       alt="Operations and PMP"
-                      className="img-fluid rounded-3 shadow-sm"
+                      className="img-round-shadow"
                     />
                   </div>
                 </div>

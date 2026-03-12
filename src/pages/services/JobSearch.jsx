@@ -38,12 +38,12 @@ export default function JobSearch() {
           <h2 className="text-center fw-bold mb-5">THE ANATOMY OF A MODERN CAMPAIGN</h2>
           <div className="row g-4 align-items-center">
             <div className="col-md-6">
-              <div className="d-flex align-items-center mb-3 text-center">
+              <div className="flex-ai-center mb-3 text-center">
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-muted">Target List</div>
                 <div className="px-3 fs-3">+</div>
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-muted">Warm Outreach</div>
               </div>
-              <div className="d-flex align-items-center text-center">
+              <div className="flex-ai-center text-center">
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-muted">Referral Loop</div>
                 <div className="px-3 fs-3">=</div>
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-dark">The Priority Interview</div>
@@ -65,14 +65,14 @@ export default function JobSearch() {
           <h3 className="fw-bold mb-5">UPGRADE YOUR OUTREACH</h3>
           <div className="row justify-content-center align-items-center">
             <div className="col-md-5">
-              <div className="p-4 rounded-4 bg-white border border-secondary text-muted d-flex align-items-center shadow-sm">
+              <div className="p-4 rounded-4 bg-white border border-secondary text-muted flex-ai-center shadow-sm">
                 <i className="bi bi-mailbox fs-2 me-3"></i>
                 <span className="small">"I applied to 50 jobs on LinkedIn today."</span>
               </div>
             </div>
             <div className="col-md-1 fs-2 fw-bold text-dark">→</div>
             <div className="col-md-5">
-              <div className="p-4 rounded-4 text-white d-flex align-items-center shadow bg-grad-blue">
+              <div className="p-4 rounded-4 text-white flex-ai-center shadow bg-grad-blue">
                 <i className="bi bi-rocket-takeoff fs-2 me-3 text-info"></i>
                 <span className="small fw-bold">"I spoke with 3 insiders at my top target companies."</span>
               </div>

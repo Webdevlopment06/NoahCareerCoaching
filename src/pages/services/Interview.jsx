@@ -31,12 +31,12 @@ export default function Interview() {
           <h2 className="text-center fw-bold mb-5">THE ANATOMY OF A HIGH-IMPACT RESUME</h2>
           <div className="row g-4 align-items-center">
             <div className="col-md-6">
-              <div className="d-flex align-items-center mb-3">
+              <div className="flex-ai-center mb-3">
                 <div className="border p-3 rounded shadow-sm flex-grow-1 text-center fw-bold text-muted">Action Verb</div>
                 <div className="px-3 fs-3">+</div>
                 <div className="border p-3 rounded shadow-sm flex-grow-1 text-center fw-bold text-muted">Quantifiable Task</div>
               </div>
-              <div className="d-flex align-items-center">
+              <div className="flex-ai-center">
                 <div className="border p-3 rounded shadow-sm flex-grow-1 text-center fw-bold text-muted">Action Verb</div>
                 <div className="px-3 fs-3">=</div>
                 <div className="border p-3 rounded shadow-sm flex-grow-1 text-center fw-bold text-primary">Business Impact</div>
@@ -58,14 +58,14 @@ export default function Interview() {
           <h3 className="text-center fw-bold mb-5">MASTER THE "POWER BULLET" FORMULA</h3>
           <div className="row justify-content-center align-items-center">
             <div className="col-md-5">
-              <div className="p-4 rounded-pill bg-danger text-white d-flex align-items-center shadow">
+              <div className="p-4 rounded-pill bg-danger text-white flex-ai-center shadow">
                 <i className="bi bi-x-circle fs-2 me-3"></i>
                 <span className="small">Responsible for managing a team of five.</span>
               </div>
             </div>
             <div className="col-md-1 text-center fs-2 fw-bold">=</div>
             <div className="col-md-5">
-              <div className="p-4 rounded-pill bg-info text-white d-flex align-items-center shadow bg-grad-cyan">
+              <div className="p-4 rounded-pill bg-info text-white flex-ai-center shadow bg-grad-cyan">
                 <i className="bi bi-star-fill fs-2 me-3 text-warning"></i>
                 <span className="small fw-bold">Managed a cross-functional team of 5 to deliver $250k projects.</span>
               </div>

@@ -6,10 +6,10 @@ export default function ArtsDesign() {
   return (
     <main>
       {/* section with image container */}
-      <section className="arts-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="arts-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
           {/* heading */}
-          <header className="rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+          <header className="hero-panel">
             <h1 className="display-3 fw-bolder text-white mb-3">
               Your Future in <span className="text-white">Creative Arts & Design</span>
             </h1>
@@ -95,34 +95,34 @@ export default function ArtsDesign() {
             </div>
           </section>
 
-          <section id="skills" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
+          <section id="skills" className="skills-panel">
             <h2 className="fs-2 fw-bold section-heading-custom text-dark">Essential Skills and Knowledge</h2>
             <p className="text-muted mb-5">Successful managers combine quantitative analysis with dynamic leadership skills.</p>
             <div className="row g-5">
               <div className="col-lg-6">
                 <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Hard Skills (Analytical)</h3>
                 <div className="row g-4">
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i className="bi bi-calculator-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Adobe Creative Suite</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i className="bi bi-table me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Figma / Sketch</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i className="bi bi-diagram-3-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">3D Modeling</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i className="bi bi-bar-chart-line-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Video Editing</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i className="bi bi-cloud-check-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Typography & Color Theory</span>
                   </div>
-                  <div className="col-6 d-flex align-items-center">
+                  <div className="col-6 flex-ai-center">
                     <i className="bi bi-shield-check me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Layout & Composition</span>
                   </div>
@@ -131,15 +131,15 @@ export default function ArtsDesign() {
               <div className="col-lg-6">
                 <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Soft Skills (Leadership)</h3>
                 <div className="row g-4">
-                  <div className="col-12 d-flex align-items-center">
+                  <div className="col-12 flex-ai-center">
                     <i className="bi bi-people-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Unwavering Creativity & Originality</span>
                   </div>
-                  <div className="col-12 d-flex align-items-center">
+                  <div className="col-12 flex-ai-center">
                     <i className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Time Management & Meeting Deadlines</span>
                   </div>
-                  <div className="col-12 d-flex align-items-center">
+                  <div className="col-12 flex-ai-center">
                     <i className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327"></i>
                     <span className="fw-medium">Ability to Interpret & Apply Client Feedback</span>
                   </div>
@@ -148,7 +148,7 @@ export default function ArtsDesign() {
             </div>
           </section>
 
-          <section id="future" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
+          <section id="future" className="skills-panel">
             <h2 className="fs-2 fw-bold section-heading-custom text-dark">Future Trends and Growth</h2>
             <div className="row g-4">
               <div className="col-md-4">
@@ -177,9 +177,9 @@ export default function ArtsDesign() {
         </section>
       </div>
 
-      <section className="arts-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="arts-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
-          <section className="rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+          <section className="hero-panel">
             <h2 className="fs-3 text-white fw-bold mb-3">Ready to Create Your Masterpiece?</h2>
             <p className="fs-5 mb-4 mx-auto text-white max-w-700">
               The only limits in the creative world are the ones you place on yourself. Dedicate yourself to practice and never stop sharing your work.
@@ -202,8 +202,8 @@ export default function ArtsDesign() {
             <div className="modal-body p-4 p-md-5">
               <div className="row g-4">
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
-                    <img src="/images/career-imgs/art-imgs/art1.png" alt="Strategy Planning" className="img-fluid rounded-3 shadow-sm" />
+                    <div className="center-card h-100">
+                    <img src="/images/career-imgs/art-imgs/art1.png" alt="Strategy Planning" className="img-round-shadow" />
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">
@@ -266,8 +266,8 @@ export default function ArtsDesign() {
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
-                    <img src="/images/career-imgs/art-imgs/art2.png" alt="Finance and HR" className="img-fluid rounded-3 shadow-sm" />
+                    <div className="center-card h-100">
+                    <img src="/images/career-imgs/art-imgs/art2.png" alt="Finance and HR" className="img-round-shadow" />
                   </div>
                 </div>
               </div>
@@ -286,8 +286,8 @@ export default function ArtsDesign() {
             <div className="modal-body p-4 p-md-5">
               <div className="row g-4">
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-4 border d-flex align-items-center justify-content-center p-3">
-                    <img src="/images/career-imgs/art-imgs/art3.png" alt="Operations and PMP" className="img-fluid rounded-3 shadow-sm" />
+                    <div className="center-card h-100">
+                    <img src="/images/career-imgs/art-imgs/art3.png" alt="Operations and PMP" className="img-round-shadow" />
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">

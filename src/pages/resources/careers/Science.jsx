@@ -5,9 +5,9 @@ import RoleCard from '/src/components/RoleCard'
 export default function Science() {
   return (
     <>
-      <section className="science-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="science-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
-          <header className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+          <header className="bg-white hero-panel">
             <h1 className="display-3 fw-bolder text-dark mb-3">
               Your Future in <span className="text-custom-primary">Science, Research &amp; Discovery</span>
             </h1>
@@ -90,26 +90,26 @@ export default function Science() {
           </section>
         </section>
 
-        <section id="skills" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
+        <section id="skills" className="skills-panel">
           <h2 className="fs-2 fw-bold section-heading-custom text-dark">Essential Skills and Knowledge</h2>
           <p className="text-muted mb-4">Methodological rigor, statistical mastery, and collaborative research practice.</p>
           <div className="row g-5">
             <div className="col-lg-6">
               <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Hard Skills (Technical)</h3>
               <div className="row g-4">
-                <div className="col-6 d-flex align-items-center">
+                <div className="col-6 flex-ai-center">
                   <i className="bi bi-beaker me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Laboratory Techniques</span>
                 </div>
-                <div className="col-6 d-flex align-items-center">
+                <div className="col-6 flex-ai-center">
                   <i className="bi bi-calculator-fill me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Statistical Analysis</span>
                 </div>
-                <div className="col-6 d-flex align-items-center">
+                <div className="col-6 flex-ai-center">
                   <i className="bi bi-code-slash me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Programming &amp; Bioinformatics</span>
                 </div>
-                <div className="col-6 d-flex align-items-center">
+                <div className="col-6 flex-ai-center">
                   <i className="bi bi-database-fill-gear me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Data Management</span>
                 </div>
@@ -118,15 +118,15 @@ export default function Science() {
             <div className="col-lg-6">
               <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Soft Skills (Collaborative)</h3>
               <div className="row g-4">
-                <div className="col-12 d-flex align-items-center">
+                <div className="col-12 flex-ai-center">
                   <i className="bi bi-people-fill me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Team Collaboration</span>
                 </div>
-                <div className="col-12 d-flex align-items-center">
+                <div className="col-12 flex-ai-center">
                   <i className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Critical Thinking</span>
                 </div>
-                <div className="col-12 d-flex align-items-center">
+                <div className="col-12 flex-ai-center">
                   <i className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327" />
                   <span className="fw-medium">Scientific Communication</span>
                 </div>
@@ -135,7 +135,7 @@ export default function Science() {
           </div>
         </section>
 
-        <section id="future" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
+        <section id="future" className="skills-panel">
           <h2 className="fs-2 fw-bold section-heading-custom text-dark">Future Trends and Growth</h2>
           <div className="row g-4">
             <div className="col-md-4">
@@ -171,7 +171,7 @@ export default function Science() {
             <div className="modal-body p-4 p-md-5">
               <div className="row g-4">
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
+                  <div className="center-card h-100">
                     <img src="/images/career-imgs/sci-imgs/science1.jpg" alt="Biologists in lab" className="img-fluid rounded-2" />
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export default function Science() {
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
+                  <div className="center-card h-100">
                     <img src="/images/career-imgs/sci-imgs/science2.jpeg" alt="Environmental lab" className="img-fluid rounded-2" />
                   </div>
                 </div>
@@ -235,7 +235,7 @@ export default function Science() {
             <div className="modal-body p-4 p-md-5">
               <div className="row g-4">
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
+                  <div className="center-card h-100">
                     <img src="/images/career-imgs/sci-imgs/science3.jpg" alt="Data science" className="img-fluid rounded-2" />
                   </div>
                 </div>
@@ -255,9 +255,9 @@ export default function Science() {
         </div>
       </div>
 
-      <section className="science-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="science-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
-          <section className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+          <section className="bg-white hero-panel">
             <h2 className="fs-3 fw-bold mb-3">Ready to Make the Next Great Discovery?</h2>
             <p className="fs-5 mb-4 mx-auto max-w-700">Get involved in undergraduate research or laboratory work early to validate your passion and build essential practical skills.</p>
             <SmoothScrollLink to="roles" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">Begin Your Research</SmoothScrollLink>

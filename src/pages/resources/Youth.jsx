@@ -64,7 +64,7 @@ export default function Youth() {
               <div className="p-4 border rounded-4 shadow-sm bg-light">
                 <h5 className="fw-bold"><i className="bi bi-plus-square-fill text-danger me-2"></i>The Reliability Formula</h5>
                 <p className="small text-muted">Since you don't have past bosses, we use "Proxies" for reliability:</p>
-                <div className="d-flex align-items-center mb-3">
+                <div className="flex-ai-center mb-3">
                   <div className="p-2 border rounded bg-white small w-100 text-center">95%+ School Attendance</div>
                   <div className="px-2">+</div>
                   <div className="p-2 border rounded bg-white small w-100 text-center">3.0+ GPA or Awards</div>

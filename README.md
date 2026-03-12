@@ -20,6 +20,7 @@ npm run dev
 - A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them. However, This not really an issue and more of just a change. The site still looks and works fine with this.
 - the footer has some links that do not work and send you to 404s (they are placholders)
 - the find your path button in career pages does not go anywhere
+- the style css is big and files are long in general (i am trying to make more components, but it is turning out ot be more difficult than I thought)
 
 
 ### CHANGES:

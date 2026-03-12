@@ -40,12 +40,12 @@ export default function ProfessionalDev() {
           <h2 className="text-center fw-bold mb-5">THE ANATOMY OF A MODERN LEADER</h2>
           <div className="row g-4 align-items-center">
             <div className="col-md-6">
-              <div className="d-flex align-items-center mb-3 text-center">
+              <div className="flex-ai-center mb-3 text-center">
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold">Strategic Vision</div>
                 <div className="px-3 fs-3">+</div>
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold">Operational Agility</div>
               </div>
-              <div className="d-flex align-items-center text-center">
+              <div className="flex-ai-center text-center">
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold">Cultural Intelligence</div>
                 <div className="px-3 fs-3">=</div>
                 <div className="border p-3 rounded-4 shadow-sm flex-grow-1 fw-bold text-danger">The Executive Presence</div>
@@ -67,14 +67,14 @@ export default function ProfessionalDev() {
           <h3 className="fw-bold mb-5">UPGRADING YOUR CAREER MINDSET</h3>
           <div className="row justify-content-center align-items-center">
             <div className="col-md-5">
-              <div className="p-4 rounded-pill bg-secondary text-white d-flex align-items-center shadow opacity-75">
+              <div className="p-4 rounded-pill bg-secondary text-white flex-ai-center shadow opacity-75">
                 <i className="bi bi-lock-fill fs-2 me-3"></i>
                 <span className="small">"I only do what's in my job description."</span>
               </div>
             </div>
             <div className="col-md-1 fs-2 fw-bold">→</div>
             <div className="col-md-5">
-              <div className="p-4 rounded-pill text-white d-flex align-items-center shadow bg-grad-pink">
+              <div className="p-4 rounded-pill text-white flex-ai-center shadow bg-grad-pink">
                 <i className="bi bi-rocket-takeoff-fill fs-2 me-3 text-warning"></i>
                 <span className="small fw-bold">"I identify gaps and solve problems proactively."</span>
               </div>

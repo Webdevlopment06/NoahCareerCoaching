@@ -11,7 +11,7 @@ export default function ResumeTemplates() {
 
                 <div className="resume-templates-grid">
                     <article className="resume-template-card">
-                        <div className="resume-template-preview d-flex align-items-center justify-content-center">Classic</div>
+                        <div className="resume-template-preview flex-ai-center justify-content-center">Classic</div>
                         <div className="resume-template-body">
                             <h3>Classic</h3>
                             <p className="text-muted">Clean, professional, and ATS-friendly.</p>
@@ -23,7 +23,7 @@ export default function ResumeTemplates() {
                     </article>
 
                     <article className="resume-template-card">
-                        <div className="resume-template-preview d-flex align-items-center justify-content-center">Modern</div>
+                        <div className="resume-template-preview flex-ai-center justify-content-center">Modern</div>
                         <div className="resume-template-body">
                             <h3>Modern</h3>
                             <p className="text-muted">Stylish layout with a contemporary feel.</p>
@@ -35,7 +35,7 @@ export default function ResumeTemplates() {
                     </article>
 
                     <article className="resume-template-card">
-                        <div className="resume-template-preview d-flex align-items-center justify-content-center">Creative</div>
+                        <div className="resume-template-preview flex-ai-center justify-content-center">Creative</div>
                         <div className="resume-template-body">
                             <h3>Creative</h3>
                             <p className="text-muted">Perfect for designers, artists, and creatives.</p>
@@ -47,7 +47,7 @@ export default function ResumeTemplates() {
                     </article>
 
                     <article className="resume-template-card">
-                        <div className="resume-template-preview d-flex align-items-center justify-content-center">Executive</div>
+                        <div className="resume-template-preview flex-ai-center justify-content-center">Executive</div>
                         <div className="resume-template-body">
                             <h3>Executive</h3>
                             <p className="text-muted">Bold and refined for leadership roles.</p>

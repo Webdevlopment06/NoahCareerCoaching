@@ -398,7 +398,37 @@ img { max-width: 100%; height: auto; display: block; }
 .bg-grad-cyan { background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%); }
 .bg-f1b327 { background-color: #f1b327 !important; }
 
+/* Image helper: common rounded + shadow used across career pages */
+.img-round-shadow { display: block; max-width: 100%; height: auto; border-radius: .5rem; box-shadow: 0 6px 18px rgba(0,0,0,0.08); }
+
+/* Centered light card used across modals and role blocks */
+.center-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa; /* matches Bootstrap bg-light */
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 0.75rem; /* close to rounded-4 */
+    padding: 1rem; /* replaces p-3 */
+}
+/* Consolidated skills / future panel to reduce repeated class lists */
+.skills-panel {
+    margin-bottom: 3rem; /* matches mb-5 */
+    background-color: #ffffff; /* bg-white */
+    border-radius: 1rem; /* similar to rounded-4 */
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,0.075); /* subtle shadow */
+    padding: 1.5rem; /* p-4 */
+}
+@media (min-width: 768px) {
+    .skills-panel { padding: 3rem; /* p-md-5 */ }
+}
+
 /* Additional utilities for pages migrated from static HTML */
+/* Utility: compact flex + align-items:center used across pages */
+.flex-ai-center {
+    display: flex !important;
+    align-items: center !important;
+}
 .bg-grad-ff6b6b { background: linear-gradient(135deg, #FF6B6B 0%, #FFD93D 100%); }
 .text-2d3436 { color: #2D3436 !important; }
 .bg-fff9e6 { background-color: #FFF9E6 !important; }
@@ -447,4 +477,17 @@ img { max-width: 100%; height: auto; display: block; }
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+/* Consolidated hero header panel used across career pages */
+.hero-panel {
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hero-panel { padding: 3rem; }
+}
+
 /* End of stylesheet */

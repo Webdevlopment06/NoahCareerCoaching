@@ -5,9 +5,9 @@ import RoleCard from '/src/components/RoleCard'
 export default function Law() {
   return (
     <>
-      <section className="law-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="law-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
-          <header className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+          <header className="bg-white hero-panel">
             <h1 className="display-3 fw-bolder text-dark mb-3">Your Future in <span className="text-custom-primary">Law &amp; Public Service</span></h1>
             <p className="fs-5 text-muted mx-auto mb-4 max-w-800">A career in law demands intellectual rigor, ethical commitment, and a passion for justice. It offers pathways from litigation and corporate advising to public policy.</p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
@@ -84,7 +84,7 @@ export default function Law() {
           </section>
         </section>
 
-        <section id="skills" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
+        <section id="skills" className="skills-panel">
           <h2 className="fs-2 fw-bold section-heading-custom text-dark">Essential Skills and Knowledge</h2>
           <p className="text-muted mb-4">Research, persuasive writing, ethical judgment, and courtroom presentation skills.</p>
           <div className="row g-5">
@@ -143,7 +143,7 @@ export default function Law() {
           </div>
         </section>
 
-        <section id="future" className="mb-5 bg-white rounded-4 shadow-sm p-4 p-md-5">
+        <section id="future" className="skills-panel">
           <h2 className="fs-2 fw-bold section-heading-custom text-dark">Future Trends and Growth</h2>
           <div className="row g-4 mt-3">
             <div className="col-md-4">
@@ -179,7 +179,7 @@ export default function Law() {
             <div className="modal-body p-4 p-md-5">
               <div className="row g-4">
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
+                  <div className="center-card h-100">
                     <img src="/images/career-imgs/law-imgs/law1.jpg" alt="Corporate Law" className="img-fluid rounded-2" />
                   </div>
                 </div>
@@ -223,7 +223,7 @@ export default function Law() {
                   </div>
                 </div>
                 <div className="col-12 col-lg-6">
-                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
+                  <div className="center-card h-100">
                     <img src="/images/career-imgs/law-imgs/law2.jpg" alt="Public Defense" className="img-fluid rounded-2" />
                   </div>
                 </div>
@@ -243,7 +243,7 @@ export default function Law() {
             <div className="modal-body p-4 p-md-5">
               <div className="row g-4">
                 <div className="col-12 col-lg-6 order-lg-1">
-                  <div className="h-100 bg-light rounded-3 border d-flex align-items-center justify-content-center p-3">
+                  <div className="center-card h-100">
                     <img src="/images/career-imgs/law-imgs/law3.jpg" alt="Paralegal" className="img-fluid rounded-2" />
                   </div>
                 </div>
@@ -263,9 +263,9 @@ export default function Law() {
         </div>
       </div>
 
-      <section className="law-hero-bg d-flex align-items-center justify-content-center py-5">
+      <section className="law-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
-          <section className="bg-white rounded-4 shadow-lg p-4 p-md-5 mb-5 text-center">
+          <section className="bg-white hero-panel">
             <h2 className="fs-3 fw-bold mb-3">Commit to Justice and Service</h2>
             <p className="fs-5 mb-4 mx-auto max-w-700">These careers offer profound opportunities to impact society directly. If you seek a role that combines intellectual challenge with real-world consequence, your path is here.</p>
             <SmoothScrollLink to="roles" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">Start Your Journey</SmoothScrollLink>
