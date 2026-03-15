@@ -8,11 +8,11 @@ export default function Education() {
       <section className="education-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
           <header className="hero-panel">
-            <h1 className="display-3 fw-bolder text-white mb-3">
+            <h1 className="display-3 fw-bolder text-white mb-3 animate-fade-in">
               Your Future in{' '}
               <span className="text-white">Education &amp; Training</span>
             </h1>
-            <p className="fs-5 text-white mx-auto mb-4 max-w-800">
+            <p className="fs-5 text-white mx-auto mb-4 max-w-800 animate-slide-up">
               Empower the next generation and shape professional talent. Careers in
               teaching, administration, and corporate learning are deeply impactful
               and constantly evolving.
@@ -47,7 +47,7 @@ export default function Education() {
 
           <div className="container py-5">
             <div className="row g-4">
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-lightbulb"
                   title="Academic Teaching &amp; Instruction"
@@ -62,7 +62,7 @@ export default function Education() {
                 </RoleCard>
               </div>
 
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-graph-up-arrow"
                   title="Corporate &amp; Specialized Training"
@@ -76,10 +76,10 @@ export default function Education() {
                 </RoleCard>
               </div>
 
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-gear"
-                  title="Leadership &amp; Support Roles"
+                  title="Leadership & Support Roles"
                   modalTarget="#opsModal-education"
                 >
                   Leadership and support positions guide, manage, and strengthen

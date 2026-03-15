@@ -11,7 +11,7 @@ export default function Home() {
                 <h1 className="display-5 fw-bold text-dark mb-3">Your Career Path Doesn't Have To Be A Solo Journey</h1>
                 <p className="lead mb-4 heroFont blackText text-bold">Free, personalized career coaching for job searches and career changes. Get the tools you need to make an impression, regardless of your starting point.</p>
                 <div className="d-grid d-md-block">
-                  <a href="/contact" className="btn btn-warning btn-lg px-5 py-3 shadow-sm fw-bold main-hero-btn">START MY COACHING JOURNEY</a>
+                  <a href="/contact" className="btn btn-warning btn-lg px-5 py-3 shadow-sm fw-bold main-hero-btn hover-shadow">START MY COACHING JOURNEY</a>
                 </div>
               </div>
             </div>

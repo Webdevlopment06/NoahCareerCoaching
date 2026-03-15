@@ -10,10 +10,10 @@ export default function ArtsDesign() {
         <div className="container">
           {/* heading */}
           <header className="hero-panel">
-            <h1 className="display-3 fw-bolder text-white mb-3">
+            <h1 className="display-3 fw-bolder text-white mb-3 animate-fade-in">
               Your Future in <span className="text-white">Creative Arts & Design</span>
             </h1>
-            <p className="fs-5 text-white mx-auto mb-4 max-w-800">
+            <p className="fs-5 text-white mx-auto mb-4 max-w-800 animate-slide-up">
               Shape the visual and emotional world around us. Careers in design, media, and fine arts merge
               passion with commercial demand, requiring both artistry and technical skill.
             </p>
@@ -32,7 +32,7 @@ export default function ArtsDesign() {
 
           <div className="container py-5">
             <div className="row g-4">
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-lightbulb"
                   title="Digital &amp; UX/UI Design"
@@ -42,7 +42,7 @@ export default function ArtsDesign() {
                 </RoleCard>
               </div>
 
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-graph-up-arrow"
                   title="Visual Arts &amp; Media Production"
@@ -52,7 +52,7 @@ export default function ArtsDesign() {
                 </RoleCard>
               </div>
 
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-gear"
                   title="Management &amp; Strategy"

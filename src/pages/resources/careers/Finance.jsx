@@ -10,11 +10,11 @@ export default function Finance() {
         <div className="container">
           {/* heading */}
           <header className="hero-panel">
-            <h1 className="display-3 fw-bolder text-white mb-3">
-              Your Future in{" "}
+            <h1 className="display-3 fw-bolder text-white mb-3 animate-fade-in">
+              Your Future in{' '}
               <span className="text-white">Finance &amp; Accounting</span>
             </h1>
-            <p className="fs-5 text-white mx-auto mb-4 max-w-800">
+            <p className="fs-5 text-white mx-auto mb-4 max-w-800 animate-slide-up">
               Finance careers are the engine of the global economy, offering roles
               in investment, risk management, advisory, and detailed corporate
               accounting.
@@ -51,7 +51,7 @@ export default function Finance() {
           {/* new section idea */}
           <div className="container py-5">
             <div className="row g-4">
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-lightbulb"
                   title="Investment and Advisory"
@@ -63,7 +63,7 @@ export default function Finance() {
                   strategies to achieve long-term financial goals.
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-graph-up-arrow"
                   title="Corporate Finance &amp; Management"
@@ -75,10 +75,10 @@ export default function Finance() {
                   efficiency.
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-gear"
-                  title="Accounting &amp; Compliance"
+                  title="Accounting & Compliance"
                   modalTarget="#opsModal-finance"
                 >
                   This field ensures financial accuracy, transparency, and

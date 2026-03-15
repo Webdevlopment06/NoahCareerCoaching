@@ -10,11 +10,11 @@ export default function Hospitality() {
         <div className="container">
           {/* heading */}
           <header className="hero-panel">
-            <h1 className="display-3 fw-bolder text-white mb-3">
-              Your Future in{" "}
+            <h1 className="display-3 fw-bolder text-white mb-3 animate-fade-in">
+              Your Future in{' '}
               <span className="text-white">Hospitality &amp; Tourism</span>
             </h1>
-            <p className="fs-5 text-white mx-auto mb-4 max-w-800">
+            <p className="fs-5 text-white mx-auto mb-4 max-w-800 animate-slide-up">
               Hospitality is a global industry focused on creating memorable guest
               experiences in hotels, restaurants, events, and travel services.
             </p>
@@ -50,7 +50,7 @@ export default function Hospitality() {
           {/* new section idea */}
           <div className="container py-5">
             <div className="row g-4">
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-lightbulb"
                   title="Accommodation and Lodging"
@@ -61,7 +61,7 @@ export default function Hospitality() {
                   and guest services to ensure comfortable, reliable stays.
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-graph-up-arrow"
                   title="Food and Beverage Services"
@@ -73,7 +73,7 @@ export default function Hospitality() {
                   and service staff to management and operations.
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-gear"
                   title="Tourism and Events"

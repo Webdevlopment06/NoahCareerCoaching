@@ -8,8 +8,12 @@ export default function Law() {
       <section className="law-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
           <header className="bg-white hero-panel">
-            <h1 className="display-3 fw-bolder text-dark mb-3">Your Future in <span className="text-custom-primary">Law &amp; Public Service</span></h1>
-            <p className="fs-5 text-muted mx-auto mb-4 max-w-800">A career in law demands intellectual rigor, ethical commitment, and a passion for justice. It offers pathways from litigation and corporate advising to public policy.</p>
+            <h1 className="display-3 fw-bolder text-dark mb-3 animate-fade-in">
+              Your Future in <span className="text-custom-primary">Law &amp; Public Service</span>
+            </h1>
+            <p className="fs-5 text-muted mx-auto mb-4 max-w-800 animate-slide-up">
+              A career in law demands intellectual rigor, ethical commitment, and a passion for justice. It offers pathways from litigation and corporate advising to public policy.
+            </p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
               <SmoothScrollLink to="roles" className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark">Explore Roles</SmoothScrollLink>
               <SmoothScrollLink to="education" className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3">Find Your Path</SmoothScrollLink>
@@ -25,7 +29,7 @@ export default function Law() {
 
           <div className="container py-5">
             <div className="row g-4">
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-briefcase"
                   title="Private Practice &amp; Corporate Law"
@@ -34,7 +38,7 @@ export default function Law() {
                   Advises organizations on commercial law, transactions, and risk management. Work involves negotiating contracts, counseling on regulatory compliance, and partnering with business teams to structure deals. Ideal for detail-oriented problem-solvers who enjoy commercial strategy.
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-people-fill"
                   title="Public Service &amp; Advocacy"
@@ -43,7 +47,7 @@ export default function Law() {
                   Serves the public through courtroom advocacy, policy, and community representation. Roles range from trial work and client advocacy to shaping public policy and legal reform.
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-file-earmark-text"
                   title="Legal Support &amp; Paralegal Roles"

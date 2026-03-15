@@ -10,11 +10,11 @@ export default function BusinessManagement() {
         <div className="container">
           {/* heading */}
           <header className="hero-panel">
-            <h1 className="display-3 fw-bolder text-white mb-3">
+            <h1 className="display-3 fw-bolder text-white mb-3 animate-fade-in">
               Your Future in{" "}
               <span className="text-white">Business &amp; Management</span>
             </h1>
-            <p className="fs-5 text-white mx-auto mb-4 max-w-800">
+            <p className="fs-5 text-white mx-auto mb-4 max-w-800 animate-slide-up">
               Management careers drive strategy, growth, and organizational success.
               This guide explores paths in leadership, finance, operations, and
               analysis across all major industries.
@@ -51,10 +51,10 @@ export default function BusinessManagement() {
           {/* new section idea */}
           <div className="container py-5">
             <div className="row g-4">
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-lightbulb"
-                  title="Strategy &amp; Consulting"
+                  title="Strategy & Consulting"
                   modalTarget="#strategyModal-businessmanagement"
                 >
                   Master the art of high-level problem solving. Learn to analyze
@@ -63,10 +63,10 @@ export default function BusinessManagement() {
                   sustainable growth.
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-graph-up-arrow"
-                  title="Financial &amp; Resource Management"
+                  title="Financial & Resource Management"
                   modalTarget="#financeModal-businessmanagement"
                 >
                   Become the steward of organizational health. Focus on optimizing
@@ -74,10 +74,10 @@ export default function BusinessManagement() {
                   ensure every resource is positioned for maximum impact and ROI.
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-gear"
-                  title="Operations &amp; Supply Chain"
+                  title="Operations & Supply Chain"
                   modalTarget="#opsModal-businessmanagement"
                 >
                   Architect the engines of efficiency. From global logistics to

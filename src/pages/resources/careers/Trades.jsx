@@ -8,13 +8,13 @@ export default function Trades() {
       <section className="trades-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
           <header className="bg-white hero-panel">
-            <h1 className="display-3 fw-bolder text-dark mb-3">
-              Your Future in{" "}
+            <h1 className="display-3 fw-bolder text-dark mb-3 animate-fade-in">
+              Your Future in{' '}
               <span className="text-custom-primary">
                 Skilled Trades &amp; Construction
               </span>
             </h1>
-            <p className="fs-5 text-muted mx-auto mb-4 max-w-800">
+            <p className="fs-5 text-muted mx-auto mb-4 max-w-800 animate-slide-up">
               Skilled trades are the backbone of our infrastructure, offering
               rewarding, hands-on careers with high demand, excellent pay, and
               pathways to self-employment.
@@ -47,7 +47,7 @@ export default function Trades() {
           </p>
           <div className="container py-5">
             <div className="row g-4">
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-tools"
                   title="Mechanical &amp; Electrical"
@@ -56,7 +56,7 @@ export default function Trades() {
                   Electricians, HVAC technicians, and controls specialists who install, maintain, and troubleshoot power distribution, climate systems, and automated control equipment to keep buildings and industrial facilities operating safely and efficiently.
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-building"
                   title="Construction &amp; Finishing"
@@ -65,7 +65,7 @@ export default function Trades() {
                   Carpenters, finishers, and site supervisors responsible for framing, structural assembly, interior finishes, and coordinating crews to deliver quality construction on schedule and to code.
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-gear"
                   title="Automotive &amp; Maintenance"

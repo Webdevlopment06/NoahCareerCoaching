@@ -8,10 +8,10 @@ export default function Science() {
       <section className="science-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
           <header className="bg-white hero-panel">
-            <h1 className="display-3 fw-bolder text-dark mb-3">
+            <h1 className="display-3 fw-bolder text-dark mb-3 animate-fade-in">
               Your Future in <span className="text-custom-primary">Science, Research &amp; Discovery</span>
             </h1>
-            <p className="fs-5 text-muted mx-auto mb-4 max-w-800">
+            <p className="fs-5 text-muted mx-auto mb-4 max-w-800 animate-slide-up">
               The scientific field is the bedrock of innovation, offering careers
               that push the boundaries of knowledge in biology, chemistry, physics,
               and environmental solutions.
@@ -31,7 +31,7 @@ export default function Science() {
 
           <div className="container py-5">
             <div className="row g-4">
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-bandaid"
                   title="Biological &amp; Medical Sciences"
@@ -40,7 +40,7 @@ export default function Science() {
                   Research biologists, biotechnologists, and clinical researchers designing experiments, analyzing biological systems, and translating discoveries into diagnostics, therapeutics, and biomanufacturing processes.
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-geo-alt"
                   title="Physical &amp; Environmental Sciences"
@@ -49,7 +49,7 @@ export default function Science() {
                   Chemists, materials scientists, physicists, and environmental researchers developing sustainable materials, studying climate impacts, and creating technologies for pollution mitigation and resource management.
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-bar-chart-line-fill"
                   title="Data &amp; Computational Science"

@@ -8,10 +8,10 @@ export default function Technology() {
 			<section className="tech-hero-bg flex-ai-center justify-content-center py-5">
 				<div className="container">
 					<header className="bg-white hero-panel">
-						<h1 className="display-3 fw-bolder text-dark mb-3">
+						<h1 className="display-3 fw-bolder text-dark mb-3 animate-fade-in">
 							Your Future in <span className="text-custom-primary">Technology &amp; Software</span>
 						</h1>
-						<p className="fs-5 text-muted mx-auto mb-4 max-w-800">
+						<p className="fs-5 text-muted mx-auto mb-4 max-w-800 animate-slide-up">
 							Careers in technology span software, infrastructure, and specialized
 							roles—this guide highlights common paths and what you need to get
 							started.
@@ -35,7 +35,7 @@ export default function Technology() {
 
 					<div className="container py-5">
 						<div className="row g-4">
-							<div className="col-lg-4">
+							<div className="col-lg-4 animate-scale-up">
 								<RoleCard
 									icon="bi bi-code-slash"
 									title="Software &amp; Development"
@@ -44,7 +44,7 @@ export default function Technology() {
 									Design, build, and maintain scalable applications, APIs, and data platforms. Collaborate with product and design, write tests, and optimize performance to deliver reliable user experiences at scale.
 								</RoleCard>
 							</div>
-							<div className="col-lg-4">
+							<div className="col-lg-4 animate-scale-up">
 								<RoleCard
 									icon="bi bi-cloud-arrow-up-fill"
 									title="Infrastructure &amp; Ops"
@@ -53,7 +53,7 @@ export default function Technology() {
 									Architect and operate cloud platforms, CI/CD pipelines, and networking. Focus on automation, observability, reliability engineering, and incident response to keep services secure and performant.
 								</RoleCard>
 							</div>
-							<div className="col-lg-4">
+							<div className="col-lg-4 animate-scale-up">
 								<RoleCard
 									icon="bi bi-shield-lock-fill"
 									title="Specialized &amp; Support"

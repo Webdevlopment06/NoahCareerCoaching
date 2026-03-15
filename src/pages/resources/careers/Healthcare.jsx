@@ -10,11 +10,11 @@ export default function Healthcare() {
         <div className="container">
           {/* heading */}
           <header className="hero-panel">
-            <h1 className="display-3 fw-bolder text-white mb-3">
-              Your Future in{" "}
+            <h1 className="display-3 fw-bolder text-white mb-3 animate-fade-in">
+              Your Future in{' '}
               <span className="text-white">Healthcare &amp; Wellness</span>
             </h1>
-            <p className="fs-5 text-white mx-auto mb-4 max-w-800">
+            <p className="fs-5 text-white mx-auto mb-4 max-w-800 animate-slide-up">
               Healthcare offers diverse, demanding, and immensely rewarding careers
               from direct patient care to research and administration.
             </p>
@@ -50,7 +50,7 @@ export default function Healthcare() {
           {/* new section idea */}
           <div className="container py-5">
             <div className="row g-4">
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-lightbulb"
                   title="Clinical &amp; Direct Patient Care"
@@ -65,7 +65,7 @@ export default function Healthcare() {
                   healthcare process.
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-graph-up-arrow"
                   title="Allied Health &amp; Therapy"
@@ -80,7 +80,7 @@ export default function Healthcare() {
                   teams
                 </RoleCard>
               </div>
-              <div className="col-lg-4">
+              <div className="col-lg-4 animate-scale-up">
                 <RoleCard
                   icon="bi bi-gear"
                   title="Management &amp; Informatics"
