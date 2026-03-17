@@ -25,6 +25,11 @@
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
+
+.career-icon {
+  transition: transform 0.3s ease;
+}
+
 .career-mini-card:hover .career-icon {
   transform: scale(1.2);
 }
@@ -86,7 +91,8 @@
 
 /* Animation: Scale Up */
 .animate-scale-up:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 /* Animation: Hero Button Diagonal Swoosh */

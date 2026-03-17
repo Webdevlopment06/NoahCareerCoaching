@@ -1,0 +1,23 @@
+/* ==========================================================================
+   PAGE-SPECIFIC STYLES
+   ========================================================================== */
+
+/* Home page helper (replaces inline background + minHeight) */
+.home-hero { min-height: 80vh; background: url('/images/home-imgs/home-hero-bg.png') no-repeat center center/cover; display: flex; align-items: center; }
+
+/* About page helper classes */
+/* (Referenced from utilities.css for consistency, but keep here for page grouping) */
+
+/* Top-hero animated gradient used on services pages */
+/* Consolidated hero header panel used across career pages */
+.hero-panel {
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .hero-panel { padding: 3rem; }
+}

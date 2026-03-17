@@ -41,6 +41,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                
 
                 <h2 className="fw-bold blackText h4">Social Proof</h2>
                 <div className="flex-ai-center gap-4 mt-3">
@@ -60,20 +61,29 @@ export default function Home() {
               <h2 className="fw-bold h4 blackText mb-4">The Power of Three</h2>
               <div className="row g-3 mb-5">
                 <div className="col-md-4">
-                  <div className="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm">
-                    <i className="bi bi-file-earmark-text h2 blackText"></i>
+                  <div className="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm animate-scale-up">
+                    <div className="d-flex align-items-center gap-2">
+                      <i className="bi bi-file-earmark-text h2 blackText"></i>
+                      <h5 className="blackText mb-0">Career Roadmap</h5>
+                    </div>
                     <p className="small blackText mt-2 mb-0">Stand out to recruiters with a professional career roadmap.</p>
                   </div>
                 </div>
                 <div className="col-md-4">
-                  <div className="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm">
-                    <i className="bi bi-mic h2 blackText"></i>
+                  <div className="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm animate-scale-up">
+                    <div className="d-flex align-items-center gap-2">
+                      <i className="bi bi-mic h2 blackText"></i>
+                      <h5 className="blackText mb-0">Mock Interview Practice</h5>
+                    </div>
                     <p className="small mt-2 blackText mb-0">Mock interviews to turn your nerves into confidence.</p>
                   </div>
                 </div>
                 <div className="col-md-4">
-                  <div className="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm">
-                    <i className="bi bi-search h2 blackText"></i>
+                  <div className="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm animate-scale-up">
+                    <div className="d-flex align-items-center gap-2">
+                      <i className="bi bi-search h2 blackText"></i>
+                      <h5 className="blackText mb-0">Networking & Referrals</h5>
+                    </div>
                     <p className="small mt-2 blackText mb-0">Don't just apply - get referred and get noticed.</p>
                   </div>
                 </div>

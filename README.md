@@ -23,7 +23,6 @@ npm run dev
 - while in a career page the nav highlight is on resources but not a subpage
 
 
-
 ### CHANGES:
 - The state content is in a component, so it keeps the size of the page down.
 - I added some new icons to explore, they are all from flaticon.com
@@ -33,13 +32,15 @@ npm run dev
 - Made a component for the cards in the career pages.
 - Put animation related styles into /styles/animations.css
 
+
 ### IDEAS:
 - We could add dark mode, but its not at all necessary.
 - We could put similar pages into a component template and then have all the data for each page in json to reduce duplicate code and file size
 - mobile optimizations
 -  add actual stories to the stories page instead of fake placeholders
 - spitting the style.css file
-- have the odd foot links play an animation on the nav items they relate to
+- have the odd footer links play an animation on the nav items they relate to
+
 
 ### DOING (first priority anyway) 
 - css animations and making the site feel better and more responsive
