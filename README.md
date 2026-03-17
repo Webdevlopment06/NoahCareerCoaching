@@ -18,11 +18,9 @@ npm run dev
 
 ### ISSUES:
 - A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them. However, This not really an issue and more of just a change. The site still looks and works fine with this.
-- the footer has some links that do not work and send you to 404s (they are placholders)
-- the find your path button in the career pages does not go anywhere
+- the footer has some links that do not work and send you to 404s (they are placholders) privacy and terms do not need to be pages though
 - the style css is big and files are long in general (i am trying to make more components, but it is turning out ot be more difficult than I thought) I have been slowly making the style css bigger so I am thinking of ways to split it into multiple files
-- when you navigate to a new page sometimes it scrolls from a random spot on the page to the top for some reason
-- while in a career page the nav highlight is on resouces but not a subpage
+- while in a career page the nav highlight is on resources but not a subpage
 
 
 
@@ -33,6 +31,7 @@ npm run dev
 - The Navbar page you are on is indicated in blue.
 - images are now organized simlarly to how the pages are.
 - Made a component for the cards in the career pages.
+- Put animation related styles into /styles/animations.css
 
 ### IDEAS:
 - We could add dark mode, but its not at all necessary.
@@ -40,6 +39,7 @@ npm run dev
 - mobile optimizations
 -  add actual stories to the stories page instead of fake placeholders
 - spitting the style.css file
+- have the odd foot links play an animation on the nav items they relate to
 
 ### DOING (first priority anyway) 
-css animations and making the site feel better and more responsive
+- css animations and making the site feel better and more responsive

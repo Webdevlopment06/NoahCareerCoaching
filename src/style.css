@@ -19,6 +19,7 @@
 .heroFont { font-family: "TASA Explorer", sans-serif; font-size: 16px; font-weight: bold; font-style: normal; }
 .heroParaFont { color:#fff; font-size: 20px; }
 .main-hero-btn { font-family: "TASA Explorer", sans-serif; font-size: 15px; font-style: normal; }
+
 .whiteText { color: #ffffff; }
 .w-85 { width: 85% !important; }
 .w-70 { width: 70% !important; }
@@ -31,6 +32,12 @@
 :root { --body-font: "Outfit", sans-serif;
         --heading-font: "Outfit", sans-serif;
 }
+
+/* Override bootstrap's global smooth scroll - we want instant navigation scroll. this is to fix the problem with the scrolling upon navigation */
+html, body {
+  scroll-behavior: auto !important;
+}
+
 body { font-family: var(--body-font); font-size: 16px; color: #222; }
 h1,h2,h3,h4,h5 { font-family: var(--heading-font); }
 
@@ -134,12 +141,6 @@ img { max-width: 100%; height: auto; display: block; }
 /* 5. CAROUSEL & CARDS */
 .carousel-item img { height: 400px; object-fit: cover; border-radius: 10px; }
 .carousel-inner { border-radius: 10px; overflow: hidden; }
-.carousel-fade .carousel-item { transition: opacity 1s ease-in-out; }
-.carousel-item { transition: transform 1s ease-in-out, opacity 1s ease-in-out; }
-.card-flyer { transition: all 0.3s ease-in-out;}
-.card-flyer:hover { transform: translateY(-10px); /* The "Pop" upward */ box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Increased shadow */}
-#autoCarousel:hover { animation-play-state: paused; }
-
 .blue-card-box { background-color: #1800ad; border-radius: 20px; }
 .white-card-box { background-color: #fff; border: 1px solid #1800ad; border-radius: 20px; color: #000; }
 
@@ -155,23 +156,12 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .career-icon {
-    max-height: 55px;
-    max-width: 55px;
-    width: auto;
-    height: auto;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.08));
-    transition: transform 0.3s ease;
+    transition: transform 0.3s;
 }
-
-.career-mini-card {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.career-mini-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-.career-mini-card:hover .career-icon { transform: scale(1.2); }
 
 /* 6. BUTTONS */
 .orange-button { background-color: #f1b327; color: #fff; border: none; }
@@ -288,17 +278,6 @@ img { max-width: 100%; height: auto; display: block; }
 
 .quiz1-image-container { width: 100px; height: 200px; overflow: hidden; margin: 10px auto; text-align: center; line-height: 200px; font-size: 0; }
 .quiz1-image-container img { width: 100%; height: auto; display: inline-block; }
-
-.glass-back {
-    position: fixed; bottom: 25px; right: 25px; width: 55px; height: 55px;
-    background: rgba(255,255,255,0.35); backdrop-filter: blur(10px);
-    border-radius: 50%; display: flex; align-items: center; justify-content: center;
-    color: #0d6efd; font-size: 26px; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-    opacity: 0; transition: opacity .3s ease; z-index: 999;
-    pointer-events: none; /* don't receive clicks or show pointer when hidden */
-}
-.glass-back.show { opacity: 1; }
-.glass-back.show { pointer-events: auto; cursor: pointer; }
 
 .join-card { max-width: 980px; margin: 2.5rem auto; }
 .step-icon { width: 56px; height: 56px; display:flex; align-items:center; justify-content:center; border-radius:12px; background-color:#f1f5f9; }
@@ -454,31 +433,6 @@ img { max-width: 100%; height: auto; display: block; }
 .bg-grad-equale2 { background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%); }
 
 /* Top-hero animated gradient used on services pages */
-.hero-gradient-indigo-orange {
-    /* swapped: yellow -> indigo, using only the two licensed colors */
-    background: linear-gradient(270deg, #f1b327 0%, #f1b327 35%, #1800ad 65%, #1800ad 100%);
-    background-size: 400% 400%;
-
-    -webkit-animation: gradientBg 20s ease infinite;
-    -moz-animation: gradientBg 20s ease infinite;
-    animation: gradientBg 20s ease infinite;
-}
-
-@-webkit-keyframes gradientBg {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes gradientBg {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes gradientBg {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
 /* Consolidated hero header panel used across career pages */
 .hero-panel {
     border-radius: 1rem;

@@ -26,12 +26,7 @@ export default function Trades() {
               >
                 Explore Roles
               </SmoothScrollLink>
-              <SmoothScrollLink
-                to="education"
-                className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
-              >
-                Find Your Path
-              </SmoothScrollLink>
+              <a href="/contact" className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3">Find Your Path</a>
             </div>
       {/* Modals moved to bottom to avoid nested markup/backdrop issues. */}
           </header>
@@ -376,12 +371,12 @@ export default function Trades() {
               work come to life. Contact local unions or trade schools to start your
               apprenticeship application today.
             </p>
-            <SmoothScrollLink
-              to="roles"
+            <a
+              href="/contact"
               className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
             >
               Apply Your Skills
-            </SmoothScrollLink>
+            </a>
           </section>
         </div>
       </section>

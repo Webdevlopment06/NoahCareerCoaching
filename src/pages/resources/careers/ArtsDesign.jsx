@@ -19,7 +19,7 @@ export default function ArtsDesign() {
             </p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
               <SmoothScrollLink to="roles" className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark">Explore Roles</SmoothScrollLink>
-              <a href="#education" className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3">Find Your Path</a>
+              <a href="/contact" className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3">Find Your Path</a>
             </div>
           </header>
         </div>

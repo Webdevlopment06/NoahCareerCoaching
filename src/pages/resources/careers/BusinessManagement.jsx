@@ -26,12 +26,12 @@ export default function BusinessManagement() {
               >
                 Explore Roles
               </SmoothScrollLink>
-              <a
-                href="/resources/explore"
-                className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
-              >
-                Find Your Path
-              </a>
+                <a
+                  href="/contact"
+                  className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
+                >
+                  Find Your Path
+                </a>
             </div>
           </header>
           {/* end of section and div */}
@@ -290,12 +290,12 @@ export default function BusinessManagement() {
               leadership and analytical skills today to take the helm of a
               successful organization tomorrow.
             </p>
-            <SmoothScrollLink
-              to="roles"
+            <a
+              href="/contact"
               className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
             >
               Define Your Business Strategy
-            </SmoothScrollLink>
+            </a>
           </section>
           {/* end of section and div */}
         </div>

@@ -25,7 +25,7 @@ export default function Education() {
                 Explore Roles
               </SmoothScrollLink>
               <a
-                href="#education"
+                href="/contact"
                 className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
               >
                 Find Your Path
@@ -242,16 +242,15 @@ export default function Education() {
         </section>
       </div>
 
-      {/* hero section with buisness background */}
+      {/* hero section with education background */}
       <section className="education-hero-bg flex-ai-center justify-content-center py-5">
         <div className="container">
           {/* VI. Conclusion Call to action */}
           <section className="hero-panel">
-            <h2 className="fs-3 text-white fw-bold mb-3">Ready to Create Your Masterpiece?</h2>
-            <p className="fs-5 mb-4 mx-auto text-white max-w-700">The only limits in the creative world are the ones you place on yourself. Dedicate yourself to practice and never stop sharing your work.</p>
-            <SmoothScrollLink to="roles" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">Start Sketching Your Career</SmoothScrollLink>
+            <h2 className="fs-3 text-white fw-bold mb-3">Ready to Inspire and Lead?</h2>
+            <p className="fs-5 mb-4 mx-auto text-white max-w-700">Every great mind was shaped by a dedicated educator. Take the next step to empower others and make a lasting impact in your community.</p>
+            <a href="/contact" className="btn btn-warning btn-lg text-custom-primaryus fw-bold rounded-3 shadow-lg">Connect with an Education Mentor</a>
           </section>
-          {/* end of section and div */}
         </div>
       </section>
 

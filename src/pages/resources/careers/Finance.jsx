@@ -26,12 +26,7 @@ export default function Finance() {
               >
                 Explore Roles
               </SmoothScrollLink>
-              <a
-                href="#education"
-                className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
-              >
-                Find Your Path
-              </a>
+              <a href="/contact" className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3">Find Your Path</a>
             </div>
           </header>
         </div>
@@ -313,12 +308,7 @@ export default function Finance() {
               economy. Build a career that offers stability, challenge, and immense
               growth potential.
             </p>
-            <SmoothScrollLink
-              to="roles"
-              className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
-            >
-              Calculate Your Path
-            </SmoothScrollLink>
+            <a href="/contact" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">Calculate Your Path</a>
           </section>
           {/* end of section and div */}
         </div>

@@ -26,7 +26,7 @@ export default function Healthcare() {
                 Explore Roles
               </SmoothScrollLink>
               <a
-                href="#education"
+                href="/contact"
                 className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
               >
                 Find Your Path
@@ -324,12 +324,12 @@ export default function Healthcare() {
               Start by seeking clinical experience today to solidify your commitment
               and path.
             </p>
-            <SmoothScrollLink
-              to="roles"
+            <a
+              href="/contact"
               className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
             >
               Find Your Healthcare Calling
-            </SmoothScrollLink>
+            </a>
           </section>
           {/* end of section and div */}
         </div>

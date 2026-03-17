@@ -18,7 +18,7 @@ export default function Science() {
             </p>
             <div className="d-grid gap-3 d-md-flex justify-content-center">
               <SmoothScrollLink to="roles" className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark">Explore Roles</SmoothScrollLink>
-              <SmoothScrollLink to="education" className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3">Find Your Path</SmoothScrollLink>
+              <a href="/contact" className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3">Find Your Path</a>
             </div>
           </header>
         </div>
@@ -260,7 +260,12 @@ export default function Science() {
           <section className="bg-white hero-panel">
             <h2 className="fs-3 fw-bold mb-3">Ready to Make the Next Great Discovery?</h2>
             <p className="fs-5 mb-4 mx-auto max-w-700">Get involved in undergraduate research or laboratory work early to validate your passion and build essential practical skills.</p>
-            <SmoothScrollLink to="roles" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">Begin Your Research</SmoothScrollLink>
+            <a
+              href="/contact"
+              className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
+            >
+              Begin Your Research
+            </a>
           </section>
         </div>
       </section>

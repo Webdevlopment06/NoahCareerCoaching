@@ -25,12 +25,7 @@ export default function Hospitality() {
               >
                 Explore Roles
               </SmoothScrollLink>
-              <a
-                href="#education"
-                className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
-              >
-                Find Your Path
-              </a>
+              <a href="/contact" className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3">Find Your Path</a>
             </div>
           </header>
         </div>
@@ -303,12 +298,9 @@ export default function Hospitality() {
               network and focusing on service skills, which are the cornerstone of
               success in this industry.
             </p>
-            <SmoothScrollLink
-              to="roles"
-              className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
-            >
+            <a href="/contact" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">
               Book Your Career Journey
-            </SmoothScrollLink>
+            </a>
           </section>
           {/* end of section and div */}
         </div>
