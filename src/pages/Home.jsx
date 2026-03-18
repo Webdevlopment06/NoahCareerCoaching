@@ -61,7 +61,7 @@ export default function Home() {
               <h2 className="fw-bold h4 blackText mb-4">The Power of Three</h2>
               <div className="row g-3 mb-5">
                 <div className="col-md-4">
-                  <div className="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm animate-scale-up">
+                  <div className="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm animate-scale-up-blue-outline">
                     <div className="d-flex align-items-center gap-2">
                       <i className="bi bi-file-earmark-text h2 blackText"></i>
                       <h5 className="blackText mb-0">Career Roadmap</h5>
@@ -70,7 +70,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-md-4">
-                  <div className="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm animate-scale-up">
+                  <div className="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm animate-scale-up-blue-outline">
                     <div className="d-flex align-items-center gap-2">
                       <i className="bi bi-mic h2 blackText"></i>
                       <h5 className="blackText mb-0">Mock Interview Practice</h5>
@@ -79,7 +79,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-md-4">
-                  <div className="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm animate-scale-up">
+                  <div className="card h-100 bg-transparent border-success rounded-4 p-3 shadow-sm animate-scale-up-blue-outline">
                     <div className="d-flex align-items-center gap-2">
                       <i className="bi bi-search h2 blackText"></i>
                       <h5 className="blackText mb-0">Networking & Referrals</h5>

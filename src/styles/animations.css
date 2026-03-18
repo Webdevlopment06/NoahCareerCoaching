@@ -90,9 +90,30 @@
 }
 
 /* Animation: Scale Up */
+.animate-scale-up {
+  transition: transform 0.3s ease;
+}
+
 .animate-scale-up:hover {
+  transform: scale(1.05);
+}
+
+/* About page: lift up instead of scaling */
+.about-join .animate-scale-up:hover,
+#founder .animate-scale-up:hover,
+.donation-section .animate-scale-up:hover {
+  transform: translateY(-6px);
+}
+
+/* Animation: Scale Up + Blue Outline */
+.animate-scale-up-blue-outline {
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.animate-scale-up-blue-outline:hover {
   transform: scale(1.04);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  border: 1px solid #1800ad !important;
+  box-shadow: 0 10px 20px rgba(24, 0, 173, 0.2);
 }
 
 /* Animation: Hero Button Diagonal Swoosh */

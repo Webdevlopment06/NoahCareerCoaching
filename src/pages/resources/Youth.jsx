@@ -227,9 +227,9 @@ export default function Youth() {
             </div>
 
             <div className="col-lg-5">
-              <div className="card border-0 rounded-4 shadow-lg p-4 bg-2d3436">
+              <div className="card border-0 rounded-4 shadow-sm p-4 bg-white">
                 <h4 className="fw-bold mb-4 text-warning"><i className="bi bi-card-checklist me-2"></i>Grab These Documents</h4>
-                <p className="small opacity-75 mb-4">Have these ready in a folder before you go to your school or your
+                <p className="small text-muted mb-4">Have these ready in a folder before you go to your school or your
                   interview:</p>
 
                 <div className="form-check mb-3">

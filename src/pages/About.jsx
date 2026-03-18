@@ -64,7 +64,7 @@ export default function About() {
 
                 <div className="row gy-4">
                   <div className="col-12">
-                    <div className="p-4 rounded shadow-sm">
+                    <div className="p-4 rounded shadow-sm animate-scale-up">
                       <h4 className="fw-bold text-dark">1. Apply to Volunteer</h4>
                       <p className="text-dark">Submit a short volunteer application to help us learn how you'd like to
                         contribute.</p>
@@ -72,7 +72,7 @@ export default function About() {
                   </div>
 
                   <div className="col-12">
-                    <div className="p-4 rounded shadow-sm">
+                    <div className="p-4 rounded shadow-sm animate-scale-up">
                       <h4 className="fw-bold text-dark">2. Orientation</h4>
                       <p className="text-dark">Attend a brief orientation session to understand our mission, roles, and
                         expectations.</p>
@@ -80,7 +80,7 @@ export default function About() {
                   </div>
 
                   <div className="col-12">
-                    <div className="p-4 rounded shadow-sm">
+                    <div className="p-4 rounded shadow-sm animate-scale-up">
                       <h4 className="fw-bold text-dark">3. Start Volunteering</h4>
                       <p className="text-dark">Begin supporting our programs and making an impact in the community.</p>
                     </div>
@@ -95,7 +95,7 @@ export default function About() {
 
                 <div className="row gy-4">
                   <div className="col-12">
-                    <div className="p-4 rounded shadow-sm">
+                    <div className="p-4 rounded shadow-sm animate-scale-up">
                       <h4 className="fw-bold text-dark">1. Apply Online</h4>
                       <p className="text-dark">Submit your quick online application so we can understand your career goals.
                       </p>
@@ -103,7 +103,7 @@ export default function About() {
                   </div>
 
                   <div className="col-12">
-                    <div className="p-4 rounded shadow-sm">
+                    <div className="p-4 rounded shadow-sm animate-scale-up">
                       <h4 className="fw-bold text-dark">2. Meet Our Team</h4>
                       <p className="text-dark">Attend an introduction session so we can personalize your coaching experience.
                       </p>
@@ -111,7 +111,7 @@ export default function About() {
                   </div>
 
                   <div className="col-12">
-                    <div className="p-4 rounded shadow-sm">
+                    <div className="p-4 rounded shadow-sm animate-scale-up">
                       <h4 className="fw-bold text-dark">3. Get Started</h4>
                       <p className="text-dark">Gain access to our career programs, resources, and personalized support.</p>
                     </div>
@@ -145,7 +145,7 @@ export default function About() {
 
           <div className="row g-4 justify-content-center">
             <div className="col-md-4">
-              <div className="card shadow-sm h-100 text-center p-4">
+              <div className="card shadow-sm h-100 text-center p-4 animate-scale-up">
                 <h4 className="fw-bold mb-3">$25</h4>
                 <p>Helps us provide educational materials and resources to clients.</p>
                 <button type="button" className="btn btn-primary mt-auto">Donate $25</button>
@@ -153,7 +153,7 @@ export default function About() {
             </div>
 
             <div className="col-md-4">
-              <div className="card shadow-sm h-100 text-center p-4">
+              <div className="card shadow-sm h-100 text-center p-4 animate-scale-up">
                 <h4 className="fw-bold mb-3">$50</h4>
                 <p>Supports one-on-one coaching sessions for individuals in need.</p>
                 <button type="button" className="btn btn-primary mt-auto">Donate $50</button>
@@ -161,7 +161,7 @@ export default function About() {
             </div>
 
             <div className="col-md-4">
-              <div className="card shadow-sm h-100 text-center p-4">
+              <div className="card shadow-sm h-100 text-center p-4 animate-scale-up">
                 <h4 className="fw-bold mb-3">Custom Amount</h4>
                 <p>Your generosity helps us expand our programs and reach more people.</p>
                 <button type="button" className="btn btn-primary mt-auto">Donate Any Amount</button>

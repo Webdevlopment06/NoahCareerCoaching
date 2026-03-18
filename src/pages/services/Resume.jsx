@@ -26,7 +26,7 @@ export default function Resume() {
         <h3>The Three Pillars of a Great Resume</h3>
         <div className="row">
           <div className="col-md-4 mb-4">
-            <div className="card h-100 shadow-sm border-0 rounded-4">
+            <div className="card h-100 shadow-sm border-0 rounded-4 animate-scale-up">
               <div className="card-body">
                 <div className="row align-items-center">
                   <div className="col-3 text-center">
@@ -42,7 +42,7 @@ export default function Resume() {
           </div>
 
           <div className="col-md-4 mb-4">
-            <div className="card h-100 shadow-sm border-0 rounded-4">
+            <div className="card h-100 shadow-sm border-0 rounded-4 animate-scale-up">
               <div className="card-body">
                 <div className="row align-items-center">
                   <div className="col-3 text-center">
@@ -58,7 +58,7 @@ export default function Resume() {
           </div>
 
           <div className="col-md-4 mb-4">
-            <div className="card h-100 shadow-sm border-0 rounded-4">
+            <div className="card h-100 shadow-sm border-0 rounded-4 animate-scale-up">
               <div className="card-body">
                 <div className="row align-items-center">
                   <div className="col-3 text-center">
@@ -79,7 +79,7 @@ export default function Resume() {
         <div className="row">
           <h3>Choose Your Path</h3>
           <div className="col-md-4 mb-4">
-            <div className="card h-100 shadow-sm border-0 rounded-4">
+            <div className="card h-100 shadow-sm border-0 rounded-4 animate-scale-up">
               <div className="card-body">
                 <div className="row align-items-center">
                   <div className="col-3 text-center">
@@ -96,7 +96,7 @@ export default function Resume() {
           </div>
 
           <div className="col-md-4 mb-4">
-            <div className="card h-100 shadow-sm border-0 rounded-4">
+            <div className="card h-100 shadow-sm border-0 rounded-4 animate-scale-up">
               <div className="card-body">
                 <div className="row align-items-center">
                   <div className="col-3 text-center">
@@ -113,7 +113,7 @@ export default function Resume() {
           </div>
 
           <div className="col-md-4 mb-4">
-            <div className="card h-100 shadow-sm border-0 rounded-4">
+            <div className="card h-100 shadow-sm border-0 rounded-4 animate-scale-up">
               <div className="card-body">
                 <div className="row align-items-center">
                   <div className="col-3 text-center">
@@ -229,7 +229,7 @@ export default function Resume() {
               <h2 className="display-5 fw-bold mb-3">READY TO STAND OUT?</h2>
               <p className="lead mb-4 opacity-75">Join 10,000+ job seekers who used our templates to land roles at top-tier
                 companies.</p>
-              <a href="/services/build-resume" className="btn btn-warning btn-lg px-5 py-3 fw-bold rounded-pill text-primary shadow">
+              <a href="/services/build-resume" className="btn btn-warning btn-lg px-5 py-3 fw-bold rounded-pill shadow hero-btn-swoosh">
                 Build My Resume Now
               </a>
             </div>
