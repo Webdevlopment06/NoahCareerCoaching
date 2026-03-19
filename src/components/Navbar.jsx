@@ -294,7 +294,7 @@ export default function Navbar() {
                                         <div className="row mb-2">
                                             <div className="col-md-4">
                                                 <Link
-                                                    className={`dropdown-item ${location.pathname === '/resources/explore' ? 'nav-active' : ''}`}
+                                                    className={`dropdown-item ${(location.pathname === '/resources/explore' || location.pathname.startsWith('/resources/career')) ? 'nav-active' : ''}`}
                                                     to="/resources/explore"
                                                 >
                                                     Explore Careers

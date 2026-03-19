@@ -19,8 +19,7 @@ npm run dev
 ### ISSUES:
 - A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them. However, This not really an issue and more of just a change. The site still looks and works fine with this.
 - the footer has some links that do not work and send you to 404s (they are placholders) privacy and terms do not need to be pages though
-- the style css is big and files are long in general (i am trying to make more components, but it is turning out ot be more difficult than I thought) I have been slowly making the style css bigger so I am thinking of ways to split it into multiple files
-- while in a career page the nav highlight is on resources but not a subpage
+- FILES ARE BIGGGGGGGGGGG I dont know why but every file is super long, its getting harder and harder to actually read them. I might add a bunch of comments but I think the best solution is putting all of the text into json and then having reusable components for similar structures.
 
 
 ### CHANGES:
@@ -31,14 +30,15 @@ npm run dev
 - images are now organized simlarly to how the pages are.
 - Made a component for the cards in the career pages.
 - Put animation related styles into /styles/animations.css
+- Split the style.css file into multiple files in the new styles folder
 
 
 ### IDEAS:
+- We could add the career pages to the navbar somehow
 - We could add dark mode, but its not at all necessary.
 - We could put similar pages into a component template and then have all the data for each page in json to reduce duplicate code and file size
 - mobile optimizations
 -  add actual stories to the stories page instead of fake placeholders
-- spitting the style.css file
 - have the odd footer links play an animation on the nav items they relate to
 
 
