@@ -53,15 +53,6 @@
 .nav-active { color: #1800AD !important; font-weight: 700 !important; }
 .icon-svg-small { width: 1.25em; height: 1.25em; display: inline-block; vertical-align: -0.125em; }
 
-/* Gradient helpers used in services pages */
-.bg-grad-teal { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
-.bg-grad-teal-90 { background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%); }
-.bg-grad-blue { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
-.bg-grad-multi1 { background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); }
-.bg-grad-pink { background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%); }
-.bg-grad-dark { background: linear-gradient(135deg, #232526 0%, #414345 100%); }
-.bg-grad-dark2 { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); }
-
 /* Progress / width utilities used in a few places */
 .progress-h-10 { height: 10px; }
 .progress-h-30 { height: 30px; }

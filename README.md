@@ -20,6 +20,7 @@ npm run dev
 - A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them. However, This not really an issue and more of just a change. The site still looks and works fine with this.
 - the footer has some links that do not work and send you to 404s (they are placholders) privacy and terms do not need to be pages though
 - FILES ARE BIGGGGGGGGGGG I dont know why but every file is super long, its getting harder and harder to actually read them. I might add a bunch of comments but I think the best solution is putting all of the text into json and then having reusable components for similar structures.
+- I think there is css that we do not need anymore because of site changes
 
 
 ### CHANGES:
@@ -35,6 +36,7 @@ npm run dev
 
 ### IDEAS:
 - We could add the career pages to the navbar somehow
+- I have been looking at ESlint, it could help keep the code clean and bug free without much added in the way of packages
 - We could add dark mode, but its not at all necessary.
 - We could put similar pages into a component template and then have all the data for each page in json to reduce duplicate code and file size
 - mobile optimizations

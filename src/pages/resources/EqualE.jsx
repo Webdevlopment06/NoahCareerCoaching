@@ -4,7 +4,7 @@ export default function EqualE() {
   return (
     <main>
     {/* hero section */}
-    <section className="py-5 text-white bg-grad-equale1">
+    <section className="py-5 text-white hero-gradient-indigo-orange">
       <div className="container py-4">
         <div className="row align-items-center">
           <div className="col-lg-8">
@@ -156,7 +156,7 @@ export default function EqualE() {
     </section>
 
     {/* sexual harassment section */}
-    <section className="py-5 text-white bg-grad-equale2">
+    <section className="py-5 text-white hero-gradient-indigo-orange">
       <div className="container py-4">
         <div className="row align-items-center">
           <div className="col-lg-8">

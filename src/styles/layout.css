@@ -14,6 +14,7 @@
     padding-right: 0.75rem;
 }
 .dropdown-menu .dropdown-item { font-size: 0.95rem; }
+.dropdown-menu .dropdown-item:hover { color: #1800AD; }
 .navbar-brand img { max-height: 40px; }
 
 /* 3. HERO SECTIONS (ALL ORIGINAL HEIGHTS PRESERVED) */

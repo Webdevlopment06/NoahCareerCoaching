@@ -34,7 +34,8 @@
     background-color: #000;
 }
 .icon-circle:hover i {
-    color: #fff;
+    color: #fff !important;
+    fill: #fff !important;
 }
 
 /* 6. BUTTONS */
