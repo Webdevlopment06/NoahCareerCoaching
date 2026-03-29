@@ -3,22 +3,12 @@
    ========================================================================== */
 
 /* 1. FONTS & GLOBAL TYPOGRAPHY */
-.lora-hero { font-family: "Lora", serif; font-optical-sizing: auto; font-style: normal; }
-.outfit-hero { font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-weight: bold; font-style: normal; }
-.lora-para { font-family: "Lora", serif; font-optical-sizing: auto; font-weight: bold; font-style: normal; }
-.outfit-para { font-family: "Outfit", sans-serif; font-optical-sizing: auto; font-weight: bold; font-style: normal; }
-.tasa-explorer-nav { font-family: "TASA Explorer", sans-serif; font-optical-sizing: auto; font-style: normal; }
 .navfont { font-family: var(--body-font); font-size: 0.95rem; font-weight: 600; font-style: normal; letter-spacing: 0.02em; }
 .bg-grad-blue { background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
-.bg-grad-multi1 { background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d); }
 .bg-grad-pink { background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%); }
-.bg-grad-dark { background: linear-gradient(135deg, #232526 0%, #414345 100%); }
-.bg-grad-dark2 { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); }
 .heroFont { font-family: "TASA Explorer", sans-serif; font-size: 16px; font-weight: bold; font-style: normal; }
-.heroParaFont { color:#fff; font-size: 20px; }
 .main-hero-btn { font-family: "TASA Explorer", sans-serif; font-size: 15px; font-style: normal; }
 
-.whiteText { color: #ffffff; }
 .blackText { color: #000000; }
 
 /* Global font fallbacks and defaults */
@@ -37,3 +27,25 @@ h1,h2,h3,h4,h5 { font-family: var(--heading-font); }
 
 /* Responsive images globally so JSX pages match the static HTML look */
 img { max-width: 100%; height: auto; display: block; }
+
+/* Subtle roadmap hover (minimal visual change) */
+.roadmap-wrapper .row { --roadmap-gap: 1.5rem; }
+.roadmap-node {
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.step-item:hover .roadmap-node {
+  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(15,15,15,0.06);
+}
+.roadmap-node.shadow { box-shadow: 0 6px 12px rgba(0,0,0,0.06); }
+
+@media (prefers-reduced-motion: reduce) {
+  .roadmap-node { transition: none !important; transform: none !important; }
+}

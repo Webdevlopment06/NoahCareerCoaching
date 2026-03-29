@@ -7,19 +7,14 @@ export default function Interview() {
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">
-              <h1 className="display-4 fw-bold mb-3 text-uppercase">Why your resume might be getting ghosted</h1>
+              <h1 className="display-4 fw-bold mb-3 text-uppercase animate-fade-in">Why your resume might be getting ghosted</h1>
               <p className="lead mb-4 opacity-75">Most Fortune 500 companies use an Applicant Tracking System or (ATS). If your resume isn't optimized, it stays hidden.</p>
-              <div className="mt-4">
+              <div className="mt-4 animate-slide-in-left">
                 <h5 className="fw-bold mb-3">Key Takeaways</h5>
                 <ul className="list-unstyled">
                   <li className="mb-2"><i className="bi bi-check-circle-fill text-info me-2"></i> Plain Text is King</li>
                   <li className="mb-2"><i className="bi bi-check-circle-fill text-info me-2"></i> Standard Headers</li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-lg-5 text-center">
-              <div className="p-3 bg-white rounded-3 shadow-lg opacity-75">
-                <div className="letter-box">F</div>
+                </ul> 
               </div>
             </div>
           </div>

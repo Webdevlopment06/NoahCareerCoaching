@@ -7,9 +7,9 @@ export default function JobSearch() {
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">
-              <h1 className="display-4 fw-bold mb-3 text-uppercase">Stop Applying. Start Conversing.</h1>
+              <h1 className="display-4 fw-bold mb-3 text-uppercase animate-fade-in">Stop Applying. Start Conversing.</h1>
               <p className="lead mb-4 opacity-75">80% of jobs are never posted publicly. Our strategy moves you out of the crowded applicant pool and into the "Hidden Job Market" through targeted networking.</p>
-              <div className="mt-4">
+              <div className="mt-4 animate-slide-in-left">
                 <h5 className="fw-bold mb-3">Tactical Pillars</h5>
                 <ul className="list-unstyled">
                   <li className="mb-2"><i className="bi bi-radar text-info me-2"></i> Targeted Company Mapping</li>
@@ -18,7 +18,7 @@ export default function JobSearch() {
               </div>
             </div>
             <div className="col-lg-5 text-center">
-              <div className="p-4 bg-dark rounded-4 shadow-lg border border-secondary">
+              <div className="p-4 bg-dark rounded-4 shadow-lg border border-secondary animate-scale-up">
                 <h5 className="fw-bold text-info mb-3">The Job Search Funnel</h5>
                 <div className="d-flex flex-column align-items-center">
                   <div className="w-100 bg-secondary py-2 mb-1 rounded-top opacity-75 small">100 Applications</div>

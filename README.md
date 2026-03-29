@@ -42,6 +42,7 @@ npm run dev
 - mobile optimizations
 -  add actual stories to the stories page instead of fake placeholders
 - have the odd footer links play an animation on the nav items they relate to
+- the css no longer uses vars for colors so I should add that back
 
 
 ### DOING (first priority anyway) 

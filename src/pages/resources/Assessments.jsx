@@ -16,8 +16,8 @@ export default function Assessments() {
 
       <div className="container py-5">
         <div className="text-center mb-5">
-          <h2 className="fw-bold">Career Assessments</h2>
-          <p className="text-muted mx-auto max-w-700">
+          <h2 className="fw-bold animate-fade-in">Career Assessments</h2>
+          <p className="text-muted mx-auto max-w-700 animate-slide-up">
             Noah Career Coaching believes clarity is the foundation of confident career decisions.
             Below are some trusted quizzes to help you along your journey.
           </p>
@@ -25,7 +25,7 @@ export default function Assessments() {
 
         <div className="row g-4 mb-4">
           <div className="col-lg-8">
-            <div className="card h-100 assessment-card featured">
+            <div className="card h-100 assessment-card featured animate-scale-up">
               <div className="card-body d-md-flex flex-ai-center">
                 <div className="p-3 text-center">
                   <img loading="lazy" src="/images/resources-imgs/assessments-imgs/16personalities.png" alt="16Personalities" className="img-fluid mb-3 mb-md-0 max-w-140" />
@@ -44,7 +44,7 @@ export default function Assessments() {
           </div>
 
           <div className="col-lg-4">
-            <div className="card h-100 assessment-card text-center">
+            <div className="card h-100 assessment-card text-center animate-scale-up">
               <div className="card-body d-flex flex-column">
                 <img loading="lazy" src="/images/resources-imgs/assessments-imgs/truity.png" alt="Truity" className="img-fluid mb-3 max-w-100 mx-auto" />
                 <h3 className="card-title h4 fw-bold">Truity</h3>
@@ -58,7 +58,7 @@ export default function Assessments() {
 
         <div className="row g-4">
           <div className="col-md-6 col-lg-3">
-            <div className="card h-100 assessment-card text-center">
+            <div className="card h-100 assessment-card text-center animate-scale-up">
               <div className="card-body p-4 d-flex flex-column">
                 <img loading="lazy" src="/images/resources-imgs/assessments-imgs/careerfitter.png" alt="CareerFitter" className="img-fluid mb-2 max-w-80" />
                 <h5 className="fw-bold">CareerFitter</h5>
@@ -70,7 +70,7 @@ export default function Assessments() {
             </div>
           </div>
           <div className="col-md-6 col-lg-3">
-            <div className="card h-100 assessment-card text-center">
+            <div className="card h-100 assessment-card text-center animate-scale-up">
               <div className="card-body p-4 d-flex flex-column">
                 <img loading="lazy" src="/images/resources-imgs/assessments-imgs/bigfuture.png" alt="BigFuture" className="img-fluid mb-2 max-w-80" />
                 <h5 className="fw-bold">BigFuture</h5>
@@ -82,7 +82,7 @@ export default function Assessments() {
             </div>
           </div>
           <div className="col-md-6 col-lg-3">
-            <div className="card h-100 assessment-card text-center">
+            <div className="card h-100 assessment-card text-center animate-scale-up">
               <div className="card-body p-4 d-flex flex-column">
                 <img loading="lazy" src="/images/resources-imgs/assessments-imgs/coursera.png" alt="Coursera" className="img-fluid mb-2 max-w-80" />
                 <h5 className="fw-bold">Coursera</h5>
@@ -94,7 +94,7 @@ export default function Assessments() {
             </div>
           </div>
           <div className="col-md-6 col-lg-3">
-            <div className="card h-100 assessment-card text-center">
+            <div className="card h-100 assessment-card text-center animate-scale-up">
               <div className="card-body p-4 d-flex flex-column">
                 <img loading="lazy" src="/images/resources-imgs/assessments-imgs/Onet.png" alt="O*net" className="img-fluid mb-2 max-w-80" />
                 <h5 className="fw-bold">O*NET</h5>

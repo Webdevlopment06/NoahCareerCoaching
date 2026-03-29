@@ -7,9 +7,9 @@ export default function Volunteer() {
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-7">
-              <h1 className="display-4 fw-bold mb-3 text-uppercase">Your Time. Their Future.</h1>
+              <h1 className="display-4 fw-bold mb-3 text-uppercase animate-fade-in">Your Time. Their Future.</h1>
               <p className="lead mb-4 opacity-75">Change doesn't happen by chance; it happens by choice. Join a community of over 500 volunteers dedicated to making a measurable difference.</p>
-              <div className="mt-4">
+              <div className="mt-4 animate-slide-in-left">
                 <h5 className="fw-bold mb-3">Our Mission Pulse</h5>
                 <ul className="list-unstyled">
                   <li className="mb-2"><i className="bi bi-heart-fill text-warning me-2"></i> 100% Local Impact</li>
@@ -18,7 +18,7 @@ export default function Volunteer() {
               </div>
             </div>
             <div className="col-lg-5 text-center">
-              <div className="p-4 bg-white rounded-4 shadow-lg text-dark border-top border-5 border-success">
+              <div className="p-4 bg-white rounded-4 shadow-lg text-dark border-top border-5 border-success animate-scale-up">
                 <h5 className="fw-bold text-success mb-3">2025 Impact Report</h5>
                 <div className="text-start mb-2">
                   <small className="fw-bold">Meals Delivered</small>

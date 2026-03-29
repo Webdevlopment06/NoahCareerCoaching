@@ -26,10 +26,6 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-.career-icon {
-  transition: transform 0.3s ease;
-}
-
 .career-mini-card:hover .career-icon {
   transform: scale(1.2);
 }
@@ -86,6 +82,27 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+/* Animation: Slide In From Left */
+@keyframes slideInLeft {
+  /* start well off-screen to the left using viewport units */
+  from { transform: translateX(-110vw); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft .7s cubic-bezier(.2,.9,.2,1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-slide-in-left,
+  .animate-slide-up,
+  .animate-fade-in,
+  .animate-scale-up {
+    animation: none !important;
+    transition: none !important;
   }
 }
 

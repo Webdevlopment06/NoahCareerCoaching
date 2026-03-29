@@ -35,8 +35,8 @@ export default function Explore() {
           <source src="/images/resources-imgs/explore-imgs/explorcareers.mp4" type="video/mp4" />
         </video>
         <div className="container position-relative z-1 text-center text-white">
-          <h1 className="fw-bold display-6">Explore Career Pathways</h1>
-          <p className="opacity-75 small">Find the right industry for your professional journey</p>
+          <h1 className="fw-bold display-6 animate-fade-in">Explore Career Pathways</h1>
+          <p className="opacity-75 small animate-slide-up">Find the right industry for your professional journey</p>
         </div>
       </section>
 
@@ -62,9 +62,9 @@ export default function Explore() {
 
       <section className="container">
         <div className="row g-4 row-cols-2 row-cols-md-3 row-cols-lg-5">
-          {visible.map(c => (
+          {visible.map((c, i) => (
             <div key={c.id} className="col career-item">
-              <div className="card career-mini-card border-0 shadow-sm">
+              <div className="card career-mini-card border-0 shadow-sm animate-slide-up" style={{animationDelay: `${i * 0.06}s`}}>
                 <div className="icon-header"><img src={c.icon} className="career-icon" alt={c.title} /></div>
                 <div className="card-body p-3 text-center d-flex flex-column">
                   <h6 className="fw-bold mb-1">{c.title}</h6>
