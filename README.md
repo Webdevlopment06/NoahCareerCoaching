@@ -32,13 +32,14 @@ npm run dev
 - Made a component for the cards in the career pages.
 - Put animation related styles into /styles/animations.css
 - Split the style.css file into multiple files in the new styles folder
+- Made a component for the career pages
 
 
 ### IDEAS:
 - We could add the career pages to the navbar somehow
 - I have been looking at ESlint, it could help keep the code clean and bug free without much added in the way of packages
 - We could add dark mode, but its not at all necessary.
-- We could put similar pages into a component template and then have all the data for each page in json to reduce duplicate code and file size
+- We could put similar pages into components to reduce file size
 - mobile optimizations
 -  add actual stories to the stories page instead of fake placeholders
 - have the odd footer links play an animation on the nav items they relate to
