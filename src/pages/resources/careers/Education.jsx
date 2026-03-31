@@ -1,382 +1,112 @@
 import React from 'react'
-import SmoothScrollLink from '/src/components/SmoothScrollLink'
-import RoleCard from '/src/components/RoleCard'
+import CareerTemplate from '/src/components/CareerTemplate'
+
+const hero = {
+  bgClass: 'education-hero-bg',
+  title: (
+    <>
+      Your Future in <span className="text-white">Education & Training</span>
+    </>
+  ),
+  blurb:
+    'Empower the next generation and shape professional talent. Careers in teaching, administration, and corporate learning are deeply impactful and constantly evolving.',
+  ctaPrimary: 'Explore Roles',
+  ctaSecondary: 'Find Your Path',
+  rolesHeading: 'Key Education & Management Roles',
+  rolesSub: 'Detailing common and specialized roles across academic and corporate settings.',
+  roadmapHeading: 'Education & Training Career Roadmap',
+  skillsHeading: 'Essential Skills and Knowledge',
+  futureHeading: 'Future Trends and Growth'
+}
+
+const roles = [
+  {
+    icon: 'bi bi-lightbulb',
+    title: 'Academic Teaching & Instruction',
+    summary:
+      'This area focuses on educating students in formal academic settings such as schools, colleges, and universities. Professionals design curricula, deliver instruction, assess learning outcomes, and support students’ intellectual and personal development across a wide range of subjects and grade levels.',
+    modalId: 'strategyModal-education',
+    modal: {
+      title: 'Academic Teaching & Instruction',
+      image: '/images/career-imgs/education-imgs/Education1.jpg',
+      items: [
+        { title: 'Classroom Teacher (K-12)', text: 'Delivering curriculum, classroom management, and student development.', bgClass: 'bg-warning-subtle' },
+        { title: 'University Professor', text: 'Advanced subject teaching, academic research, and publishing.' },
+        { title: 'Special Education Teacher', text: 'Developing and implementing individualized education programs (IEPs).' },
+        { title: 'Tutor / Academic Coach', text: 'Providing one-on-one or small-group instruction for specific subjects or skills.', bgClass: 'bg-primary-subtle' }
+      ]
+    }
+  },
+  {
+    icon: 'bi bi-graph-up-arrow',
+    title: 'Corporate & Specialized Training',
+    summary:
+      'This field centers on developing employee skills and knowledge within organizations or specialized industries. Roles include designing training programs, facilitating workshops, onboarding new hires, and delivering professional development to improve performance, compliance, and career growth.',
+    modalId: 'financeModal-education',
+    modal: {
+      title: 'Corporate & Specialized Training',
+      image: '/images/career-imgs/education-imgs/Education2.jpg',
+      items: [
+        { title: 'Instructional Designer (ID)', text: 'Applying learning theories to design effective training programs (eLearning, blended learning).', bgClass: 'bg-warning-subtle' },
+        { title: 'Training & Development Specialist', text: 'Delivering, assessing, and managing professional development within a company.', bgClass: 'bg-primary-subtle' },
+        { title: 'Curriculum Developer', text: 'Creating and updating core educational content, aligned with standards and learning objectives.' }
+      ]
+    }
+  },
+  {
+    icon: 'bi bi-gear',
+    title: 'Leadership & Support Roles',
+    summary:
+      'Leadership and support positions guide, manage, and strengthen educational or organizational environments. These roles involve mentoring others, overseeing programs or teams, shaping strategy, and ensuring individuals have the resources and support needed to succeed.',
+    modalId: 'opsModal-education',
+    modal: {
+      title: 'Leadership & Support Roles',
+      image: '/images/career-imgs/education-imgs/Education3.jpg',
+      items: [
+        { title: 'School Principal / Administrator', text: 'Overseeing school operations, staff management, budgeting, and community relations.', bgClass: 'bg-warning-subtle' },
+        { title: 'Librarian / Media Specialist', text: 'Managing information resources and teaching digital literacy skills to students and staff.', bgClass: 'bg-primary-subtle' },
+        { title: 'School Counselor / Psychologist', text: 'Providing mental health support, career guidance, and academic advising.' }
+      ]
+    }
+  }
+]
+
+const roadmap = [
+  { step: 1, title: 'Exploration & Foundations', text: 'Education Assistant / Classroom Aide/ Tutor or After-School Instructor/ Camp Counselor or Youth Program Leader', years: 'Years 0-2' },
+  { step: 2, title: 'Formal Education & Credentialing', text: 'Student Teacher / Teaching Intern / Substitute Teacher', years: 'Years 2-5' },
+  { step: 3, title: 'Professional Practice & Growth', text: 'K–12 Teacher/ Postsecondary Instructor /Corporate Trainer / Instructional Specialist / Special Education Teacher', years: 'Years 5-10' },
+  { step: 4, title: 'Specialization, Leadership, or Advancement', text: 'School Administrator (Principal, Assistant Principal) / Instructional Coach or Curriculum Director / Higher Education Faculty / Training Manager or Education Consultant', years: 'Years 10+' }
+]
+
+const skills = {
+  hard: [
+    { icon: 'bi bi-calculator-fill', text: 'Classroom Management' },
+    { icon: 'bi bi-table', text: 'Assessment and Evaluation Methods' },
+    { icon: 'bi bi-diagram-3-fill', text: 'Learning Management Systems (LMS)' },
+    { icon: 'bi bi-bar-chart-line-fill', text: 'Differentiated Instruction' },
+    { icon: 'bi bi-cloud-check-fill', text: 'Curriculum Mapping' },
+    { icon: 'bi bi-shield-check', text: 'Subject Matter Expertise' }
+  ],
+  soft: [
+    { icon: 'bi bi-people-fill', text: 'Patience and Empathy' },
+    { icon: 'bi bi-lightbulb-fill', text: 'Dynamic Communication and Public Speaking' },
+    { icon: 'bi bi-chat-dots-fill', text: 'Conflict Resolution and Diplomacy with parents/students' },
+    { icon: 'bi bi-lightbulb-fill', text: 'Organizational and Planning Skills' }
+  ]
+}
+
+const future = [
+  { title: 'Personalized & Adaptive Learning', text: 'Growth in roles utilizing AI to tailor educational content to individual student paces. Need for educators proficient in data analytics to track student progress.', borderClass: 'border-custom-secondary', bgClass: 'bg-warning-subtle' },
+  { title: 'Rise of EdTech and Hybrid Models', text: 'Increased integration of digital tools, virtual classrooms, and blended learning environments, requiring digital fluency.', borderClass: 'border-custom-primary', bgClass: 'bg-primary-subtle' },
+  { title: 'Corporate L&D Focus', text: 'Learning & Development (L&D) departments are growing rapidly as companies invest in upskilling and reskilling their workforce.', borderClass: 'border-secondary', bgClass: 'bg-secondary-subtle' }
+]
+
+const cta = {
+  title: 'Ready to Inspire and Lead?',
+  text: 'Every great mind was shaped by a dedicated educator. Take the next step to empower others and make a lasting impact in your community.',
+  button: 'Connect with an Education Mentor'
+}
 
 export default function Education() {
-  return (
-    <main>
-      <section className="education-hero-bg flex-ai-center justify-content-center py-5">
-        <div className="container">
-          <header className="hero-panel">
-            <h1 className="display-3 fw-bolder text-white mb-3 animate-fade-in">
-              Your Future in{' '}
-              <span className="text-white">Education &amp; Training</span>
-            </h1>
-            <p className="fs-5 text-white mx-auto mb-4 max-w-800 animate-slide-up">
-              Empower the next generation and shape professional talent. Careers in
-              teaching, administration, and corporate learning are deeply impactful
-              and constantly evolving.
-            </p>
-            <div className="d-grid gap-3 d-md-flex justify-content-center">
-              <SmoothScrollLink
-                to="roles"
-                className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark"
-              >
-                Explore Roles
-              </SmoothScrollLink>
-              <a
-                href="/contact"
-                className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
-              >
-                Find Your Path
-              </a>
-            </div>
-          </header>
-        </div>
-      </section>
-
-      <div className="container-xl py-4 py-lg-5">
-        <section id="roles" className="mb-5">
-          <h2 className="fs-2 fw-bold section-heading-custom text-black">
-            Key Education &amp; Training Roles
-          </h2>
-          <p className="text-muted mb-4">
-            Detailing common and specialized roles across academic and corporate
-            settings.
-          </p>
-
-          <div className="container py-5">
-            <div className="row g-4">
-              <div className="col-lg-4 animate-scale-up">
-                <RoleCard
-                  icon="bi bi-lightbulb"
-                  title="Academic Teaching &amp; Instruction"
-                  modalTarget="#strategyModal-education"
-                >
-                  This area focuses on educating students in formal academic
-                  settings such as schools, colleges, and universities.
-                  Professionals design curricula, deliver instruction, assess
-                  learning outcomes, and support students’ intellectual and
-                  personal development across a wide range of subjects and grade
-                  levels.
-                </RoleCard>
-              </div>
-
-              <div className="col-lg-4 animate-scale-up">
-                <RoleCard
-                  icon="bi bi-graph-up-arrow"
-                  title="Corporate &amp; Specialized Training"
-                  modalTarget="#financeModal-education"
-                >
-                  This field centers on developing employee skills and knowledge
-                  within organizations or specialized industries. Roles include
-                  designing training programs, facilitating workshops, onboarding
-                  new hires, and delivering professional development to improve
-                  performance, compliance, and career growth.
-                </RoleCard>
-              </div>
-
-              <div className="col-lg-4 animate-scale-up">
-                <RoleCard
-                  icon="bi bi-gear"
-                  title="Leadership & Support Roles"
-                  modalTarget="#opsModal-education"
-                >
-                  Leadership and support positions guide, manage, and strengthen
-                  educational or organizational environments. These roles involve
-                  mentoring others, overseeing programs or teams, shaping
-                  strategy, and ensuring individuals have the resources and
-                  support needed to succeed.
-                </RoleCard>
-              </div>
-            </div>
-          </div>
-
-          {/* road map section */}
-          <section id="roadmap" className="mb-5 py-5 bg-light rounded-4">
-            <div className="container">
-              <h2 className="fs-2 fw-bold section-heading-custom text-dark text-center mb-5">
-                Education &amp; Training Career Roadmap
-              </h2>
-              <div className="roadmap-wrapper position-relative">
-                <div className="roadmap-line d-none d-lg-block" />
-                <div className="row g-4 text-center justify-content-center">
-                  <div className="col-lg-3 step-item">
-                    <div className="roadmap-node shadow">01</div>
-                    <h4 className="fw-bold mt-3">Exploration &amp; Foundations</h4>
-                    <p className="small text-muted">
-                      Education Assistant / Classroom Aide/ Tutor or After-School
-                      Instructor/ Camp Counselor or Youth Program Leader
-                      <br />
-                      <span className="badge bg-warning text-dark">Years 0-2</span>
-                    </p>
-                  </div>
-                  <div className="col-lg-3 step-item">
-                    <div className="roadmap-node shadow">02</div>
-                    <h4 className="fw-bold mt-3">
-                      Formal Education &amp; Credentialing
-                    </h4>
-                    <p className="small text-muted">
-                      Student Teacher / Teaching Intern / Substitute Teacher
-                      <br />
-                      <span className="badge bg-warning text-dark">Years 2-5</span>
-                    </p>
-                  </div>
-                  <div className="col-lg-3 step-item">
-                    <div className="roadmap-node shadow">03</div>
-                    <h4 className="fw-bold mt-3">
-                      Professional Practice &amp; Growth
-                    </h4>
-                    <p className="small text-muted">
-                      K–12 Teacher/ Postsecondary Instructor /Corporate Trainer /
-                      Instructional Specialist / Special Education Teacher
-                      <br />
-                      <span className="badge bg-warning text-dark">Years 5-10</span>
-                    </p>
-                  </div>
-                  <div className="col-lg-3 step-item">
-                    <div className="roadmap-node shadow">04</div>
-                    <h4 className="fw-bold mt-3">
-                      Specialization, Leadership, or Advancement
-                    </h4>
-                    <p className="small text-muted">
-                      School Administrator (Principal, Assistant Principal) /
-                      Instructional Coach or Curriculum Director / Higher Education
-                      Faculty / Training Manager or Education Consultant
-                      <br />
-                      <span className="badge bg-warning text-dark">Years 10+</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section
-            id="skills"
-            className="skills-panel"
-          >
-            <div className="row g-5">
-              <div className="col-lg-6">
-                <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">
-                  Hard Skills (Analytical)
-                </h3>
-                <div className="row g-4">
-                  <div className="col-6 flex-ai-center">
-                    <i className="bi bi-calculator-fill me-3 fs-3 text-f1b327" />
-                    <span className="fw-medium">Classroom Management</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i className="bi bi-table me-3 fs-3 text-f1b327" />
-                    <span className="fw-medium">Assessment and Evaluation Methods</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i className="bi bi-diagram-3-fill me-3 fs-3 text-f1b327" />
-                    <span className="fw-medium">Learning Management Systems (LMS)</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i className="bi bi-bar-chart-line-fill me-3 fs-3 text-f1b327" />
-                    <span className="fw-medium">Differentiated Instruction</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i className="bi bi-cloud-check-fill me-3 fs-3 text-f1b327" />
-                    <span className="fw-medium">Curriculum Mapping</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i className="bi bi-shield-check me-3 fs-3 text-f1b327" />
-                    <span className="fw-medium">Subject Matter Expertise</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Soft Skills</h3>
-                <div className="row g-4">
-                  <div className="col-12 flex-ai-center">
-                    <i className="bi bi-people-fill me-3 fs-3 text-f1b327" />
-                    <span className="fw-medium">Patience and Empathy</span>
-                  </div>
-                  <div className="col-12 flex-ai-center">
-                    <i className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327" />
-                    <span className="fw-medium">Dynamic Communication and Public Speaking</span>
-                  </div>
-                  <div className="col-12 flex-ai-center">
-                    <i className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327" />
-                    <span className="fw-medium">Conflict Resolution and Diplomacy with parents/students</span>
-                  </div>
-                  <div className="col-12 flex-ai-center">
-                    <i className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327" />
-                    <span className="fw-medium">Organizational and Planning Skills</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* future trends */}
-          <section id="future" className="skills-panel">
-            <h2 className="fs-2 fw-bold section-heading-custom text-dark">Future Trends and Growth</h2>
-            <div className="row g-4">
-              <div className="col-md-4">
-                <div className="p-3 border-start border-4 border-custom-secondary bg-warning-subtle rounded-3">
-                  <h3 className="fs-5 fw-semibold text-custom-secondary mb-2">Personalized &amp; Adaptive Learning</h3>
-                  <ul className="text-muted small">
-                    <li>Growth in roles utilizing AI to tailor educational content to individual student paces.</li>
-                    <li>Need for educators proficient in data analytics to track student progress.</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="p-3 border-start border-4 border-custom-primary bg-primary-subtle rounded-3">
-                  <h3 className="fs-5 fw-semibold text-custom-primary mb-2 text-dark">Rise of EdTech and Hybrid Models</h3>
-                  <p className="small text-muted mb-0">Increased integration of digital tools, virtual classrooms, and blended learning environments, requiring digital fluency.</p>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="p-3 border-start border-4 border-secondary bg-secondary-subtle rounded-3">
-                  <h3 className="fs-5 fw-semibold text-secondary mb-2">Corporate L&amp;D Focus</h3>
-                  <p className="small text-muted mb-0">Learning &amp; Development (L&amp;D) departments are growing rapidly as companies invest in upskilling and reskilling their workforce.</p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </section>
-      </div>
-
-      {/* hero section with education background */}
-      <section className="education-hero-bg flex-ai-center justify-content-center py-5">
-        <div className="container">
-          {/* VI. Conclusion Call to action */}
-          <section className="hero-panel">
-            <h2 className="fs-3 text-white fw-bold mb-3">Ready to Inspire and Lead?</h2>
-            <p className="fs-5 mb-4 mx-auto text-white max-w-700">Every great mind was shaped by a dedicated educator. Take the next step to empower others and make a lasting impact in your community.</p>
-            <a href="/contact" className="btn btn-warning btn-lg text-custom-primaryus fw-bold rounded-3 shadow-lg">Connect with an Education Mentor</a>
-          </section>
-        </div>
-      </section>
-
-      {/* modals */}
-      {/* modal 1 */}
-      <div className="modal fade" id="strategyModal-education" tabIndex={-1} aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered modal-xl">
-          <div className="modal-content border-0 rounded-4 shadow-lg">
-            <div className="modal-header bg-warning text-black rounded-top-4">
-              <h5 className="modal-title fw-bold">Academic Teaching &amp; Instruction</h5>
-              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" />
-            </div>
-            <div className="modal-body p-4 p-md-5">
-              <div className="row g-4">
-                <div className="col-12 col-lg-6">
-                  <div className="center-card h-100">
-                    <img src="/images/career-imgs/education-imgs/Education1.jpg" alt="Strategy Planning" className="img-round-shadow" />
-                  </div>
-                </div>
-                <div className="col-12 col-lg-6">
-                  <div className="row row-cols-1 row-cols-md-2 g-3">
-                    <div className="col">
-                      <div className="p-3 bg-warning-subtle rounded-3 border h-100">
-                        <p className="fw-bold fs-5 mb-1 text-dark">Classroom Teacher (K-12)</p>
-                        <p className="mb-0 text-muted small">Delivering curriculum, classroom management, and student development.</p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5 mb-1 text-dark">University Professor</p>
-                        <p className="mb-0 text-muted small">Advanced subject teaching, academic research, and publishing.</p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5 mb-1 text-dark">Special Education Teacher</p>
-                        <p className="mb-0 text-muted small">Developing and implementing individualized education programs (IEPs).</p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-primary-subtle rounded-3 border h-100">
-                        <p className="fw-bold fs-5 mb-1 text-dark">Tutor / Academic Coach</p>
-                        <p className="mb-0 text-muted small">Providing one-on-one or small-group instruction for specific subjects or skills.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* modal 2 */}
-      <div className="modal fade" id="financeModal-education" tabIndex={-1} aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered modal-xl">
-          <div className="modal-content border-0 rounded-4 shadow-lg">
-            <div className="modal-header bg-warning text-black rounded-top-4">
-              <h5 className="modal-title fw-bold">Corporate &amp; Specialized Training</h5>
-              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" />
-            </div>
-            <div className="modal-body p-4 p-md-5">
-              <div className="row g-4 align-items-center">
-                <div className="col-12 col-lg-6">
-                  <div className="d-flex flex-column gap-3 h-100">
-                    <div className="p-4 bg-warning-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">Instructional Designer (ID)</p>
-                      <p className="mb-0 text-muted small">Applying learning theories to design effective training programs (eLearning, blended learning).</p>
-                    </div>
-                    <div className="p-4 bg-primary-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">Training &amp; Development Specialist</p>
-                      <p className="mb-0 text-muted small">Delivering, assessing, and managing professional development within a company.</p>
-                    </div>
-                    <div className="p-4 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">Curriculum Developer</p>
-                      <p className="mb-0 text-muted small">Creating and updating core educational content, aligned with standards and learning objectives.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-6">
-                  <div className="center-card h-100">
-                    <img src="/images/career-imgs/education-imgs/Education2.jpg" alt="Finance and HR" className="img-round-shadow" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* modal 3 */}
-      <div className="modal fade" id="opsModal-education" tabIndex={-1} aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered modal-xl">
-          <div className="modal-content border-0 rounded-4 shadow-lg">
-            <div className="modal-header bg-warning text-black rounded-top-4">
-              <h5 className="modal-title fw-bold">Leadership &amp; Support Roles</h5>
-              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" />
-            </div>
-            <div className="modal-body p-4 p-md-5">
-              <div className="row g-4">
-                <div className="col-12 col-lg-6">
-                  <div className="center-card h-100">
-                    <img src="/images/career-imgs/education-imgs/Education3.jpg" alt="Operations and PMP" className="img-round-shadow" />
-                  </div>
-                </div>
-                <div className="col-12 col-lg-6">
-                  <div className="d-flex flex-column gap-3 h-100">
-                    <div className="p-4 bg-warning-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">School Principal / Administrator</p>
-                      <p className="mb-0 text-muted small">Overseeing school operations, staff management, budgeting, and community relations.</p>
-                    </div>
-                    <div className="p-4 bg-primary-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">Librarian / Media Specialist</p>
-                      <p className="mb-0 text-muted small">Managing information resources and teaching digital literacy skills to students and staff.</p>
-                    </div>
-                    <div className="p-4 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">School Counselor / Psychologist</p>
-                      <p className="mb-0 text-muted small">Providing mental health support, career guidance, and academic advising.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-  )
+  return <CareerTemplate hero={hero} roles={roles} roadmap={roadmap} skills={skills} future={future} cta={cta} />
 }

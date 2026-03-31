@@ -1,518 +1,111 @@
 import React from 'react'
-import SmoothScrollLink from '/src/components/SmoothScrollLink'
-import RoleCard from '/src/components/RoleCard'
+import CareerTemplate from '/src/components/CareerTemplate'
+
+const hero = {
+  bgClass: 'business-hero-bg',
+  title: (
+    <>
+      Your Future in <span className="text-white">Business & Management</span>
+    </>
+  ),
+  blurb:
+    'Management careers drive strategy, growth, and organizational success. This guide explores paths in leadership, finance, operations, and analysis across all major industries.',
+  ctaPrimary: 'Explore Roles',
+  ctaSecondary: 'Find Your Path',
+  rolesHeading: 'Key Business & Management Roles',
+  rolesSub: 'Detailing common and high-impact roles, organized by function.',
+  roadmapHeading: 'Business Management Career Roadmap',
+  skillsHeading: 'Essential Skills and Knowledge',
+  futureHeading: 'Future Trends and Growth'
+}
+
+const roles = [
+  {
+    icon: 'bi bi-lightbulb',
+    title: 'Strategy & Consulting',
+    summary:
+      'Master the art of high-level problem solving. Learn to analyze complex business landscapes, drive organizational change, and provide the strategic vision that guides companies toward sustainable growth.',
+    modalId: 'strategyModal-businessmanagement',
+    modal: {
+      title: 'Strategy and Consulting Deep-Dive',
+      image: '/images/career-imgs/business-imgs/buisness1.jpg',
+      items: [
+        { title: 'Management Consultant', text: 'Solving complex business problems and driving organizational change.', bgClass: 'bg-warning-subtle' },
+        { title: 'Business Analyst', text: 'Bridging the gap between business needs and technological solutions.' },
+        { title: 'Product Manager', text: 'Defining the product roadmap; coordinating engineering and marketing.' },
+        { title: 'Chief of Staff', text: 'High-level organizational support and strategic initiatives.', bgClass: 'bg-primary-subtle' }
+      ]
+    }
+  },
+  {
+    icon: 'bi bi-graph-up-arrow',
+    title: 'Financial & Resource Management',
+    summary:
+      'Become the steward of organizational health. Focus on optimizing capital, managing talent, and leveraging data-driven insights to ensure every resource is positioned for maximum impact and ROI.',
+    modalId: 'financeModal-businessmanagement',
+    modal: {
+      title: 'Financial & Resource Management Path',
+      image: '/images/career-imgs/business-imgs/buisness2.jpeg',
+      items: [
+        { title: 'Financial Analyst', text: 'Budgeting, forecasting, financial modeling, and investment decision support.', bgClass: 'bg-warning-subtle' },
+        { title: 'Human Resources Manager', text: 'Workforce planning, talent acquisition, and regulatory compliance.', bgClass: 'bg-primary-subtle' },
+        { title: 'Marketing Manager', text: 'Developing and executing campaigns, market research, and brand strategy.' }
+      ]
+    }
+  },
+  {
+    icon: 'bi bi-gear',
+    title: 'Operations & Supply Chain',
+    summary:
+      'Architect the engines of efficiency. From global logistics to daily process improvement, learn how to streamline workflows and manage the critical systems that deliver products and services to the world.',
+    modalId: 'opsModal-businessmanagement',
+    modal: {
+      title: 'Operations & Supply Chain Insight',
+      image: '/images/career-imgs/business-imgs/buisness3.jpg',
+      items: [
+        { title: 'Operations Manager', text: 'Optimizing daily processes, improving efficiency, and managing quality control.', bgClass: 'bg-warning-subtle' },
+        { title: 'Supply Chain Specialist', text: 'Managing logistics, procurement, and inventory to ensure smooth flow of goods.', bgClass: 'bg-primary-subtle' },
+        { title: 'Project Manager (PMP)', text: 'Defining scope, managing resources, mitigating risks, and delivering projects.' }
+      ]
+    }
+  }
+]
+
+const roadmap = [
+  { step: 1, title: 'Entry Level', text: 'Business Analyst / Assistant Manager', years: 'Years 0-2' },
+  { step: 2, title: 'Mid-Level', text: 'Department Manager / Operations Lead', years: 'Years 3-6' },
+  { step: 3, title: 'Director', text: 'Regional Director / Strategic Planning', years: 'Years 7-12' },
+  { step: 4, title: 'Executive', text: 'VP / COO / Chief Executive Officer', years: 'Years 15+' }
+]
+
+const skills = {
+  hard: [
+    { icon: 'bi bi-calculator-fill', text: 'Financial Accounting' },
+    { icon: 'bi bi-table', text: 'Data Modeling & Excel' },
+    { icon: 'bi bi-diagram-3-fill', text: 'Process Mapping' },
+    { icon: 'bi bi-bar-chart-line-fill', text: 'Statistical Analysis' },
+    { icon: 'bi bi-cloud-check-fill', text: 'CRM/ERP Software' },
+    { icon: 'bi bi-shield-check', text: 'Legal & Compliance' }
+  ],
+  soft: [
+    { icon: 'bi bi-people-fill', text: 'Leadership and Team Building' },
+    { icon: 'bi bi-lightbulb-fill', text: 'Strategic Thinking and Planning' },
+    { icon: 'bi bi-chat-dots-fill', text: 'Negotiation and Conflict Resolution' }
+  ]
+}
+
+const future = [
+  { title: 'Global & Sustainable Markets', text: 'Emphasis on ESG reporting and increased complexity in international trade and operations.', borderClass: 'border-custom-secondary', bgClass: 'bg-warning-subtle' },
+  { title: 'Data-Driven Decision Making', text: 'Managers must be proficient in Big Data analytics, visualization tools, and applying quantitative methods to strategy.', borderClass: 'border-custom-primary', bgClass: 'bg-primary-subtle' },
+  { title: 'Agile & Adaptive Leadership', text: 'The shift towards flatter organizational structures requires leaders who can manage hybrid teams and rapid, iterative changes.', borderClass: 'border-secondary', bgClass: 'bg-secondary-subtle' }
+]
+
+const cta = {
+  title: 'Ready to Lead Your Career?',
+  text: 'Management is about execution and vision. Start refining your leadership and analytical skills today to take the helm of a successful organization tomorrow.',
+  button: 'Define Your Business Strategy'
+}
 
 export default function BusinessManagement() {
-  return (
-    <main>
-      {/* section with image container */}
-      <section className="business-hero-bg flex-ai-center justify-content-center py-5">
-        <div className="container">
-          {/* heading */}
-          <header className="hero-panel">
-            <h1 className="display-3 fw-bolder text-white mb-3 animate-fade-in">
-              Your Future in{" "}
-              <span className="text-white">Business &amp; Management</span>
-            </h1>
-            <p className="fs-5 text-white mx-auto mb-4 max-w-800 animate-slide-up">
-              Management careers drive strategy, growth, and organizational success.
-              This guide explores paths in leadership, finance, operations, and
-              analysis across all major industries.
-            </p>
-            <div className="d-grid gap-3 d-md-flex justify-content-center">
-              <SmoothScrollLink
-                to="roles"
-                className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark"
-              >
-                Explore Roles
-              </SmoothScrollLink>
-                <a
-                  href="/contact"
-                  className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3"
-                >
-                  Find Your Path
-                </a>
-            </div>
-          </header>
-          {/* end of section and div */}
-        </div>
-      </section>
-      {/* end of art image */}
-      <div className="container-xl py-4 py-lg-5">
-        {/* start of second */}
-        {/* primary color backing */}
-        <section id="roles" className="mb-5">
-          <h2 className="fs-2 fw-bold section-heading-custom text-black">
-            Key Business &amp; Management Roles
-          </h2>
-          <p className="text-muted mb-4">
-            Detailing common and high-impact roles, organized by function.
-          </p>
-          {/* new section idea */}
-          <div className="container py-5">
-            <div className="row g-4">
-              <div className="col-lg-4 animate-scale-up">
-                <RoleCard
-                  icon="bi bi-lightbulb"
-                  title="Strategy & Consulting"
-                  modalTarget="#strategyModal-businessmanagement"
-                >
-                  Master the art of high-level problem solving. Learn to analyze
-                  complex business landscapes, drive organizational change, and
-                  provide the strategic vision that guides companies toward
-                  sustainable growth.
-                </RoleCard>
-              </div>
-              <div className="col-lg-4 animate-scale-up">
-                <RoleCard
-                  icon="bi bi-graph-up-arrow"
-                  title="Financial & Resource Management"
-                  modalTarget="#financeModal-businessmanagement"
-                >
-                  Become the steward of organizational health. Focus on optimizing
-                  capital, managing talent, and leveraging data-driven insights to
-                  ensure every resource is positioned for maximum impact and ROI.
-                </RoleCard>
-              </div>
-              <div className="col-lg-4 animate-scale-up">
-                <RoleCard
-                  icon="bi bi-gear"
-                  title="Operations & Supply Chain"
-                  modalTarget="#opsModal-businessmanagement"
-                >
-                  Architect the engines of efficiency. From global logistics to
-                  daily process improvement, learn how to streamline workflows and
-                  manage the critical systems that deliver products and services
-                  to the world.
-                </RoleCard>
-              </div>
-            </div>
-          </div>
-
-          {/* road map section */}
-          <section id="roadmap" className="mb-5 py-5 bg-light rounded-4">
-            <div className="container">
-              <h2 className="fs-2 fw-bold section-heading-custom text-dark text-center mb-5">
-                Business Management Career Roadmap
-              </h2>
-              <div className="roadmap-wrapper position-relative">
-                <div className="roadmap-line d-none d-lg-block" />
-                <div className="row g-4 text-center justify-content-center">
-                  <div className="col-lg-3 step-item">
-                    <div className="roadmap-node shadow">01</div>
-                    <h4 className="fw-bold mt-3">Entry Level</h4>
-                    <p className="small text-muted">
-                      Business Analyst / Assistant Manager
-                      <br />
-                      <span className="badge bg-warning text-dark">Years 0-2</span>
-                    </p>
-                  </div>
-                  <div className="col-lg-3 step-item">
-                    <div className="roadmap-node shadow">02</div>
-                    <h4 className="fw-bold mt-3">Mid-Level</h4>
-                    <p className="small text-muted">
-                      Department Manager / Operations Lead
-                      <br />
-                      <span className="badge bg-warning text-dark">Years 3-6</span>
-                    </p>
-                  </div>
-                  <div className="col-lg-3 step-item">
-                    <div className="roadmap-node shadow">03</div>
-                    <h4 className="fw-bold mt-3">Director</h4>
-                    <p className="small text-muted">
-                      Regional Director / Strategic Planning
-                      <br />
-                      <span className="badge bg-warning text-dark">Years 7-12</span>
-                    </p>
-                  </div>
-                  <div className="col-lg-3 step-item">
-                    <div className="roadmap-node shadow">04</div>
-                    <h4 className="fw-bold mt-3">Executive</h4>
-                    <p className="small text-muted">
-                      VP / COO / Chief Executive Officer
-                      <br />
-                      <span className="badge bg-warning text-dark">Years 15+</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section
-            id="skills"
-            className="skills-panel"
-          >
-            <h2 className="fs-2 fw-bold section-heading-custom text-dark">
-              Essential Skills and Knowledge
-            </h2>
-            <p className="text-muted mb-5">
-              Successful managers combine quantitative analysis with dynamic
-              leadership skills.
-            </p>
-            <div className="row g-5">
-              <div className="col-lg-6">
-                <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">
-                  Hard Skills (Analytical)
-                </h3>
-                <div className="row g-4">
-                  <div className="col-6 flex-ai-center">
-                    <i
-                      className="bi bi-calculator-fill me-3 fs-3 text-f1b327"
-                    />
-                    <span className="fw-medium">Financial Accounting</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i
-                      className="bi bi-table me-3 fs-3 text-f1b327"
-                    />
-                    <span className="fw-medium">Data Modeling &amp; Excel</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i
-                      className="bi bi-diagram-3-fill me-3 fs-3 text-f1b327"
-                    />
-                    <span className="fw-medium">Process Mapping</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i
-                      className="bi bi-bar-chart-line-fill me-3 fs-3 text-f1b327"
-                    />
-                    <span className="fw-medium">Statistical Analysis</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i
-                      className="bi bi-cloud-check-fill me-3 fs-3 text-f1b327"
-                    />
-                    <span className="fw-medium">CRM/ERP Software</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i
-                      className="bi bi-shield-check me-3 fs-3 text-f1b327"
-                    />
-                    <span className="fw-medium">Legal &amp; Compliance</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">
-                  Soft Skills (Leadership)
-                </h3>
-                <div className="row g-4">
-                  <div className="col-12 flex-ai-center">
-                    <i
-                      className="bi bi-people-fill me-3 fs-3 text-f1b327"
-                    />
-                    <span className="fw-medium">Leadership and Team Building</span>
-                  </div>
-                  <div className="col-12 flex-ai-center">
-                    <i
-                      className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327"
-                    />
-                    <span className="fw-medium">
-                      Strategic Thinking and Planning
-                    </span>
-                  </div>
-                  <div className="col-12 flex-ai-center">
-                    <i
-                      className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327"
-                    />
-                    <span className="fw-medium">
-                      Negotiation and Conflict Resolution
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* future trends */}
-          <section
-            id="future"
-            className="skills-panel"
-          >
-            <h2 className="fs-2 fw-bold section-heading-custom text-dark">
-              Future Trends and Growth
-            </h2>
-            <div className="row g-4">
-              <div className="col-md-4">
-                <div className="p-3 border-start border-4 border-custom-secondary bg-warning-subtle rounded-3">
-                  <h3 className="fs-5 fw-semibold text-custom-secondary mb-2">
-                    Global &amp; Sustainable Markets
-                  </h3>
-                  <ul className="text-muted small">
-                    <li>
-                      Emphasis on ESG (Environmental, Social, Governance) reporting.
-                    </li>
-                    <li>
-                      Increased complexity in international trade and operations.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="p-3 border-start border-4 border-custom-primary bg-primary-subtle rounded-3">
-                  <h3 className="fs-5 fw-semibold text-custom-primary mb-2 text-dark">
-                    Data-Driven Decision Making
-                  </h3>
-                  <p className="small text-muted mb-0">
-                    Managers must be proficient in interpreting Big Data analytics,
-                    visualization tools, and applying quantitative methods to
-                    strategy.
-                  </p>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="p-3 border-start border-4 border-secondary bg-secondary-subtle rounded-3">
-                  <h3 className="fs-5 fw-semibold text-secondary mb-2">
-                    Agile &amp; Adaptive Leadership
-                  </h3>
-                  <p className="small text-muted mb-0">
-                    The shift towards flatter organizational structures requires
-                    leaders who can manage hybrid teams and rapid, iterative changes
-                    (Agile methodology).
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </section>
-      </div>
-      {/* hero section with buisness background */}
-      <section className="business-hero-bg flex-ai-center justify-content-center py-5">
-        <div className="container">
-          {/* VI. Conclusion Call to action */}
-          <section className="hero-panel">
-            <h2 className="fs-3 text-white fw-bold mb-3">
-              Ready to Lead Your Career?
-            </h2>
-            <p className="fs-5 mb-4 mx-auto text-white max-w-700">
-              Management is about execution and vision. Start refining your
-              leadership and analytical skills today to take the helm of a
-              successful organization tomorrow.
-            </p>
-            <a
-              href="/contact"
-              className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg"
-            >
-              Define Your Business Strategy
-            </a>
-          </section>
-          {/* end of section and div */}
-        </div>
-      </section>
-      {/* modals */}
-      <div
-        className="modal fade"
-        id="strategyModal-businessmanagement"
-        tabIndex={-1}
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-dialog-centered modal-xl">
-          <div className="modal-content border-0 rounded-4 shadow-lg">
-            <div className="modal-header bg-warning text-black rounded-top-4">
-              <h5 className="modal-title fw-bold">
-                Strategy and Consulting Deep-Dive
-              </h5>
-              <button
-                type="button"
-                className="btn-close btn-close-white"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              />
-            </div>
-            <div className="modal-body p-4 p-md-5">
-              <div className="row g-4">
-                <div className="col-12 col-lg-6">
-                  <div className="center-card h-100">
-                    <img
-                      src="/images/career-imgs/business-imgs/buisness1.jpg"
-                      alt="Strategy Planning"
-                      className="img-round-shadow"
-                    />
-                  </div>
-                </div>
-                <div className="col-12 col-lg-6">
-                  <div className="row row-cols-1 row-cols-md-2 g-3">
-                    <div className="col">
-                      <div className="p-3 bg-warning-subtle rounded-3 border h-100">
-                        <p className="fw-bold fs-5 mb-1 text-dark">
-                          Management Consultant
-                        </p>
-                        <p className="mb-0 text-muted small">
-                          *Focus:* Solving complex business problems and driving
-                          organizational change.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5 mb-1 text-dark">
-                          Business Analyst
-                        </p>
-                        <p className="mb-0 text-muted small">
-                          *Focus:* Bridging the gap between business needs and
-                          technological solutions.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5 mb-1 text-dark">
-                          Product Manager
-                        </p>
-                        <p className="mb-0 text-muted small">
-                          *Focus:* Defining the product roadmap, coordinating
-                          engineering and marketing.
-                        </p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-primary-subtle rounded-3 border h-100">
-                        <p className="fw-bold fs-5 mb-1 text-dark">
-                          Chief of Staff
-                        </p>
-                        <p className="mb-0 text-muted small">
-                          *Focus:* High-level organizational support and strategic
-                          initiatives.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* modal for financial and resource management */}
-      <div
-        className="modal fade"
-        id="financeModal-businessmanagement"
-        tabIndex={-1}
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-dialog-centered modal-xl">
-          <div className="modal-content border-0 rounded-4 shadow-lg">
-            <div className="modal-header bg-warning text-black rounded-top-4">
-              <h5 className="modal-title fw-bold">
-                Financial &amp; Resource Management Path
-              </h5>
-              <button
-                type="button"
-                className="btn-close btn-close-white"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              />
-            </div>
-            <div className="modal-body p-4 p-md-5">
-              <div className="row g-4 align-items-center">
-                <div className="col-12 col-lg-6">
-                  <div className="d-flex flex-column gap-3 h-100">
-                    <div className="p-4 bg-warning-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">
-                        Financial Analyst
-                      </p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Budgeting, forecasting, financial modeling, and
-                        investment decision support.
-                      </p>
-                    </div>
-                    <div className="p-4 bg-primary-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">
-                        Human Resources Manager
-                      </p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Workforce planning, talent acquisition, and
-                        regulatory compliance.
-                      </p>
-                    </div>
-                    <div className="p-4 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">
-                        Marketing Manager
-                      </p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Developing and executing campaigns, market
-                        research, and brand strategy.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-6">
-                  <div className="center-card h-100">
-                    <img
-                      src="/images/career-imgs/business-imgs/buisness2.jpeg"
-                      alt="Finance and HR"
-                      className="img-round-shadow"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* modal for opperations and supply chain */}
-      <div className="modal fade" id="opsModal-businessmanagement" tabIndex={-1} aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered modal-xl">
-          <div className="modal-content border-0 rounded-4 shadow-lg">
-            <div className="modal-header bg-warning text-black rounded-top-4">
-              <h5 className="modal-title fw-bold">
-                Operations &amp; Supply Chain Insight
-              </h5>
-              <button
-                type="button"
-                className="btn-close btn-close-white"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              />
-            </div>
-            <div className="modal-body p-4 p-md-5">
-              <div className="row g-4">
-                <div className="col-12 col-lg-6">
-                  <div className="center-card h-100">
-                    <img
-                      src="/images/career-imgs/business-imgs/buisness3.jpg"
-                      alt="Operations and PMP"
-                      className="img-round-shadow"
-                    />
-                  </div>
-                </div>
-                <div className="col-12 col-lg-6">
-                  <div className="d-flex flex-column gap-3 h-100">
-                    <div className="p-4 bg-warning-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">
-                        Operations Manager
-                      </p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Optimizing daily processes, improving efficiency,
-                        and managing quality control.
-                      </p>
-                    </div>
-                    <div className="p-4 bg-primary-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">
-                        Supply Chain Specialist
-                      </p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Managing logistics, procurement, and inventory
-                        smooth flow of goods.
-                      </p>
-                    </div>
-                    <div className="p-4 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">
-                        Project Manager (PMP)
-                      </p>
-                      <p className="mb-0 text-muted small">
-                        *Focus:* Defining scope, managing resources, mitigating
-                        risks, and delivering projects.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>      
-    </main>
-  )
+  return <CareerTemplate hero={hero} roles={roles} roadmap={roadmap} skills={skills} future={future} cta={cta} />
 }

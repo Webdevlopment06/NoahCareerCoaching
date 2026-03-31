@@ -23,7 +23,7 @@ npm run dev
 - I think there is css that we do not need anymore because of site changes
 
 
-### CHANGES:
+### CHANGES FROM MAIN:
 - The state content is in a component, so it keeps the size of the page down.
 - I added some new icons to explore, they are all from flaticon.com
 - The Navbar is position absolute and there is some javascript to make each page 
@@ -46,4 +46,4 @@ npm run dev
 
 
 ### DOING (first priority anyway) 
-- css animations and making the site feel better and more responsive
+- nothing I guess? I'm unsure on where to go from here, there are no website breaking bugs and it looks good. what else am I supposed to do?

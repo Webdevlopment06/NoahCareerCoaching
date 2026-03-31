@@ -1,316 +1,111 @@
 import React from 'react'
-import SmoothScrollLink from '/src/components/SmoothScrollLink'
-import RoleCard from '/src/components/RoleCard'
+import CareerTemplate from '/src/components/CareerTemplate'
+
+const hero = {
+  bgClass: 'arts-hero-bg',
+  title: (
+    <>
+      Your Future in <span className="text-white">Creative Arts & Design</span>
+    </>
+  ),
+  blurb:
+    'Shape the visual and emotional world around us. Careers in design, media, and fine arts merge passion with commercial demand, requiring both artistry and technical skill.',
+  ctaPrimary: 'Explore Roles',
+  ctaSecondary: 'Find Your Path',
+  rolesHeading: 'Key Business & Management Roles',
+  rolesSub: 'Detailing common and high-impact roles, organized by function.',
+  roadmapHeading: 'Creative Arts & Design Career Roadmap',
+  skillsHeading: 'Essential Skills and Knowledge',
+  futureHeading: 'Future Trends and Growth'
+}
+
+const roles = [
+  {
+    icon: 'bi bi-lightbulb',
+    title: 'Digital & UX/UI Design',
+    summary:
+      'This field bridges the gap between human behavior and technology by crafting intuitive, user-centered interfaces for digital products. It focuses on optimizing the functionality and accessibility of websites and applications to ensure a seamless interaction for every user.',
+    modalId: 'strategyModal-artsdesign',
+    modal: {
+      title: 'Digital and UX/UI Design',
+      image: '/images/career-imgs/art-imgs/art1.png',
+      items: [
+        { title: 'Graphic Designer', text: 'Visual identity, branding, marketing materials, and print design.', bgClass: 'bg-warning-subtle' },
+        { title: 'UX/UI Designer', text: 'Creating intuitive, accessible digital interfaces and optimizing user flows.' },
+        { title: 'Web Designer', text: 'Layout, visual appearance, and usability of websites.' },
+        { title: 'Interaction Designer', text: 'How users interact with products and systems.', bgClass: 'bg-primary-subtle' }
+      ]
+    }
+  },
+  {
+    icon: 'bi bi-graph-up-arrow',
+    title: 'Visual Arts & Media Production',
+    summary:
+      'This sector serves as a powerful storytelling engine that communicates complex ideas through high-impact imagery and multimedia content. By blending technical skills in cinematography, graphics, and sound, it creates immersive experiences that define brand identities and capture audience attention.',
+    modalId: 'financeModal-artsdesign',
+    modal: {
+      title: 'Visual Arts and Media Production',
+      image: '/images/career-imgs/art-imgs/art2.png',
+      items: [
+        { title: 'Illustrator / Concept Artist', text: 'Creating original artwork for books, games, films, and advertising.', bgClass: 'bg-warning-subtle' },
+        { title: 'Videographer / Editor', text: 'Filming, editing, and post-production for commercial, corporate, or broadcast media.', bgClass: 'bg-primary-subtle' },
+        { title: 'Photographer (Commercial/Art)', text: 'Visual storytelling, capturing high-quality images for marketing or artistic purposes.' }
+      ]
+    }
+  },
+  {
+    icon: 'bi bi-gear',
+    title: 'Management & Strategy',
+    summary:
+      'Acting as the vital link between creative vision and business goals, this discipline focuses on leading teams and defining the "why" behind every project. It utilizes design thinking and strategic planning to ensure that artistic output is not only high-quality but also commercially viable and impactful.',
+    modalId: 'opsModal-artsdesign',
+    modal: {
+      title: 'Management and Strategy',
+      image: '/images/career-imgs/art-imgs/art3.png',
+      items: [
+        { title: 'Art Director / Creative Lead', text: 'Overseeing the visual style and execution of projects; managing creative teams.', bgClass: 'bg-warning-subtle' },
+        { title: 'Marketing/Brand Specialist', text: "Developing the aesthetic and messaging that defines a brand's public presence.", bgClass: 'bg-primary-subtle' },
+        { title: 'Copywriter / Content Creator', text: 'Writing persuasive and engaging text that supports the visual design elements.' }
+      ]
+    }
+  }
+]
+
+const roadmap = [
+  { step: 1, title: 'Entry Level', text: 'Junior Graphic Designer/ Production & Design Assistant/ Social Media Content Creator.', years: 'Years 0-2' },
+  { step: 2, title: 'Mid-Level', text: 'Graphic, Visual, UX/UI, Multimedia Designer.', years: 'Years 2-5' },
+  { step: 3, title: 'Senior/ Specialized Designer', text: 'Art Director/ UX Lead/ Motion Graphics Designer/ Senior Graphic Designer.', years: 'Years 5-8' },
+  { step: 4, title: 'Creative Leadership/Independent Expert', text: 'Creative Director/ Design Manager/ Brand Director/ Freelance Studio Owner.', years: 'Years 8-12+' }
+]
+
+const skills = {
+  hard: [
+    { icon: 'bi bi-calculator-fill', text: 'Adobe Creative Suite' },
+    { icon: 'bi bi-table', text: 'Figma / Sketch' },
+    { icon: 'bi bi-diagram-3-fill', text: '3D Modeling' },
+    { icon: 'bi bi-bar-chart-line-fill', text: 'Video Editing' },
+    { icon: 'bi bi-cloud-check-fill', text: 'Typography & Color Theory' },
+    { icon: 'bi bi-shield-check', text: 'Layout & Composition' }
+  ],
+  soft: [
+    { icon: 'bi bi-people-fill', text: 'Unwavering Creativity & Originality' },
+    { icon: 'bi bi-lightbulb-fill', text: 'Time Management & Meeting Deadlines' },
+    { icon: 'bi bi-chat-dots-fill', text: 'Ability to Interpret & Apply Client Feedback' }
+  ]
+}
+
+const future = [
+  { title: 'Generative AI in Design', text: 'AI as a collaborator, not a replacement. Prompt Engineering becomes a valuable creative skill.', borderClass: 'border-custom-secondary', bgClass: 'bg-warning-subtle' },
+  { title: '3D, XR, and Metaverse Design', text: 'Growing demand for 3D modelers and designers specializing in Extended Reality (XR) experiences.', borderClass: 'border-custom-primary', bgClass: 'bg-primary-subtle' },
+  { title: 'The Freelance Economy', text: 'More creative professionals are choosing self-employment, requiring strong business acumen.', borderClass: 'border-secondary', bgClass: 'bg-secondary-subtle' }
+]
+
+const cta = {
+  title: 'Ready to Create Your Masterpiece?',
+  text: "The only limits in the creative world are the ones you place on yourself. Dedicate yourself to practice and never stop sharing your work.",
+  button: 'Start Sketching Your Career'
+}
 
 export default function ArtsDesign() {
-  return (
-    <main>
-      {/* section with image container */}
-      <section className="arts-hero-bg flex-ai-center justify-content-center py-5">
-        <div className="container">
-          {/* heading */}
-          <header className="hero-panel">
-            <h1 className="display-3 fw-bolder text-white mb-3 animate-fade-in">
-              Your Future in <span className="text-white">Creative Arts & Design</span>
-            </h1>
-            <p className="fs-5 text-white mx-auto mb-4 max-w-800 animate-slide-up">
-              Shape the visual and emotional world around us. Careers in design, media, and fine arts merge
-              passion with commercial demand, requiring both artistry and technical skill.
-            </p>
-            <div className="d-grid gap-3 d-md-flex justify-content-center">
-              <SmoothScrollLink to="roles" className="btn btn-warning btn-lg fw-semibold shadow-sm rounded-3 text-dark">Explore Roles</SmoothScrollLink>
-              <a href="/contact" className="btn btn-primary btn-lg fw-semibold shadow-sm rounded-3">Find Your Path</a>
-            </div>
-          </header>
-        </div>
-      </section>
-
-      <div className="container-xl py-4 py-lg-5">
-        <section id="roles" className="mb-5">
-          <h2 className="fs-2 fw-bold section-heading-custom text-black">Key Business & Management Roles</h2>
-          <p className="text-muted mb-4">Detailing common and high-impact roles, organized by function.</p>
-
-          <div className="container py-5">
-            <div className="row g-4">
-              <div className="col-lg-4 animate-scale-up">
-                <RoleCard
-                  icon="bi bi-lightbulb"
-                  title="Digital &amp; UX/UI Design"
-                  modalTarget="#strategyModal-artsdesign"
-                >
-                  This field bridges the gap between human behavior and technology by crafting intuitive, user-centered interfaces for digital products. It focuses on optimizing the functionality and accessibility of websites and applications to ensure a seamless interaction for every user.
-                </RoleCard>
-              </div>
-
-              <div className="col-lg-4 animate-scale-up">
-                <RoleCard
-                  icon="bi bi-graph-up-arrow"
-                  title="Visual Arts &amp; Media Production"
-                  modalTarget="#financeModal-artsdesign"
-                >
-                  This sector serves as a powerful storytelling engine that communicates complex ideas through high-impact imagery and multimedia content. By blending technical skills in cinematography, graphics, and sound, it creates immersive experiences that define brand identities and capture audience attention.
-                </RoleCard>
-              </div>
-
-              <div className="col-lg-4 animate-scale-up">
-                <RoleCard
-                  icon="bi bi-gear"
-                  title="Management &amp; Strategy"
-                  modalTarget="#opsModal-artsdesign"
-                >
-                  Acting as the vital link between creative vision and business goals, this discipline focuses on leading teams and defining the "why" behind every project. It utilizes design thinking and strategic planning to ensure that artistic output is not only high-quality but also commercially viable and impactful.
-                </RoleCard>
-              </div>
-            </div>
-          </div>
-
-          <section id="roadmap" className="mb-5 py-5 bg-light rounded-4">
-            <div className="container">
-              <h2 className="fs-2 fw-bold section-heading-custom text-dark text-center mb-5">Creative Arts & Design Career Roadmap</h2>
-              <div className="roadmap-wrapper position-relative">
-                <div className="roadmap-line d-none d-lg-block"></div>
-                <div className="row g-4 text-center justify-content-center">
-                  <div className="col-lg-3 step-item">
-                    <div className="roadmap-node shadow">01</div>
-                    <h4 className="fw-bold mt-3">Entry Level</h4>
-                    <p className="small text-muted">Junior Graphic Designer/ Production & Design Assistant/ Social Media Content Creator.<br /><span className="badge bg-warning text-dark">Years 0-2</span></p>
-                  </div>
-                  <div className="col-lg-3 step-item">
-                    <div className="roadmap-node shadow">02</div>
-                    <h4 className="fw-bold mt-3">Mid-Level</h4>
-                    <p className="small text-muted">Graphic, Visual, UX/UI, Multimedia Designer.<br /><span className="badge bg-warning text-dark">Years 2-5</span></p>
-                  </div>
-                  <div className="col-lg-3 step-item">
-                    <div className="roadmap-node shadow">03</div>
-                    <h4 className="fw-bold mt-3">Senior/ Specialized Designer</h4>
-                    <p className="small text-muted">Art Director/ UX Lead/ Motion Graphics Designer/ Senior Graphic Designer.<br /><span className="badge bg-warning text-dark">Years 5-8</span></p>
-                  </div>
-                  <div className="col-lg-3 step-item">
-                    <div className="roadmap-node shadow">04</div>
-                    <h4 className="fw-bold mt-3">Creative Leadership/Independent Expert</h4>
-                    <p className="small text-muted">Creative Director/ Design Manager/ Brand Director/ Freelance Studio Owner.<br /><span className="badge bg-warning text-dark">Years 8-12+</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section id="skills" className="skills-panel">
-            <h2 className="fs-2 fw-bold section-heading-custom text-dark">Essential Skills and Knowledge</h2>
-            <p className="text-muted mb-5">Successful managers combine quantitative analysis with dynamic leadership skills.</p>
-            <div className="row g-5">
-              <div className="col-lg-6">
-                <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Hard Skills (Analytical)</h3>
-                <div className="row g-4">
-                  <div className="col-6 flex-ai-center">
-                    <i className="bi bi-calculator-fill me-3 fs-3 text-f1b327"></i>
-                    <span className="fw-medium">Adobe Creative Suite</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i className="bi bi-table me-3 fs-3 text-f1b327"></i>
-                    <span className="fw-medium">Figma / Sketch</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i className="bi bi-diagram-3-fill me-3 fs-3 text-f1b327"></i>
-                    <span className="fw-medium">3D Modeling</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i className="bi bi-bar-chart-line-fill me-3 fs-3 text-f1b327"></i>
-                    <span className="fw-medium">Video Editing</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i className="bi bi-cloud-check-fill me-3 fs-3 text-f1b327"></i>
-                    <span className="fw-medium">Typography & Color Theory</span>
-                  </div>
-                  <div className="col-6 flex-ai-center">
-                    <i className="bi bi-shield-check me-3 fs-3 text-f1b327"></i>
-                    <span className="fw-medium">Layout & Composition</span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-6">
-                <h3 className="fs-4 fw-semibold text-dark mb-4 border-bottom pb-2">Soft Skills (Leadership)</h3>
-                <div className="row g-4">
-                  <div className="col-12 flex-ai-center">
-                    <i className="bi bi-people-fill me-3 fs-3 text-f1b327"></i>
-                    <span className="fw-medium">Unwavering Creativity & Originality</span>
-                  </div>
-                  <div className="col-12 flex-ai-center">
-                    <i className="bi bi-lightbulb-fill me-3 fs-3 text-f1b327"></i>
-                    <span className="fw-medium">Time Management & Meeting Deadlines</span>
-                  </div>
-                  <div className="col-12 flex-ai-center">
-                    <i className="bi bi-chat-dots-fill me-3 fs-3 text-f1b327"></i>
-                    <span className="fw-medium">Ability to Interpret & Apply Client Feedback</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section id="future" className="skills-panel">
-            <h2 className="fs-2 fw-bold section-heading-custom text-dark">Future Trends and Growth</h2>
-            <div className="row g-4">
-              <div className="col-md-4">
-                <div className="p-3 border-start border-4 border-custom-secondary bg-warning-subtle rounded-3">
-                  <h3 className="fs-5 fw-semibold text-custom-secondary mb-2">Generative AI in Design</h3>
-                  <ul className="text-muted small">
-                    <li>AI as a collaborator, not a replacement.</li>
-                    <li>Prompt Engineering becomes a valuable creative skill.</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="p-3 border-start border-4 border-custom-primary bg-primary-subtle rounded-3">
-                  <h3 className="fs-5 fw-semibold text-custom-primary mb-2 text-dark">3D, XR, and Metaverse Design</h3>
-                  <p className="small text-muted mb-0">Growing demand for 3D modelers and designers specializing in Extended Reality (XR) experiences.</p>
-                </div>
-              </div>
-              <div className="col-md-4">
-                <div className="p-3 border-start border-4 border-secondary bg-secondary-subtle rounded-3">
-                  <h3 className="fs-5 fw-semibold text-secondary mb-2">The Freelance Economy</h3>
-                  <p className="small text-muted mb-0">More creative professionals are choosing self-employment, requiring strong business acumen.</p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </section>
-      </div>
-
-      <section className="arts-hero-bg flex-ai-center justify-content-center py-5">
-        <div className="container">
-          <section className="hero-panel">
-            <h2 className="fs-3 text-white fw-bold mb-3">Ready to Create Your Masterpiece?</h2>
-            <p className="fs-5 mb-4 mx-auto text-white max-w-700">
-              The only limits in the creative world are the ones you place on yourself. Dedicate yourself to practice and never stop sharing your work.
-            </p>
-            <a href="/contact" className="btn btn-warning btn-lg text-custom-primary fw-bold rounded-3 shadow-lg">
-              Start Sketching Your Career
-            </a>
-          </section>
-        </div>
-      </section>
-
-      {/* Modals */}
-      <div className="modal fade" id="strategyModal-artsdesign" tabIndex="-1" aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered modal-xl">
-          <div className="modal-content border-0 rounded-4 shadow-lg">
-            <div className="modal-header bg-warning text-black rounded-top-4">
-              <h5 className="modal-title fw-bold">Digital and UX/UI Design</h5>
-              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div className="modal-body p-4 p-md-5">
-              <div className="row g-4">
-                <div className="col-12 col-lg-6">
-                    <div className="center-card h-100">
-                    <img src="/images/career-imgs/art-imgs/art1.png" alt="Strategy Planning" className="img-round-shadow" />
-                  </div>
-                </div>
-                <div className="col-12 col-lg-6">
-                  <div className="row row-cols-1 row-cols-md-2 g-3">
-                    <div className="col">
-                      <div className="p-3 bg-warning-subtle rounded-3 border h-100">
-                        <p className="fw-bold fs-5 mb-1 text-dark">Graphic Designer</p>
-                        <p className="mb-0 text-muted small">Visual identity, branding, marketing materials, and print design.</p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5 mb-1 text-dark">UX/UI Designer</p>
-                        <p className="mb-0 text-muted small">Creating intuitive, accessible digital interfaces and optimizing user flows.</p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-light rounded-3 border h-100">
-                        <p className="fw-bold fs-5 mb-1 text-dark">Web Designer</p>
-                        <p className="mb-0 text-muted small">Layout, visual appearance, and usability of websites.</p>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="p-3 bg-primary-subtle rounded-3 border h-100">
-                        <p className="fw-bold fs-5 mb-1 text-dark">Interaction Designer</p>
-                        <p className="mb-0 text-muted small">How users interact with products and systems.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="modal fade" id="financeModal-artsdesign" tabIndex="-1" aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered modal-xl">
-          <div className="modal-content border-0 rounded-4 shadow-lg">
-            <div className="modal-header bg-warning text-black rounded-top-4">
-              <h5 className="modal-title fw-bold">Visual Arts and Media Production</h5>
-              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div className="modal-body p-4 p-md-5">
-              <div className="row g-4 align-items-center">
-                <div className="col-12 col-lg-6">
-                  <div className="d-flex flex-column gap-3 h-100">
-                    <div className="p-4 bg-warning-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">Illustrator / Concept Artist</p>
-                      <p className="mb-0 text-muted small">Creating original artwork for books, games, films, and advertising.</p>
-                    </div>
-                    <div className="p-4 bg-primary-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">Videographer / Editor</p>
-                      <p className="mb-0 text-muted small">Filming, editing, and post-production for commercial, corporate, or broadcast media.</p>
-                    </div>
-                    <div className="p-4 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">Photographer (Commercial/Art)</p>
-                      <p className="mb-0 text-muted small">Visual storytelling, capturing high-quality images for marketing or artistic purposes.</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-6">
-                    <div className="center-card h-100">
-                    <img src="/images/career-imgs/art-imgs/art2.png" alt="Finance and HR" className="img-round-shadow" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="modal fade" id="opsModal-artsdesign" tabIndex="-1" aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered modal-xl">
-          <div className="modal-content border-0 rounded-4 shadow-lg">
-            <div className="modal-header bg-warning text-black rounded-top-4">
-              <h5 className="modal-title fw-bold">Management and Strategy</h5>
-              <button type="button" className="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div className="modal-body p-4 p-md-5">
-              <div className="row g-4">
-                <div className="col-12 col-lg-6">
-                    <div className="center-card h-100">
-                    <img src="/images/career-imgs/art-imgs/art3.png" alt="Operations and PMP" className="img-round-shadow" />
-                  </div>
-                </div>
-                <div className="col-12 col-lg-6">
-                  <div className="d-flex flex-column gap-3 h-100">
-                    <div className="p-4 bg-warning-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">Art Director / Creative Lead</p>
-                      <p className="mb-0 text-muted small">Overseeing the visual style and execution of projects; managing creative teams.</p>
-                    </div>
-                    <div className="p-4 bg-primary-subtle rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">Marketing/Brand Specialist</p>
-                      <p className="mb-0 text-muted small">Developing the aesthetic and messaging that defines a brand's public presence.</p>
-                    </div>
-                    <div className="p-4 bg-light rounded-3 border">
-                      <p className="fw-bold fs-5 text-dark mb-1">Copywriter / Content Creator</p>
-                      <p className="mb-0 text-muted small">Writing persuasive and engaging text that supports the visual design elements.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-  )
+  return <CareerTemplate hero={hero} roles={roles} roadmap={roadmap} skills={skills} future={future} cta={cta} />
 }
