@@ -46,15 +46,7 @@ export default function Footer() {
 					</div>
 				</div>
 
-				<hr className="border-secondary my-4" />
 
-				<div className="row align-items-center">
-					<div className="col-md-6 text-center text-md-start small text-muted">© {new Date().getFullYear()} Noah Career Coaching — All rights reserved.</div>
-					<div className="col-md-6 text-center text-md-end small">
-						<a className="text-decoration-none text-dark me-3" href="/privacy">Privacy</a>
-						<a className="text-decoration-none text-dark" href="/terms">Terms</a>
-					</div>
-				</div>
 			</div>
 		</footer>
 	)

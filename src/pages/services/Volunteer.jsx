@@ -1,43 +1,18 @@
 import React from 'react'
+import ServiceHero from '/src/components/ServiceHero'
 
 export default function Volunteer() {
   return (
     <main>
-      <section className="hero-gradient-indigo-orange py-5 text-white">
-        <div className="container py-4">
-          <div className="row align-items-center">
-            <div className="col-lg-7">
-              <h1 className="display-4 fw-bold mb-3 text-uppercase animate-fade-in">Your Time. Their Future.</h1>
-              <p className="lead mb-4 opacity-75">Change doesn't happen by chance; it happens by choice. Join a community of over 500 volunteers dedicated to making a measurable difference.</p>
-              <div className="mt-4 animate-slide-in-left">
-                <h5 className="fw-bold mb-3">Our Mission Pulse</h5>
-                <ul className="list-unstyled">
-                  <li className="mb-2"><i className="bi bi-heart-fill text-warning me-2"></i> 100% Local Impact</li>
-                  <li className="mb-2"><i className="bi bi-people-fill text-warning me-2"></i> Inclusive Community</li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-lg-5 text-center">
-              <div className="p-4 bg-white rounded-4 shadow-lg text-dark border-top border-5 border-success animate-scale-up">
-                <h5 className="fw-bold text-success mb-3">2025 Impact Report</h5>
-                <div className="text-start mb-2">
-                  <small className="fw-bold">Meals Delivered</small>
-                  <div className="progress progress-h-10">
-                    <div className="progress-bar bg-success w-85"></div>
-                  </div>
-                </div>
-                <div className="text-start mb-2">
-                  <small className="fw-bold">Students Mentored</small>
-                  <div className="progress progress-h-10">
-                    <div className="progress-bar bg-primary w-60"></div>
-                  </div>
-                </div>
-                <p className="small text-muted mt-3">"Volunteering here changed my perspective on my city." — Jane D.</p>
-              </div>
-            </div>
-          </div>
+      <ServiceHero
+        title="Your Time. Their Future."
+        subtitle="Change doesn't happen by chance; it happens by choice. Join a community of over 500 volunteers dedicated to making a measurable difference."
+      >
+        <div className="small text-white">
+          <h5 className="fw-bold mb-3 text-white">Our Mission Pulse</h5>
+          <div className="small text-white">100% Local Impact • Inclusive Community</div>
         </div>
-      </section>
+      </ServiceHero>
 
       <section className="py-5 bg-white">
         <div className="container">

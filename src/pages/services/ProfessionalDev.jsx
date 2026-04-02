@@ -1,39 +1,18 @@
 import React from 'react'
+import ServiceHero from '/src/components/ServiceHero'
 
 export default function ProfessionalDev() {
   return (
     <main>
-      <section className="hero-gradient-indigo-orange py-5 text-white">
-        <div className="container py-4">
-          <div className="row align-items-center">
-            <div className="col-lg-7">
-              <h1 className="display-4 fw-bold mb-3 text-uppercase animate-fade-in">Close the Skills Gap. Lead the Future.</h1>
-              <p className="lead mb-4 opacity-75">In the next 5 years, 40% of core skills will change. Are you evolving fast enough to remain indispensable?</p>
-              <div className="mt-4 animate-slide-in-left">
-                <h5 className="fw-bold mb-3">Growth Roadmap</h5>
-                <ul className="list-unstyled">
-                  <li className="mb-2"><i className="bi bi-graph-up-arrow text-warning me-2"></i> Upskilling vs. Reskilling</li>
-                  <li className="mb-2"><i className="bi bi-people-fill text-warning me-2"></i> Emotional Intelligence (EQ)</li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-lg-5 text-center">
-              <div className="p-4 bg-white rounded-4 shadow-lg text-dark animate-scale-up">
-                <h5 className="fw-bold text-primary">The 70-20-10 Model</h5>
-                <div className="progress mb-3 progress-h-30">
-                  <div className="progress-bar bg-primary w-70">Experience</div>
-                </div>
-                <div className="progress mb-3 progress-h-30">
-                  <div className="progress-bar bg-info w-20">Mentorship</div>
-                </div>
-                <div className="progress progress-h-30">
-                  <div className="progress-bar bg-secondary w-10">Training</div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <ServiceHero
+        title="Close the Skills Gap. Lead the Future."
+        subtitle="In the next 5 years, 40% of core skills will change. Are you evolving fast enough to remain indispensable?"
+      >
+        <div className="small text-white">
+          <h5 className="fw-bold mb-3 text-white">Growth Roadmap</h5>
+          <div className="small text-white">Upskilling vs. Reskilling • Emotional Intelligence (EQ)</div>
         </div>
-      </section>
+      </ServiceHero>
 
       <section className="py-5 bg-white">
         <div className="container">

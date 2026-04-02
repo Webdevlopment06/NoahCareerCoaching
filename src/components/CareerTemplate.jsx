@@ -129,7 +129,7 @@ export default function CareerTemplate({ hero = {}, roles = [], roadmap = [], sk
                   <div className="col-12 col-lg-6">
                     {r.modal.image && (
                       <div className="center-card h-100">
-                        <img src={r.modal.image} alt={r.modal.title} className="img-round-shadow" />
+                        <img src={r.modal.image} alt={r.modal.title} className="img-round-shadow" loading="lazy" decoding="async" />
                       </div>
                     )}
                   </div>

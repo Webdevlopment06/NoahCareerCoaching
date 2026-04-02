@@ -17,10 +17,8 @@ npm run dev
 ## Romes Notes:
 
 ### ISSUES:
-- A lot of the fonts are wrong for some reason, I think there are some imports somewhere that are messing with them. However, This not really an issue and more of just a change. The site still looks and works fine with this.
-- the footer has some links that do not work and send you to 404s (they are placholders) privacy and terms do not need to be pages though
 - FILES ARE BIGGGGGGGGGGG I dont know why but every file is super long, its getting harder and harder to actually read them. I might add a bunch of comments but I think the best solution is putting all of the text into json and then having reusable components for similar structures.
-- I think there is css that we do not need anymore because of site changes
+
 
 
 ### CHANGES FROM MAIN:
@@ -33,6 +31,7 @@ npm run dev
 - Put animation related styles into /styles/animations.css
 - Split the style.css file into multiple files in the new styles folder
 - Made a component for the career pages
+- the fonts got changed when I moved it to react for some reason lol
 
 
 ### IDEAS:
@@ -44,6 +43,7 @@ npm run dev
 -  add actual stories to the stories page instead of fake placeholders
 - have the odd footer links play an animation on the nav items they relate to
 - the css no longer uses vars for colors so I should add that back
+- soon I should do backend stuff (make the contact page actually email people, make the donation section work)
 
 
 ### DOING (first priority anyway) 

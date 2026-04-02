@@ -1,36 +1,18 @@
 import React from 'react'
+import ServiceHero from '/src/components/ServiceHero'
 
 export default function InternshipPath() {
   return (
     <main>
-      <section className="hero-gradient-indigo-orange py-5 text-white">
-        <div className="container py-4">
-          <div className="row align-items-center">
-            <div className="col-lg-7">
-              <h1 className="display-4 fw-bold mb-3 text-uppercase animate-fade-in">Bridge the Gap from Campus to Career</h1>
-              <p className="lead mb-4 opacity-75">Stop wondering how to get experience without having any. Our pathways are designed to turn your classroom knowledge into corporate impact.</p>
-              <div className="mt-4 animate-slide-in-left">
-                <h5 className="fw-bold mb-3">Your Journey Map</h5>
-                <ul className="list-unstyled">
-                  <li className="mb-2"><i className="bi bi-compass text-warning me-2"></i> Skill Discovery Phase</li>
-                  <li className="mb-2"><i className="bi bi-briefcase text-warning me-2"></i> Real-World Project Placement</li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-lg-5 text-center">
-              <div className="p-4 bg-white rounded-4 shadow-lg text-dark animate-scale-up">
-                <h5 className="fw-bold text-primary mb-3">The Pathway Pipeline</h5>
-                <div className="d-flex flex-column align-items-start small">
-                  <div className="badge bg-primary mb-2 p-2 w-100 text-start">1. Core Training (4 Weeks)</div>
-                  <div className="badge bg-info mb-2 p-2 w-100 text-start text-dark">2. Mentorship Pairing (2 Weeks)</div>
-                  <div className="badge bg-success mb-2 p-2 w-100 text-start">3. Active Internship (12 Weeks)</div>
-                  <div className="badge bg-secondary p-2 w-100 text-start">4. Full-Time Conversion</div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <ServiceHero
+        title="Bridge the Gap from Campus to Career"
+        subtitle="Stop wondering how to get experience without having any. Our pathways are designed to turn your classroom knowledge into corporate impact."
+      >
+        <div className="small text-white">
+          <h5 className="fw-bold mb-3 text-white">Your Journey Map</h5>
+          <div className="small text-white">Skill Discovery • Real-World Project Placement</div>
         </div>
-      </section>
+      </ServiceHero>
 
       <section className="py-5 bg-white">
         <div className="container">

@@ -1,26 +1,17 @@
 import React from 'react'
+import ServiceHero from '/src/components/ServiceHero'
 
 export default function Resume() {
   return (
     <main>
-      <section className="hero-gradient-indigo-orange py-5 text-white resume-banner">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-9 col-md-8 ps-md-5">
-              <h1 className="display-3 fw-bold text-white mb-2">Land Your Dream Job.</h1>
-
-              <h2 className="h4 text-white mb-4 fw-normal">
-                Expert-crafted resume strategies designed to beat the ATS and get you noticed by top recruiters.
-              </h2>
-
-              <div className="d-flex gap-3">
-                <a href="/contact" className="btn btn-primary btn-lg px-4 rounded-pill">Get Started Free</a>
-                <a href="/services/resume-templates" className="btn btn-warning btn-lg px-4 rounded-pill">View Templates</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ServiceHero
+        title="Land Your Dream Job."
+        subtitle="Expert-crafted resume strategies designed to beat the ATS and get you noticed by top recruiters."
+        ctaText="Get Started Free"
+        ctaLink="/contact"
+      >
+        <a href="/services/resume-templates" className="btn btn-warning btn-lg px-4 rounded-pill">View Templates</a>
+      </ServiceHero>
 
       <div className="container mt-5">
         <h3>The Three Pillars of a Great Resume</h3>

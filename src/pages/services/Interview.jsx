@@ -1,25 +1,18 @@
 import React from 'react'
+import ServiceHero from '/src/components/ServiceHero'
 
 export default function Interview() {
   return (
     <main>
-      <section className="hero-gradient-indigo-orange py-5 text-white">
-        <div className="container py-4">
-          <div className="row align-items-center">
-            <div className="col-lg-7">
-              <h1 className="display-4 fw-bold mb-3 text-uppercase animate-fade-in">Why your resume might be getting ghosted</h1>
-              <p className="lead mb-4 opacity-75">Most Fortune 500 companies use an Applicant Tracking System or (ATS). If your resume isn't optimized, it stays hidden.</p>
-              <div className="mt-4 animate-slide-in-left">
-                <h5 className="fw-bold mb-3">Key Takeaways</h5>
-                <ul className="list-unstyled">
-                  <li className="mb-2"><i className="bi bi-check-circle-fill text-info me-2"></i> Plain Text is King</li>
-                  <li className="mb-2"><i className="bi bi-check-circle-fill text-info me-2"></i> Standard Headers</li>
-                </ul> 
-              </div>
-            </div>
-          </div>
+      <ServiceHero
+        title="Why your resume might be getting ghosted"
+        subtitle="Most Fortune 500 companies use an Applicant Tracking System or (ATS). If your resume isn't optimized, it stays hidden."
+      >
+        <div className="small text-white">
+          <h5 className="fw-bold mb-3 text-white">Key Takeaways</h5>
+          <div className="small text-white">Plain Text is King • Standard Headers</div>
         </div>
-      </section>
+      </ServiceHero>
 
       <section className="py-5 bg-white">
         <div className="container">
