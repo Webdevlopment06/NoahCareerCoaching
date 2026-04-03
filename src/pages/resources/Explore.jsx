@@ -65,7 +65,7 @@ export default function Explore() {
           {visible.map((c, i) => (
             <div key={c.id} className="col career-item">
               <div className="card career-mini-card border-0 shadow-sm animate-slide-up" style={{animationDelay: `${i * 0.06}s`}}>
-                <div className="icon-header"><img src={c.icon} className="career-icon" alt={c.title} /></div>
+                <div className="icon-header"><img src={c.icon} className="career-icon" alt={c.title} loading="lazy" decoding="async" /></div>
                 <div className="card-body p-3 text-center d-flex flex-column">
                   <h6 className="fw-bold mb-1">{c.title}</h6>
                   <p className="extra-small text-muted mb-3">{c.subtitle}</p>

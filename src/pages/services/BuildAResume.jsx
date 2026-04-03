@@ -8,6 +8,40 @@ export default function BuildAResume() {
   const [experience, setExperience] = useState('')
   const [education, setEducation] = useState('')
   const [skills, setSkills] = useState('')
+  const [copyStatus, setCopyStatus] = useState('Copy')
+
+  const handleCopy = async () => {
+    const parts = []
+    if (name) parts.push(name)
+    const contact = [email, phone].filter(Boolean).join(' | ')
+    if (contact) parts.push(contact)
+    if (summary) parts.push('\nSummary:\n' + summary)
+    if (experience) parts.push('\nExperience:\n' + experience)
+    if (education) parts.push('\nEducation:\n' + education)
+    if (skills) parts.push('\nSkills:\n' + skills.split(',').map(s => s.trim()).join(', '))
+
+    const text = parts.join('\n\n') || ' ' // copy something so clipboard API succeeds
+
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopyStatus('Copied!')
+      setTimeout(() => setCopyStatus('Copy'), 2000)
+    } catch (err) {
+      setCopyStatus('Failed')
+      setTimeout(() => setCopyStatus('Copy'), 2000)
+    }
+  }
+
+  const handleClear = () => {
+    if (!window.confirm('Clear all fields? This cannot be undone.')) return
+    setName('')
+    setEmail('')
+    setPhone('')
+    setSummary('')
+    setExperience('')
+    setEducation('')
+    setSkills('')
+  }
 
   return (
     <main>
@@ -56,7 +90,27 @@ export default function BuildAResume() {
           </div>
 
           <aside className="col-lg-4">
-            <div className="card p-3 bg-light">
+            <div className="card p-3 bg-light position-relative">
+              <div style={{ position: 'absolute', top: '8px', right: '8px', display: 'flex', gap: '8px' }}>
+                <button
+                  type="button"
+                  className="btn btn-sm btn-outline-danger"
+                  onClick={handleClear}
+                  aria-label="Clear all fields"
+                >
+                  <i className="bi bi-trash" aria-hidden="true"></i>
+                  <span className="ms-2">Clear</span>
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-sm btn-outline-secondary"
+                  onClick={handleCopy}
+                  aria-label="Copy resume preview"
+                >
+                  <i className="bi bi-clipboard" aria-hidden="true"></i>
+                  <span className="ms-2">{copyStatus}</span>
+                </button>
+              </div>
               <h4 id="preview-name" className="mb-1">{name || 'Your Name'}</h4>
               <p id="preview-contact" className="text-muted mb-3">{email || 'Email'}{email && phone ? ' | ' : ''}{phone || 'Phone'}</p>
 
