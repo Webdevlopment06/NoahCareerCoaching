@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 export default function BuildAResume() {
   const [name, setName] = useState('')
@@ -9,6 +9,37 @@ export default function BuildAResume() {
   const [education, setEducation] = useState('')
   const [skills, setSkills] = useState('')
   const [copyStatus, setCopyStatus] = useState('Copy')
+  const STORAGE_KEY = 'buildResumeDraft'
+
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY)
+      if (raw) {
+        const data = JSON.parse(raw)
+        if (data.name) setName(data.name)
+        if (data.email) setEmail(data.email)
+        if (data.phone) setPhone(data.phone)
+        if (data.summary) setSummary(data.summary)
+        if (data.experience) setExperience(data.experience)
+        if (data.education) setEducation(data.education)
+        if (data.skills) setSkills(data.skills)
+      }
+    } catch (e) {
+      // ignore parse/storage errors
+    }
+  }, [])
+
+  useEffect(() => {
+    const t = setTimeout(() => {
+      const data = { name, email, phone, summary, experience, education, skills }
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(data))
+      } catch (e) {
+        // ignore
+      }
+    }, 500)
+    return () => clearTimeout(t)
+  }, [name, email, phone, summary, experience, education, skills])
 
   const handleCopy = async () => {
     const parts = []
@@ -41,6 +72,7 @@ export default function BuildAResume() {
     setExperience('')
     setEducation('')
     setSkills('')
+    try { localStorage.removeItem(STORAGE_KEY) } catch (e) {}
   }
 
   return (

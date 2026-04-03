@@ -17,7 +17,7 @@ npm run dev
 ## Romes Notes:
 
 ### ISSUES:
-- FILES ARE BIGGGGGGGGGGG I dont know why but every file is super long, its getting harder and harder to actually read them. I might add a bunch of comments but I think the best solution is putting all of the text into json and then having reusable components for similar structures.
+- None I solved them all yay :)
 
 
 
@@ -47,4 +47,4 @@ npm run dev
 
 
 ### DOING (first priority anyway) 
-- nothing I guess? I'm unsure on where to go from here, there are no website breaking bugs and it looks good. what else am I supposed to do?
+- making the resume pages
