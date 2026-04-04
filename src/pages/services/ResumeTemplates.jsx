@@ -47,6 +47,7 @@ export default function ResumeTemplates() {
     const useTemplate = (key) => {
         try {
             localStorage.setItem('buildResumeDraft', JSON.stringify(TEMPLATES[key]))
+            localStorage.setItem('buildResumeDraftSource', key)
         } catch (e) {
             // ignore storage errors
         }

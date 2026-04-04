@@ -10,6 +10,7 @@ export default function BuildAResume() {
   const [skills, setSkills] = useState('')
   const [copyStatus, setCopyStatus] = useState('Copy')
   const STORAGE_KEY = 'buildResumeDraft'
+  const [templateApplied, setTemplateApplied] = useState(null)
 
   useEffect(() => {
     try {
@@ -24,6 +25,15 @@ export default function BuildAResume() {
         if (data.education) setEducation(data.education)
         if (data.skills) setSkills(data.skills)
       }
+      // check if draft was applied from a template
+      try {
+        const src = localStorage.getItem('buildResumeDraftSource')
+        if (src) {
+          setTemplateApplied(src)
+          localStorage.removeItem('buildResumeDraftSource')
+          setTimeout(() => setTemplateApplied(null), 3000)
+        }
+      } catch (e) {}
     } catch (e) {
       // ignore parse/storage errors
     }
@@ -81,6 +91,13 @@ export default function BuildAResume() {
         <h1>Build Your Resume Step by Step</h1>
         <p>Fill out each section and see your resume update live</p>
       </header>
+      {templateApplied && (
+        <div className="container">
+          <div className="alert alert-success py-2" role="status" aria-live="polite">
+            Template applied: {templateApplied}
+          </div>
+        </div>
+      )}
       <div className="container py-4">
         <div className="row g-4 justify-content-center">
           <div className="col-lg-8">
