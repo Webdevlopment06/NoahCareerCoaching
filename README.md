@@ -18,7 +18,7 @@ npm run dev
 
 ### ISSUES:
 - the stories in the stories page are fake placeholders AHHHHHH
-
+- need a picture for the second quote on the homepage
 
 
 ### CHANGES FROM MAIN:
