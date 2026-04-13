@@ -17,7 +17,7 @@ npm run dev
 ## Romes Notes:
 
 ### ISSUES:
-- None I solved them all yay :)
+- the stories in the stories page are fake placeholders AHHHHHH
 
 
 
