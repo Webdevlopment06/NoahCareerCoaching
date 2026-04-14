@@ -18,7 +18,7 @@ npm run dev
 
 ### ISSUES:
 - the stories in the stories page are fake placeholders AHHHHHH
-- need a picture for the second quote on the homepage
+- need a picture for the second guy we quoted on the homepage
 
 
 ### CHANGES FROM MAIN:
@@ -47,4 +47,4 @@ npm run dev
 
 
 ### DOING (first priority anyway) 
-- making the resume pages
+- messing with prettier and eslint

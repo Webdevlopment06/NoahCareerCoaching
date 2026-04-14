@@ -1,6 +1,12 @@
-import React from 'react'
+import React from "react";
 
-export default function RoleCard({ icon, title, children, modalTarget, btnLabel = 'Learn More →' }) {
+export default function RoleCard({
+  icon,
+  title,
+  children,
+  modalTarget,
+  btnLabel = "Learn More →",
+}) {
   return (
     <div className="card creative-card h-100 p-4 shadow-sm d-flex flex-column">
       <div className="icon-box mb-3">
@@ -17,5 +23,5 @@ export default function RoleCard({ icon, title, children, modalTarget, btnLabel 
         {btnLabel}
       </button>
     </div>
-  )
+  );
 }

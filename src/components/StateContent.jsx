@@ -1,16 +1,71 @@
-import React from 'react'
+import React from "react";
 
 const STATE_CONTENT = {
   al: (
     <>
       <h5>Alabama Resources</h5>
       <ul>
-        <li><a href="https://adol.alabama.gov/career-centers/" target="_blank" rel="noreferrer noopener">Alabama Career Center</a>: Network of physical centers offering resume help, job counseling, and interview facilities.</li>
-        <li><a href="https://alabamaworks.alabama.gov/vosnet/Default.aspx" target="_blank" rel="noreferrer noopener">AlabamaWorks</a>: Workforce training, placement, and informational resources.</li>
-        <li><a href="https://personnel.alabama.gov/" target="_blank" rel="noreferrer noopener">Alabama State Personnel Department</a>: State government job listings.</li>
-        <li><a href="https://adol.alabama.gov/" target="_blank" rel="noreferrer noopener">Alabama Department of Labor</a>: Labor market info and local career center assistance.</li>
-        <li><a href="https://www.accs.edu/ace/" target="_blank" rel="noreferrer noopener">Alabama Community College System</a>: Training and workforce development programs.</li>
-        <li><a href="https://www.aidt.edu/" target="_blank" rel="noreferrer noopener">AIDT</a>: Workforce training programs for Alabama industries.</li>
+        <li>
+          <a
+            href="https://adol.alabama.gov/career-centers/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Alabama Career Center
+          </a>
+          : Network of physical centers offering resume help, job counseling,
+          and interview facilities.
+        </li>
+        <li>
+          <a
+            href="https://alabamaworks.alabama.gov/vosnet/Default.aspx"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            AlabamaWorks
+          </a>
+          : Workforce training, placement, and informational resources.
+        </li>
+        <li>
+          <a
+            href="https://personnel.alabama.gov/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Alabama State Personnel Department
+          </a>
+          : State government job listings.
+        </li>
+        <li>
+          <a
+            href="https://adol.alabama.gov/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Alabama Department of Labor
+          </a>
+          : Labor market info and local career center assistance.
+        </li>
+        <li>
+          <a
+            href="https://www.accs.edu/ace/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Alabama Community College System
+          </a>
+          : Training and workforce development programs.
+        </li>
+        <li>
+          <a
+            href="https://www.aidt.edu/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            AIDT
+          </a>
+          : Workforce training programs for Alabama industries.
+        </li>
       </ul>
     </>
   ),
@@ -19,10 +74,46 @@ const STATE_CONTENT = {
     <>
       <h5>Alaska Resources</h5>
       <ul>
-        <li><a href="https://jobs.alaska.gov/" target="_blank" rel="noreferrer noopener">Alaska Job Center Network</a>: Online portal and in-person support for resumes and applications.</li>
-        <li><a href="https://labor.alaska.gov/" target="_blank" rel="noreferrer noopener">Alaska Department of Labor</a>: Training programs and apprenticeship information.</li>
-        <li><a href="https://www.governmentjobs.com/careers/alaska" target="_blank" rel="noreferrer noopener">AlaskaJobs</a>: State hiring platform.</li>
-        <li><a href="https://avtec.edu/" target="_blank" rel="noreferrer noopener">AVTEC</a>: Vocational training and technical programs.</li>
+        <li>
+          <a
+            href="https://jobs.alaska.gov/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Alaska Job Center Network
+          </a>
+          : Online portal and in-person support for resumes and applications.
+        </li>
+        <li>
+          <a
+            href="https://labor.alaska.gov/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Alaska Department of Labor
+          </a>
+          : Training programs and apprenticeship information.
+        </li>
+        <li>
+          <a
+            href="https://www.governmentjobs.com/careers/alaska"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            AlaskaJobs
+          </a>
+          : State hiring platform.
+        </li>
+        <li>
+          <a
+            href="https://avtec.edu/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            AVTEC
+          </a>
+          : Vocational training and technical programs.
+        </li>
       </ul>
     </>
   ),
@@ -31,9 +122,37 @@ const STATE_CONTENT = {
     <>
       <h5>Arizona Resources</h5>
       <ul>
-        <li><a href="https://www.azjobconnection.gov/job_seeker/" target="_blank" rel="noreferrer noopener">ARIZONA@WORK / AZ Job Connection</a>: Job search, resumes, career counselors, training and apprenticeship programs.</li>
-        <li><a href="https://pipelineaz.com/" target="_blank" rel="noreferrer noopener">Pipeline AZ</a>: Explore job openings by industry and training programs.</li>
-        <li><a href="https://des.az.gov/wia" target="_blank" rel="noreferrer noopener">Arizona Department of Economic Security (WIOA)</a>: Funding and support for training and job search assistance.</li>
+        <li>
+          <a
+            href="https://www.azjobconnection.gov/job_seeker/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            ARIZONA@WORK / AZ Job Connection
+          </a>
+          : Job search, resumes, career counselors, training and apprenticeship
+          programs.
+        </li>
+        <li>
+          <a
+            href="https://pipelineaz.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Pipeline AZ
+          </a>
+          : Explore job openings by industry and training programs.
+        </li>
+        <li>
+          <a
+            href="https://des.az.gov/wia"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Arizona Department of Economic Security (WIOA)
+          </a>
+          : Funding and support for training and job search assistance.
+        </li>
       </ul>
     </>
   ),
@@ -42,14 +161,88 @@ const STATE_CONTENT = {
     <>
       <h5>Arkansas Resources</h5>
       <ul>
-        <li><a href="https://dws.arkansas.gov/workforce-services/job-seekers/" target="_blank" rel="noreferrer noopener">Arkansas Division of Workforce Services</a>: Locate local Workforce Centers for job search assistance and training.</li>
-        <li><a href="https://dws.arkansas.gov/workforce-services/arkansas-workforce-centers/" target="_blank" rel="noreferrer noopener">Arkansas Workforce Centers</a>: In-person services for resumes, interview prep, and training referrals.</li>
-        <li><a href="https://www.arjoblink.arkansas.gov/job_seeker" target="_blank" rel="noreferrer noopener">Arkansas JobLink</a>: Official online job-matching system.</li>
-        <li><a href="https://dws.arkansas.gov/workforce-services/wioa/" target="_blank" rel="noreferrer noopener">WIOA – Arkansas</a>: Funding for occupational training and apprenticeships.</li>
-        <li><a href="https://dws.arkansas.gov/workforce-services/job-seekers/reemployment-services/" target="_blank" rel="noreferrer noopener">Reemployment Services (RESEA)</a>: One-on-one support for those collecting UI.</li>
-        <li><a href="https://dws.arkansas.gov/unemployment/" target="_blank" rel="noreferrer noopener">Arkansas Unemployment Insurance</a>: Portal for filing claims.</li>
-        <li><a href="https://www.discover.arkansas.gov/Data-Search-Tool/index" target="_blank" rel="noreferrer noopener">Discover Arkansas – Labor Market Data</a>: Labor market information and projections.</li>
-        <li><a href="https://commerce.arkansas.gov/divisions/workforce-policy-innovation/" target="_blank" rel="noreferrer noopener">Workforce Policy & Innovation</a>: State workforce strategy and training alignment.</li>
+        <li>
+          <a
+            href="https://dws.arkansas.gov/workforce-services/job-seekers/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Arkansas Division of Workforce Services
+          </a>
+          : Locate local Workforce Centers for job search assistance and
+          training.
+        </li>
+        <li>
+          <a
+            href="https://dws.arkansas.gov/workforce-services/arkansas-workforce-centers/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Arkansas Workforce Centers
+          </a>
+          : In-person services for resumes, interview prep, and training
+          referrals.
+        </li>
+        <li>
+          <a
+            href="https://www.arjoblink.arkansas.gov/job_seeker"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Arkansas JobLink
+          </a>
+          : Official online job-matching system.
+        </li>
+        <li>
+          <a
+            href="https://dws.arkansas.gov/workforce-services/wioa/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            WIOA – Arkansas
+          </a>
+          : Funding for occupational training and apprenticeships.
+        </li>
+        <li>
+          <a
+            href="https://dws.arkansas.gov/workforce-services/job-seekers/reemployment-services/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Reemployment Services (RESEA)
+          </a>
+          : One-on-one support for those collecting UI.
+        </li>
+        <li>
+          <a
+            href="https://dws.arkansas.gov/unemployment/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Arkansas Unemployment Insurance
+          </a>
+          : Portal for filing claims.
+        </li>
+        <li>
+          <a
+            href="https://www.discover.arkansas.gov/Data-Search-Tool/index"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Discover Arkansas – Labor Market Data
+          </a>
+          : Labor market information and projections.
+        </li>
+        <li>
+          <a
+            href="https://commerce.arkansas.gov/divisions/workforce-policy-innovation/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Workforce Policy & Innovation
+          </a>
+          : State workforce strategy and training alignment.
+        </li>
       </ul>
     </>
   ),
@@ -58,15 +251,98 @@ const STATE_CONTENT = {
     <>
       <h5>California Resources</h5>
       <ul>
-        <li><a href="https://edd.ca.gov/en/jobs_and_training/" target="_blank" rel="noreferrer noopener">EDD — Jobs & Training</a>: America’s Job Center of California (AJCC) network, job search help and training referrals.</li>
-        <li><a href="https://www.caljobs.ca.gov/" target="_blank" rel="noreferrer noopener">CalJOBS</a>: California's online job-matching system.</li>
-        <li><a href="https://cwdb.ca.gov/local_boards/find_your_local_board/" target="_blank" rel="noreferrer noopener">AJCC / Local Workforce Centers</a>: In-person career services and training referrals.</li>
-        <li><a href="https://cwdb.ca.gov/" target="_blank" rel="noreferrer noopener">California Workforce Development Board (CWDB)</a>: State workforce policy and programs.</li>
-        <li><a href="https://edd.ca.gov/en/jobs_and_training/workforce_Innovation_and_opportunity_act" target="_blank" rel="noreferrer noopener">WIOA — California</a>: Funding and support for training and employment services.</li>
-        <li><a href="https://edd.ca.gov/en/jobs_and_training/Resources_for_Job_Seekers/" target="_blank" rel="noreferrer noopener">Training Resources for Job Seekers</a>: Free or low-cost training options and Eligible Training Provider List.</li>
-        <li><a href="https://edd.ca.gov/en/jobs_and_training/Job_Fairs_and_Workshops/" target="_blank" rel="noreferrer noopener">Job Fairs & Workshops</a>: EDD hosted events and workshops.</li>
-        <li><a href="https://edd.ca.gov/en/jobs_and_training/stu-training-catalog/" target="_blank" rel="noreferrer noopener">Statewide Training Unit (STU) Catalog</a>: Catalog of free training programs.</li>
-        <li><a href="https://www.ccc.ca.gov/" target="_blank" rel="noreferrer noopener">California Conservation Corps</a>: Paid work experience and pathways for young adults.</li>
+        <li>
+          <a
+            href="https://edd.ca.gov/en/jobs_and_training/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            EDD — Jobs & Training
+          </a>
+          : America’s Job Center of California (AJCC) network, job search help
+          and training referrals.
+        </li>
+        <li>
+          <a
+            href="https://www.caljobs.ca.gov/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            CalJOBS
+          </a>
+          : California's online job-matching system.
+        </li>
+        <li>
+          <a
+            href="https://cwdb.ca.gov/local_boards/find_your_local_board/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            AJCC / Local Workforce Centers
+          </a>
+          : In-person career services and training referrals.
+        </li>
+        <li>
+          <a
+            href="https://cwdb.ca.gov/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            California Workforce Development Board (CWDB)
+          </a>
+          : State workforce policy and programs.
+        </li>
+        <li>
+          <a
+            href="https://edd.ca.gov/en/jobs_and_training/workforce_Innovation_and_opportunity_act"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            WIOA — California
+          </a>
+          : Funding and support for training and employment services.
+        </li>
+        <li>
+          <a
+            href="https://edd.ca.gov/en/jobs_and_training/Resources_for_Job_Seekers/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Training Resources for Job Seekers
+          </a>
+          : Free or low-cost training options and Eligible Training Provider
+          List.
+        </li>
+        <li>
+          <a
+            href="https://edd.ca.gov/en/jobs_and_training/Job_Fairs_and_Workshops/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Job Fairs & Workshops
+          </a>
+          : EDD hosted events and workshops.
+        </li>
+        <li>
+          <a
+            href="https://edd.ca.gov/en/jobs_and_training/stu-training-catalog/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Statewide Training Unit (STU) Catalog
+          </a>
+          : Catalog of free training programs.
+        </li>
+        <li>
+          <a
+            href="https://www.ccc.ca.gov/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            California Conservation Corps
+          </a>
+          : Paid work experience and pathways for young adults.
+        </li>
       </ul>
     </>
   ),
@@ -75,20 +351,41 @@ const STATE_CONTENT = {
     <>
       <h5>Colorado Resources</h5>
       <ul>
-        <li><a href="https://cdle.colorado.gov/jobs-training/connecting-colorado" target="_blank" rel="noreferrer noopener">Connecting Colorado</a>: Primary online platform for job seekers and training.</li>
-        <li><a href="https://cdle.colorado.gov/jobs-training/workforce-centers" target="_blank" rel="noreferrer noopener">Colorado Workforce Centers</a>: One-stop centers offering free career services.</li>
+        <li>
+          <a
+            href="https://cdle.colorado.gov/jobs-training/connecting-colorado"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Connecting Colorado
+          </a>
+          : Primary online platform for job seekers and training.
+        </li>
+        <li>
+          <a
+            href="https://cdle.colorado.gov/jobs-training/workforce-centers"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Colorado Workforce Centers
+          </a>
+          : One-stop centers offering free career services.
+        </li>
       </ul>
     </>
   ),
-}
+};
 
 export default function StateContent({ abbr }) {
   const content = STATE_CONTENT[abbr] || (
     <>
       <h5>No resources yet</h5>
-      <p className="small text-muted">You can add local workforce centers, training links, and contact info for this state.</p>
+      <p className="small text-muted">
+        You can add local workforce centers, training links, and contact info
+        for this state.
+      </p>
     </>
-  )
+  );
 
-  return <div>{content}</div>
+  return <div>{content}</div>;
 }

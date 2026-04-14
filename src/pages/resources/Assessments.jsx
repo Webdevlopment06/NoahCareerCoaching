@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export default function Assessments() {
   return (
     <main>
       <section className="career-top-banner">
         <div className="banner-row">
-            <div className="banner-col banner-col-img">
+          <div className="banner-col banner-col-img">
             <img loading="lazy" src="/images/ncc4.png" alt="Banner" />
           </div>
           <div className="banner-col banner-col-text">
@@ -18,8 +18,9 @@ export default function Assessments() {
         <div className="text-center mb-5">
           <h2 className="fw-bold animate-fade-in">Career Assessments</h2>
           <p className="text-muted mx-auto max-w-700 animate-slide-up">
-            Noah Career Coaching believes clarity is the foundation of confident career decisions.
-            Below are some trusted quizzes to help you along your journey.
+            Noah Career Coaching believes clarity is the foundation of confident
+            career decisions. Below are some trusted quizzes to help you along
+            your journey.
           </p>
         </div>
 
@@ -28,16 +29,33 @@ export default function Assessments() {
             <div className="card h-100 assessment-card featured animate-scale-up">
               <div className="card-body d-md-flex flex-ai-center">
                 <div className="p-3 text-center">
-                  <img loading="lazy" src="/images/resources-imgs/assessments-imgs/16personalities.png" alt="16Personalities" className="img-fluid mb-3 mb-md-0 max-w-140" />
+                  <img
+                    loading="lazy"
+                    src="/images/resources-imgs/assessments-imgs/16personalities.png"
+                    alt="16Personalities"
+                    className="img-fluid mb-3 mb-md-0 max-w-140"
+                  />
                 </div>
                 <div className="ps-md-4 d-flex flex-column">
-                  <span className="badge bg-info mb-2">Featured Assessment</span>
+                  <span className="badge bg-info mb-2">
+                    Featured Assessment
+                  </span>
                   <h3 className="card-title h4 fw-bold">16Personalities</h3>
-                  <p className="card-text text-muted">A free personality type test based on the Myers-Briggs framework that
-                    gives insight into your traits and work life.</p>
-                  <p className="small fw-bold mb-3"><i className="bi bi-clock"></i> Quick Stat: 10 mins | Free</p>
-                  <a href="https://www.16personalities.com/" target="_blank" rel="noreferrer noopener" className="btn btn-primary px-4 mt-auto">Take
-                    Assessment</a>
+                  <p className="card-text text-muted">
+                    A free personality type test based on the Myers-Briggs
+                    framework that gives insight into your traits and work life.
+                  </p>
+                  <p className="small fw-bold mb-3">
+                    <i className="bi bi-clock"></i> Quick Stat: 10 mins | Free
+                  </p>
+                  <a
+                    href="https://www.16personalities.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="btn btn-primary px-4 mt-auto"
+                  >
+                    Take Assessment
+                  </a>
                 </div>
               </div>
             </div>
@@ -46,11 +64,26 @@ export default function Assessments() {
           <div className="col-lg-4">
             <div className="card h-100 assessment-card text-center animate-scale-up">
               <div className="card-body d-flex flex-column">
-                <img loading="lazy" src="/images/resources-imgs/assessments-imgs/truity.png" alt="Truity" className="img-fluid mb-3 max-w-100 mx-auto" />
+                <img
+                  loading="lazy"
+                  src="/images/resources-imgs/assessments-imgs/truity.png"
+                  alt="Truity"
+                  className="img-fluid mb-3 max-w-100 mx-auto"
+                />
                 <h3 className="card-title h4 fw-bold">Truity</h3>
-                <p className="card-text text-muted">A 15-minute free assessment to match you with suitable careers.</p>
+                <p className="card-text text-muted">
+                  A 15-minute free assessment to match you with suitable
+                  careers.
+                </p>
                 <p className="small fw-bold mb-3">Quick Stat: 15 mins | Free</p>
-                <a href="https://www.truity.com/" target="_blank" rel="noreferrer noopener" className="btn btn-primary w-100 mt-auto">Start Quiz</a>
+                <a
+                  href="https://www.truity.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="btn btn-primary w-100 mt-auto"
+                >
+                  Start Quiz
+                </a>
               </div>
             </div>
           </div>
@@ -60,53 +93,105 @@ export default function Assessments() {
           <div className="col-md-6 col-lg-3">
             <div className="card h-100 assessment-card text-center animate-scale-up">
               <div className="card-body p-4 d-flex flex-column">
-                <img loading="lazy" src="/images/resources-imgs/assessments-imgs/careerfitter.png" alt="CareerFitter" className="img-fluid mb-2 max-w-80" />
+                <img
+                  loading="lazy"
+                  src="/images/resources-imgs/assessments-imgs/careerfitter.png"
+                  alt="CareerFitter"
+                  className="img-fluid mb-2 max-w-80"
+                />
                 <h5 className="fw-bold">CareerFitter</h5>
-                <p className="small text-muted">Focuses on work personality and home/work balance.</p>
+                <p className="small text-muted">
+                  Focuses on work personality and home/work balance.
+                </p>
                 <p className="extra-small fw-bold mb-3">10 mins | Free</p>
-                <a href="https://www.careerfitter.com/free_test/careerbuilder/test" target="_blank" rel="noreferrer noopener"
-                  className="btn btn-primary btn-sm w-100 mt-auto">Start Quiz</a>
+                <a
+                  href="https://www.careerfitter.com/free_test/careerbuilder/test"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="btn btn-primary btn-sm w-100 mt-auto"
+                >
+                  Start Quiz
+                </a>
               </div>
             </div>
           </div>
           <div className="col-md-6 col-lg-3">
             <div className="card h-100 assessment-card text-center animate-scale-up">
               <div className="card-body p-4 d-flex flex-column">
-                <img loading="lazy" src="/images/resources-imgs/assessments-imgs/bigfuture.png" alt="BigFuture" className="img-fluid mb-2 max-w-80" />
+                <img
+                  loading="lazy"
+                  src="/images/resources-imgs/assessments-imgs/bigfuture.png"
+                  alt="BigFuture"
+                  className="img-fluid mb-2 max-w-80"
+                />
                 <h5 className="fw-bold">BigFuture</h5>
-                <p className="small text-muted">College Board quiz matching interests to careers.</p>
+                <p className="small text-muted">
+                  College Board quiz matching interests to careers.
+                </p>
                 <p className="extra-small fw-bold mb-3">15 mins | Free</p>
-                <a href="https://bigfuture.collegeboard.org/career-search/career-quiz" target="_blank" rel="noreferrer noopener"
-                  className="btn btn-primary btn-sm w-100 mt-auto">Start Quiz</a>
+                <a
+                  href="https://bigfuture.collegeboard.org/career-search/career-quiz"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="btn btn-primary btn-sm w-100 mt-auto"
+                >
+                  Start Quiz
+                </a>
               </div>
             </div>
           </div>
           <div className="col-md-6 col-lg-3">
             <div className="card h-100 assessment-card text-center animate-scale-up">
               <div className="card-body p-4 d-flex flex-column">
-                <img loading="lazy" src="/images/resources-imgs/assessments-imgs/coursera.png" alt="Coursera" className="img-fluid mb-2 max-w-80" />
+                <img
+                  loading="lazy"
+                  src="/images/resources-imgs/assessments-imgs/coursera.png"
+                  alt="Coursera"
+                  className="img-fluid mb-2 max-w-80"
+                />
                 <h5 className="fw-bold">Coursera</h5>
-                <p className="small text-muted">A deep dive into skills, interests, and working styles.</p>
+                <p className="small text-muted">
+                  A deep dive into skills, interests, and working styles.
+                </p>
                 <p className="extra-small fw-bold mb-3">20 mins | Free</p>
-                <a href="https://www.coursera.org/resources/career-quiz" target="_blank" rel="noreferrer noopener"
-                  className="btn btn-primary btn-sm w-100 mt-auto">Explore</a>
+                <a
+                  href="https://www.coursera.org/resources/career-quiz"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="btn btn-primary btn-sm w-100 mt-auto"
+                >
+                  Explore
+                </a>
               </div>
             </div>
           </div>
           <div className="col-md-6 col-lg-3">
             <div className="card h-100 assessment-card text-center animate-scale-up">
               <div className="card-body p-4 d-flex flex-column">
-                <img loading="lazy" src="/images/resources-imgs/assessments-imgs/Onet.png" alt="O*net" className="img-fluid mb-2 max-w-80" />
+                <img
+                  loading="lazy"
+                  src="/images/resources-imgs/assessments-imgs/Onet.png"
+                  alt="O*net"
+                  className="img-fluid mb-2 max-w-80"
+                />
                 <h5 className="fw-bold">O*NET</h5>
-                <p className="small text-muted">The industry standard for detailed job exploration.</p>
+                <p className="small text-muted">
+                  The industry standard for detailed job exploration.
+                </p>
                 <p className="extra-small fw-bold mb-3">15 mins | Free</p>
-                <a href="https://www.onetonline.org/" target="_blank" rel="noreferrer noopener"
-                  className="btn btn-primary btn-sm w-100 mt-auto">Go</a>
+                <a
+                  href="https://www.onetonline.org/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="btn btn-primary btn-sm w-100 mt-auto"
+                >
+                  Go
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-  )
+  );
 }

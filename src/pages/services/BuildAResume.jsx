@@ -1,89 +1,106 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 
 export default function BuildAResume() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
-  const [summary, setSummary] = useState('')
-  const [experience, setExperience] = useState('')
-  const [education, setEducation] = useState('')
-  const [skills, setSkills] = useState('')
-  const [copyStatus, setCopyStatus] = useState('Copy')
-  const STORAGE_KEY = 'buildResumeDraft'
-  const [templateApplied, setTemplateApplied] = useState(null)
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [summary, setSummary] = useState("");
+  const [experience, setExperience] = useState("");
+  const [education, setEducation] = useState("");
+  const [skills, setSkills] = useState("");
+  const [copyStatus, setCopyStatus] = useState("Copy");
+  const STORAGE_KEY = "buildResumeDraft";
+  const [templateApplied, setTemplateApplied] = useState(null);
 
   useEffect(() => {
     try {
-      const raw = localStorage.getItem(STORAGE_KEY)
+      const raw = localStorage.getItem(STORAGE_KEY);
       if (raw) {
-        const data = JSON.parse(raw)
-        if (data.name) setName(data.name)
-        if (data.email) setEmail(data.email)
-        if (data.phone) setPhone(data.phone)
-        if (data.summary) setSummary(data.summary)
-        if (data.experience) setExperience(data.experience)
-        if (data.education) setEducation(data.education)
-        if (data.skills) setSkills(data.skills)
+        const data = JSON.parse(raw);
+        if (data.name) setName(data.name);
+        if (data.email) setEmail(data.email);
+        if (data.phone) setPhone(data.phone);
+        if (data.summary) setSummary(data.summary);
+        if (data.experience) setExperience(data.experience);
+        if (data.education) setEducation(data.education);
+        if (data.skills) setSkills(data.skills);
       }
       // check if draft was applied from a template
       try {
-        const src = localStorage.getItem('buildResumeDraftSource')
+        const src = localStorage.getItem("buildResumeDraftSource");
         if (src) {
-          setTemplateApplied(src)
-          localStorage.removeItem('buildResumeDraftSource')
-          setTimeout(() => setTemplateApplied(null), 3000)
+          setTemplateApplied(src);
+          localStorage.removeItem("buildResumeDraftSource");
+          setTimeout(() => setTemplateApplied(null), 3000);
         }
       } catch (e) {}
     } catch (e) {
       // ignore parse/storage errors
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
     const t = setTimeout(() => {
-      const data = { name, email, phone, summary, experience, education, skills }
+      const data = {
+        name,
+        email,
+        phone,
+        summary,
+        experience,
+        education,
+        skills,
+      };
       try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(data))
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
       } catch (e) {
         // ignore
       }
-    }, 500)
-    return () => clearTimeout(t)
-  }, [name, email, phone, summary, experience, education, skills])
+    }, 500);
+    return () => clearTimeout(t);
+  }, [name, email, phone, summary, experience, education, skills]);
 
   const handleCopy = async () => {
-    const parts = []
-    if (name) parts.push(name)
-    const contact = [email, phone].filter(Boolean).join(' | ')
-    if (contact) parts.push(contact)
-    if (summary) parts.push('\nSummary:\n' + summary)
-    if (experience) parts.push('\nExperience:\n' + experience)
-    if (education) parts.push('\nEducation:\n' + education)
-    if (skills) parts.push('\nSkills:\n' + skills.split(',').map(s => s.trim()).join(', '))
+    const parts = [];
+    if (name) parts.push(name);
+    const contact = [email, phone].filter(Boolean).join(" | ");
+    if (contact) parts.push(contact);
+    if (summary) parts.push("\nSummary:\n" + summary);
+    if (experience) parts.push("\nExperience:\n" + experience);
+    if (education) parts.push("\nEducation:\n" + education);
+    if (skills)
+      parts.push(
+        "\nSkills:\n" +
+          skills
+            .split(",")
+            .map((s) => s.trim())
+            .join(", "),
+      );
 
-    const text = parts.join('\n\n') || ' ' // copy something so clipboard API succeeds
+    const text = parts.join("\n\n") || " "; // copy something so clipboard API succeeds
 
     try {
-      await navigator.clipboard.writeText(text)
-      setCopyStatus('Copied!')
-      setTimeout(() => setCopyStatus('Copy'), 2000)
+      await navigator.clipboard.writeText(text);
+      setCopyStatus("Copied!");
+      setTimeout(() => setCopyStatus("Copy"), 2000);
     } catch (err) {
-      setCopyStatus('Failed')
-      setTimeout(() => setCopyStatus('Copy'), 2000)
+      setCopyStatus("Failed");
+      setTimeout(() => setCopyStatus("Copy"), 2000);
     }
-  }
+  };
 
   const handleClear = () => {
-    if (!window.confirm('Clear all fields? This cannot be undone.')) return
-    setName('')
-    setEmail('')
-    setPhone('')
-    setSummary('')
-    setExperience('')
-    setEducation('')
-    setSkills('')
-    try { localStorage.removeItem(STORAGE_KEY) } catch (e) {}
-  }
+    if (!window.confirm("Clear all fields? This cannot be undone.")) return;
+    setName("");
+    setEmail("");
+    setPhone("");
+    setSummary("");
+    setExperience("");
+    setEducation("");
+    setSkills("");
+    try {
+      localStorage.removeItem(STORAGE_KEY);
+    } catch (e) {}
+  };
 
   return (
     <main>
@@ -93,7 +110,11 @@ export default function BuildAResume() {
       </header>
       {templateApplied && (
         <div className="container">
-          <div className="alert alert-success py-2" role="status" aria-live="polite">
+          <div
+            className="alert alert-success py-2"
+            role="status"
+            aria-live="polite"
+          >
             Template applied: {templateApplied}
           </div>
         </div>
@@ -105,42 +126,85 @@ export default function BuildAResume() {
               <h5 className="mb-2">Step 1: Personal Information</h5>
               <div className="mb-2">
                 <label className="form-label">Name</label>
-                <input value={name} onChange={e => setName(e.target.value)} className="form-control" />
+                <input
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="form-control"
+                />
               </div>
               <div className="mb-2">
                 <label className="form-label">Email</label>
-                <input value={email} onChange={e => setEmail(e.target.value)} type="email" className="form-control" />
+                <input
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  type="email"
+                  className="form-control"
+                />
               </div>
               <div className="mb-2">
                 <label className="form-label">Phone</label>
-                <input value={phone} onChange={e => setPhone(e.target.value)} className="form-control" />
+                <input
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="form-control"
+                />
               </div>
             </div>
 
             <div className="card p-3 mb-3">
               <h5 className="mb-2">Step 2: Professional Summary</h5>
-              <textarea value={summary} onChange={e => setSummary(e.target.value)} className="form-control" rows={4} />
+              <textarea
+                value={summary}
+                onChange={(e) => setSummary(e.target.value)}
+                className="form-control"
+                rows={4}
+              />
             </div>
 
             <div className="card p-3 mb-3">
               <h5 className="mb-2">Step 3: Work Experience</h5>
-              <textarea value={experience} onChange={e => setExperience(e.target.value)} placeholder="Job title, company, achievements..." className="form-control" rows={4} />
+              <textarea
+                value={experience}
+                onChange={(e) => setExperience(e.target.value)}
+                placeholder="Job title, company, achievements..."
+                className="form-control"
+                rows={4}
+              />
             </div>
 
             <div className="card p-3 mb-3">
               <h5 className="mb-2">Step 4: Education</h5>
-              <textarea value={education} onChange={e => setEducation(e.target.value)} placeholder="School, degree, year..." className="form-control" rows={3} />
+              <textarea
+                value={education}
+                onChange={(e) => setEducation(e.target.value)}
+                placeholder="School, degree, year..."
+                className="form-control"
+                rows={3}
+              />
             </div>
 
             <div className="card p-3 mb-3">
               <h5 className="mb-2">Step 5: Skills</h5>
-              <input value={skills} onChange={e => setSkills(e.target.value)} className="form-control" placeholder="Comma separated" />
+              <input
+                value={skills}
+                onChange={(e) => setSkills(e.target.value)}
+                className="form-control"
+                placeholder="Comma separated"
+              />
             </div>
           </div>
 
           <aside className="col-lg-4">
             <div className="card p-3 bg-light position-relative">
-              <div style={{ position: 'absolute', top: '8px', right: '8px', display: 'flex', gap: '8px' }}>
+              <div
+                style={{
+                  position: "absolute",
+                  top: "8px",
+                  right: "8px",
+                  display: "flex",
+                  gap: "8px",
+                }}
+              >
                 <button
                   type="button"
                   className="btn btn-sm btn-outline-danger"
@@ -160,32 +224,51 @@ export default function BuildAResume() {
                   <span className="ms-2">{copyStatus}</span>
                 </button>
               </div>
-              <h4 id="preview-name" className="mb-1">{name || 'Your Name'}</h4>
-              <p id="preview-contact" className="text-muted mb-3">{email || 'Email'}{email && phone ? ' | ' : ''}{phone || 'Phone'}</p>
+              <h4 id="preview-name" className="mb-1">
+                {name || "Your Name"}
+              </h4>
+              <p id="preview-contact" className="text-muted mb-3">
+                {email || "Email"}
+                {email && phone ? " | " : ""}
+                {phone || "Phone"}
+              </p>
 
               <div className="mb-3">
                 <h6 className="mb-1">Summary</h6>
-                <p id="preview-summary" className="mb-0 pre-wrap">{summary}</p>
+                <p id="preview-summary" className="mb-0 pre-wrap">
+                  {summary}
+                </p>
               </div>
 
               <div className="mb-3">
                 <h6 className="mb-1">Experience</h6>
-                <p id="preview-experience" className="mb-0 pre-wrap">{experience}</p>
+                <p id="preview-experience" className="mb-0 pre-wrap">
+                  {experience}
+                </p>
               </div>
 
               <div className="mb-3">
                 <h6 className="mb-1">Education</h6>
-                <p id="preview-education" className="mb-0 pre-wrap">{education}</p>
+                <p id="preview-education" className="mb-0 pre-wrap">
+                  {education}
+                </p>
               </div>
 
               <div>
                 <h6 className="mb-1">Skills</h6>
-                <p id="preview-skills" className="mb-0">{skills ? skills.split(',').map(s => s.trim()).join(' • ') : ''}</p>
+                <p id="preview-skills" className="mb-0">
+                  {skills
+                    ? skills
+                        .split(",")
+                        .map((s) => s.trim())
+                        .join(" • ")
+                    : ""}
+                </p>
               </div>
             </div>
           </aside>
         </div>
       </div>
     </main>
-  )
+  );
 }
