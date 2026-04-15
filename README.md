@@ -19,19 +19,11 @@ npm run dev
 ### ISSUES:
 - the stories in the stories page are fake placeholders AHHHHHH
 - need a picture for the second guy we quoted on the homepage
+- the deployment goes to a 404 when you reload the page on anything other than the homepage
 
 
 ### CHANGES FROM MAIN:
-- The state content is in a component, so it keeps the size of the page down.
-- I added some new icons to explore, they are all from flaticon.com
-- The Navbar is position absolute and there is some javascript to make each page 
-- The Navbar page you are on is indicated in blue.
-- images are now organized simlarly to how the pages are.
-- Made a component for the cards in the career pages.
-- Put animation related styles into /styles/animations.css
-- Split the style.css file into multiple files in the new styles folder
-- Made a component for the career pages
-- the fonts got changed when I moved it to react for some reason lol
+- None! we merged it in and deployed it!
 
 
 ### IDEAS:
@@ -40,10 +32,10 @@ npm run dev
 - We could add dark mode, but its not at all necessary.
 - We could put similar pages into components to reduce file size
 - mobile optimizations
--  add actual stories to the stories page instead of fake placeholders
 - have the odd footer links play an animation on the nav items they relate to
 - the css no longer uses vars for colors so I should add that back
 - soon I should do backend stuff (make the contact page actually email people, make the donation section work)
+- make the pages with the gradeint stay at the point of the gradient they were at before when switching between pages that both have it
 
 
 ### DOING (first priority anyway) 
