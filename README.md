@@ -19,12 +19,9 @@ npm run dev
 ### ISSUES:
 - the stories in the stories page are fake placeholders AHHHHHH
 - need a picture for the second guy we quoted on the homepage
-- the deployment goes to a 404 when you reload the page on anything other than the homepage
-
-
-### CHANGES FROM MAIN:
-- None! we merged it in and deployed it!
-
+- the contact page does not work
+- the donation defaults are too high and they do not work
+- a lot of the state content is missing
 
 ### IDEAS:
 - We could add the career pages to the navbar somehow
@@ -40,3 +37,22 @@ npm run dev
 
 ### DOING (first priority anyway) 
 - messing with prettier and eslint
+- making contact page work
+
+## Contact form: EmailJS setup
+
+This project uses EmailJS to send contact form messages from the client. To enable sending:
+
+1. Create an account at https://www.emailjs.com and add an email service (e.g., SMTP or Gmail).
+2. Create an email template that accepts `from_name`, `from_email`, `message`, and `to_email` (the code sets `to_email` to `christopher@noahcareercoachingapp.com`).
+3. In the project root create a `.env` file and add the following Vite env vars (replace placeholders):
+
+```
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_USER_ID=your_user_id
+```
+
+4. Restart the dev server: `npm run dev`.
+
+Notes: if you prefer a different provider (Formspree, Netlify Forms, a server endpoint), I can adapt the code accordingly.
