@@ -7,6 +7,17 @@ export default function Navbar() {
   const isActive = (path) => location.pathname === path;
   const isSectionActive = (prefix) => location.pathname.startsWith(prefix);
   const [activeAboutSection, setActiveAboutSection] = useState(null);
+  const [theme, setTheme] = useState(() => {
+    try {
+      const saved = localStorage.getItem("theme");
+      if (saved) return saved;
+      const prefersDark =
+        window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      return prefersDark ? "dark" : "light";
+    } catch (e) {
+      return "light";
+    }
+  });
   const navRef = useRef(null);
 
   useEffect(() => {
@@ -399,6 +410,19 @@ export default function Navbar() {
                 DONATE
               </a>
             </div>
+            <div className="text-center">
+              <button
+                id="themeToggleBtn"
+                onClick={() => setTheme((t) => (t === "dark" ? "light" : "dark"))}
+                className={`btn ${theme === "dark" ? "btn-warning is-dark" : "btn-outline-warning"} navfont ms-lg-3`}
+                aria-label="Toggle theme"
+                title="Toggle theme"
+                aria-pressed={theme === "dark"}
+              >
+                <i className={theme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-fill"} aria-hidden="true"></i>
+              </button>
+            </div>
+            
           </div>
         </div>
       </nav>

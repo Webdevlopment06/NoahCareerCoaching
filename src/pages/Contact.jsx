@@ -36,43 +36,8 @@ export default function Contact() {
     return null;
   };
 
-  // Sends email via EmailJS REST API. Configure the following Vite env vars:
-  // VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_USER_ID
-  const sendEmail = async () => {
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-    const userId = import.meta.env.VITE_EMAILJS_USER_ID;
-
-    if (!serviceId || !templateId || !userId) {
-      throw new Error("Email service not configured. Set EmailJS env vars.");
-    }
-
-    const payload = {
-      service_id: serviceId,
-      template_id: templateId,
-      user_id: userId,
-      template_params: {
-        to_email: "christopher@noahcareercoachingapp.com",
-        from_name: name,
-        from_email: email,
-        message,
-      },
-    };
-
-    const res = await fetch("https://api.emailjs.com/api/v1.0/email/send", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(payload),
-    });
-
-    if (!res.ok) {
-      const text = await res.text();
-      throw new Error(text || "Failed to send email");
-    }
-  };
-
+  // Sends email via FormSubmit (no account required).
+  // First submission will send a verification email to the recipient.
   const handleSubmit = async (e) => {
     e.preventDefault();
     const err = validate();
@@ -85,7 +50,26 @@ export default function Contact() {
     setStatus(null);
 
     try {
-      await sendEmail();
+      const res = await fetch(
+        "https://formsubmit.co/ajax/christopher@noahcareercoachingapp.com",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name,
+            email,
+            message,
+            _subject: "Website contact",
+            _captcha: true,
+          }),
+        },
+      );
+
+      if (!res.ok) {
+        const text = await res.text();
+        throw new Error(text || "Failed to send message");
+      }
+
       setStatus({ type: "success", text: "Message sent — thank you!" });
       localStorage.removeItem("contactDraft");
       setName("");

@@ -25,16 +25,17 @@ npm run dev
 
 ### IDEAS:
 - We could add the career pages to the navbar somehow
-- I have been looking at ESlint, it could help keep the code clean and bug free without much added in the way of packages
 - We could add dark mode, but its not at all necessary.
 - We could put similar pages into components to reduce file size
 - mobile optimizations
 - have the odd footer links play an animation on the nav items they relate to
 - the css no longer uses vars for colors so I should add that back
-- soon I should do backend stuff (make the contact page actually email people, make the donation section work)
+- soon I should do backend stuff (make the contact page email immediately, make the donation section work)
 - make the pages with the gradeint stay at the point of the gradient they were at before when switching between pages that both have it
+- decide some rules for eslint and make it run throught the code and syncronise the style
 
 
 ### DOING (first priority anyway) 
 - messing with prettier and eslint
 - making contact page work
+- dark mode

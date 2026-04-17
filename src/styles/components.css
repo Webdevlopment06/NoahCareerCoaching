@@ -67,6 +67,16 @@
   border: none;
 }
 
+/* When the sun is shown (button has .is-dark), hovering should show white bg and yellow sun */
+#themeToggleBtn.is-dark:hover {
+  background: #ffffff !important;
+  color: var(--accent, #f1b327) !important;
+  border-color: var(--accent, #f1b327) !important;
+}
+#themeToggleBtn.is-dark:hover .bi-sun-fill {
+  color: var(--accent, #f1b327) !important;
+}
+
 /* 7. STATE MAP & LABELS */
 #map-container {
   position: relative;
