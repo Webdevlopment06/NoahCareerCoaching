@@ -212,9 +212,11 @@ export default function Navbar() {
                       </div>
                       <div className="col-md-6">
                         <a
-                          className={`dropdown-item ${location.pathname === "/about" && (location.hash === "#donation" || activeAboutSection === "donation") ? "nav-active" : ""}`}
-                          href="/about#donation"
-                          onClick={(e) => handleHash(e, "/about", "donation")}
+                          className={`dropdown-item ${location.pathname === "/about"  ? "nav-active" : ""}`}
+                          href="https://givebutter.com/I7JPWd"
+                          target="blank"
+                          rel="noopener noreferrer"
+                          
                         >
                           Donation
                         </a>
