@@ -394,8 +394,9 @@ export default function Navbar() {
             </div>
             <div className="text-center">
               <a
-                href="/about#donation"
-                onClick={(e) => handleHash(e, "/about", "donation")}
+                href="https://givebutter.com/I7JPWd"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-warning navfont ms-lg-3"
               >
                 DONATE
