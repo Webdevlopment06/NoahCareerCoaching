@@ -2,6 +2,43 @@
    BASE STYLES
    ========================================================================== */
 
+/* Light-mode color tokens (use these throughout styles) */
+:root {
+  --primary: #1800ad;
+  --accent: #f1b327;
+  --white: #ffffff;
+  --black: #000000;
+  --text: #222222;
+  --muted: #6b7280;
+  --bg: #ffffff;
+  --surface: #fcfcfc;
+  --nav-bg: #ededed;
+  --card-bg: #ffffff;
+  --border: #f0f0f0;
+  --glass-bg: rgba(255,255,255,0.35);
+  --label-bg: rgba(255,255,255,0.85);
+  --grad-blue-start: #1e3c72;
+  --grad-blue-end: #2a5298;
+  --grad-pink-start: #ff416c;
+  --grad-pink-end: #ff4b2b;
+  /* additional light-mode tokens used in utilities */
+  --muted-bg: #e5e7eb;
+  --muted-2: #4b5563;
+  --cta-blue: #2563eb;
+  --cta-blue-dark: #1d4ed8;
+  --page-accent: #ffb700;
+  --neutral-200: #f0f0f0;
+  --danger: #cc0000;
+  --cyan-start: #00d2ff;
+  --cyan-end: #3a7bd5;
+  --light-100: #f8f9fa;
+  --grad-ff-start: #ff6b6b;
+  --grad-ff-end: #ffd93d;
+  --text-dark: #2d3436;
+  --bg-cream: #fff9e6;
+}
+
+
 /* 1. FONTS & GLOBAL TYPOGRAPHY */
 .navfont {
   font-family: var(--body-font);
@@ -11,10 +48,10 @@
   letter-spacing: 0.02em;
 }
 .bg-grad-blue {
-  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  background: linear-gradient(135deg, var(--grad-blue-start) 0%, var(--grad-blue-end) 100%);
 }
 .bg-grad-pink {
-  background: linear-gradient(90deg, #ff416c 0%, #ff4b2b 100%);
+  background: linear-gradient(90deg, var(--grad-pink-start) 0%, var(--grad-pink-end) 100%);
 }
 .heroFont {
   font-family: var(--heading-font);
@@ -29,7 +66,7 @@
 }
 
 .blackText {
-  color: #000000;
+  color: var(--black);
 }
 
 /* Global font fallbacks and defaults */
@@ -47,7 +84,8 @@ body {
 body {
   font-family: var(--body-font);
   font-size: 16px;
-  color: #222;
+  color: var(--text);
+  background-color: var(--bg);
 }
 h1,
 h2,

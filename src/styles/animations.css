@@ -47,7 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0d6efd;
+  color: var(--primary);
   font-size: 26px;
   text-decoration: none;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
@@ -67,10 +67,10 @@
   /* swapped: yellow -> indigo, using only the two licensed colors */
   background: linear-gradient(
     270deg,
-    #f1b327 0%,
-    #f1b327 35%,
-    #1800ad 65%,
-    #1800ad 100%
+    var(--accent) 0%,
+    var(--accent) 35%,
+    var(--primary) 65%,
+    var(--primary) 100%
   );
   background-size: 400% 400%;
 
@@ -159,7 +159,7 @@
 #founder .animate-scale-up:hover,
 .donation-section .animate-scale-up:hover {
   transform: translateY(-6px);
-  border: 1px solid #1800ad;
+  border: 1px solid var(--primary);
   box-shadow: 0 10px 20px rgba(24, 0, 173, 0.2);
 }
 
@@ -173,7 +173,7 @@
 
 .animate-scale-up-blue-outline:hover {
   transform: scale(1.04);
-  border: 1px solid #1800ad !important;
+  border: 1px solid var(--primary) !important;
   box-shadow: 0 10px 20px rgba(24, 0, 173, 0.2);
 }
 
@@ -210,5 +210,5 @@
 }
 
 .hero-btn-swoosh:hover {
-  color: #000;
+  color: var(--text);
 }

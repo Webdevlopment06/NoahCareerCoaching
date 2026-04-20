@@ -14,7 +14,7 @@
   gap: 2rem;
 }
 .resume-template-card {
-  background: #ffffff;
+  background: var(--card-bg);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
@@ -28,12 +28,12 @@
 }
 .resume-template-preview {
   height: 320px;
-  background: #e5e7eb;
+  background: var(--muted-bg);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #6b7280;
+  color: var(--muted);
 }
 .resume-template-body {
   padding: 1rem;
@@ -43,7 +43,7 @@
 }
 .resume-template-body p {
   font-size: 0.9rem;
-  color: #4b5563;
+  color: var(--muted-2);
   margin-bottom: 1rem;
 }
 .resume-template-actions {
@@ -59,14 +59,14 @@
   font-weight: bold;
 }
 .resume-template-btn-preview {
-  background: #e5e7eb;
+  background: var(--muted-bg);
 }
 .resume-template-btn-select {
-  background: #2563eb;
-  color: white;
+  background: var(--cta-blue);
+  color: var(--white);
 }
 .resume-template-btn-select:hover {
-  background: #1d4ed8;
+  background: var(--cta-blue-dark);
 }
 
 /* About page specific classes to replace inline styles */
@@ -80,7 +80,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;
+  color: var(--white);
 }
 .about-hero-overlay {
   position: absolute;
@@ -88,21 +88,21 @@
   background: rgba(0, 0, 0, 0.45);
 }
 .about-founder {
-  background: #ffb700;
+  background: var(--page-accent);
   padding: 40px 0;
 }
 .about-join {
-  background-color: #1800ad;
+  background-color: var(--primary);
 }
 .donation-section {
-  background-color: #f1b327;
-  color: white;
+  background-color: var(--accent);
+  color: var(--white);
 }
 .about-hero .display-3 {
-  color: #f1b327;
+  color: var(--accent);
 }
 .about-hero .lead {
-  color: #f1b327;
+  color: var(--accent);
 }
 
 /* Utility classes to replace inline React style={{}} usage */
@@ -121,13 +121,13 @@
   object-fit: cover;
 }
 .text-black {
-  color: #000 !important;
+  color: var(--black) !important;
 }
 .bg-e9f7ef {
-  background-color: #e9f7ef !important;
+  background-color: var(--muted-bg) !important;
 }
 .bg-e3e3e3 {
-  background-color: #e3e3e3 !important;
+  background-color: var(--neutral-200) !important;
 }
 .lh-140 {
   line-height: 1.4 !important;
@@ -147,7 +147,7 @@
   object-fit: cover;
 }
 .nav-active {
-  color: #1800ad !important;
+  color: var(--primary) !important;
   font-weight: 700 !important;
 }
 .icon-svg-small {
@@ -182,18 +182,18 @@
 
 /* Yellow -> Indigo gradient used for internship and other CTAs */
 .bg-grad-yellow-indigo {
-  background: linear-gradient(135deg, #f1b327 0%, #1800ad 100%);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
 }
 
 /* Light page background helper */
 .bg-f0f4f8 {
-  background-color: #f0f4f8;
+  background-color: var(--muted-bg);
 }
 
 /* Page header helper */
 .page-header {
-  background: #1800ad;
-  color: #f8f8f8;
+  background: var(--primary);
+  color: var(--white);
   padding: 2rem;
   text-align: center;
 }
@@ -216,19 +216,19 @@
 .letter-box {
   height: 250px;
   width: 100%;
-  background: #f0f0f0;
+  background: var(--neutral-200);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #cc0000;
+  color: var(--danger);
   font-size: 80px;
 }
 .bg-grad-cyan {
-  background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+  background: linear-gradient(90deg, var(--cyan-start) 0%, var(--cyan-end) 100%);
 }
 .bg-f1b327 {
-  background-color: #f1b327 !important;
+  background-color: var(--accent) !important;
 }
 
 /* Image helper: common rounded + shadow used across career pages */
@@ -245,7 +245,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f8f9fa; /* matches Bootstrap bg-light */
+  background-color: var(--light-100); /* matches Bootstrap bg-light */
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 0.75rem; /* close to rounded-4 */
   padding: 1rem; /* replaces p-3 */
@@ -253,7 +253,7 @@
 /* Consolidated skills / future panel to reduce repeated class lists */
 .skills-panel {
   margin-bottom: 3rem; /* matches mb-5 */
-  background-color: #ffffff; /* bg-white */
+  background-color: var(--card-bg); /* bg-white */
   border-radius: 1rem; /* similar to rounded-4 */
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* subtle shadow */
   padding: 1.5rem; /* p-4 */
@@ -271,20 +271,20 @@
   align-items: center !important;
 }
 .bg-grad-ff6b6b {
-  background: linear-gradient(135deg, #ff6b6b 0%, #ffd93d 100%);
+  background: linear-gradient(135deg, var(--grad-ff-start) 0%, var(--grad-ff-end) 100%);
 }
 .text-2d3436 {
-  color: #2d3436 !important;
+  color: var(--text-dark) !important;
 }
 .bg-fff9e6 {
-  background-color: #fff9e6 !important;
+  background-color: var(--bg-cream) !important;
 }
 .text-ff6b6b {
-  color: #ff6b6b !important;
+  color: var(--grad-ff-start) !important;
 }
 .bg-2d3436 {
-  background-color: #2d3436 !important;
-  color: #fff !important;
+  background-color: var(--text-dark) !important;
+  color: var(--white) !important;
 }
 .icon-120 {
   font-size: 120px !important;
@@ -302,7 +302,7 @@
   border-radius: 50%;
 }
 .text-f1b327 {
-  color: #f1b327 !important;
+  color: var(--accent) !important;
 }
 .max-w-140 {
   max-width: 140px !important;

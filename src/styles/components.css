@@ -13,19 +13,19 @@
   overflow: hidden;
 }
 .blue-card-box {
-  background-color: #1800ad;
+  background-color: var(--primary);
   border-radius: 20px;
 }
 .white-card-box {
-  background-color: #fff;
-  border: 1px solid #1800ad;
+  background-color: var(--card-bg);
+  border: 1px solid var(--primary);
   border-radius: 20px;
-  color: #000;
+  color: var(--text);
 }
 
 /* NEW: Icon Container Fixes */
 .icon-header {
-  background: #fcfcfc;
+  background: var(--surface);
   height: 100px;
   display: flex;
   align-items: center;
@@ -48,22 +48,22 @@
     color 0.2s ease;
 }
 .icon-circle:hover {
-  background-color: #000;
+  background-color: var(--black);
 }
 .icon-circle:hover i {
-  color: #fff !important;
-  fill: #fff !important;
+  color: var(--white) !important;
+  fill: var(--white) !important;
 }
 
 /* 6. BUTTONS */
 .orange-button {
-  background-color: #f1b327;
-  color: #fff;
+  background-color: var(--accent);
+  color: var(--white);
   border: none;
 }
 .blue-button {
-  background-color: #1800ad;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--white);
   border: none;
 }
 
@@ -92,8 +92,8 @@
   position: absolute;
   text-decoration: none;
   font-weight: bold;
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--text);
+  background-color: var(--label-bg);
   padding: 1px 3px;
   border-radius: 2px;
   z-index: 10;
@@ -106,8 +106,8 @@
 
 .state-label:hover,
 .state-label.active {
-  background-color: #0d6efd;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--white);
   transform: scale(1.1);
   z-index: 15;
 }
