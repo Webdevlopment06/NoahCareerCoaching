@@ -20,6 +20,18 @@ export default function Navbar() {
   });
   const navRef = useRef(null);
 
+  // sync theme state to document (data-theme and Bootstrap data-bs-theme)
+  useEffect(() => {
+    try {
+      localStorage.setItem("theme", theme);
+      document.documentElement.setAttribute("data-theme", theme);
+      document.documentElement.setAttribute("data-bs-theme", theme);
+      document.documentElement.classList.toggle("dark", theme === "dark");
+    } catch (e) {
+      // ignore
+    }
+  }, [theme]);
+
   useEffect(() => {
     const nav = navRef.current;
     if (!nav) return;

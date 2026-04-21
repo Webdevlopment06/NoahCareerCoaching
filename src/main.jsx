@@ -13,16 +13,26 @@ import "./styles/animations.css"; // Import animations
 import App from "./App";
 
 // Initialize theme early to avoid flash of incorrect theme
+const applyThemeToDocument = (theme) => {
+  try {
+    document.documentElement.setAttribute("data-theme", theme);
+    document.documentElement.setAttribute("data-bs-theme", theme);
+    document.documentElement.classList.toggle("dark", theme === "dark");
+  } catch (e) {
+    // ignore
+  }
+};
+
 const initTheme = () => {
   try {
     const saved = localStorage.getItem("theme");
     if (saved) {
-      document.documentElement.classList.toggle("dark", saved === "dark");
+      applyThemeToDocument(saved);
       return;
     }
     const prefersDark =
       window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-    document.documentElement.classList.toggle("dark", !!prefersDark);
+    applyThemeToDocument(prefersDark ? "dark" : "light");
   } catch (e) {
     // ignore
   }

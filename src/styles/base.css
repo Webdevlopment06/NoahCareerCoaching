@@ -75,6 +75,65 @@
   --heading-font: "Outfit", sans-serif;
 }
 
+/* Dark theme overrides (Bootstrap 5.3 friendly) */
+:root[data-theme="dark"],
+.dark {
+  --white: #ffffff;
+  --black: #000000;
+  --text: #e6eef8;
+  --muted: #9ca3af;
+  --bg: #071022;
+  --surface: #0b1320;
+  --nav-bg: #07121b;
+  --card-bg: #081223;
+  --border: #1f2937;
+  --glass-bg: rgba(255,255,255,0.03);
+  --label-bg: rgba(255,255,255,0.04);
+  --grad-blue-start: #0f172a;
+  --grad-blue-end: #12263a;
+  --grad-pink-start: #ff6b6b;
+  --grad-pink-end: #ff4b2b;
+  --muted-bg: #071321;
+  --muted-2: #9aa1aa;
+  --cta-blue: #2563eb;
+  --cta-blue-dark: #1d4ed8;
+  --page-accent: #ffb700;
+  --neutral-200: #0f1724;
+  --danger: #ff6b6b;
+  --cyan-start: #00d2ff;
+  --cyan-end: #3a7bd5;
+  --light-100: #0b1220;
+  --grad-ff-start: #ff6b6b;
+  --grad-ff-end: #ffd93d;
+  --text-dark: #cbd5e1;
+  --bg-cream: #0b0b0b;
+  --banner-bg: #0b1620;
+}
+
+/* Ensure all text uses the theme text color in dark mode (force white-ish text)
+   This overrides utility classes like .text-dark/.text-black when dark theme is active. */
+:root[data-theme="dark"],
+.dark {
+  color: var(--text) !important;
+}
+:root[data-theme="dark"] body,
+:root[data-theme="dark"] body * {
+  color: var(--text) !important;
+}
+:root[data-theme="dark"] .text-dark,
+:root[data-theme="dark"] .text-black,
+:root[data-theme="dark"] .text-2d3436,
+:root[data-theme="dark"] .text-ff6b6b,
+:root[data-theme="dark"] .text-f1b327 {
+  color: var(--text) !important;
+}
+
+/* Keep active nav links using primary blue even in dark mode */
+:root[data-theme="dark"] .nav-active,
+.dark .nav-active {
+  color: var(--primary) !important;
+}
+
 /* Override bootstrap's global smooth scroll - we want instant navigation scroll. this is to fix the problem with the scrolling upon navigation */
 html,
 body {

@@ -29,7 +29,6 @@ npm run dev
 - We could put similar pages into components to reduce file size
 - mobile optimizations
 - have the odd footer links play an animation on the nav items they relate to
-- the css no longer uses vars for colors so I should add that back
 - soon I should do backend stuff (make the contact page email immediately, make the donation section work)
 - make the pages with the gradeint stay at the point of the gradient they were at before when switching between pages that both have it
 - decide some rules for eslint and make it run throught the code and syncronise the style
