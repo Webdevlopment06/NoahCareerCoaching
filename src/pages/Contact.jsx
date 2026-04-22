@@ -11,9 +11,9 @@ export default function Contact() {
   // ==========================================================
   // STEP 1: INPUT YOUR EMAILJS INFO HERE
   // ==========================================================
-  const SERVICE_ID = "service_xxxxxxx"; // Found in 'Email Services' tab
-  const TEMPLATE_ID = "template_xxxxxx"; // Found in 'Email Templates' tab
-  const PUBLIC_KEY = "your_public_key"; // Found in 'Account' -> 'API Keys'
+  const SERVICE_ID = "service_fivfonv"; // Found in 'Email Services' tab
+  const TEMPLATE_ID = "template_5uqlm4r"; // Found in 'Email Templates' tab
+  const PUBLIC_KEY = "fWT1vflfA0awaRRiu"; // Found in 'Account' -> 'API Keys'
   // ==========================================================
 
   useEffect(() => {
