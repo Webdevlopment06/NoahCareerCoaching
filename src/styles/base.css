@@ -134,6 +134,41 @@
   color: var(--primary) !important;
 }
 
+/* Utility: force black text for elements that must stay black in both themes */
+.keep-black {
+  color: var(--black) !important;
+}
+/* Ensure .keep-black wins over the global dark-mode text override */
+:root[data-theme="dark"] .keep-black,
+.dark .keep-black {
+  color: var(--black) !important;
+}
+
+/* Prevent .keep-black from forcing all descendant elements to black when
+   applied to a container. Descendants without their own .keep-black class
+   will use the normal theme text color. */
+.keep-black *:not(.keep-black) {
+  color: var(--text) !important;
+}
+
+/* Consolidated dark-mode override for sections that should flip to dark background */
+:root[data-theme="dark"] .darkmode-override,
+.dark .darkmode-override {
+  background-color: var(--black) !important;
+  color: var(--text) !important;
+}
+/* Ensure nested utility backgrounds/cards inside the override also flip */
+:root[data-theme="dark"] .darkmode-override .bg-light,
+.dark .darkmode-override .bg-light,
+:root[data-theme="dark"] .darkmode-override .bg-white,
+.dark .darkmode-override .bg-white,
+:root[data-theme="dark"] .darkmode-override .card.bg-light,
+.dark .darkmode-override .card.bg-white {
+  background-color: var(--black) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+
 /* Override bootstrap's global smooth scroll - we want instant navigation scroll. this is to fix the problem with the scrolling upon navigation */
 html,
 body {

@@ -16,7 +16,7 @@ export default function InternshipPath() {
         </div>
       </ServiceHero>
 
-      <section className="py-5 bg-white">
+      <section className="py-5 bg-white darkmode-override">
         <div className="container">
           <h2 className="text-center fw-bold mb-5">
             THE ANATOMY OF A STANDOUT INTERN
@@ -62,12 +62,12 @@ export default function InternshipPath() {
         </div>
       </section>
 
-      <section className="py-5 bg-light">
+      <section className="py-5 bg-light darkmode-override">
         <div className="container text-center">
           <h3 className="fw-bold mb-5">FROM THEORY TO IMPACT</h3>
           <div className="row justify-content-center align-items-center">
             <div className="col-md-5">
-              <div className="p-4 rounded-pill bg-light border border-primary text-primary flex-ai-center shadow-sm">
+              <div className="p-4 rounded-pill bg-light darkmode-override border border-primary text-primary flex-ai-center shadow-sm">
                 <i className="bi bi-book fs-2 me-3"></i>
                 <span className="small">"I learned how to code in Java."</span>
               </div>

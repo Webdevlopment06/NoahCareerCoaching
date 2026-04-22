@@ -92,7 +92,7 @@ export default function Youth() {
         </div>
       </section>
 
-      <section className="py-5 bg-white">
+      <section className="py-5 bg-white darkmode-override">
         <div className="container">
           <h2 className="text-center fw-bold mb-2">
             THE ANATOMY OF A STUDENT RESUME
@@ -104,7 +104,7 @@ export default function Youth() {
 
           <div className="row g-4 align-items-center">
             <div className="col-md-6">
-              <div className="p-4 border rounded-4 shadow-sm bg-light">
+              <div className="p-4 border rounded-4 shadow-sm bg-light darkmode-override">
                 <h5 className="fw-bold">
                   <i className="bi bi-plus-square-fill text-danger me-2"></i>The
                   Reliability Formula
@@ -154,7 +154,7 @@ export default function Youth() {
         </div>
       </section>
 
-      <section className="py-5 bg-light">
+      <section className="py-5 bg-light darkmode-override">
         <div className="container text-center">
           <h3 className="fw-bold mb-2">HOW TO SPEAK "MANAGER"</h3>
           <p className="text-muted mb-5">
@@ -200,7 +200,7 @@ export default function Youth() {
         <div className="container">
           <div className="row align-items-center justify-content-center">
             <div className="col-md-5 text-center mb-4 mb-md-0">
-              <div className="p-4 bg-white rounded-4 shadow border border-warning">
+              <div className="p-4 bg-white rounded-4 shadow border border-warning darkmode-override">
                 <h5 className="fw-bold">Common Interview Questions:</h5>
                 <ul className="text-start small mt-3">
                   <li>
@@ -250,7 +250,7 @@ export default function Youth() {
         </div>
       </section>
 
-      <section className="py-5 bg-white border-top">
+      <section className="py-5 bg-white border-top darkmode-override">
         <div className="container">
           <div className="row g-5">
             <div className="col-lg-7">
@@ -363,7 +363,7 @@ export default function Youth() {
             </div>
 
             <div className="col-lg-5">
-              <div className="card border-0 rounded-4 shadow-sm p-4 bg-white">
+              <div className="card border-0 rounded-4 shadow-sm p-4 bg-white darkmode-override">
                 <h4 className="fw-bold mb-4 text-warning">
                   <i className="bi bi-card-checklist me-2"></i>Grab These
                   Documents

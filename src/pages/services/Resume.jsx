@@ -155,7 +155,7 @@ export default function Resume() {
         </div>
       </div>
 
-      <section className="py-5">
+      <section className="py-5 darkmode-override">
         <div className="container">
           <div className="card border-0 shadow-sm rounded-4 bg-light overflow-hidden">
             <div className="card-body p-4 p-md-5">

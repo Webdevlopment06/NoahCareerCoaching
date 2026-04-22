@@ -16,7 +16,7 @@ export default function JobSearch() {
         </div>
       </ServiceHero>
 
-      <section className="py-5 bg-white">
+      <section className="py-5 bg-white darkmode-override">
         <div className="container">
           <h2 className="text-center fw-bold mb-5">
             THE ANATOMY OF A MODERN CAMPAIGN
@@ -62,12 +62,12 @@ export default function JobSearch() {
         </div>
       </section>
 
-      <section className="py-5 bg-light">
+      <section className="py-5 bg-light darkmode-override">
         <div className="container text-center">
           <h3 className="fw-bold mb-5">UPGRADE YOUR OUTREACH</h3>
           <div className="row justify-content-center align-items-center">
             <div className="col-md-5">
-              <div className="p-4 rounded-4 bg-white border border-secondary text-muted flex-ai-center shadow-sm">
+              <div className="p-4 rounded-4 bg-white darkmode-override border border-secondary text-muted flex-ai-center shadow-sm">
                 <i className="bi bi-mailbox fs-2 me-3"></i>
                 <span className="small">
                   "I applied to 50 jobs on LinkedIn today."
@@ -87,7 +87,7 @@ export default function JobSearch() {
         </div>
       </section>
 
-      <section className="py-5 bg-light">
+      <section className="py-5 bg-light darkmode-override">
         <div className="container">
           <h2 className="fw-bold mb-4 text-center">
             BUILD YOUR SEARCH BLUEPRINT

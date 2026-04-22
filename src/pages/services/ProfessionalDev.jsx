@@ -16,7 +16,7 @@ export default function ProfessionalDev() {
         </div>
       </ServiceHero>
 
-      <section className="py-5 bg-white">
+      <section className="py-5 bg-white darkmode-override">
         <div className="container">
           <h2 className="text-center fw-bold mb-5">
             THE ANATOMY OF A MODERN LEADER
@@ -62,7 +62,7 @@ export default function ProfessionalDev() {
         </div>
       </section>
 
-      <section className="py-5 bg-light">
+      <section className="py-5 bg-light darkmode-override">
         <div className="container text-center">
           <h3 className="fw-bold mb-5">UPGRADING YOUR CAREER MINDSET</h3>
           <div className="row justify-content-center align-items-center">
@@ -87,7 +87,7 @@ export default function ProfessionalDev() {
         </div>
       </section>
 
-      <section className="py-5 bg-light">
+      <section className="py-5 bg-light darkmode-override">
         <div className="container">
           <h2 className="fw-bold mb-4 text-center">
             ADVANCE YOUR CAREER WITH 1-ON-1 COACHING

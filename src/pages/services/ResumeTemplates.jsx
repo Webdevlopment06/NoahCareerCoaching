@@ -195,7 +195,7 @@ export default function ResumeTemplates() {
 
         {preview && (
           <div
-            className="position-fixed top-50 start-50 translate-middle bg-white border rounded p-4"
+            className="position-fixed top-50 start-50 translate-middle bg-white darkmode-override border rounded p-4"
             style={{
               zIndex: 1060,
               width: "min(820px, 95%)",

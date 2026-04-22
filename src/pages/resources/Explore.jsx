@@ -139,7 +139,7 @@ export default function Explore() {
             </div>
             <div className="col-md-4">
               <div className="input-group input-group-sm">
-                <span className="input-group-text bg-white border-end-0">
+                <span className="input-group-text bg-white border-end-0 darkmode-override">
                   <i className="bi bi-search"></i>
                 </span>
                 <input

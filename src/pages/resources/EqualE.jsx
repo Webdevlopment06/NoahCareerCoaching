@@ -36,7 +36,7 @@ export default function EqualE() {
       </section>
 
       {/* protected characteristics */}
-      <section className="py-5 bg-white">
+      <section className="py-5 bg-white darkmode-override">
         <div className="container">
           <h2 className="fw-bold mb-4">Understanding Protected Classes</h2>
           <p className="text-muted mb-5">
@@ -47,7 +47,7 @@ export default function EqualE() {
 
           <div className="row g-4">
             <div className="col-md-4">
-              <div className="h-100 p-4 border-start border-4 border-primary bg-light shadow-sm">
+              <div className="h-100 p-4 border-start border-4 border-primary bg-light shadow-sm darkmode-override">
                 <h5 className="fw-bold">Title VII &amp; ADEA</h5>
                 <p className="small">
                   Protects against discrimination based on{" "}
@@ -75,7 +75,7 @@ export default function EqualE() {
               </div>
             </div>
             <div className="col-md-4">
-              <div className="h-100 p-4 border-start border-4 border-info bg-light shadow-sm">
+              <div className="h-100 p-4 border-start border-4 border-info bg-light shadow-sm darkmode-override">
                 <h5 className="fw-bold">ADA &amp; GINA</h5>
                 <p className="small">
                   Protects qualified individuals with{" "}
@@ -103,7 +103,7 @@ export default function EqualE() {
               </div>
             </div>
             <div className="col-md-4">
-              <div className="h-100 p-4 border-start border-4 border-dark bg-light shadow-sm">
+              <div className="h-100 p-4 border-start border-4 border-dark bg-light shadow-sm darkmode-override">
                 <h5 className="fw-bold">Equal Pay Act</h5>
                 <p className="small">
                   Requires that men and women in the same workplace be given{" "}
@@ -127,7 +127,7 @@ export default function EqualE() {
       </section>
 
       {/* reasonable accommodations */}
-      <section className="py-5 bg-light">
+      <section className="py-5 bg-light darkmode-override">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -193,7 +193,7 @@ export default function EqualE() {
       </section>
 
       {/* reporting a violation */}
-      <section className="py-5 bg-white">
+      <section className="py-5 bg-white darkmode-override">
         <div className="container">
           <div className="text-center mb-5">
             <h2 className="fw-bold">Reporting & Enforcement</h2>
@@ -269,7 +269,7 @@ export default function EqualE() {
       </section>
 
       {/* red flags / green flags */}
-      <section className="py-5 bg-white">
+      <section className="py-5 bg-white darkmode-override">
         <div className="container">
           <h2 className="fw-bold mb-5 text-center">
             Recognizing the Forms of Harassment
@@ -330,7 +330,7 @@ export default function EqualE() {
       </section>
 
       {/* two categories */}
-      <section className="py-5 bg-light border-top border-bottom">
+      <section className="py-5 bg-light border-top border-bottom darkmode-override">
         <div className="container">
           <div className="row align-items-center g-5">
             <div className="col-md-6">
@@ -363,7 +363,7 @@ export default function EqualE() {
       </section>
 
       {/* bystander intervention */}
-      <section className="py-5 bg-white">
+      <section className="py-5 bg-white darkmode-override">
         <div className="container text-center">
           <h2 className="fw-bold mb-4">Be an Upstander, Not a Bystander</h2>
           <p className="mb-5 text-muted mx-auto max-w-700">

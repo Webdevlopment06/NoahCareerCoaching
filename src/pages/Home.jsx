@@ -8,10 +8,10 @@ export default function Home() {
           <div className="row">
             <div className="col-md-8 col-lg-4">
               <div className="hero-content p-4 p-md-0">
-                <h1 className="display-5 fw-bold text-dark mb-3">
+                <h1 className="display-5 fw-bold text-dark keep-black mb-3">
                   Your Career Path Doesn't Have To Be A Solo Journey
                 </h1>
-                <p className="lead mb-4 heroFont text-dark text-bold">
+                <p className="lead mb-4 heroFont text-dark keep-black text-bold">
                   Free, personalized career coaching for job searches and career
                   changes. Get the tools you need to make an impression,
                   regardless of your starting point.
@@ -19,7 +19,7 @@ export default function Home() {
                 <div className="d-grid d-md-block">
                   <a
                     href="/contact"
-                    className="btn btn-warning btn-lg px-5 py-3 shadow-sm fw-bold main-hero-btn hover-shadow hero-btn-swoosh"
+                    className="btn btn-warning btn-lg px-5 py-3 shadow-sm fw-bold main-hero-btn hover-shadow hero-btn-swoosh keep-black"
                   >
                     START MY COACHING JOURNEY
                   </a>

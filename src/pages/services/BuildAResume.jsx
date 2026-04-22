@@ -195,7 +195,7 @@ export default function BuildAResume() {
           </div>
 
           <aside className="col-lg-4">
-            <div className="card p-3 bg-light position-relative">
+            <div className="card p-3 bg-light darkmode-override position-relative">
               <div
                 style={{
                   position: "absolute",

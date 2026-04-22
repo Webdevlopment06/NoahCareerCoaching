@@ -23,6 +23,12 @@ npm run dev
 - the donation defaults are too high and they do not work
 - a lot of the state content is missing
 
+### DARK MODE ISSUES
+- just in general icons lose their color and turn grey or white
+- the three icons in home should have thier hover colors inverted
+- the green outlines on the other elements in home looks odd
+- things are odd in the youth page
+
 ### IDEAS:
 - We could add the career pages to the navbar somehow
 - We could add dark mode, but its not at all necessary.
