@@ -97,7 +97,7 @@ export default function Contact() {
             </li>
             <li className="mb-2">
               <i className="bi bi-telephone-fill me-2"></i>
-              <a href="tel:+12163029179">(216) 302-9179</a>
+              <a href="tel:+12163029179">(216) 800-5846</a>
             </li>
             <li className="mb-2">
               <i className="bi bi-linkedin me-2"></i>
