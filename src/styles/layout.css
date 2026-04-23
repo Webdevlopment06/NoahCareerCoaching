@@ -17,6 +17,22 @@
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
+
+/* Ensure navbar matches site typography (restore pre-dark-mode values) */
+.navfont,
+.navbar .nav-link,
+.navbar .dropdown-toggle,
+.navbar .dropdown-item,
+.navbar .btn {
+  font-family: var(--body-font) !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  letter-spacing: 0.02em !important;
+  text-transform: none !important;
+}
+
+/* navbar typography: no explicit override here to preserve existing site styles */
 .dropdown-menu .dropdown-item {
   font-size: 0.95rem;
 }

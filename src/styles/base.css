@@ -41,11 +41,7 @@
 
 /* 1. FONTS & GLOBAL TYPOGRAPHY */
 .navfont {
-  font-family: var(--body-font);
-  font-size: 0.95rem;
-  font-weight: 600;
-  font-style: normal;
-  letter-spacing: 0.02em;
+  /* removed custom navbar font override to preserve original navbar typography */
 }
 .bg-grad-blue {
   background: linear-gradient(135deg, var(--grad-blue-start) 0%, var(--grad-blue-end) 100%);
@@ -69,7 +65,7 @@
   color: var(--black);
 }
 
-/* Global font fallbacks and defaults */
+/* Global font fallbacks and defaults (restored to original site fonts) */
 :root {
   --body-font: "Outfit", sans-serif;
   --heading-font: "Outfit", sans-serif;

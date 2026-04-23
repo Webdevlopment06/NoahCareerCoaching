@@ -28,6 +28,7 @@ npm run dev
 - the three icons in home should have thier hover colors inverted
 - the green outlines on the other elements in home looks odd
 - things are odd in the youth page
+- the fonts got messed with again somehow?????
 
 ### IDEAS:
 - We could add the career pages to the navbar somehow

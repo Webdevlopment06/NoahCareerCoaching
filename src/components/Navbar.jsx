@@ -180,7 +180,7 @@ export default function Navbar() {
               {/* Home */}
               <li className="nav-item" id="nav-home">
                 <Link
-                  className={`nav-link navfont ${isActive("/") ? "nav-active active" : "blackText"}`}
+                  className={`nav-link ${isActive("/") ? "nav-active active" : "blackText"}`}
                   to="/"
                 >
                   HOME
@@ -190,7 +190,7 @@ export default function Navbar() {
               {/* About Dropdown */}
               <li className="nav-item dropdown position-static" id="nav-about">
                 <button
-                  className={`nav-link dropdown-toggle navfont ${isSectionActive("/about") ? "nav-active active" : "blackText"}`}
+                  className={`nav-link dropdown-toggle ${isSectionActive("/about") ? "nav-active active" : "blackText"}`}
                   type="button"
                   id="aboutDropdown"
                   data-bs-toggle="dropdown"
@@ -253,7 +253,7 @@ export default function Navbar() {
                 id="nav-services"
               >
                 <button
-                  className={`nav-link dropdown-toggle navfont ${isSectionActive("/services") ? "nav-active active" : "blackText"}`}
+                  className={`nav-link dropdown-toggle ${isSectionActive("/services") ? "nav-active active" : "blackText"}`}
                   type="button"
                   id="servicesDropdown"
                   data-bs-toggle="dropdown"
@@ -328,7 +328,7 @@ export default function Navbar() {
                 id="nav-resources"
               >
                 <button
-                  className={`nav-link dropdown-toggle navfont ${isSectionActive("/resources") ? "nav-active active" : "blackText"}`}
+                  className={`nav-link dropdown-toggle ${isSectionActive("/resources") ? "nav-active active" : "blackText"}`}
                   type="button"
                   id="resourcesDropdown"
                   data-bs-toggle="dropdown"
@@ -400,7 +400,7 @@ export default function Navbar() {
               {/* Contact */}
               <li className="nav-item" id="nav-contact">
                 <Link
-                  className={`nav-link navfont ${isActive("/contact") ? "nav-active active" : "blackText"}`}
+                  className={`nav-link ${isActive("/contact") ? "nav-active active" : "blackText"}`}
                   to="/contact"
                 >
                   GET INVOLVED
@@ -409,7 +409,7 @@ export default function Navbar() {
             </ul>
 
             <div className="text-center">
-              <a href="/contact" className="btn btn-warning navfont ms-lg-3">
+              <a href="/contact" className="btn btn-warning ms-lg-3">
                 GET FREE COACHING
               </a>
             </div>
@@ -417,7 +417,7 @@ export default function Navbar() {
               <a
                 href="/about#donation"
                 onClick={(e) => handleHash(e, "/about", "donation")}
-                className="btn btn-warning navfont ms-lg-3"
+                className="btn btn-warning ms-lg-3"
               >
                 DONATE
               </a>
@@ -426,7 +426,7 @@ export default function Navbar() {
               <button
                 id="themeToggleBtn"
                 onClick={() => setTheme((t) => (t === "dark" ? "light" : "dark"))}
-                className={`btn ${theme === "dark" ? "btn-warning is-dark" : "btn-outline-warning"} navfont ms-lg-3`}
+                className={`btn ${theme === "dark" ? "btn-warning is-dark" : "btn-outline-warning"} ms-lg-3`}
                 aria-label="Toggle theme"
                 title="Toggle theme"
                 aria-pressed={theme === "dark"}
