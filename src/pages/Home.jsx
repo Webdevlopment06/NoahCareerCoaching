@@ -158,6 +158,33 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section>
+  <div className="partnerships">
+    <h2 className="blackText">Meet our Partners!</h2>
+    <div className=" three-col">
+      <div className="left-row col-md-6">
+        <h3 className="blackText">Akron Children's Hospital</h3>
+        <div class="icon-image"></div>
+
+      </div>
+
+      <div className="mid-row col-md-6">
+        <h3 className="blackText">Engage2Rewards</h3>
+        <div className="icon-image"></div>
+
+      </div>
+
+      
+      <div className="right-row col-md-6">
+        <h3 className="blackText">Givebutter</h3>
+        <div className="icon-image"></div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>
     </main>
   );
 }
