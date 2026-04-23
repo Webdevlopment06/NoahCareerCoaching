@@ -158,33 +158,42 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <div className="partnerships">
-        <h2 className="blackText">Meet our Partners!</h2>
-          <div className=" three-col">
-            <div className="left-row col-md-6">
-            <h3 className="blackText">Akron Children's Hospital</h3>
-            <div class="icon-image"></div>
+      <section className="py-5 nav-bg"> {/* Added py-5 for top/bottom padding */}
+        <div className="container">
+          <div className="partnerships text-center mb-5">
+            <h2 className="blackText fw-bold mb-4">Meet our Partners!</h2>
+            
+            {/* Use the Bootstrap 'row' to wrap your columns */}
+            <div className="row g-4 justify-content-center"> 
+              
+              {/* Column 1: Akron */}
+              <div className="col-md-4">
+                <div className="p-3 border rounded-4 shadow-sm bg-white h-100">
+                  <h3 className="blackText h5">Akron Children's Hospital</h3>
+                  <div className="icon-image"></div>
+                </div>
+              </div>
 
+              {/* Column 2: Engage2Rewards */}
+              <div className="col-md-4">
+                <div className="p-3 border rounded-4 shadow-sm bg-white h-100">
+                  <h3 className="blackText h5">Engage2Rewards</h3>
+                  <div className="icon-image"></div>
+                </div>
+              </div>
+
+              {/* Column 3: Givebutter */}
+              <div className="col-md-4">
+                <div className="p-3 border rounded-4 shadow-sm bg-white h-100">
+                  <h3 className="blackText h5">Givebutter</h3>
+                  <div className="icon-image"></div>
+                </div>
+              </div>
+
+            </div>
           </div>
-
-            <div className="mid-row col-md-6">
-            <h3 className="blackText">Engage2Rewards</h3>
-            <div className="icon-image"></div>
-
-          </div>
-
-      
-          <div className="right-row col-md-6">
-          <h3 className="blackText">Givebutter</h3>
-          <div className="icon-image"></div>
-
-          </div>
-
         </div>
-      </div>
-
-</section>
+      </section>
     </main>
   );
 }
