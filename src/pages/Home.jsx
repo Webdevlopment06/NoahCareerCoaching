@@ -161,7 +161,7 @@ export default function Home() {
       <section className="py-5 nav-bg"> {/* Added py-5 for top/bottom padding */}
         <div className="container">
           <div className="partnerships text-center mb-5">
-            <h2 className="blackText fw-bold mb-4">Meet our Partners!</h2>
+            <h2 className="blackText fw-bold mb-4">Trusted By</h2>
             
             {/* Use the Bootstrap 'row' to wrap your columns */}
             <div className="row g-4 justify-content-center"> 
