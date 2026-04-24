@@ -60,12 +60,18 @@ export default function Footer() {
             <h6 className="fw-bold">Support</h6>
             <ul className="list-unstyled small">
               <li>
-                <a className="text-decoration-none" href="/services/resume-templates">
+                <a
+                  className="text-decoration-none"
+                  href="/services/resume-templates"
+                >
                   Resume Templates
                 </a>
               </li>
               <li className="mt-1">
-                <a className="text-decoration-none" href="/services/build-resume">
+                <a
+                  className="text-decoration-none"
+                  href="/services/build-resume"
+                >
                   Build a Resume
                 </a>
               </li>

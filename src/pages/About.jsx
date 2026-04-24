@@ -35,7 +35,7 @@ export default function About() {
                 alt="Christopher Noah"
               />
 
-              <p className="mb-4 px-3 text-dark keep-black">
+              <p className="mb-4 px-3 text-dark">
                 Christopher Noah is the CEO and founder of Noah Career Coaching.
                 His drive and passion to provide help to people has motivated
                 him to create this 100% volunteer non-profit.
@@ -90,15 +90,15 @@ export default function About() {
           <div className="row g-5">
             <div className="col-lg-6">
               <div className="p-4 rounded bg-white">
-                <h3 className="fw-bold text-dark keep-black mb-3">Join as a Volunteer</h3>
+                <h3 className="fw-bold text-dark mb-3">Join as a Volunteer</h3>
 
                 <div className="row gy-4">
                   <div className="col-12">
                     <div className="p-4 rounded shadow-sm animate-scale-up">
-                      <h4 className="fw-bold text-dark keep-black">
+                      <h4 className="fw-bold text-dark">
                         1. Apply to Volunteer
                       </h4>
-                      <p className="text-dark keep-black">
+                      <p className="text-dark">
                         Submit a short volunteer application to help us learn
                         how you'd like to contribute.
                       </p>
@@ -107,8 +107,8 @@ export default function About() {
 
                   <div className="col-12">
                     <div className="p-4 rounded shadow-sm animate-scale-up">
-                      <h4 className="fw-bold text-dark keep-black">2. Orientation</h4>
-                      <p className="text-dark keep-black">
+                      <h4 className="fw-bold text-dark">2. Orientation</h4>
+                      <p className="text-dark">
                         Attend a brief orientation session to understand our
                         mission, roles, and expectations.
                       </p>
@@ -117,10 +117,10 @@ export default function About() {
 
                   <div className="col-12">
                     <div className="p-4 rounded shadow-sm animate-scale-up">
-                      <h4 className="fw-bold text-dark keep-black">
+                      <h4 className="fw-bold text-dark">
                         3. Start Volunteering
                       </h4>
-                      <p className="text-dark keep-black">
+                      <p className="text-dark">
                         Begin supporting our programs and making an impact in
                         the community.
                       </p>
@@ -132,13 +132,13 @@ export default function About() {
 
             <div className="col-lg-6">
               <div className="p-4 rounded bg-white">
-                <h3 className="fw-bold text-dark keep-black mb-3">Join as a Client</h3>
+                <h3 className="fw-bold text-dark mb-3">Join as a Client</h3>
 
                 <div className="row gy-4">
                   <div className="col-12">
                     <div className="p-4 rounded shadow-sm animate-scale-up">
-                      <h4 className="fw-bold text-dark keep-black">1. Apply Online</h4>
-                      <p className="text-dark keep-black">
+                      <h4 className="fw-bold text-dark">1. Apply Online</h4>
+                      <p className="text-dark">
                         Submit your quick online application so we can
                         understand your career goals.
                       </p>
@@ -147,8 +147,8 @@ export default function About() {
 
                   <div className="col-12">
                     <div className="p-4 rounded shadow-sm animate-scale-up">
-                      <h4 className="fw-bold text-dark keep-black">2. Meet Our Team</h4>
-                      <p className="text-dark keep-black">
+                      <h4 className="fw-bold text-dark">2. Meet Our Team</h4>
+                      <p className="text-dark">
                         Attend an introduction session so we can personalize
                         your coaching experience.
                       </p>
@@ -157,8 +157,8 @@ export default function About() {
 
                   <div className="col-12">
                     <div className="p-4 rounded shadow-sm animate-scale-up">
-                      <h4 className="fw-bold text-dark keep-black">3. Get Started</h4>
-                      <p className="text-dark keep-black">
+                      <h4 className="fw-bold text-dark">3. Get Started</h4>
+                      <p className="text-dark">
                         Gain access to our career programs, resources, and
                         personalized support.
                       </p>

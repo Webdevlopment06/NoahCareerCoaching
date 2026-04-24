@@ -49,7 +49,7 @@ export default function Youth() {
               </div>
             </div>
             <div className="col-lg-5 text-center">
-              <div className="p-4 bg-white rounded-4 shadow-lg text-dark border-bottom border-5 border-warning">
+              <div className="p-4 bg-white rounded-4 shadow-lg text-dark border-bottom border-5 border-warning dark-card">
                 <h5 className="fw-bold text-danger mb-3">
                   High-Conversion Youth Roles
                 </h5>

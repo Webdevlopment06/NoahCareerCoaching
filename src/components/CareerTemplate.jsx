@@ -65,7 +65,10 @@ export default function CareerTemplate({
             </div>
           </div>
 
-          <section id="roadmap" className="mb-5 py-5 bg-light rounded-4 darkmode-override">
+          <section
+            id="roadmap"
+            className="mb-5 py-5 bg-light rounded-4 darkmode-override"
+          >
             <div className="container">
               <h2 className="fs-2 fw-bold section-heading-custom text-dark text-center mb-5">
                 {hero.roadmapHeading || "Career Roadmap"}

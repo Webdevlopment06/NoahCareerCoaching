@@ -55,6 +55,15 @@
   fill: var(--white) !important;
 }
 
+/* In dark mode invert the icon hover so background becomes light and icon dark */
+:root[data-theme="dark"] .icon-circle:hover {
+  background-color: var(--white);
+}
+:root[data-theme="dark"] .icon-circle:hover i {
+  color: var(--black) !important;
+  fill: var(--black) !important;
+}
+
 /* 6. BUTTONS */
 .orange-button {
   background-color: var(--accent);

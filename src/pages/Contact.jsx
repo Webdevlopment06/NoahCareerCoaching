@@ -22,7 +22,10 @@ export default function Contact() {
   useEffect(() => {
     const t = setTimeout(() => {
       try {
-        localStorage.setItem("contactDraft", JSON.stringify({ name, email, message }));
+        localStorage.setItem(
+          "contactDraft",
+          JSON.stringify({ name, email, message }),
+        );
       } catch (e) {}
     }, 400);
     return () => clearTimeout(t);
@@ -31,7 +34,8 @@ export default function Contact() {
   const validate = () => {
     if (!name.trim()) return "Please enter your name.";
     if (!email.trim()) return "Please enter your email.";
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return "Please enter a valid email.";
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+      return "Please enter a valid email.";
     if (!message.trim()) return "Please enter a message.";
     return null;
   };
@@ -87,12 +91,17 @@ export default function Contact() {
       <div className="row align-items-start">
         <div className="col-md-6 mb-4">
           <h1 className="fw-bold">Contact</h1>
-          <p className="lead">Reach out for coaching, partnerships, or press — we'd love to hear from you.</p>
+          <p className="lead">
+            Reach out for coaching, partnerships, or press — we'd love to hear
+            from you.
+          </p>
 
           <ul className="list-unstyled">
             <li className="mb-2">
               <i className="bi bi-envelope-fill me-2"></i>
-              <a href="mailto:christopher@noahcareercoachingapp.com">christopher@noahcareercoachingapp.com</a>
+              <a href="mailto:christopher@noahcareercoachingapp.com">
+                christopher@noahcareercoachingapp.com
+              </a>
             </li>
             <li className="mb-2">
               <i className="bi bi-telephone-fill me-2"></i>
@@ -100,25 +109,54 @@ export default function Contact() {
             </li>
             <li className="mb-2">
               <i className="bi bi-linkedin me-2"></i>
-              <a href="https://www.linkedin.com/company/noah-career-coaching" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+              <a
+                href="https://www.linkedin.com/company/noah-career-coaching"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                LinkedIn
+              </a>
             </li>
             <li className="mb-2">
               <i className="bi bi-instagram me-2"></i>
-              <a href="https://www.instagram.com/noahcareercoaching/" target="_blank" rel="noreferrer noopener">Instagram</a>
+              <a
+                href="https://www.instagram.com/noahcareercoaching/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Instagram
+              </a>
             </li>
             <li className="mb-2">
-              <img loading="lazy" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tiktok.svg" alt="TikTok" className="me-2 icon-svg-small" />
-              <a href="https://www.tiktok.com/@noahcareercoaching" target="_blank" rel="noreferrer noopener">TikTok</a>
+              <img
+                loading="lazy"
+                src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/tiktok.svg"
+                alt="TikTok"
+                className="me-2 icon-svg-small"
+              />
+              <a
+                href="https://www.tiktok.com/@noahcareercoaching"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                TikTok
+              </a>
             </li>
           </ul>
 
-          <p className="small text-muted">Prefer email? Expect a reply within 48 hours.</p>
+          <p className="small text-muted">
+            Prefer email? Expect a reply within 48 hours.
+          </p>
         </div>
 
         <div className="col-md-6">
           <h2 className="h5 fw-bold">Send a message</h2>
           {status && (
-            <div className={`alert ${status.type === "error" ? "alert-danger" : "alert-success"}`} role="alert" aria-live="polite">
+            <div
+              className={`alert ${status.type === "error" ? "alert-danger" : "alert-success"}`}
+              role="alert"
+              aria-live="polite"
+            >
               {status.text}
             </div>
           )}
@@ -126,21 +164,72 @@ export default function Contact() {
           <form className="needs-validation" noValidate onSubmit={handleSubmit}>
             <div className="mb-3">
               <label className="form-label">Name</label>
-              <input value={name} onChange={(e) => setName(e.target.value)} className="form-control" type="text" placeholder="Your name" aria-required="true" aria-invalid={!!(status && status.type === "error" && status.text.includes("name"))} />
+              <input
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="form-control"
+                type="text"
+                placeholder="Your name"
+                aria-required="true"
+                aria-invalid={
+                  !!(
+                    status &&
+                    status.type === "error" &&
+                    status.text.includes("name")
+                  )
+                }
+              />
             </div>
 
             <div className="mb-3">
               <label className="form-label">Email</label>
-              <input value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" type="email" placeholder="you@email.com" aria-required="true" aria-invalid={!!(status && status.type === "error" && status.text.includes("email"))} />
+              <input
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="form-control"
+                type="email"
+                placeholder="you@email.com"
+                aria-required="true"
+                aria-invalid={
+                  !!(
+                    status &&
+                    status.type === "error" &&
+                    status.text.includes("email")
+                  )
+                }
+              />
             </div>
 
             <div className="mb-3">
               <label className="form-label">Message</label>
-              <textarea value={message} onChange={(e) => setMessage(e.target.value)} className="form-control" rows={5} placeholder="How can we help?" aria-required="true" aria-invalid={!!(status && status.type === "error" && status.text.includes("message"))}></textarea>
+              <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                className="form-control"
+                rows={5}
+                placeholder="How can we help?"
+                aria-required="true"
+                aria-invalid={
+                  !!(
+                    status &&
+                    status.type === "error" &&
+                    status.text.includes("message")
+                  )
+                }
+              ></textarea>
             </div>
 
-            <button type="submit" className="btn btn-primary" disabled={submitting}>{submitting ? "Sending…" : "Send message"}</button>
-            <p className="mt-2 small text-muted">This site uses EmailJS to send messages directly; set up EmailJS and the Vite env vars described in the README.</p>
+            <button
+              type="submit"
+              className="btn btn-primary"
+              disabled={submitting}
+            >
+              {submitting ? "Sending…" : "Send message"}
+            </button>
+            <p className="mt-2 small text-muted">
+              This site uses EmailJS to send messages directly; set up EmailJS
+              and the Vite env vars described in the README.
+            </p>
           </form>
         </div>
       </div>

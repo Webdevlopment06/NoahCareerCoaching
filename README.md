@@ -17,23 +17,15 @@ npm run dev
 ## Romes Notes:
 
 ### ISSUES:
-- the stories in the stories page are fake placeholders AHHHHHH
+- the stories in the stories page are fake placeholders
 - need a picture for the second guy we quoted on the homepage
 - the contact page does not work
-- the donation defaults are too high and they do not work
 - a lot of the state content is missing
-
-### DARK MODE ISSUES
-- just in general icons lose their color and turn grey or white
-- the three icons in home should have thier hover colors inverted
-- the green outlines on the other elements in home looks odd
-- things are odd in the youth page
-- the fonts got messed with again somehow?????
+- in main and on the deployment the about links are not scrolling and the donation links dont go to givebutter
+- dark mode is kind of too dark? I think we need a different color than pitch black but it works for now
 
 ### IDEAS:
 - We could add the career pages to the navbar somehow
-- We could add dark mode, but its not at all necessary.
-- We could put similar pages into components to reduce file size
 - mobile optimizations
 - have the odd footer links play an animation on the nav items they relate to
 - soon I should do backend stuff (make the contact page email immediately, make the donation section work)
@@ -44,4 +36,3 @@ npm run dev
 ### DOING (first priority anyway) 
 - messing with prettier and eslint
 - making contact page work
-- dark mode

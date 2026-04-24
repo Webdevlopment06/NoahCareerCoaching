@@ -78,7 +78,7 @@ export default function Volunteer() {
             <div className="col-md-5">
               <div className="p-4 rounded-4 text-white flex-ai-center shadow bg-grad-teal-90">
                 <i className="bi bi-infinity fs-2 me-3 text-warning"></i>
-                <span className="small fw-bold">
+                <span className="small fw-bold text-dark">
                   "I am growing skills while creating real-world change."
                 </span>
               </div>

@@ -15,8 +15,8 @@
   --nav-bg: #ededed;
   --card-bg: #ffffff;
   --border: #f0f0f0;
-  --glass-bg: rgba(255,255,255,0.35);
-  --label-bg: rgba(255,255,255,0.85);
+  --glass-bg: rgba(255, 255, 255, 0.35);
+  --label-bg: rgba(255, 255, 255, 0.85);
   --grad-blue-start: #1e3c72;
   --grad-blue-end: #2a5298;
   --grad-pink-start: #ff416c;
@@ -38,16 +38,20 @@
   --bg-cream: #fff9e6;
 }
 
-
 /* 1. FONTS & GLOBAL TYPOGRAPHY */
-.navfont {
-  /* removed custom navbar font override to preserve original navbar typography */
-}
 .bg-grad-blue {
-  background: linear-gradient(135deg, var(--grad-blue-start) 0%, var(--grad-blue-end) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--grad-blue-start) 0%,
+    var(--grad-blue-end) 100%
+  );
 }
 .bg-grad-pink {
-  background: linear-gradient(90deg, var(--grad-pink-start) 0%, var(--grad-pink-end) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--grad-pink-start) 0%,
+    var(--grad-pink-end) 100%
+  );
 }
 .heroFont {
   font-family: var(--heading-font);
@@ -83,8 +87,8 @@
   --nav-bg: #07121b;
   --card-bg: #081223;
   --border: #1f2937;
-  --glass-bg: rgba(255,255,255,0.03);
-  --label-bg: rgba(255,255,255,0.04);
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --label-bg: rgba(255, 255, 255, 0.04);
   --grad-blue-start: #0f172a;
   --grad-blue-end: #12263a;
   --grad-pink-start: #ff6b6b;

@@ -62,6 +62,24 @@
   cursor: pointer;
 }
 
+/* Ensure the back-to-top icon remains the primary blue in dark mode */
+:root[data-theme="dark"] .glass-back {
+  color: var(--primary) !important;
+  /* slightly darker glass in dark mode to keep contrast */
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Stronger override using the element ID to win over broad body * !important rules */
+:root[data-theme="dark"] #backToTop,
+.dark #backToTop {
+  color: var(--primary) !important;
+}
+:root[data-theme="dark"] #backToTop i,
+.dark #backToTop i {
+  color: var(--primary) !important;
+  fill: var(--primary) !important;
+}
+
 /* Animation: Animated Gradient Background */
 .hero-gradient-indigo-orange {
   /* swapped: yellow -> indigo, using only the two licensed colors */

@@ -105,6 +105,14 @@
   color: var(--accent);
 }
 
+/* Preserve the yellow accent in dark mode for the About hero text */
+:root[data-theme="dark"] .about-hero .display-3,
+.dark .about-hero .display-3,
+:root[data-theme="dark"] .about-hero .lead,
+.dark .about-hero .lead {
+  color: var(--accent) !important;
+}
+
 /* Utility classes to replace inline React style={{}} usage */
 .fs-hero-clamp {
   font-size: clamp(1.8rem, 4vw, 3rem);
@@ -122,6 +130,64 @@
 }
 .text-black {
   color: var(--black) !important;
+}
+
+/* Keep elements explicitly marked `.text-dark` black even when dark theme
+   applies broad color overrides. Targets anchors and their icon children. */
+:root[data-theme="dark"] a.text-dark,
+.dark a.text-dark,
+:root[data-theme="dark"] a.text-dark i,
+.dark a.text-dark i {
+  color: var(--black) !important;
+}
+
+/* Make the specific hero card black in dark mode without changing other cards */
+:root[data-theme="dark"] .dark-card,
+.dark .dark-card {
+  background-color: var(--black) !important;
+  /* remove visual lift so the card blends with parent in dark mode */
+  box-shadow: none !important;
+  background-image: none !important;
+  color: var(--text) !important;
+  /* neutralize any bright borders (e.g., border-warning) so card reads flat */
+  border-color: var(--border) !important;
+  border-bottom-color: var(--border) !important;
+}
+
+/* Stronger overrides to beat Bootstrap's .bg-white/.list-group rules that may load later */
+:root[data-theme="dark"] .dark-card.bg-white,
+.dark .dark-card.bg-white,
+:root[data-theme="dark"] .dark-card .list-group,
+.dark .dark-card .list-group,
+:root[data-theme="dark"] .dark-card .list-group-item,
+.dark .dark-card .list-group-item {
+  background-color: var(--black) !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  color: var(--text) !important;
+  border-color: transparent !important;
+}
+
+/* Ensure badges inside the dark card remain readable (optional tweak) */
+:root[data-theme="dark"] .dark-card .badge.bg-light,
+.dark .dark-card .badge.bg-light {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  color: var(--text) !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+/* Invert simple monochrome career icons in dark mode so they remain visible */
+:root[data-theme="dark"] .career-icon,
+.dark .career-icon {
+  filter: invert(1) brightness(1.2) saturate(1.1) !important;
+  /* preserve transform transition from .career-icon while adding filter animation */
+  transition:
+    transform 0.3s ease,
+    filter 180ms ease !important;
+}
+:root[data-theme="dark"] .dark-card .text-dark,
+.dark .dark-card .text-dark {
+  color: var(--text) !important;
 }
 .bg-e9f7ef {
   background-color: var(--muted-bg) !important;
@@ -225,7 +291,11 @@
   font-size: 80px;
 }
 .bg-grad-cyan {
-  background: linear-gradient(90deg, var(--cyan-start) 0%, var(--cyan-end) 100%);
+  background: linear-gradient(
+    90deg,
+    var(--cyan-start) 0%,
+    var(--cyan-end) 100%
+  );
 }
 .bg-f1b327 {
   background-color: var(--accent) !important;
@@ -258,6 +328,43 @@
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* subtle shadow */
   padding: 1.5rem; /* p-4 */
 }
+
+/* Ensure skills-panel light/white children flip to dark backgrounds in dark mode */
+:root[data-theme="dark"] .skills-panel .bg-light,
+.dark .skills-panel .bg-light,
+:root[data-theme="dark"] .skills-panel .bg-white,
+.dark .skills-panel .bg-white {
+  background-color: var(--black) !important;
+  border-color: var(--border) !important;
+  color: var(--text) !important;
+}
+:root[data-theme="dark"] .skills-panel .bg-light .text-white,
+.dark .skills-panel .bg-light .text-white,
+:root[data-theme="dark"] .skills-panel .bg-white .text-white,
+.dark .skills-panel .bg-white .text-white {
+  color: var(--white) !important;
+}
+
+/* Ensure modal content learn-more blocks with bg-white/bg-light become dark in dark mode */
+:root[data-theme="dark"] .modal-content .bg-white,
+.dark .modal-content .bg-white,
+:root[data-theme="dark"] .modal-content .bg-light,
+.dark .modal-content .bg-light {
+  background-color: var(--black) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+:root[data-theme="dark"] .modal-content .text-white,
+.dark .modal-content .text-white {
+  color: var(--white) !important;
+}
+/* Make the white boxes inside the About "How to Join" section go dark in dark mode */
+:root[data-theme="dark"] .about-join .bg-white,
+.dark .about-join .bg-white {
+  background-color: var(--black) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
 @media (min-width: 768px) {
   .skills-panel {
     padding: 3rem; /* p-md-5 */
@@ -271,7 +378,11 @@
   align-items: center !important;
 }
 .bg-grad-ff6b6b {
-  background: linear-gradient(135deg, var(--grad-ff-start) 0%, var(--grad-ff-end) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--grad-ff-start) 0%,
+    var(--grad-ff-end) 100%
+  );
 }
 .text-2d3436 {
   color: var(--text-dark) !important;
@@ -319,4 +430,34 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Restore semantic icon colors in dark mode (override broad body * rules) */
+:root[data-theme="dark"] .text-primary,
+.dark .text-primary {
+  color: var(--primary) !important;
+}
+:root[data-theme="dark"] .text-warning,
+.dark .text-warning {
+  color: var(--accent) !important;
+}
+:root[data-theme="dark"] .text-success,
+.dark .text-success {
+  color: #198754 !important;
+}
+:root[data-theme="dark"] .text-danger,
+.dark .text-danger {
+  color: var(--danger) !important;
+}
+
+/* Info color (used for icons and borders) should persist in dark mode */
+:root[data-theme="dark"] .text-info,
+.dark .text-info,
+:root[data-theme="dark"] .text-info i,
+.dark .text-info i {
+  color: var(--cta-blue) !important;
+}
+:root[data-theme="dark"] .border-info,
+.dark .border-info {
+  border-color: var(--cta-blue) !important;
 }
