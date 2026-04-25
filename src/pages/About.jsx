@@ -199,9 +199,14 @@ export default function About() {
                   Helps us provide educational materials and resources to
                   clients.
                 </p>
-                <button type="button" className="btn btn-primary mt-auto">
+                <a
+                  href="https://givebutter.com/I7JPWd"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="btn btn-primary mt-auto"
+                >
                   Donate $25
-                </button>
+                </a>
               </div>
             </div>
 
@@ -211,9 +216,14 @@ export default function About() {
                 <p>
                   Supports one-on-one coaching sessions for individuals in need.
                 </p>
-                <button type="button" className="btn btn-primary mt-auto">
+                <a
+                  href="https://givebutter.com/I7JPWd"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="btn btn-primary mt-auto"
+                >
                   Donate $50
-                </button>
+                </a>
               </div>
             </div>
 
@@ -224,9 +234,14 @@ export default function About() {
                   Your generosity helps us expand our programs and reach more
                   people.
                 </p>
-                <button type="button" className="btn btn-primary mt-auto">
+                <a
+                  href="https://givebutter.com/I7JPWd"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="btn btn-primary mt-auto"
+                >
                   Donate Any Amount
-                </button>
+                </a>
               </div>
             </div>
           </div>

@@ -63,6 +63,7 @@ export default function Contact() {
             name,
             email,
             message,
+            _replyto: email,
             _subject: "Website contact",
             _captcha: true,
           }),
@@ -227,8 +228,7 @@ export default function Contact() {
               {submitting ? "Sending…" : "Send message"}
             </button>
             <p className="mt-2 small text-muted">
-              This site uses EmailJS to send messages directly; set up EmailJS
-              and the Vite env vars described in the README.
+              This site uses FormSubmit to send messages; no account required.
             </p>
           </form>
         </div>
