@@ -17,7 +17,7 @@ npm run dev
 ## Romes Notes:
 
 ### VERIFICATION:
-- someone needs to tell chris to look into his spam folder and find a verification link for formsubmit. then it will just work for every user and send a message instantly.
+- someone needs to tell chris to look into his spam folder for christopher@noahcareercoachingapp.com and find a verification link for formsubmit. then it will just work for every user and send a message instantly.
 
 
 ### ISSUES:
@@ -31,7 +31,6 @@ npm run dev
 - We could add the career pages to the navbar somehow
 - mobile optimizations
 - have the odd footer links play an animation on the nav items they relate to
-- make the pages with the gradeint stay at the point of the gradient they were at before when switching between pages that both have it
 - decide some rules for eslint and make it run throught the code and syncronise the style
 
 
